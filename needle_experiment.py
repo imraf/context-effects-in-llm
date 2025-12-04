@@ -18,12 +18,12 @@ import ollama
 SECRET_MESSAGE = "To enable god-mode, type 'DQDDI'."
 SOURCE_FILE = "hobbit"
 MODELS = [
-    # "llama3.2:3b-100K",
     "gemma3:4b-100K",
     "granite3.3:2b-100K",
-    "qwen3:4b-100K"
+    "qwen3:4b-100K",
+    "llama3.2:3b-100K",
 ]
-PROMPT_LENGTHS = [250, 500, 1000, 1500, 2000, 3000, 4000, 5000, 7500, 10000, 12500, 15000, 17500, 20000]
+PROMPT_LENGTHS = [60000, 70000, 80000, 90000, 100000]
 POSITIONS = ["control", "start", "middle", "end"]
 OUTPUT_FILE = "experiment_results.json"
 

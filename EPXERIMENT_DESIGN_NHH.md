@@ -40,7 +40,7 @@ This message contains a unique code (`DQDDI`) that can be easily detected in mod
 2. **Prompt Length** (`prompt_length`)
    - Measured in characters
    - Progressive increases to test context window limits
-   - Increments: 250, 500, 1000, 1500, 2000, 3000, 4000, 5000, 7500, 10000, 12500, 15000, 17500, 20000
+   - Increments: 250, 500, 1000, 1500, 2000, 3000, 4000, 5000, 7500, 10000, 12500, 15000, 17500, 20000, 25000, 30000, 35000, 40000, 45000, 50000
 
 3. **Message Position** (`message_position`)
    - Four positions:
