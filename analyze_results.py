@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 
 # Configuration
-INPUT_FILE = "experiment_results.json"
+INPUT_FILE = "experiment_results_merged.json"
 OUTPUT_DIR = "analysis_output"
 REPORT_FILE = "EXPERIMENT_REPORT.md"
 

@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This report presents the findings of a "Needle-in-a-Haystack" experiment designed to evaluate the context retrieval capabilities of Small Language Models (SLMs). We tested 4 models: llama3.2:3b-100K, gemma3:4b-100K, granite3.3:2b-100K, qwen3:4b-100K. The experiment varied context length from 250 to 20000 characters and placed a secret message ("needle") at the start, middle, and end of the context.
+This report presents the findings of a "Needle-in-a-Haystack" experiment designed to evaluate the context retrieval capabilities of Small Language Models (SLMs). We tested 4 models: llama3.2:3b-100K, gemma3:4b-100K, granite3.3:2b-100K, qwen3:4b-100K. The experiment varied context length from 250 to 100000 characters and placed a secret message ("needle") at the start, middle, and end of the context.
 
 ## 1. Executive Summary
 
@@ -17,7 +17,7 @@ The experiment reveals distinct performance characteristics among the tested mod
 *   **Task:** Retrieve a secret code ("DQDDI") from a text passage ("The Hobbit").
 *   **Variables:**
     *   **Models:** llama3.2:3b-100K, gemma3:4b-100K, granite3.3:2b-100K, qwen3:4b-100K
-    *   **Context Lengths:** 14 increments up to 20000 chars.
+    *   **Context Lengths:** 25 increments up to 100000 chars.
     *   **Positions:** Start, Middle, End, Control (None).
 *   **Metric:** Exact match of the secret code in the response.
 
@@ -27,9 +27,9 @@ The experiment reveals distinct performance characteristics among the tested mod
 
 | Model | Overall Accuracy | Start | Middle | End | False Positives |
 |-------|------------------|-------|--------|-----|-----------------|
-| llama3.2:3b-100K | 28.57% | 0.00% | 21.43% | 64.29% | 0 |
-| gemma3:4b-100K | 95.24% | 100.00% | 92.86% | 92.86% | 0 |
-| granite3.3:2b-100K | 64.29% | 42.86% | 57.14% | 92.86% | 0 |
+| llama3.2:3b-100K | 29.33% | 16.00% | 20.00% | 52.00% | 0 |
+| gemma3:4b-100K | 80.00% | 100.00% | 64.00% | 76.00% | 0 |
+| granite3.3:2b-100K | 60.00% | 52.00% | 40.00% | 88.00% | 0 |
 | qwen3:4b-100K | 100.00% | 100.00% | 100.00% | 100.00% | 0 |
 
 ### 3.2 Visual Analysis
@@ -78,4 +78,4 @@ Query time generally increases linearly with context length, but the slope varie
 For applications requiring precise retrieval from long contexts (e.g., RAG, document summarization), **qwen3:4b-100K** is the recommended choice among the tested SLMs. However, developers should be wary of the "middle" context position, as it remains a blind spot for many efficient models.
 
 ---
-*Generated on 2025-12-04*
+*Generated on 2025-12-05*
