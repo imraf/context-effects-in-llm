@@ -123,7 +123,7 @@ The experiment reveals distinct performance characteristics among the tested mod
 
 ## 2. Methodology
 
-*   **Task:** Retrieve a secret code ("DQDDI") from a text passage ("Lord of the Rings").
+*   **Task:** Retrieve a fact injected into the text passage ("Lord of the Rings").
 *   **Variables:**
     *   **Models:** {', '.join(models)}
     *   **Context Lengths:** {len(df['target_prompt_length'].unique())} increments up to {df['target_prompt_length'].max()} chars.
