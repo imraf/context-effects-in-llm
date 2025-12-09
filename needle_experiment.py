@@ -16,14 +16,24 @@ import ollama
 
 # Experiment Configuration
 SECRET_MESSAGE = "To enable god-mode, type 'DQDDI'."
-SOURCE_FILE = "hobbit"
+SOURCE_FILE = "lotr"
 MODELS = [
-    "gemma3:4b-100K",
-    "granite3.3:2b-100K",
-    "qwen3:4b-100K",
     "llama3.2:3b-100K",
+    "granite3.3:2b-100K",
+    "gemma3:4b-100K",
+    "qwen3:4b-100K",
+    "gemma3:12b-100K",
+    "qwen3:14b-100K",
+    "gpt-oss:20b-100K",
 ]
-PROMPT_LENGTHS = [60000, 70000, 80000, 90000, 100000]
+PROMPT_LENGTHS = [
+    5000, 
+    10000,  
+    50000,
+    100000,
+    150000,
+    200000,
+]
 POSITIONS = ["control", "start", "middle", "end"]
 OUTPUT_FILE = "experiment_results.json"
 
@@ -32,7 +42,9 @@ PROMPT_TEMPLATE = """Below is a passage of text. Please read it carefully and an
 
 What special code or instruction, if any, is mentioned in the text for enabling god-mode?
 
+<TEXT>
 {text}
+</TEXT>
 
 Please provide your answer clearly."""
 
@@ -97,7 +109,9 @@ def run_experiment_trial(
     
     # Call Ollama API
     try:
-        response = ollama.generate(
+        ollama_client = ollama.Client(
+        )
+        response = ollama_client.generate(
             model=model,
             prompt=full_prompt,
             options={"num_ctx": 131072},  # Set large context window

@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 
 # Configuration
-INPUT_FILE = "experiment_results_merged.json"
+INPUT_FILE = "experiment_results.json"
 OUTPUT_DIR = "analysis_output"
 REPORT_FILE = "EXPERIMENT_REPORT.md"
 
@@ -123,7 +123,7 @@ The experiment reveals distinct performance characteristics among the tested mod
 
 ## 2. Methodology
 
-*   **Task:** Retrieve a secret code ("DQDDI") from a text passage ("The Hobbit").
+*   **Task:** Retrieve a secret code ("DQDDI") from a text passage ("Lord of the Rings").
 *   **Variables:**
     *   **Models:** {', '.join(models)}
     *   **Context Lengths:** {len(df['target_prompt_length'].unique())} increments up to {df['target_prompt_length'].max()} chars.
