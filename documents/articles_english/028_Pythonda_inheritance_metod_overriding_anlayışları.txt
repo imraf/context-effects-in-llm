@@ -1,0 +1,7 @@
+Title: Pythonda inheritance, metod overriding anlayışları
+URL: https://medium.com/pragmatech/pythonda-inheritance-metod-overriding-anlay%C4%B1%C5%9Flar%C4%B1-59d369d9c756
+Tags: Inheritance, Programming, Python, Praqmatik Məsələlər, Python3
+----------------------------------------
+Python Inheritance
+
+Inheritance allows us to define a class that inherits all the methods and properties from another class. Parent class…

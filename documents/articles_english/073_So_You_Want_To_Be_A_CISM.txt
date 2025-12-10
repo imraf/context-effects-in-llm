@@ -1,0 +1,35 @@
+Title: So, You Want To Be A CISM
+URL: https://medium.com/@olayinka.o/so-you-want-to-be-a-cism-aff1536ba320
+Tags: Information Security, Cybersecurity, Certification, Risk Management, Cism
+----------------------------------------
+From ISACA.org
+
+I was talking to a friend of mine recently about the cybersecurity landscape and how it seems that the industry values certifications more than the degree.
+
+His response was not what I had hoped, but it is reality.
+
+To be noticed in this space you need to get your certification.
+
+There are several certifications. Some are not cheap, nor easy to pass. One advise is to take your time to understand the purpose of each one and select the right one for you.
+
+My friend’s advise was to go for the Certified Information Security Management CISM certification because it was geared towards the management side of infosec. The other one, Certified Information Systems Security Profession (CISSP) is geared towards those who have the technical background. Ultimately, the CISM was the right choice for me.
+
+The CISM is an ISACA certification that “validates your knowledge and expertise in managing enterprise information security teams”. The test is four hours long with 150 questions. The score range is 200 to 800, with 450 being the lowest passing grade. The questions are divided into four domains.
+
+Domain 1: Information Security Governance, which is 24% of the score. In this section you learn about the core of infosec and how it fits into the business. From board members to employees, roles and responsibilities framework, metrics and more.
+
+Domain 2: Information Risk Management makes up the majority of the test at 30%. In this section you learn about the various stages of risk management, what you should do before, during and a risk analysis.
+
+Domain 3: Information Security Program Development and Management is 27% of the test. You will learn security program management and development like risk treatments, audits, and controls.
+
+Domain 4: Information Security Incident Management is the last section which counts for only 19% of the test. This section focuses on business continuity and incident responses.
+
+Once you take the test and pass, you will need to be approved for the certification. You can find additional information about the requirements here.
+
+The CISM test costs $575 for ISACA members and $760 for non members. Windows to take the test opens on a quarterly basis.
+
+If you are thinking about taking the test or studying for it leave a response below.
+
+Good luck!
+
+When you combine cybersecurity, compliance, education and creativity you get Olayinka. With over 18 years of experience in regulatory compliance, master’s degree in cybersecurity and recently passed the CISM exam, Olayinka is dedicated to helping financial firms strengthen their security program. Follow me for more interesting tips on cybersecurity.

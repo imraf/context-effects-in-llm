@@ -1,0 +1,67 @@
+Title: The Analytics Hierarchy of Needs
+URL: https://towardsdatascience.com/the-analytics-hierarchy-of-needs-6d57d0e205e2
+Tags: Data Analytics, Data Analyst, Product Analytics, Data Science, Data
+----------------------------------------
+1. Collect
+
+Wait, how are we not tracking usage of our flagship feature?!
+
+This isn’t fun to hear. You can’t manufacture data that you wish existed in hindsight!
+
+Before doing anything else, an analyst’s first priority should be to ensure basic event logging & data modeling for key entities. This can be informed by your own product intuition and key questions stakeholders have of your data.
+
+Determining what to log and how to log it can be intimidating. Consider mapping out an Entity Relationship Diagram (ERD) for your key entities, and giving engineering the basic event logging guidance of LATAM (Log All Taps And [Relevant] Metadata).
+
+2. Clean
+
+Hey Ryan, can you quickly pull this for me? Sure, let me just SELECT * FROM some_pristine_table_that_does_not_exist;
+
+Your engineering team will likely emit data in disparate, narrow tables. Before dashboarding & diving into analysis, you should ETL your data into wider, standardized tables. This will make your analyses and dashboards far more scalable & easier to build.
+
+Consider a per-user-per-day summary table as a place to start. Your stakeholders can inform the columns: ask them what common questions they wish they knew but are unable to answer.
+
+3. Define & Track
+
+Why is revenue lower than I expected this month?
+
+Now that your data is organized, it’s time to break down your funnel.
+
+Usually people care most about active users and $$. In order to understand what’s driving these, you need to map your product funnel to a flow chart. Consider this basic SaaS product as an example:
+
+> Revenue = (active users) * (average subscription cost per user)
+
+>> Active users = (new conversions) + (retained users)
+
+>>> New conversions = (free trials) * (average conversion %)
+
+And so on. Once you’ve mapped out this flow chart and built dashboards tracking each metric, you’re ready to analyze your funnel.
+
+4. Analyze
+
+Interesting churn analysis, Ryan, but our retention is best in class. Conversion is top of mind for me right now.
+
+Once my team had each of our funnel metrics defined and tracked, we assigned a Red/Amber/Green status to each. We did this by comparing each metric to internal benchmarks, external benchmarks, and our gut; this helped us determine our biggest areas of opportunity.
+
+For example: why do a deep dive into retention if it’s beating benchmarks?
+
+Once you have your top area(s) of opportunity, you can do some basic heuristic analysis on each. There’s often a noteworthy trend when visualizing a metric by cohort, acquisition channel, and basic user demographics.
+
+5. Optimize & Predict
+
+So, you’re finally going to do that clustering analysis I heard about?
+
+You’re collecting data and you’ve cleaned it. You’ve defined your metrics and you’re tracking them. You’ve analyzed your metrics and outlined key areas for improvement.
+
+Congratulations: you can now do the ‘sexy’ stuff. 😎
+
+A/B testing can give you confidence that one user experience is more optimal than another. If you’ve been following the analytics hierarchy of needs, this is well-timed: as the more users you have, the higher statistical confidence your experiments will yield.
+
+Supervised machine learning can help you understand what is predictive of user behavior — for example, what actions or demographics lead to conversion or sustained usage.
+
+Unsupervised machine learning can help you understand patterns among your users you weren’t aware of (hello, clustering!).
+
+However, a word of caution: just because you’ve reached the top of the hierarchy does not mean that machine learning is the best solution to all your questions. Simple heuristics can often yield a better outcome, as they’re quicker to implement and usually more digestible.
+
+In summary
+
+Don’t be the analyst explaining the SHAP values of your XGBoost model while your new flagship feature isn’t being tracked.

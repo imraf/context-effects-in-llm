@@ -1,0 +1,31 @@
+Title: [Portfolio Update]
+URL: https://medium.com/cypher-core/portfolio-update-bi-weekly-release-e78e8dd93bd0
+Tags: Portfolio Updates, Regen Network, Cypher Core, Irisnet, Blockchain
+----------------------------------------
+Reflecting on Regen Testnet 1001
+
+For several weeks now dozens of Regen community and team members have been hard at work setting the foundation for the first of three incentivized testnets for the Regen Network. While being able to participate in this great experience with some familiar faces, our team would like to thank Ethan Frey and the Regen developer team for successfully guiding all testnet participants along this eventful journey and providing excellent support within all channels through all hours of the day. Gregory Landua recently provided the community with an outstanding reflection post breaking down everything from tools the Regen team aims to offer in the future, results from participating validators, and so much more. The Cypher Core team again would like to thank everyone at Regen Network for providing a great learning experience for us to reflect on. We hope to deliver an even stronger performance in these next phases as we continue to build within this growing community.
+
+On-Chain Governance Proposal #5
+
+Recently a few prominent validators within the IRISnet community brought up the topic regarding validator jail time. Prior to the recent passing of proposal #5 validators would be jailed for an extended period of 36 hrs. While we’re currently in the back end of an entire year since a successful mainnet launch, many thought to this being excessive and suggested parameters should be catered to stronger penalties outside of the jailed period while lowering the jailed period to ten minutes in total. This is a better move for the network at the time being as this encourages a more stabilized due process that eliminates the probability of having several of your top validators out for an extended period of 36 hrs. Even though this proposal doesn’t include any changes to any other penalty parameters be on the lookout in this coming year for a more stringent proposal.
+
+IRIS Hub Upgrade v0.16.0
+
+Following proposal #5 we bring you #6. This upgrade proposal is jam-packed with a ton of awesome features new to the IRIS Hub like Coinswap, HTLC, and snapshot. This update is aimed to not only usher in a series of all-new features but also highlight the direction that IRIS Hub will be going with these IBC enabled functions. To learn more about the hub upgrade check out IRISplorer, IRISnet’s very own network explorer!
+
+Lino’s first DApp Hits Several Milestones
+
+After creating a lot of buzz within the last year for obtaining a huge userbase and occurring a high level of transactions within their DApp, CryptoKitties obtained a strong footing within the DApp ecosystem and became a recognizable application within and out of the blockchain community. Now the live streaming platform, DLive, Lino’s first DApp, has taken the crown after building a unique userbase of mainstream and blockchain enthusiasts. After attracting several of the most influential YouTube stars, DLive has seen significant growth and interest on a month over month basis. With a sound DApp in DLive and growing interest within the Lino Blockchain following the recent mainnet launch, we can only wonder what other DApps the Lino community will create next!
+
+Get in Touch
+
+E-mail
+
+Website
+
+Twitter
+
+Telegram
+
+Instagram

@@ -1,0 +1,21 @@
+Title: Power BI — Visual Story Telling. Visual Story Tellers — The Power BI…
+URL: https://medium.com/@harishgopalan/power-bi-visual-story-telling-50c2f492cec0
+Tags: Storytelling, Power Bi, Visualization, Customer Experience
+----------------------------------------
+Visual Story Tellers — The Power BI Experience Series #1
+
+We are sharing our customer success stories and can help you with our amazing talent in simple Visual Story Telling and insights.
+
+Problem: Customer a leading retailer requested for root cause analysis of job failures in production and do retrospective analysis
+
+Challenge: With over 500 jobs running, multiple categories, groups, technologies, and failures, needed a single snapshot image with a summary and understanding of the failures. So Many Data Items in one page!!!! How do we do it???
+
+Regular Solution: Build a bunch of bar charts, line charts, grids etc?
+
+Visual Story Teller Experience: Our visual story teller experts jumped in and built a decomposition chart which showcased the entire root cause summary in a single visual. A consolidated view of about 6–9 charts in a single landscape view.
+
+Outcome: Customer rejoiced with the one pager summary view with numbers and insights.
+
+To know more or if interested feel free to reach out to me on how we can assist
+
+Hkgopalan@netlink.com

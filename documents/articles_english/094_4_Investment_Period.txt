@@ -1,0 +1,27 @@
+Title: 4. Investment Period
+URL: https://medium.com/consciouscrypto/4-investment-period-e0b9c7c27e53
+Tags: Cryptocurrency Investment, Investment, Bitcoin, Investing, Cryptocurrency
+----------------------------------------
+If there is one thing guaranteed for the future, it is that the earnings and average annual market value of a stock portfolio will not grow at the uniform rate of the historical average. In the memorable words of the elder J.P. Morgan, “They will fluctuate”. That means that the common stock buyer at todays, or tomorrows, prices will be running a real risk of having unsatisfactory results therefrom over a period of years. (Graham, p. 54) Volatility risk is only a lost asset risk if you need to liquidate your assets. If there is even a remove possibility that you have to liquidate assets in the near term, very different strategies apply to investors who can push through thick and thin (Bogle, p.30) Volatility risk in common stocks is reduced as the holding period increases (Bogle,31)
+
+Malkiel, p. 353
+
+Looking at the above diagram which have investigated a diverse portfolio of US common stocks for “all” periods of 1, 5, 10, 15 20 and 25 years in 1950 to 2013, we can see that on average the return (the black dot) will be around ~10%. However, if you hold the portfolio for one year the price has varied wildly from+52% to -37%. As time goes by, the chances of the portfolio reaching ~10% annualised return increases.
+
+Looking back at investment vs. speculation, we can argue that a diverse portfolio of many stocks (like in the S&P 500) is a speculation if held for only one year. It is an investment with low risk of loss of principal and a ~10% return if held for 15 years.
+
+The distinction between a safe investment program and a volatile investment program lies in the time horizon of the investor (Bogle, p.30)
+
+The volatility risk is negated when we hold the security long enough. The following table shows suggested holding periods for different securities.
+
+(Malkiel, p. 308)
+
+Cryptocurrency holding periods
+
+We have discussed earlier how Graham defines an investment as an operation where you limit loss of principal while producing expected returns. Volatility risk in common stocks is reduced as the holding period increases (Bogle, p.31). If one decided to invest in crypto currency, then, what then would be a suitable holding period?
+
+One of the riskiest main stream alternatives we have right now is a diversified portfolio of emerging market stocks, as seen above. If you want to invest in a diversified portfolio of emerging market stocks as portrayed above (8–9% return)then you should expect to lock up and don’t take out any money for at least 10 years. Returns might materialise sooner, but they might also be temporarily wiped out by a new downturn.
+
+As Bitcoin and Crypto currencies are more volatile than any regular stock, you should arguably be prepared to hold crypto currencies for at least ten years in order to realise returns. This enables you to choose your exit time with some flexibility and decreases the risk of you having to liquify your assets just after a sharp drop in the market. You should have the staying power to stick it out to avoid being forced to sell when the market is down. Bitcoin have had many crashes and recovery can take a long time.
+
+Indeed, due to crypto currencies’ volatility, Bitcoin lost 30% of its value on average 2 times each year between 2012 and 2018. This is up next, in the post about The Cyclic Nature of Markets.

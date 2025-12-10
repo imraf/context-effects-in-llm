@@ -1,0 +1,95 @@
+Title: Introduction to unittest: a Unit Testing Framework in Python
+URL: https://medium.com/better-programming/introduction-to-unittest-a-unit-testing-framework-in-python-fa0d96fc8262
+Tags: Automation Testing, Testing, Tdd, Programming, Python
+----------------------------------------
+Basic Concepts
+
+Import
+
+First and foremost, you need to import the module by declaring it on top of your Python file:
+
+import unittest
+
+TestCase
+
+In order to create a testcase , you have to create a class that inherits the unittest.TestCase class
+
+class TestFunctions(unittest.TestCase):
+
+Test methods
+
+A test method can be created by prefixing them with the test keyword. Any function that starts with the test keyword will be treated as a unit test method.
+
+def test_some_function(self):
+
+Let’s try it with a simple function that removes whitespace from the input string. It accepts an input string and outputs the same text with the white space removed.
+
+def remove_whitespace(text):
+
+result = text.replace(' ', '')
+
+return result
+
+Next, we have to create a test method that tests the function that we have defined above. I will just use the same name and prefix it with the test keyword. Feel free to name it anything as you like as long as it starts with the test keyword. Inside the function, you need to define the check for the expected result using the assertEqual call.
+
+In the example given above, I wrote three lines that check if the output from the remove_whitespace function is the same as the expected result. In an actual use case, you should cover all the possibilities you can think of.
+
+Main
+
+Once you’re done, write the following code to finish the script for your first unit test:
+
+if __name__ == '__main__':
+
+unittest.main()
+
+Save the script as a Python file and run it normally using the following syntax in command prompt. Change the name to the name of the file that you’ve set.
+
+python -m unittest myFile.py
+
+You can specify additional parameters. Common parameters are:
+
+-b — The standard output and standard error streams are buffered during the test run. Output during a passing test is discarded. The output is echoed normally on test fail or error and is added to the failure messages.
+
+— The standard output and standard error streams are buffered during the test run. Output during a passing test is discarded. The output is echoed normally on test fail or error and is added to the failure messages. -c — Control-C during the test run waits for the current test to end and then reports all the results so far. A second Control-C raises the normal KeyboardInterrupt exception.
+
+— Control-C during the test run waits for the current test to end and then reports all the results so far. A second Control-C raises the normal KeyboardInterrupt exception. -f — Stop the test run on the first error or failure.
+
+— Stop the test run on the first error or failure. -k — Only run test methods and classes that match the pattern or substring. This option may be used multiple times, in which case all test cases that match the given patterns are included. Patterns that contain a wildcard character ( * ) are matched against the test name using fnmatch.fnmatchcase() . Otherwise, simple case-sensitive substring matching is used. Patterns are matched against the fully-qualified test method name, as imported by the test loader.
+
+— Only run test methods and classes that match the pattern or substring. This option may be used multiple times, in which case all test cases that match the given patterns are included. Patterns that contain a wildcard character ( ) are matched against the test name using . Otherwise, simple case-sensitive substring matching is used. Patterns are matched against the fully-qualified test method name, as imported by the test loader. -v — Verbose output
+
+Let’s say you would like a verbose output. You run the following command.
+
+python -m unittest -v myFile.py
+
+If you are running on Jupyter Notebook, you will encounter the following error:
+
+Image by Author
+
+You can easily resolve it by changing the main code to this:
+
+unittest.main(argv=['ignored'], exit=False)
+
+The list argument is to prevent unittest from looking up sys.argv as it is what started the Notebook, while the exit=False is to prevent unittest from shutting down the kernel. Parameters can also be added to the list. For example:
+
+unittest.main(argv=['ignored', '-v'], exit=False)
+
+You should see the following result when you run the script:
+
+Image by Author
+
+Second test function
+
+If you have a hard time writing the unit test, your code might not be modularized enough. It’s recommended to break your code down into smaller functions so you can easily test it. Let’s try to add another function and write a simple test method for it.
+
+The code above takes an input string, calculates the mathematical operation based on the text inside it, and returns the result as string. After that, add the test method for it:
+
+I have added three lines of equality check. Kindly note, I did not implement any exception check for strings that are not calculable. If you have an exception check in your function, you should also create an equality check for it in the test function.
+
+The following result will be outputted to the console when you run the script.
+
+Image by Author
+
+Let’s change the comparison value of the second line from 8.0 to 7.0 to check what will be the output when we ran the script. You should see the following result:
+
+Image by Author

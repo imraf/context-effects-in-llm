@@ -1,0 +1,53 @@
+Title: The Digital Identity Landscape
+URL: https://medium.com/composui/the-digital-identity-landscape-99eb6f453a20
+Tags: Identity, Authentication
+----------------------------------------
+(This past was originally created in October 2015, so it may be a bit outdated).
+
+Standardization is a unique mechanism to both ensure and enforce compatibility, interoperability, security and a similar (qualitative) user experience across different service providers. This standardization together with rules is the basics of protocols that we use every day on the internet, which enable a frictionless communication between us and the server we are trying to access.
+
+Such standardization does not exist with identity today and it’s up to the service provider to dictate the requirements for creating an identity. They ultimately decide what data needs to be submitted, how the data is managed, secured and stored. Because of this, digital identity is fragmented, impractical, restrictive and limited in scope and availability. Exactly this opens up huge problems and causes the privacy intrusions and identity thefts we have today. Successful protocols for the identification of two parties, such as the Kerberos protocol, X.509 certificates or the Web of Trust model in PGP, exist today, but they are limited in their ability to provide a true identity system which includes enrollment, identification, authentication, authorization and general identity management.
+
+The Digital Identity Landscape of Today
+
+Identity Providers
+
+As previously mentioned, the identity ecosystem today is fragmented. Instead of offering a similar (qualitative) user experience across all service providers, each service provider itself dictates the user experience and issues new identities when users sign up to the service. Identities provided by one service provider are not accepted by other service providers (except for Token based Authentication, which we will discuss soon), which creates a huge inconvenience for the users, as they have the enter similar identity information across different service providers.
+
+This makes digital identity management a time-consuming activity as you have to remember the sign up details and authentication details of each identity for every service provider. Using similar authentication details (passwords/emails) across multiple service providers bears with it huge security risks, and if one identity is hacked your other identities are as well. Services like Keepass make this identity authentication management easy, but they are only there to manage your authentication details, not your actual digital identities.
+
+In some examples, where a service provider operates a range of services that form an “ecosystem” (Google, Microsoft, Yahoo), allow the user to use a single identity across a variety of services without having to sign up again. But these ecosystems are highly restrictive and sadly there are way too few.
+
+Authentication Providers
+
+Authentication is one of the most important parts that enables identity to function. The authentication method ensures that your identity is protected, since only you are supposed to know the authentication sequence. Additionally, the authentication process is also an identification process, as the service provider can assume that the person accessing the identity is who she claims to be, since only she is supposed to know the authentication sequence.
+
+Since passwords are inconvenient and insecure, additional or different methods need to be introduced to create a better authentication process. An additional method is Two- or Three-Factor-Authentication which basically demands additional proof from the user to unlock an identity. An example is Google Authenticator, which is a mobile app on your phone that generates a unique one-time token during an authentication process. This token needs to be given to the service provider in order to complete the authentication process and successfully “unlock” the identity. It is therefore a second layer of authentication that drastically increases security.
+
+Different authentication methods which are increasing in popularity are biometrics. Probably because of the introduction of the fingerprint scanner in the iPhone, more applications and services accept biometrics for authentication of your identity. But biometrics are more than just fingerprints. Iris, finger and palm veins, face, ears, face and voice recognition, electrocardiogram and even behavioural biometrics offer innovative ways to uniquely identify you.
+
+Another innovative approach for authentication are single sign-on and token based authentication services. Especially token based authentication offers a unique way to use a single identity across multiple service providers without storing any data on the server (i.e. “stateless servers”).
+
+Original picture from https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication
+
+Identity Management
+
+One thing to note is that identity management is not what you think it is. Today there exists no identity management solution that makes it possible for a user to manage her digital identities (unless we treat Keepass and similar services as an identity manager). The only other identity management provider for users I could come up with is Hootsuite, which enables the user to manage social media identities in a single platform. But in general, the identity management solutions of today are oriented around serving the service providers and making it easy for them to manage the ever-increasing amount of users.
+
+The most obvious identity management solutions are databases: MySQL, PostgreSQL, NoSQL etc. They make it easy to store user information, modify it and make it accessible once needed for authentication or “data analyses” purposes. The other solutions are IAM (Identity and Access Management) providers which make it easy for big enterprises to manage the identities of users and their access levels. These are largely based on the Single Sign On concept with SAML. (great article about it: https://developer.salesforce.com/page/Single_Sign-On_with_SAML_on_Force.com).
+
+Identity Applications
+
+Since service providers themselves are often limited in their ability to perform certain operations with your identity, third party applications come in place. Identity applications are an important piece in the identity ecosystem since the perform specialized operations on your identity and output the results to a service provider.
+
+KYC and AML checks are probably the most prominent example. Many financial companies rely on these applications to assure them that your identity is not on any of these “scary” lists (sanction, fugitive, money laundering, PEP lists and so on and forth) so that they can provide you service. There are also applications that are there to extract information from your real-world identities (driver’s license, passport, identity card) to make the information entering process much easier and less of a hassle. Other financial applications are risk analysis or credit scores. These applications collect enough data from your digital and outside identities to build a credit score about your trustworthiness.
+
+Some other interesting concepts are the one of digital identities for kids, which enable parents to decide what kind of information service providers can collect on their children’s activity. This is the main goal behind COPPA (Child Online Privacy and Protection Act).
+
+These are just a few applications of many out there that enable you to do amazing things with your digital identity. I am sure that I’m missing out on a few, so if you have any other great examples, please let me know!
+
+Innovators in the space
+
+Since it is apparent that identity is broken, there are some interesting Startups that are attempting to solve the issues with identity. The most promising aspect of the future of identity is permissionless, publicly verifiable and immutable ledgers (i.e. Blockchains) that will function as the backbone of identity.
+
+In general, what can be assured is that identity is changing and it will change rapidly, for the better of everyone.

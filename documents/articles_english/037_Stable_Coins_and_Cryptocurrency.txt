@@ -1,0 +1,23 @@
+Title: Stable Coins and Cryptocurrency
+URL: https://medium.com/acreapp/stable-coins-and-cryptocurrency-eef9e817e851
+Tags: Bitcoin, Cryptocurrency, Altcoins, Finance, Stable Coin
+----------------------------------------
+Stable Coins and Cryptocurrency
+
+Looking for stability in an unstable world
+
+We’ve all heard it. Don’t invest in cryptocurrency: it’s not safe; it’s not even real! But, we all know that’s not true. In fact, it was recently announced that many Ivy League schools have invested portions of their endowments into cryptocurrency funds.
+
+Image Credit: blog.goodaudience.com
+
+So what is cryptocurrency? At its very core, cryptocurrency is a decentralized digital cash system. Unintentionally discovered in 2008, Bitcoin (believed to be the first cryptocurrency) was created as a means to prevent “double-spending” in financial transactions. You know — kind of like “floating a check” … I pay you, then, before that money is withdrawn from my bank account, I pay someone else. At the end of the day, I’ve paid two debts with the same pot of funds. Not cool.
+
+Bitcoin founders realized that processing all payments through one centralized place caused not only time delays, but also relied on a single source to validate whether or not funds were actually available. And so began the decentralized system which relies on the consensus of many to validate a transaction. But decentralization also means that cryptocurrencies are not typically “pegged” against another stable asset (think US dollar), and the coin’s value fluctuates… sometimes a lot!
+
+According to Sherman Lee’s recent Forbes article, Explaining Stable Coins, the Holy Grail of Cryptocurrency, in a perfect world, cryptocurrency would have four key attributes: price stability, scalability, privacy and decentralization. If a coin possessed these four attributes, it could, theoretically, be practical for everyday purchases as well as desirable for longer-term investments.
+
+So what is a “stable” coin? It’s a coin that is pegged (backed) by another stable asset, like gold, but NOT tied to a central bank. In essence, the coin has value as deemed by a “tangible” asset, i.e. gold, but the accountability of a decentralized network.
+
+Recently, there are few projects attempting to solve the stability issue. Some are even pegging against the US dollar, and then backing with an alt. coin like ETH or Bitcoin. Both ETH and Bitcoin are available on the Get Cred app. If you haven’t checked it out, download the app and get started today!
+
+As these projects continue to unfold, it’s not unreasonable to envision a world where we’ll be using cryptocurrency for everyday purchases very soon. And Get Cred is an easy way to start your journey.

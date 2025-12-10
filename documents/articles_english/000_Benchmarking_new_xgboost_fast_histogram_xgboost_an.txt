@@ -1,0 +1,29 @@
+Title: Benchmarking new xgboost fast histogram: xgboost and the compiler story
+URL: https://medium.com/data-design/benchmarking-new-xgboost-fast-histogram-xgboost-and-the-compiler-story-86f0c5a4bcd3
+Tags: Benchmark
+----------------------------------------
+We have seen previously that the new xgboost fast histogram method had an issue: it was awfully slow. But we fixed it. By recompiling R with gcc 7.1.
+
+How do you call someone compiling R from scratch in Windows?
+
+Compiling R was something tough, but I have now an executable I can use on all my servers to deploy R with gcc 7.1 without any issue:
+
+Even better, all libraries are compiled with gcc 7.1 !
+
+! It makes the new xgboost fast histogram fly!
+
+Therefore, we are going to benchmark two different things from xgboost:
+
+xgboost old fast histogram with gcc 4.9 (Rtools) and gcc 7.1 (MinGW)
+
+with gcc 4.9 (Rtools) and gcc 7.1 (MinGW) xgboost new fast histogram with gcc 7.1 (MinGW)
+
+Comparing xgboost old fast histogram with gcc 4.9 and gcc 7.1
+
+To compare the xgboost old fast histogram with different compilers, we will use:
+
+R/xgboost compiled with gcc 4.9
+
+R/xgboost compiled with gcc 7.1
+
+And no, do not tell me to compile it with something else. It is already difficult enough to compile R in Windows.

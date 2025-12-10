@@ -1,0 +1,151 @@
+Title: Audeze LCD-1 planar-magnetic headphone review: The truth, the whole truth, and nothing but the truth
+URL: https://medium.com/@katie92975617/audeze-lcd-1-planar-magnetic-headphone-review-the-truth-the-whole-truth-and-nothing-but-the-6f8b42cdaed7
+Tags: Chargers, Home Tech
+----------------------------------------
+Audeze LCD-1 planar-magnetic headphone review: The truth, the whole truth, and nothing but the truth Katie Jan 16·9 min read
+
+Audeze is one of the only headphone makers devoted exclusively to using planar-magnetic (PM) drivers in its products. The company offers a wide range of models, from reference over-ear designs to gaming-specific cans to in-ear monitors, all of which are based on PM technology.
+
+
+
+I have little experience with planar-magnetic headphones. Many years ago, I reviewed the Stax SR-007 MK2 electrostatic headphones, which use a somewhat similar technology, but they require a special amplifier and are extremely expensive. But I’ve never spent any quality time with PM headphones. So, when I got the opportunity to review the Audeze LCD-1, I jumped at the chance—and now that I’ve given them a good listen, I’m very glad I did.
+
+
+
+This review is part of TechHive’s coverage of the best headphones, where you’ll find reviews of the competition’s offerings, plus a buyer’s guide to the features you should consider when shopping for this type of product.Planar-magnetic technologyMost headphones use dynamic drivers to generate sound waves. In these drivers, an electrical audio signal is sent through a coil of wire—the voice coil—which creates a magnetic field around the coil that oscillates according to the waveform in the signal. The oscillating magnetic field interacts with the static field of a permanent magnet mounted nearby, which pushes and pulls on the voice coil, causing it to vibrate in response. The voice coil is attached to a diaphragm, which vibrates along with it, sending sound waves into the listener’s ear.
+
+
+
+Vendor-provided art. Audeze wraps the headband and earcups of its LCD-1 planar-magnetic headphones in super soft lambskin.
+
+
+
+Planar-magnetic drivers are similar in principle but different in implementation. Instead of a voice coil, the diaphragm in a PM driver is directly embedded with a flat conductor that snakes back and forth across its entire surface (see Fig. 1). That conductor carries the audio signal, and the oscillating magnetic field interacts with the static field of permanent magnets mounted very close to the diaphragm. That causes the diaphragm to vibrate according to the audio signal, generating sound waves that enter the listener’s ear.
+
+
+
+Vendor-provided art. In this rendering, you can see the “voice coil” (labeled “circuit trace pattern”) on the ultra-thin substrate of the diaphragm. You can also see a magnet and Fazor on both sides of the diaphragm, but the LCD-1 has a magnet and Fazor only on the inner side of the diaphragm.
+
+
+
+In this “exploded” rendering of an Audeze earcup, you can see the circuit-trace pattern (aka, “voice coil”) on the diaphragm. You can also see the magnet and Fazor structures, which are discussed in the next section.
+
+
+
+Mentioned in this article iFi Audio hip-dac Read TechHive's reviewSee it The main difference is that a PM driver has no separate voice coil per se; the “voice coil” and diaphragm are a single component. As a result, the entire diaphragm vibrates more uniformly than a dynamic diaphragm, which is pushed and pulled at its center by the voice coil.
+
+
+
+Also, the magnets in a PM driver are generally larger than those used in dynamic drivers, because they must be roughly the same size as the diaphragm. That makes planar-magnetic headphones generally larger and heavier than dynamic designs.
+
+
+
+So, what are the advantages of PM headphones over dynamic cans? Generally speaking, planar-magnetic headphones tend to have tighter, more accurate bass response. And because the entire diaphragm moves uniformly, the planar soundwave creates a better soundstage with a more immersive quality, and there tends to be less distortion at high levels. For these reasons, PM headphones are often preferred by critical listeners such as recording engineers and audiophiles.
+
+
+
+Audeze Audeze planar-magnetic headphones are well known among recording engineers for their neutral, revealing sound quality, a legacy that the LCD-1 easily upholds.
+
+
+
+Audeze LCD-1 featuresThe LCD-1 is an open-back, circumaural (over-ear) headphone. It’s more compact than many PM headphones and weighs just 8.8 ounces. It sports memory-foam earpads and headband covered in lambskin leather and comes with a nice carrying case into which the headphones fold. The included premium braided cable terminates with a 3.5mm connector, and a 1/4-inch adapter is included.
+
+
+
+[ Further reading: The best high-res digital audio players ]Interestingly, the plugs for each earcup are TRS (tip-ring-sleeve), which I thought might mean that the drivers are wired for balanced operation. But I was informed that they are not balanced; instead, the three-conductor connectors are used to automatically determine which signal is left and right, so it doesn’t matter which one is connected to each earcup. Clever!
+
+
+
+Audeze An ingenious design means you can plug either cable into each earcup, and the left signal will be played by the left earcup and vice versa.
+
+
+
+With an impedance of 16 ohms, sensitivity of 99 dB/mW (calculated at the eardrum), and a power-handling capacity of 5W RMS, the maximum sound output is rated over 120dB SPL with THD less than 0.1% at 100dB SPL. The frequency response is specified from 10Hz to 50kHz (no tolerance given).
+
+
+
+Audeze designs and builds its headphones in the United States and touts several enhancements it has made to planar-magnetic technology. One of them is its ultra-thin Uniforce diaphragms, which are very lightweight, presenting very little resistance to movement for improved transient response. And its large size of 90mm in diameter facilitates deep bass reproduction.
+
+
+
+The company makes all its drivers in its Southern California facility, using a vacuum-deposition process to coat the diaphragm film with conductive metal that is then etched to form the “voice coil” on the surface. To achieve a uniform magnetic force across the entire surface area of the diaphragm, Audeze actually varies the width of the voice-coil tracing depending on the strength of the magnetic field at different locations.
+
+
+
+Vendor-provided art. The LCD-1 earcups fold so the headphone fits in a small, hard-shell travel case.
+
+
+
+According to the company’s website, “Audeze uses ‘a genetic algorithm-based heuristic optimization technique together with magnetic simulations to optimize trace widths to achieve Uniforce.’ For those of us who don’t speak Martian: we use advanced computing techniques to get the most uniform distribution of force possible on the diaphragm.”
+
+
+
+Another Audeze innovation is its Fluxor magnets. The description on the company’s website gets pretty technical, which I won’t go into here; if you want to dig deeper, click here. Suffice to say that Fluxor neodymium magnets increase the magnetic field strength at the diaphragm without adding more weight to the assembly.
+
+
+
+In the company’s flagship headphones, each diaphragm is suspended between two Fluxor magnet structures, as seen in Fig. 1. But in the LCD-1, there is only one magnet in each earcup, located between the ear and the diaphragm. This is less efficient than a double-sided design, requiring more amp power, but it allows the headphones to be lighter. And the Fluxor magnet is more efficient than a conventional magnet, focusing more of the magnetic field toward the diaphragm.
+
+
+
+Why place the magnet between the ear and diaphragm rather than the other way around? Two reasons—to protect the diaphragm and to allow damping material to be placed on the other side.
+
+
+
+In most planar-magnetic headphones, including those from Audeze, the magnet is a slotted structure that allows sound to pass through the slots. As you might recall from basic physics, when waves pass through parallel slots, they cause interference patterns (see Fig. 2), which can degrade the sound quality. Audeze solves this problem with its Fazor waveguide attached to the magnet structure. According to the company, this eliminates the interference patterns, corrects the phase response, and improves the acoustic impedance. For more on Fazor technology, click here.
+
+
+
+Audeze As the diaphragm vibrates, it sends sound waves through the slots of the magnet structure, causing interference patterns as they emerge. Audeze’s Fazor waveguides eliminate this interference. In this generic diagram, there are magnets and Fazors on both sides of the diaphragm, but in the LCD-1, they are on only one side of the diaphragm.
+
+
+
+Without the Fazor waveguides, sound waves emerge from the slots and interfere with each other, degrading the sound quality. The Fazor waveguides eliminate this interference. In this diagram, there are magnets and Fazors on both sides of the diaphragm, but in the LCD-1, they are only on one side.
+
+
+
+PerformanceThe LCD-1 is quite lightweight, and the earpads are very comfortable; my ears fit nicely in them, and they are super-soft. The earcups provide a surprising sense of isolation, despite being their open-back design. My only complaint here is that the headphone feels a bit flimsy.
+
+
+
+As usual, I played high-res audio files from the Tidal Master library on my iPhone XS, using the iFi hip-dac (reviewed here) as the DAC/amplifier. First up was “In Too Deep” by Jacob Collier from his most recent album Djesse Vol. 3. The vocals are accompanied mostly by synths with some super-low bass, all of which was rendered beautifully by the LCD-1—clean and clear with an open soundstage and natural, present vocals. The deep bass was exceptionally well represented without bloat or congestion, and it balanced the rest of the spectrum perfectly.
+
+
+
+I haven’t seen Pixar’s latest movie Soul yet, but the soundtrack album is now streaming from the Tidal Master library. I listened to “Collard Greens and Cornbread Strut,” a very short but hard-bopping piece played by a jazz combo of piano, bass, drums, and horns, including a smokin’ tuba. It sounded clean and open on the LCD-1; I could hear each instrument clearly within a unified whole.
+
+
+
+This year, composer Max Richter wrote and recorded a haunting musical backdrop entitled All Human Beings meant to accompany the reading of the United Nation’s Universal Declaration of Human Rights. On his album Voices, the piece begins with Eleanor Roosevelt reading the Preamble in a 1949 recording, after which many other modern voices continue reading the Declaration in a wide variety of languages. It’s a lovely tribute to basic human rights that are all too often ignored in today’s world.
+
+
+
+In addition to Voices, Richter also released a related album called All Human Beings, which includes a six-minute version of the piece played five times. Each one starts with the Eleanor Roosevelt recording that morphs into a modern voice reading Article 1 in one of five different languages—English, Spanish, German, French, and Dutch. (I wish he had included some languages from places other than western Europe.) I listened to the English version on the LCD-1, which sounded gorgeous, with a wide soundstage for the orchestra and choir, and the voiceover sounded completely natural and present.
+
+
+
+Vendor-provided art. The Audeze LCD-1 planar magnetic headphones are quite transparent in their audio reproduction.
+
+
+
+Next up was “Starlight” by guitar legend Lee Ritenour from his album Dreamcatcher. Most of the album is simple solo guitar—in this case, an acoustic guitar tuned quite a bit lower than normal. The folky, fingerpicked piece sounded clean, open, and well-balanced on the LCD-1, with a wonderful low end and no hint of congestion.
+
+
+
+For some throwback fun, I listened to “Money For Nothing” from Dire Straits’ 1985 album Brothers in Arms, which was just released in MQA format. The LCD-1 presented a big, open soundstage in which the stereo drums really bounced around. Once again, the sound was clean, and I could hear each instrument and voice clearly, including Sting’s unmistakable guest vocals.
+
+
+
+Lately, I’ve been listening to a lot of The Manhattan Transfer, one of my favorite vocal groups, so I cued up “Cantaloop (Flip Out!)” from The Junction. The music is based on the classic Herbie Hancock tune “Cantaloupe Island” with lyrics by Us3. It’s a richly produced track and a wonderful mix with deep bass and an infectious groove. As I had come to expect, the LCD-1 did it full justice with a clean, open sound. The deep bass was perfectly balanced with the rest of the ensemble without becoming overbearing.
+
+
+
+I always include some classical music in my review listening. This time, I started with the first movement of Tchaikovsky’s Serenade for String Orchestra in C Major, Op. 48, from the album Serenades by the Zürcher Kammerorchester under the direction of Daniel Hope. Once again, the sound of the LCD-1 was clean, open, and well-balanced. The strings sounded vibrant, and I could clearly delineate each section within a cohesive whole.
+
+
+
+Finally, I listened to the fourth movement of Beethoven’s Symphony No. 7 in A major, Op. 92, as recorded by the Rotterdam Philharmonic Orchestra under the direction of Lahav Shani. The LCD-1 had a nice, open, wide sound with excellent balance.
+
+
+
+Vendor-provided art. Most people will use the 3.5mm cable, but Audeze provides a 1/4-inch adapter in the box as well.

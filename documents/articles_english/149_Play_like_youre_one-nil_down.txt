@@ -1,0 +1,37 @@
+Title: Play like you’re one-nil down
+URL: https://medium.com/develeap/play-like-youre-one-nil-down-de84fc35ceee
+Tags: Code, Learning, DevOps, Life, Work
+----------------------------------------
+There is nothing more frustrating than the moment when the football team you support is leading 1–0 (yes, leading), and then they just start to go backward and defend. The sequel is already known in advance, we will defend and defend until we will concede the goal we deserved to concede. Then, when we will understand what a mistake it was to get backward, we will start fighting back, but unfortunately, it’s too late. The moral of the rival team is in the sky at the moment, and it’s 2–1. We lost.
+
+The game after, it’s an away game. You can’t believe it, but your team has just conceded a goal at the 4’ minute of the game. This is a critical moment at the game, to see how both teams react. At this time we are one-nil down, the rival team has gone backward in order to defend. The final result? 4–1 win for our side.
+
+Why can’t we always play like we are one-nil down?
+
+Why am I telling you this? There is a chance you don’t even watch football at all, but even though, there are some conclusions which are relevant to the lives of all of us. It’s pretty impressive how much we can learn from a game.
+
+In a matter of life decisions, you must act and think like you have just conceded a crucial goal. Always. You can’t lie on your bay leaves for a moment unless the rival team will snatch the ball and now you’re up to them.
+
+Let’s imagine situation A. You have the dream job. You are in your thirties and your life and future didn’t look as brightened as now. You are one-nil up. You are one of the best workers in your company, you have great chemistry with your team and everything is just very very fine. You are in that spotlight which actually makes you pretty blind. While you were busy with your coming victory, you didn’t see what others around you are doing. You stopped learning because after all, you’re in a great place right now, you don’t need anything else. You are an expert, nothing can happen. Actually, it is not just that while you were daydreaming you conceded 3 goals to your own net, even worse, you didn’t see that you are getting out of the competition.
+
+However, let’s imagine situation B, the opposite situation of situation A. You are at a disadvantage, you are a junior who has just hatched from the egg, and you have just got accepted to your first job in the industry. You are about to do anything in order to prove your skills and abilities. You are determined and ambitious to prove who you are, and what you can bring to the place you serve. Nobody is expecting from you for the special at the moment, because you are the underdog and psychologically you can lift it up for your needs. You are one-nil down, but you are about to shuffle the deck. You are self-learning and doing the extra to score your goals. You are about to win.
+
+When your football team will do the switch and start playing like they are 1–0 down every second in the game, they will probably win, a big win. Of course, it is not as simple as I describe, you must have a well-trained team, with great chemistry, with probably good footballers, but without the right mindset inside the players’ heads, they will struggle.
+
+When you will do the same switch, and start acting like you’re 1–0 down, the results of everything you will touch will talk by themselves.
+
+Firstly, never stop learning. Continuous learning is a concept that begins to get widespread recognition. Continuous learning is about constant learning while expanding your set of skills and abilities. It is about recognizing the changes in the environment surrounding you and learn how to fit yourself into them. If you will not learn continuously, you will simply become out of date. Yes, in some professions you can stay with your current knowledge and succeed well, but you will have to ask yourself these questions:
+
+Am I bringing something new to the place I serve? If I will lose my job, do I have any advantage over my competitors? Do I have something special to offer? Can I bring something different and make an impact? Did my knowledge advanced since I got accepted to my last job?
+
+I guess that if you are not continuously learning, you will hardly answer the questions I have asked above. You need to understand — knowledge equals power. The more you will learn (either by yourself or in an organized structure), the more power you will have. And no, it’s not a cliche.
+
+Secondly, initiate the next move. You can’t allow yourself to settle down and wait for the opponent to take any action, make the next move by yourself. Invent ideas that can bring value to the place you are serving. Make yourself a strategy of progress, which surely includes continuous learning. When a football team waits for the opponent to take any action, they are simply inviting them to attack. Attacks translate to goals. Never do that.
+
+Another point to remember is that when you dare to attack, you may endanger your defense. So remember to make considerable decisions, but also, it is very important to remember that you may concede goals during the game. That’s ok, because you are attacking, and as we said, attacks translate to goals, and the most important — the one who scores the most, wins. At the moment your team concedes a goal, that is the exact moment when you are testing your culture — if you will react quickly and attack, without letting the moral go down, you will do the comeback, you will win.
+
+In a matter of DevOps, it is very important to understand your responsibilities within your role in the company. When you are a DevOps, this is not a recommendation — you must always play like you are one-nil down, surely. That’s because of your main role inside the place you serve — you are responsible to take the company forward. You are responsible to bring new technologies, ideas and implement the top tools and technologies that are available. You want to do it before your rivals that’s for sure. You are not just a player in your team that has to act like you are 1–0 down, you are the captain. You have to make your team act, work, and behave like this, always. You have to make sure that your team is actually working as one unit for one specific target — scoring goals, and a lot.
+
+If you will not look forward, in your free time, after new tools and technologies to implement in your place, you will simply keep your place behind its rivals. You will lose.
+
+Lastly, play like you’re one-nil down, always. Especially if you are a DevOps but this attitude should be adopted for everyone who wants to bring his career to the next level, at any part of it. You can take this attitude to your perspectives, I mentioned here a few examples but this is all yours now. Remember — never stop learning, initiate the next move and prepare to concede goals to your own net, be ready to react quickly.

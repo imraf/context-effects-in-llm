@@ -1,0 +1,23 @@
+Title: Coinpaprika Release — Independent Source of Crypto Data
+URL: https://medium.com/coinpaprika/coinpaprika-release-independent-source-of-crypto-data-5f027af00dbe
+Tags: Cryptocurrency, Bitcoin, Blockchain, Ethereum, Data
+----------------------------------------
+After continuous strive to have independent data, now we can say that we are fully autonomous from other services!
+
+What does it mean?
+
+Data from 176 exchanges is imported and stored into our servers without any 3rd party members. With that integration we can bring you data straight from the places where the trades take place.
+
+is imported and stored into our servers without any 3rd party members. With that integration we can bring you data straight from the places where the trades take place. Prices, charts, volume and other numeric values are waged and counted independently from other services. Previously we helped ourself with data from external sources, which sometimes resulted in showing wrong prices. (And we were not aware of it). From now, it won’t happen again.
+
+from other services. Previously we helped ourself with data from external sources, which sometimes resulted in showing wrong prices. (And we were not aware of it). From now, it won’t happen again. Data refreshes now faster, as we serve you 265 ticks on average per 1 second, which is around 16 000 ticks per 1 minute . Simply speaking, we refresh info about 16 000 prices on different pairs, every minute.
+
+. Simply speaking, we refresh info about 16 000 prices on different pairs, every minute. Prices are more stable and reliable as they are calculated in consideration with every single market. With that in mind, no strange and unconfirmed deviations from the price will occur.
+
+as they are calculated in consideration with every single market. With that in mind, no strange and unconfirmed deviations from the price will occur. We have built tools to detect outliners and anomalies. We are constantly monitoring prices, we even created a publicly available dashboard to show the difference that our independent system made — coin price listing with comparison to other websites! You can check it here!
+
+We are very proud that this day finally came, as working on our own data means we have more space to introduce even more intriguing charts, more interesting correlations, and many new features in future!
+
+Check it now on coinpaprika.com!
+
+Once again we would like to shout out that Coinpaprika is fully independent - we don’t relay on cmc data, as many other platforms do.

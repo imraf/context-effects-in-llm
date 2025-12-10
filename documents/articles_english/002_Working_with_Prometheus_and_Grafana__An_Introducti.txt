@@ -1,0 +1,15 @@
+Title: Working with Prometheus and Grafana — An Introduction
+URL: https://medium.com/@akshayavb99/working-with-prometheus-and-grafana-an-introduction-ae197c8e27bf
+Tags: Grafana, Monitoring, Prometheus, Kubernetes, DevOps
+----------------------------------------
+Source: Google Images (Prometheus, Grafana, Kubernetes)
+
+When we deploy software or application(s) in different environments, we want to monitor the environments, the performance of the deployed software or application(s), and other parameters. Monitoring is an important component of any technical field. There are many methods of monitoring like logs, metrics, profiling, etc. Each component of a given infrastructure has its specialized tool for monitoring, but there are very limited tools which can monitor multiple technologies and devices. One such tool is Prometheus.
+
+Prometheus is an open-source monitoring platform primarily used for monitoring metrics. It collects metrics from monitored targets by scraping metrics HTTP endpoints on these targets. It stores data as a time-series database, which can be accessed using a query language called PromQL. Using the metrics collected, Prometheus allows us to observe various parameters both in numerical and graphical format.
+
+Prometheus is often used in combination with Grafana, which is a multi-platform open-source visualization and analytics software. It allows you to query, visualize, alert on, and explore your metrics, by using metrics stored as a time-series database in different graphical representations.
+
+Typically, we would like to not only analyze the data in the form of metrics but also make the data collected persistent, which can be done with the help of container orchestration tools like Kubernetes. In this article, we will be looking at how we can integrate Prometheus and Grafana for metrics monitoring while making the metrics collected persistent with the help of Kubernetes.
+
+To set up our work, we need a few pre-requisites:

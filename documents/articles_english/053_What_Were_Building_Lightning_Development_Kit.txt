@@ -1,0 +1,29 @@
+Title: What We’re Building: Lightning Development Kit
+URL: https://medium.com/@squarecrypto/what-were-building-lightning-development-kit-1ed58b0cab06
+Tags: Bitcoin, Lightning Network
+----------------------------------------
+For bitcoin to become a widely used global currency — one that can’t be stopped, tampered with, or rigged in anyone’s favor — improvements to bitcoin’s UX, security, privacy, and scaling are required.
+
+In open-source development, developers usually choose their own projects. Yet, because we are a consolidated team of open-source developers, we are in a strong position to coordinate on major projects that individuals may not have the time or resources to tackle.
+
+With that in mind, we used the following criteria to ask ourselves what we should build to accelerate bitcoin adoption:
+
+Will the project have an outsized impact on bitcoin, particularly non-custodial bitcoin?
+
+Is the project meeting an underfunded need of the ecosystem that doesn’t have a clear business model?
+
+Can this become a self-sustaining open-source project that will attract developers worldwide?
+
+We spoke with dozens of wallet developers. What we heard was a desire for flexibility when integrating Lightning. Wallets and applications require different key store and backup mechanisms, security approaches, UX tradeoffs, and more. That means the solution is building for more wallets, not fewer.
+
+So rather than create a standalone Lightning node, we’re building a Lightning Development Kit (LDK) that gives wallet and application developers a convenient way to create custom experiences. LDK will include an API, language bindings, demo apps, and anything else that makes integrating Lightning easy, safe, and configurable. The API is based on the Rust-Lightning project, which offers clean interfaces and minimal system dependencies. Rust is also among the safest systems languages, one that will attract developers who can sustain LDK independently of us.
+
+Here’s just some of what LDK will simplify:
+
+Adding Lightning capabilities to existing bitcoin wallets — no need to create a separate wallet just for Lightning.
+
+Supporting multi-device, multi-application access to a single wallet.
+
+Allowing wallets to make UX/security/privacy tradeoffs such as external transaction signing and customizing their state backup to a cloud service.
+
+Today’s Lightning infrastructure is incomplete without features like these. Even though that makes LDK a big project, that’s also what makes it right for Square Crypto. And with the support of developers like Acinq, Blockstream, Lightning Labs, and open-source developers everywhere, it’s only a matter of time until instant, low-fee bitcoin payments are as common as cash used to be.

@@ -1,3 +1,11 @@
 # Python >= 3.12 required
 ollama>=0.6.1
+langchain
+langchain-community
+langchain-chroma
+chromadb
+pandas
+matplotlib
+seaborn
+
 

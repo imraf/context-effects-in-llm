@@ -1,0 +1,87 @@
+Title: The biased crypto Investor
+URL: https://medium.com/swlh/the-biased-crypto-investor-3fa5e845fc92
+Tags: Bitcoin, Ethereum, Token Sale, Coinbase, Cryptocurrency
+----------------------------------------
+Let’s Start with Hindsight Bias
+
+Hindsight Bias Makes Surprises Vanish
+
+Now that Bitcoin has rebounded, we are all thinking that we were right to Hodl and perceiver. This is called hindsight bias and we do this as a coping mechanism; otherwise we’d have to admit we were wrong and deal with an entirely different mental condition called Cognitive Dissonance (i’ll cover it in a bit).
+
+I knew it all along; didn’t I…….
+
+Hindsight bias is our way of interpreting past events with an “obvious” slant. We attribute a positive interpretation because it makes us feel like we were always in control of our investment (aka fate). The facts, however, were very different irl.
+
+No one knew why BTC dropped in value nor did anyone know why or when it would pick up again. We just kind of left it to fate. However, now that it’s rebounding we want to pat ourselves on the back and say that we “knew” it would rebound and offer up crappy reasons as to why it did.
+
+Don’t play yourself like that. You had no idea and the faster you respect that notion the better off you will be.
+
+Pro-Tip
+
+Looking backwards, the past looks like a single line leading to today. Going forward, we see many different paths we can hitch a ride on. Consider that the past had just as many paths and try to identify the alternative outcomes that could have been.
+
+Better yet, just keep a journal of your thoughts and revisit them from time to time. I use Google Keep for this. You can use a pen and paper. Whatever works.
+
+The Confirmation Bias
+
+If I gave you a Token tip and told you that it’s price is going to triple in the next week, most of you will go on google/Twitter/Reddit and find things that agree with my advice. It’s natural and this form of bias is deceptive.
+
+Confirmation bias is the tendency to interpret new evidence as confirmation of one’s existing beliefs or theories.
+
+CB is something that keeps us in our safe space. Look at your facebook or twitter feed. You’ll see that the majority of the people and things you follow keep confirming your objective reality as the one that’s true.
+
+It’s not to different in the crypto community. We tribe up and this behavior degrades our being able to process multiple ideas (even those that conflict with our narrative).
+
+Pro-Tip
+
+If you want to be objective with your next trade and avoid confirmation bias simply change up your “why should I invest in this token” to “why shouldn’t I invest in this token.”
+
+This should help you start identifying the negatives before confirming your stances and allow you to weigh the different views.
+
+Herders are for sheep
+
+We are all social creatures and tend to look for consensus from those that we “trust”. We hodl up in Telegram groups/sub-Reddits and other social platforms echo chambers because it’s the natural thing to do.
+
+These groups are a great tool for discourse and furthering your understanding of topics, however it comes with a caveat.
+
+The groups objectives may conflict with your own.
+
+What’s your objective? How much money do you have to invest? What is your time horizon and lastly how much are you willing to lose? These things should be addressed before you partake in group think and decide your objectives match to those in the group.
+
+Lastly, there is a rule that you should consider.
+
+90–9–1 Rule is when 90% of the people in a group are lurking (only view content), 9% of the members add to the original content and 1% of the members create new content.
+
+With that said, understand that your interest in any group should be based around furthering your understanding of a certain trade/topic. You should leverage the sentiment in the group to help you rationalize your investment thesis.
+
+Pro-Tip
+
+Who in your group is creating most of the topics for discussion? Do yourself a favor and look at his/her historic topics for discussion and see if you can draw some inferences. It would also serve you well to see if this original poster has an agenda or is a shill for this token or that token. Best way I know how to do this is just to ask them what they are interested in.
+
+Lastly, the worst bias trap of all — Cognitive Dissonance
+
+Cognitive dissonance is the unpleasant emotion that results from believing two contradictory things at the same time.
+
+This might go against the grain with crypto maximalists, but for the average investor, one of the best examples I can think of for cognitive dissonance is the phenomenon of HODLing.
+
+Think about it. We Hodl because we think the price of crypto (in many cases BTC) will keep increasing in value. We initially came to this conclusion from looking at the historical price charts and seeing how they have risen over the last 5 years (albeit with some peaks and troughs along the way). For many of us, however, the story is more bleak.
+
+The 2017 bull run gotten many involved towards the end when the market was just starting to turn and they had little recourse other than to Hodl.
+
+Our initial Hodling was based on our belief that Crypto is the future and for the more greedy of us we believed that it will increase in value.
+
+What’s problematic with this notion is that Hodling isn’t always the right course of action and may prevent you from seeing an alternative signals.
+
+To reiterate, cognitive dissonance is a trap that keeps us in our mental prison.
+
+The pro-tip
+
+History does not repeat it evolves. Just because you think something is going to happen based on you having experienced similar conditions in the past, doesn’t mean that it will. Look for things that disprove your point of view first and take on the contrarian role before you look for positive affirmations then weigh the two sides.
+
+I love you,
+
+Iggs
+
+Find me on Twitter under @iggsloop
+
+Igor is a lover and a fighter. He happens to enjoy shitposting on crypto twitter and getting a beer with friends. His latest venture seeks to help traders improve their ROI through a crowd driven price prediction platform, called KryptoLoop. The Wisdom of the Crowd model they use mitigates most of the biases traders contend with and distills their collective knowledge into a single price prediction. It’s the best sentiment indicator a crypto trader can find and their predictions are within a tiny margin of error from actual price.

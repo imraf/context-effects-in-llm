@@ -1,0 +1,33 @@
+Title: How A Small Device Can Help Monitor and Reduce Stress
+URL: https://medium.com/x-factors-in-life/how-a-small-device-can-help-monitor-and-reduce-stress-f00736cca56c
+Tags: Stress, Biofeedback, Technology, Burnout
+----------------------------------------
+Occupational stress and burnout are major issues that our society faces today. One up and coming intervention for this stress comes in the form of new technology. The past decade brought a surge in companies that develop wearable technology to help improve consumer health. This includes increasing accessibility to devices that help users better manage their stress.
+
+There is a lot of value in having a good, widespread way to evaluate the experience of stress. Understanding when you are experiencing stress allows a more precise determination of the stress’s cause.
+
+One concept that is widely used in the devices to help consumers reduce their stress is biofeedback. Biofeedback describes the process by which you can impact your biological outputs, like respiratory effort and heart rate variability. Wearing a health monitoring device (like an Apple Watch) allows the user to be more in tune with their biological outputs. This knowledge, in combination with techniques taught for stress management, allows the user to reduce their physiological stress reaction in real-time. Biofeedback is discussed in much more detail in another article on our blog, “A Biofeedback Hack: Controlling Stress through Resonant Breathing” by Johanna Bergstrom. Here you can find more information about incorporating this technique as a stress management technique in your life.
+
+Devices that Track Respiratory Effort
+
+One physiological measure that is computable by wearable health devices is respiratory effort. This includes measures of the number of breaths taken per minute. It is a cool area for intervention with biofeedback because breathing can be voluntary. This voluntary action allows for direct intervention.
+
+A recent study done by Stanford University used a new wearable technology from Spire Health to track stress. This study uses the Spire Stone device and its accompanying application to track respiratory effort as a measure of stress.¹ The experimental protocol for the experiment included different aspects of wearing a device. These different facets of wearing the device helped reduce the negative impacts of stress. The researchers discussed the significance of wearing the device as a reminder of the stress reduction program as well as the motivation of having readily available biofeedback information. There was also a mindfulness stress reduction program incorporated in the application associated with the device.²
+
+The findings of the study were significant. Participants using the device for four weeks reported experiencing less negative impacts of stress and less stress-related symptoms.³ They also reported fewer days where they felt stressed or anxious when compared with a group that did not complete the same stress management program.⁴
+
+Illustration by Nadia Mokadem
+
+Devices that Track Heart Rate Variability
+
+Technologies that measure heart rate variability are also viable options for wearable technologies that can monitor stress. Heart rate variability is a measure of the variation of time between heartbeats.⁵ It is a non-invasive technique for measuring physiological responses associated with stress.⁶ Its use and value as a clinical marker are discussed in detail in an earlier post on our blog. For more information on heart rate variability, “Why You Need to Measure Heart Rate Variability?” by Johanna Bergstrom is a great resource.
+
+Recent studies demonstrate the value of heart rate variability, especially as a tool to monitor and reduce reported stress levels.⁷ These studies discuss how the understanding of your heart rate variability from wearable health devices in combination with biofeedback techniques can help reduce the levels of stress experienced.
+
+One study tested heart rate variability against other physiological markers of stress. These researchers found that it is a promising tool that can be easily measured by a wide variety of wearable devices readily available to consumers.⁸ A particularly interesting finding is the difference in the reported stress level of the participants and the measured stress level. Researchers studying the use of heart rate variability as a marker of stress found that participants reported lower levels of stress than their heart rate variability monitoring suggested.⁹ One possible implication of this finding is that people are not in touch with the level of stress that their body is experiencing.¹⁰
+
+There are many tangible incentives for employers to start implementing these devices as tools to help their employees better manage their stress levels. Research suggests that occupational stress and burnout contribute to between 5–8% of the annual spending on healthcare in the United States.¹¹ It also discusses how the negative aspects of stress on employee productivity could be costing businesses enormous amounts of revenue each year.¹² Helping employees to reduce their stress by implementing stress management programs would be overall beneficial to all involved parties. Research even suggests these programs can help to decrease absences and increase employee productivity.
+
+Many wearable health devices are available on the market, in a wide price range, for consumers to purchase. There is one out there for you if you are interested in trying a stress management program with the biofeedback from a wearable health device.
+
+References

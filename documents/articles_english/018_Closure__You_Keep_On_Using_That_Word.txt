@@ -1,0 +1,91 @@
+Title: Closure — You Keep On Using That Word
+URL: https://medium.com/the-innovation/closure-you-keep-on-using-that-word-348039c2fa22
+Tags: JavaScript, Programming, Web Development, PHP
+----------------------------------------
+For some time I’ve noticed that people are using the word “closure” for things that — at least from my perspective, knowledge of English, and programming background — aren’t closures. They keep using the word, when that’s not what it means.
+
+I dunno thin it mins wha yew thin it mins
+
+This has been going on for about a decade and a half and I’ve just bit my tongue, but it’s getting ridiculous at this point, and this abuse/misuse comes with a hefty penalty.
+
+Right now programmers galore — particularly those versed in JavaScript — are running about using the term to refer to any block of code that’s self contained or has a scope isolating behavior; like a function or bracketed block.
+
+Maybe it’s my having learned “real’ programming in assembler long before Tim Berners-Lee even created HTML. Maybe it’s my having spent a decade writing code in Ada. Maybe it’s because I’m old enough to have least been taught about PAL despite not having ever actually programmed for it…
+
+… but from everything I ever learned be it programming or English, that’s not a closure.
+
+Then What Is a Closure?
+
+What I was taught in decades past is that a closure is something that ENDS a block of code or execution path. It’s part of the word, closure. From the root “Close”. Like a door. Lands sake people get a dictionary:
+
+clo·sure
+
+/ˈklōZHər/
+
+An act or process of closing something, especially an institution, thoroughfare, or frontier, or of being closed. (in a legislative assembly) a procedure for ending a debate and taking a vote. A sense of resolution or conclusion at the end of an artistic work.
+
+Therefor in programming:
+
+These Things Are Closures:
+
+The closing } in C syntax languages like C, C++, JavaScript Java, PHP The keyword “end” in Wirth family languages like Pascal, Modula 2, and Ada. “return”, “break”, and “continue” as they pass control back from the current block and/or function RET, JMP, and so forth in assembler / machine language
+
+At least, that’s what it meant when the term was coined for programming back in the 60’s and continued to mean until about a decade or two ago. That’s how I learned it in the ‘80’s.
+
+It seems that JavaScript in particular seems to have this addle-minded obsession with the concept of scope blocks being a “closure”, with such trash as LET/CONST being proof enough of that. As apparently JavaScript fanboys are too feeble minded — or just plain lazy in naming conventions — for function level scoping to be sufficient.
+
+Talk about solutions in search of a problem! And remember, that’s coming from someone well versed in Ada.
+
+Why Is “Using the Wrong Word” Bad? You Mentioned a “Hefty Penalty”
+
+It’s confusing for beginners and old-timers alike!
+
+Much like the W3C’s halfwit gibberish use of the word “empty” where <div></div> is not what they mean by an “empty tag”. Or “deprecated’ where they make it sound like we’re talking down to them like a petulant five year-old instead of being reduced in value (depreciated). It leads to confusion, misunderstandings, and just plain verbal gymnastics to explain a very VERY simple concepts.
+
+Hence why we have know-nothing XML fanboys who STILL don’t understand why <DIV /> is invalid HTML or even XHTML regardless of which spec you’re using!
+
+I often feel like certain groups in society — and this extends beyond programming — go out of their way to use obtuse, esoteric, and often incorrect language for the sole purpose of maintaining their L33T status. See legal lingo where a lawyer or judge will ask “can you make arrears” — a word nobody outside a courtroom uses in normal speech — rather than saying “can you pay the money owed?” It’s a way to confuse or mislead normal people with a less established vocabulary.
+
+I even had a lawyer explain legalese to me in those terms:
+
+The language of law and lawyers exists so that those educated in it can take advantage of those who are not. Words rare in the common vernacular are chosen so that a normal person has little chance of deciphering the procedure or intent of the process.
+
+In the case of programming this seems equally true. The simplest of things — HTML and CSS for example — are poorly explained, poorly laid out, horrifically poorly documented, and rely on market-speak double-talk to try and make things look harder.
+
+Often this is done simply to make using these languages look more difficult than they are, oft so that those who do understand it can mislead, lie, or outright scam people with snake oil. Worse than that though, is how it more often than not is nothing more than catch-phrases and rhetoric parroted by those who don’t actually even understand what they themselves are saying. It’s a cover used by stupid people to try make things sound more important than they are.
+
+For all intents and purposes I keep expecting certain development “experts” to start talking about how proactive their paradigms are.
+
+There’s a reason when people start talking about software “ecosystems” I assume they’re playing bullshit bingo. After 40+ years writing software, a lot of these sick buzzwords are a good indication of when it’s time to cut your losses and run.
+
+When you use a word for something it doesn’t even mean, OF COURSE BEGINNERS ARE GOING TO GET CONFUSED! You can see it on development forums, comments here on medium, and even in many articles on the topic people having issues understanding what’s being called “closures”. A good chunk of that simply boils down to effete know-nothings blindly parroting THE WRONG HUFFING WORD!!!
+
+So What Is The Right Word?
+
+ENCLOSURE!
+
+Because it wraps around it. Like a fence or other barrier.
+
+en·clo·sure
+
+/inˈklōZHər,enˈklōZHər/
+
+An area that is surrounded by a barrier. The state of being enclosed, especially in a religious community. A document or object placed in an envelope together with a letter.
+
+Seriously people, get a copy of Oxford’s!
+
+I’m willing to bet there would be a lot less confusion or issues explaining the structure of functions or scope blocks if instead of mislabeling it a “closure” you called it an enclosure.
+
+Just like as George Carlin joked, if they still called it “Shell Shock” I bet some of those Vietnam vets would have gotten the help they needed.
+
+Clean, simple, direct, honest language. Nope, can’t have that in the programming world, how else can we stay head and shoulders above the “mere mortals”.
+
+Ray, you’re scaring the straights.
+
+Conclusion
+
+I’m not sure why the past 15–20 years the term has become twisted into meaning something it’s not supposed to, but you’re just making it harder for the normies to make sense of things.
+
+Like a great many things in programming it seems to exist for the sole purpose of continuing the bald faced lie that “programming is hard”… like a cut rate ripoff of the “Math Barbie”.
+
+Though as Hanlon’s Razor explains: one should never attribute to malice that which can be adequately explained by stupidity.

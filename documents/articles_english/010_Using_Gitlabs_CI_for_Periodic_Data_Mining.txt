@@ -1,0 +1,69 @@
+Title: Using Gitlab’s CI for Periodic Data Mining
+URL: https://towardsdatascience.com/using-gitlabs-ci-for-periodic-data-mining-b3cc314ecd85
+Tags: Data Mining, Gitlab, DevOps, Data Science, Python
+----------------------------------------
+One of the most time-consuming and difficult stages in a standard data science development pipeline is creating a dataset. In the case where you have already been provided with a dataset kudos for you! You have just saved yourself a good amount of time and effort. Still though, on many occasions that would not be the case. As a matter of fact, the data mining stage can be one of the most demotivating periods in your project timeline. Thus it is always a plus when there are simple and easy techniques to mine the data required.
+
+That being said, in this post I will be giving describing how GitLab’s CI pipelines can be used for periodic data mining jobs without the need of storage buckets, VPSes, external servers and so forth. So without further ado let’s dive in the tutorial.
+
+Use Case
+
+To materialise the value of this tutorial I will be putting this technique in a use case that was part of a side project that I am working on. More specifically I have been trying to apply some NLP on a Greek news dataset. Therefore we will be using the RSS feed of a Cypriot news portal (http://www.sigmalive.com) to periodically fetch and store the news articles as they are posted in the portal.
+
+After performing some preliminary checks on the global RSS feed of the site it turns out that it returns the last 25 articles that have been posted. Considering the frequency of the posts too, pulling the RSS feed every hour should not miss anything. But even if we miss a few it is not a bit deal.
+
+As a result, I needed to write a script that downloads and stores the articles from RSS feed but keeps running in the background and triggers every hour. These were my main requirements.
+
+Some thoughts prior to implementation
+
+Intuitively, when talking about repeating periodic tasks cron jobs are the most common thing to do. One option would be to write a python script that does the downloading, storage and execute it every hour as a cron job. Hmm… seems simple but I would need to make sure my PC is turned on with an internet connection 24/7. Not really convenient.
+
+Alternatively, I could get a VPS from a cloud provider and run my cron job there. Sounds like it would work, yet this would require setting up the VPS, provisioning for storing the news file in remote file system and maintaining all this over time. Plus, I would need to pay for the server.
+
+My laziness instinct insisted there should be an easier way….
+
+At that point it struck me! From the DevOps perspective, I can create CI pipelines that run periodically! Since I don’t want to host anything I can use Gitlab’s hosted CI platform with a free plan. Also in terms of storing the news I can just expose them as artifacts of the CI job and then download them all together for aggregation. Given that Gitlab gives 2000 free pipeline hours per month, they should be more than enough.
+
+Another side perk of using GitLab’s CI for this task, is the built in monitoring and reporting. If any of the pipeline jobs fails an email will be sent to your inbox. How convenient is that?
+
+No cloud buckets, no google drive, no external servers. Sounds like a neat plan. Let’s move on to the implementation.
+
+But before starting I am assuming that you already have a GitLab account and you know how to use Git. Also you can just skip to the complete code by cloning my repository from here.
+
+Implementation
+
+For the sake of transparency I will be using Python 3.6.5 but it should work in any Python 3 version.
+
+For fetching the news I wrote a python script which performs a normal HTTP request, parses the XML and saves it in a JSON file.
+
+In fact, I am using tinyDB ( https://tinydb.readthedocs.io/en/latest/) a very lightweight python package which provides a simple and clean DB API on top of a storage Middleware. (By default it just stores them in a JSON file so that would do).
+
+Here is the script source code:
+
+Feel free to test the code out, but make sure that all the additional dependencies are installed by running:
+
+pip install requests
+
+pip install tinydb
+
+pip install xmltodict
+
+Great now it is time for some DevOps.
+
+Firstly, we should export our python dependencies to requirements.txt file for the Gitlab job:
+
+pip freeze > requirements.txt
+
+The next thing on the task list, is configuring the CI pipelines via the .gitlab-ci.yml file:
+
+In case you have never seen one of those files before, it is just a configuration file for Gitlab to know what to execute at each CI pipeline. In the configuration above, I define a stage called “scrape” (This could be anything you like), I install the python requirements before executing the script, and finally within the “scrape” job the script is run and all JSON files in the directory are exposed as artifacts.
+
+Let’s put that in practice. Create a new GitLab repository and push the file we have just created. These should be the following:
+
+- feed_miner.py
+
+- .gitlab-ci.yml
+
+- requirements.txt
+
+If you navigate back to your GitLab project page a CI job should have started running.

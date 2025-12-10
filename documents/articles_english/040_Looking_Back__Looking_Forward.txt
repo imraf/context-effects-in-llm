@@ -1,0 +1,23 @@
+Title: Looking Back & Looking Forward
+URL: https://medium.com/the-outlier/willem-jan-van-den-heuvel-91af6c86dcda
+Tags: Data Science, Academia
+----------------------------------------
+Excellent Data Scientists
+
+Willem-Jan has been closely involved in the development of the Data Science & Entrepreneurship curriculum which builds upon 4 pillars: Data Engineering, Math & Statistics, Business Analytics and the Socio-legal-economic Context.
+
+JADS’ vision on Data Science — the science that develops methods and techniques to turn data into value.
+
+Due to the popularity of data science and abundance of external libraries and packages, the use of advanced techniques has become accessible to a wide range of audience. You may ask yourself: to what extent is it really necessary to have a solid foundation in for example math and statistics? Willem-Jan explains: “You must be able to drive a car, but as a data scientist you should also know what goes on under the hood. This helps you understand how new technologies work in the future: is it the right approach, is it reliable and in which situation can I apply a specific algorithm? We hope to deliver students who are scientifically critical the moment they graduate but also maintain this attitude in the future.” To illustrate this he refers to a course on Hadoop he currently teaches: “In the end it’s nice if students know the trick (it has a fair market value), but I think it’s more important that they understand how it works methodologically and conceptually. That’s what they bring along and which they can benefit from in the long run.”
+
+“You must be able to drive a car, but as a data scientist you should also know what goes on under the hood.”
+
+In summary, at JADS academics primarily focus on solving practical problems, still a theoretical understanding remains essential. On top of this, I asked him what he thinks makes an excellent data scientist. Basically, he mentions 3 criteria:
+
+Analytical skills — mastering the exact sciences (statistical and mathematical models).
+
+Engineering skills— someone who is not only capable of analyzing (big) data but who can also turn data into a product or service.
+
+Domain knowledge — connecting your product or service with market demand.
+
+The latter is the big secret according to him: “It’s relatively easy to come up with a new algorithm. A PhD researcher should be able to publish an article about an incremental improvement of an existing algorithm without too much effort. Building a product or service that is adopted by the European community and delivers social and economical value requires certain skills which not everybody possesses. Then you are excellent in my eyes.”

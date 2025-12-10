@@ -1,0 +1,45 @@
+Title: When in the Amazon, do as Amazonians do
+URL: https://medium.com/@olga.rosas/when-in-the-amazon-do-as-amazonians-do-755c56f8a980
+Tags: Python, Csv File, Matplotlib, Amazon
+----------------------------------------
+A good friend recently sent me this picture of our trip, many many many years ago, to the Amazon River. (¡Hola M!) We took a boat ride through Rio Negro (that’s in Portuguese; in English, the name means Black River). It is the largest left tributary of the Amazon River (and that’s according to Wikipedia; if I learned that fact whilst traveling there, I would not count on my memory to accurately recall). It is also “the largest blackwater river in the world (accounting for about 14% of the water in the Amazon basin), and one of the world’s ten largest rivers by average discharge.” From: https://en.wikipedia.org/wiki/Rio_Negro_(Amazon)
+
+What I remember distinctly about our trip to Manaus, Brasil was that our hotel was on stilts right on the water, that early one morning, as I was heading to the restaurant for breakfast, I marveled at the spectacle of a pod of pink dolphins playing in the water (not ten feet away from me!), and that standing there admiring them, a monkey briefly hopped on me before going on his way. Upon the creature’s landing on my face — his crotch right on my nose — I let out a voiceless scream. But it is because I went on that adventure all those years ago, I can now tell this story. Totally worth it.
+
+I have many stories. I’m so glad I’m blogging about miscellaneous, coding-adjacent, things. I’ve mentioned how one of my favorite features of the Amazon website is that it has a searchable order history, here:
+
+Not only have I used that search bar to confirm how long ago did I purchase four pairs of binoculars without unboxing three of them until that Glamping trip late November 2019, but also when my waffle maker decided to stop working in the middle of a waffle batch, I checked it had lasted about three years, and cost under $30 and immediately bought it again! From that history, I can see that the first time I used Amazon.com was in July 1998, when I bought a book titled The Craft of Research (I must have been prepping to write my Masters thesis at Cornell University) and the last item I bought arrived just a few days ago; this child’s Cleopatra costume (the teacher wants my kid to go to a school event in Egyptian garb, whatever that means).
+
+First / most-recent of my Amazon purchases
+
+Speaking about the children: when my second child was in the works, I probably read it was a good idea to carry a doll around to acclimate both the elder child and the dog to the impending arrival. Some free advice to you, dear readers: never search on Amazon for a “realistic doll”, just don’t. You’re welcome! Here’s the doll I purchased, he’s a cutie.
+
+Something else I learned is that one can download a lot of the purchase history (for some reason, mine doesn’t go back as far as 1998, but begins in 2006… still awesome). It comes as a CSV file to your computer’s download folder. Since I’ve been interested in learning more about data representation using Python, I thought to google “how to work with CSV file in Python” and got plenty of results. After creating a new directory in Terminal, I then ran:
+
+python3 -m venv amazon_order_history/venv
+
+source amazon_order_history/venv/bin/activate
+
+I learned, the hard way, it’s better to create virtual environments for each of your Python projects. Dependencies, as needed, are installed in the virtual environment of each project instead of system-wide. The virtual environment inherits the Python version that created it. To deactivate the environment, you type just that — deactivate. To delete it, use rm -rf venv.
+
+Now, cd into the project, touch amazon_orders.py, and open your editor. Make sure to place the csv file inside your project directory. In your editor, the first step to use a csv file in python is:
+
+import csv
+
+then:
+
+with open('01-Jan-2006_to_15-Feb-2020.csv') as csv_file:
+
+csv_reader = csv.DictReader(csv_file)
+
+If you print the first row of that csv_reader with:
+
+row = next(csv_reader)
+
+print(row)
+
+you see that you get a lot of info you don’t actually need. Oh, I haven’t mentioned that what I would like to plot out is my yearly Amazon spending from 2006 through mid-February 2020… So, I’ve set about creating a more relevant / more limited dictionary with, you guessed it, a for loop. But first, since I want to add total purchases per year, and I noticed the info you get in the csv file comes in string form, I created two functions to type-convert the stringified dates to a four digit year (you must add to your file: import datetime), and the stringified order totals to a float (I did some fancy .split() and .join() logic to get the ‘$’ out of the way). In sum, my Python code looks like this:
+
+A little further down, I dealt with the converted information I saved in new_dict how I previously outlined here:
+
+After adding all my purchases every year to yearly totals, I went on to plotting (by Year on the ‘X’ axis and Yearly Spending in USD on the ‘Y’). Instead of plt.bar, I did a plt.plot, added formatting for the line (color=‘b’, marker=‘o’), added labels for the X and Y axes, and a title. Et voilà!

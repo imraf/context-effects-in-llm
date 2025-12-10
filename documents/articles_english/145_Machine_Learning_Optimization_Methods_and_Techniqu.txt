@@ -1,0 +1,51 @@
+Title: Machine Learning Optimization Methods and Techniques
+URL: https://medium.com/better-programming/machine-learning-optimization-methods-and-techniques-56f5a6fc5d0e
+Tags: Machine Learning, Artificial Intelligence, Data Science, Programming, Deep Learning
+----------------------------------------
+Top Optimization Techniques in Machine Learning
+
+Now let us talk about the techniques that you can use to optimize the hyperparameters of your model.
+
+Exhaustive search
+
+Exhaustive search, or brute-force search, is the process of looking for the most optimal hyperparameters by checking whether each candidate is a good match. You perform the same thing when you forget the code for your bike’s lock and try out all the possible options. In machine learning, we do the same thing, but the number of options is usually quite large.
+
+The exhaustive search method is simple. For example, if you are working with a k-means algorithm, you will manually search for the right number of clusters. However, if there are hundreds or thousands of options that you have to consider, it becomes unbearably heavy and slow. This makes a brute-force search inefficient in the majority of real-life cases.
+
+Photo by the author.
+
+Gradient descent
+
+Gradient descent is the most common model optimization algorithm for minimizing error. In order to perform gradient descent, you have to iterate over the training dataset while readjusting the model.
+
+Your goal is to minimize the cost function because it means you get the smallest possible error and improve the accuracy of the model.
+
+Photo by the author.
+
+On the graph, you can see a representation of how the gradient descent algorithm travels in the variable space. To get started, you need to take a random point on the graph and arbitrarily choose a direction. If you see that the error is getting larger, that means you chose the wrong direction.
+
+When you are not able to improve (decrease the error) anymore, the optimization is over and you have found a local minimum. In the following video, you will find a step-by-step explanation of how gradient descent works:
+
+Looks fine so far. However, classical gradient descent will not work well when there are a couple of local minima. When finding your first minimum, you will simply stop searching because the algorithm only finds a local one. It is not made to find the global one.
+
+Photo by the author.
+
+Note: In gradient descent, you proceed forward with steps of the same size. If you choose a learning rate that is too large, the algorithm will be jumping around without getting closer to the right answer. If it’s too small, the computation will start mimicking exhaustive search take, which is, of course, inefficient.
+
+Photo by the author.
+
+So you have to choose the learning rate very carefully. If done right, gradient descent becomes a computation-efficient and rather quick method to optimize models.
+
+Genetic algorithms
+
+Genetic algorithms represent another approach to ML optimization. The principle that lies behind the logic of these algorithms is an attempt to apply the theory of evolution to machine learning.
+
+In the evolution theory, only the specimens that have the best adaptation mechanisms get to survive and reproduce. How do you know which specimens are and aren’t the best in the case of machine learning models?
+
+Imagine you have a bunch of random algorithms. This will be your population. Among multiple models with some predefined hyperparameters, some are better adjusted than the others. Let’s find them! First, you calculate the accuracy of each model. Then, you keep only those that worked out best. Now you can generate some descendants with similar hyperparameters to the best models to get a second generation of models.
+
+You can see the logic behind this algorithm in this picture:
+
+Photo by the author.
+
+We repeat this process many times, and only the best models will survive at the end of the process. Genetic algorithms help to avoid being stuck at local minima/maxima. They are common in optimizing neural network models.

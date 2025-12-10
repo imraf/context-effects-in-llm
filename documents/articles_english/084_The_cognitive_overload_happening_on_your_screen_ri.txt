@@ -1,0 +1,93 @@
+Title: The cognitive overload happening on your screen right now
+URL: https://uxdesign.cc/the-cognitive-overload-happening-on-your-screen-right-now-deee2a913393
+Tags: Design, UI, UX, Visual Design, Colors
+----------------------------------------
+The most recent, controversial Google app icon redesign sparked a discussion around the direction in which digital product icons are moving in general.
+
+App icons have to be brighter, more colorful, and as vibrant as humanly possible. They practically jump out at you. Companies simply cannot afford their products being “missed”, or used rarely because the competition is screaming for attention much louder.
+
+Minimalism? No. Skeuomorphism? No thanks!
+
+There was a time when super-minimalistic, type-based logos were a thing. A white shape on a black background often communicated luxury and status. But those times are now gone, as we’re bombarded with attempts to outdo the competition.
+
+More colors!
+
+More gradients!
+
+More of everything!
+
+Google fell into that trap recently changing their icons to a “uniform style” and while brand consistency is generally a good thing, these all look too similar which only adds to the confusion of angry users.
+
+This meme has been all around my social media lately. And it does have a point.
+
+But trying to fit in the extra colors with a consistent set of shapes led to eMail being just an M now. There is no envelope for context anymore. The Docs icon is too similar to the calendar icon, which is too similar to Meet.
+
+The only icon that possibly fits into this aesthetic is the Drive icon, but mostly because it had the least changes.
+
+But this fight for attention also comes at an expense of jarring color combinations. If you’re a UI designer, you probably know not to mix green or blue with red at high saturation. That combination actually makes the edge bleed and your eyes hurt.
+
+Just take a look at the edge where red meets blue and green. Pause and look at it for a few seconds.
+
+And do you know what’s the worst part?
+
+These colors are currently at 69, 73,79 saturation. If we believe this trend to be continuing we may see these delightful colors at 100 each. After a while that may be the only thing to do to “bump up the visibility”.
+
+These are the same colors with Saturation increased.
+
+And our eyes will hurt.
+
+Instagram’s controversial redesign
+
+It all started with a very famous and controversial app icon transition. In 2016 Instagram unveiled a new logo and it was almost unanimously declared the biggest redesign fail EVER.
+
+But guess what? People got used to the new logo very quickly.
+
+Skeuomorphism went away with iOS 7 in 2013. An Instagram refresh was more than expected.
+
+The new logo served another purpose. By having very strong and very saturated colors making up a pretty unconventional gradient, it stood out from the crowd. It was instantly visible on a home screen. It was even easier, as a staggering number of app icons uses a shade of blue as its primary color. Blue can be seen in over 50% of all the app icons on most home screens.
+
+Breaking the rules in a sea of blue may be a great idea to stand out. Instagram? Right here!
+
+Apple has been using similar concepts in their icons as early as 2013. It took a while for everyone to catch up, but when they did, they went all in.
+
+The same thing happened to slack, which actually had a rather colorful logo and icon, but the colors were muted. The new redesign, as in this entire trend was about pushing the saturation as high as possible.
+
+Fighting for your attention
+
+Four years after Instagram went radical with their app icon, nearly everyone is following suit.
+
+Tobias Van Schneider summarised it well recently with this Tweet and also gave me the idea to write this story.
+
+So what is cognitive load?
+
+In cognitive psychology, cognitive load refers to the used amount of working memory resources. — Wikipedia.
+
+When everything starts looking the same, we end up struggling to find the right icon — again. So we’re back to square one. We need to put in a lot more mental effort to find what we’re looking for.
+
+Our senses and memory becomes overloaded with similar looking shapes, colors and patterns.
+
+The blur test
+
+If you blur all those icons, you’ll see that it’s literally impossible to distinguish most of them from the pack. They’re all pretty similar blobs, mostly consisting of the same four colors.
+
+The Messenger icon sticks out the most, but that’s only because it uses an even stronger gradient than Instagram.
+
+No worries!
+
+The next wave of app icon redesigns will likely try and beat that.
+
+And yes — I am also guilty of this as well by having a blue and purple gradient in my profile photo and most of my shared images.
+
+How far can it go?
+
+Obviously this trend is only accellerating. If Google is using clashing colors now, then the next big thing will be ugly, clashing gradients. Here are a couple of examples:
+
+After all the good combinations are used up and the saturation can’t get any higher, the trick will have to be crossing a line. Maybe they’ll even redefine ugly, just so they can trick our eyes into noticing them.
+
+It’s a battle for our attention, and we don’t have a lot of it to begin with. Most people can’t even binge a netflix show without scrolling a feed at the same time.
+
+The next logical step would be icons that animate in almost seizure-causing flashes. Or maybe AR icons that jump right at your face from the phone.
+
+Imagine smartphone makers charging app makers extra cash to get their icons to be bigger and more annoying.
+
+The future looks … colorful.

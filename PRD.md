@@ -1,85 +1,69 @@
-# Product Requirements Document (PRD): Context Windows Lab
+# Product Requirements Document (PRD): Context Windows & Long-Context LLM Benchmarking Suite
 
-**Author**: Dr. Yoram Segal (Lab Instructor) / Copilot (Implementation)  
-**Date**: December 9, 2025  
-**Version**: 1.0  
-
-## 1. Introduction
-This project is a laboratory exercise designed to explore the practical limitations and engineering strategies associated with Large Language Model (LLM) context windows. As models support larger contexts, developers face challenges such as "Lost in the Middle," increased latency, and noise accumulation. This lab provides a framework to measure these effects and evaluate mitigation strategies like RAG and Context Engineering.
+## 1. Overview
+This project aims to implement a comprehensive suite of experiments to analyze the behavior of Large Language Models (LLMs) under varying context conditions. Based on the "Context Windows in Practice" lab, we will evaluate "Lost in the Middle" phenomena, context size impact, RAG effectiveness, and context engineering strategies. The project places a strong emphasis on comparative benchmarking across multiple state-of-the-art open-source models and generating publication-quality visualizations.
 
 ## 2. Objectives
-The primary objectives of this software suite are:
-1.  **Quantify "Lost in the Middle"**: Empirically demonstrate how information retrieval degrades based on position in the context.
-2.  **Measure Scaling Costs**: Correlate context size with latency and accuracy degradation.
-3.  **Evaluate RAG Efficacy**: Determine when Retrieval-Augmented Generation outperforms full-context prompting.
-4.  **Test Engineering Strategies**: Compare different methods (Select, Compress, Write) for managing long-term context in sequential tasks.
+-   **Analyze Context Behavior:** Quantify how models handle information retrieval and reasoning as context grows and noise increases.
+-   **Compare Models:** Benchmark five specific LLMs (`llama3.2:3b-100K`, `granite3.3:2b-100K`, `gpt-oss:20b-100K`, `gemma3:12b-100K`, `qwen3:14b-100K`) against each other.
+-   **Visualize Results:** Produce high-quality, insightful, and aesthetic visualizations (graphs, heatmaps) suitable for academic or professional publication.
+-   **Evaluate Strategies:** Determine the efficacy of RAG and specific context engineering techniques (Select, Compress, Write).
 
-## 3. Scope
-The system will consist of four distinct Python experiments and one analysis module. It will utilize a local LLM server (Ollama) running on high-performance hardware (NVIDIA A100).
+## 3. Technical Constraints & Environment
+-   **Interpreter:** Strict usage of a virtual environment (`.venv`). **No changes to the system interpreter are allowed.**
+-   **LLM Backend:** All model inference must be performed via an Ollama server.
+    -   **Connection:** Must use the `OLLAMA_HOST` environment variable.
+    -   **Hardware Context:** The server is backed by an A100 (80GB VRAM), allowing for high-throughput and large context handling.
+-   **Language:** Python 3.x.
+-   **Libraries:** LangChain (orchestration), ChromaDB (vector store), Matplotlib/Seaborn/Plotly (visualization), Pandas (data analysis).
 
-## 4. Functional Requirements
+## 4. Target Models
+The suite must support and iterate through the following models:
+1.  `llama3.2:3b-100K`
+2.  `granite3.3:2b-100K`
+3.  `gpt-oss:20b-100K`
+4.  `gemma3:12b-100K`
+5.  `qwen3:14b-100K`
 
-### 4.1. General System
--   **FR-01**: The system MUST communicate with an Ollama instance via the `OLLAMA_HOST` environment variable.
--   **FR-02**: The system MUST use a custom model definition (`modelfile`) that supports at least 128k context tokens.
--   **FR-03**: All experiments MUST output results in JSON format to a standardized directory.
+## 5. Experiment Specifications
 
-### 4.2. Experiment 1: Needle in a Haystack
--   **FR-1.1**: Generate synthetic documents totaling ~1000 words.
--   **FR-1.2**: Insert a specific fact at the start, middle, or end of the text.
--   **FR-1.3**: Query the model and evaluate if the fact was correctly retrieved.
--   **FR-1.4**: Output accuracy metrics per position.
+### Experiment 1: Needle in a Haystack (Lost in the Middle)
+-   **Goal:** Detect accuracy drops when critical facts are buried in the middle of the context.
+-   **Method:** Insert a specific fact into synthetic documents at Start, Middle, and End positions.
+-   **Metric:** Retrieval Accuracy % by position.
 
-### 4.3. Experiment 2: Context Size Impact
--   **FR-2.1**: Load text from provided literary sources (`hobbit`, `lotr`).
--   **FR-2.2**: Construct contexts of varying lengths (2, 5, 10, 20, 50 document equivalents).
--   **FR-2.3**: Measure and record:
-    -   Time to first token (latency).
-    -   Total tokens used.
-    -   Accuracy of response to a control question.
+### Experiment 2: Context Window Size Impact
+-   **Goal:** Correlate context length with performance metrics.
+-   **Method:** Query models with increasing document counts (2, 5, 10, 20, 50).
+-   **Metrics:** Accuracy, Latency (ms), Token Count.
 
-### 4.4. Experiment 3: RAG vs. Full Context
--   **FR-3.1**: Manage a corpus of 20 Hebrew documents (synthetic or provided).
--   **FR-3.2**: Implement a Vector Store (ChromaDB) for the RAG approach.
--   **FR-3.3**: Execute queries using "Full Context" (concatenation) and "RAG" (retrieval).
--   **FR-3.4**: Compare and record accuracy and latency for both methods.
+### Experiment 3: RAG vs. Full Context
+-   **Goal:** Compare Retrieval-Augmented Generation against stuffing the full context.
+-   **Data:** 20 Hebrew documents from `documents/articles_hebrew/` covering diverse topics.
+-   **Method:**
+    -   **Full Context:** Concatenate all docs.
+    -   **RAG:** Chunk, Embed (Nomic), Store (ChromaDB), Retrieve top-k.
+-   **Metrics:** Accuracy, Latency.
 
-### 4.5. Experiment 4: Context Engineering
--   **FR-4.1**: Simulate a multi-step agent task (10 steps).
--   **FR-4.2**: Implement three context strategies:
-    -   *Select*: Retrieve relevant history.
-    -   *Compress*: Summarize old history.
-    -   *Write*: Maintain an external scratchpad.
--   **FR-4.3**: Record the success rate of the agent at each step for each strategy.
+### Experiment 4: Context Engineering Strategies
+-   **Goal:** Evaluate memory management strategies in a sequential task.
+-   **Scenario:** 10-step sequential action simulation.
+-   **Strategies:**
+    -   **Select:** RAG-based selection of history.
+    -   **Compress:** Summarization of history when limit reached.
+    -   **Write:** External scratchpad for key facts.
+-   **Metric:** Task success rate / Logic consistency.
 
-### 4.6. Analysis & Visualization
--   **FR-5.1**: Parse JSON results from all experiments.
--   **FR-5.2**: Generate the following visualizations:
-    -   Accuracy vs. Position (Exp 1).
-    -   Latency/Accuracy vs. Context Size (Exp 2).
-    -   RAG vs. Full Context Comparison (Exp 3).
-    -   Strategy Performance Table/Chart (Exp 4).
+## 6. Visualization & Reporting Requirements
+The output must be "eye-catching, beautiful, and insightful."
+-   **Needle in a Haystack:** Heatmaps showing accuracy vs. position (and potentially context depth).
+-   **Context Scaling:** Line charts with confidence intervals for Accuracy and Latency vs. Token Count.
+-   **RAG Comparison:** Grouped bar charts comparing RAG vs. Full Context across models.
+-   **Model Benchmark:** Radar charts comparing the 5 models across all key metrics (Speed, Short-Context Accuracy, Long-Context Accuracy, RAG Performance).
+-   **Style:** Use a consistent, professional color palette (e.g., Seaborn `deep` or custom publication theme).
 
-## 5. Non-Functional Requirements
--   **NFR-01 Performance**: The system should leverage the available 80GB VRAM to maximize batching or context throughput where possible.
--   **NFR-02 Reproducibility**: Random seeds should be fixed or logged to ensure experiments can be reproduced.
--   **NFR-03 Modularity**: Shared code (Ollama client, evaluation logic) should be abstracted into a utility module.
-
-## 6. Data Requirements
--   **Input Data**:
-    -   `hobbit` / `lotr` (English text for Exp 2).
-    -   Synthetic Hebrew text (for Exp 3).
--   **Output Data**:
-    -   JSON logs for raw data.
-    -   PNG/SVG files for charts.
-    -   Markdown report.
-
-## 7. Assumptions & Constraints
--   The `OLLAMA_HOST` is accessible and the model `lab-model` has been pulled/created.
--   The environment has sufficient memory to hold the vector store and large contexts in RAM.
--   Hebrew language support in the base model (`llama3.2`) is sufficient for Exp 3, or a multilingual variant is used.
-
-## 8. Success Criteria
--   All four experiments run without error.
--   `analysis_output/` contains 4 distinct visualization files.
--   `EXPERIMENT_REPORT.md` is generated with a summary of findings.
+## 7. Deliverables
+1.  **Codebase:** Modular Python scripts for running experiments.
+2.  **Data:** Raw JSON/CSV logs of all experiment runs.
+3.  **Visualizations:** High-resolution PNG/SVG files.
+4.  **Final Report:** A Markdown summary embedding the visualizations and interpreting the results.

@@ -1,0 +1,35 @@
+Title: Link to BRON Presale and How to Participate
+URL: https://medium.com/@bronwynpro/link-to-bron-presale-and-how-to-participate-b04b95b6f76f
+Tags: Presale, Bron, Eth
+----------------------------------------
+Hello, all. Due to the unusual nature of the contract and the fact that we will not be listing on an exchange, this is a slightly more complicated presale. We want you to know how your contributed funds will be used, hence this article. Link to the presale at the bottom . . . Along with a TLDR.
+
+Contract address: 0x27AA7E0b253db1C33380E6Ae1096cA69A286c42A
+
+Token(s) BRON + BRSL
+
+Date Dec. 9th — Dec. 20 00:00 UTC
+
+Min. Contribution 0.25 eth.
+
+Base price $2
+
+Total dist:
+
+- 15,000 BRON dist. = 2,000 for airdrop and 13,000 to presale contributors
+
+- X BRSL = amount of people who spend over 1 eth. ( + one additional BRSL per ETH spent)
+
+Notice: airdrop winners posted in ann channel must claim tokens, but do not have to participate in presale. A link to claim airdrop tokens will be posted later.
+
+I. How the funds will be used
+
+Funds raised during the presale will be used to mint 15,000 BRON tokens, of which 2,000 will be distributed via airdrop and the remaining 13,000 will go to presale participants. Users who contribute ≥ 1 eth during the presale will also receive the Brownwyn governance token, BRSL, in addition to BRON. For every whole ETH contributed to the Bronwyn Presale, the participant will recieve 1 BRSL token. The remaining BRSL tokens will be burnt.
+
+Users who hold BRSL will be given certain governance rights as well as access to high capital rebalance events. The treasury will use these governance tokens as a capital coordination tool and means of triggering said events. Given their significance to the protocol, most capital rebalance events will be available to the entire BRON community. The BRSL token, however, will grant access to high capital treasury events. High Capital Rebalance Events will be the driving force behind large price movements. Other Treasury Rebalance Events will also influence the value of the token, but to a lesser extent.
+
+II. Pricing Configuration
+
+The token price is set at $2 — with the initial fund contribution being made by the team. The presale funds will be used to set the initial price of the BRON token, as the total funds will be used to mint 15,000 tokens. The total amount of money raised will determine the starting price of the token. Over $20,000 of the teams funds being locked into the original contract for the Capital Rebalance Treasury, giving us the current token price of $2. This is a “Liquidity Generating Presale” so the tokens will be priced and distributed according to how much money is raised.
+
+TLDR

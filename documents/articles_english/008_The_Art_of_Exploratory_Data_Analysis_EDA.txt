@@ -1,0 +1,85 @@
+Title: The Art of Exploratory Data Analysis (EDA)
+URL: https://medium.com/swlh/the-art-of-exploratory-data-analysis-eda-94a24320d3bd
+Tags: Data Analysis, Statistics, Data Science, Data Visualization, Exploratory Data Analysis
+----------------------------------------
+Part I I — Quantitative variables EDA
+
+The sample statistics are accessed using the quantitative variables, which can be used to paint initial picture of population distribution. The distribution of population is characterised by the central tendency, dispersion, asymmetry, peakedness. In addition to that strength and direction of direct relationship between input variables and outcome variable, outliers, covariance, and correlation are also checked.
+
+Univariate Quantitative EDA
+
+Univariate-Quantitative EDA:
+
+Exploratory data analysis for quantitative variable, mostly includes evaluation of the distribution of variables in a given dataset. To do so, one might be interested in center of mass of data, variance in data, variable relationships, etc.
+
+Tips dataset
+
+Descriptive statistics of the dataset
+
+Measure of central tendency: When we measure the central tendency of a sample, we essentially are trying to identify the “center of mass” of values. In simple terms around what point most of the middle value resides. To measure central tendency arithmetic mean(generally), median and mode is calculated.
+
+Mean: In most of the case arithmetic mean is of interest. By calculating mean, we try to find out the number which can smooth the fluctuation in the dataset.
+
+Let’s solve a quick puzzle: if we have three jars filled with {6,9,3} liters of water respectively, How to redistribute the water so that each jar have same liters of water. One simple and quick way is to take 3 ltr of water from second jar and add it to the third jar, so that every jar will have 6 ltr of water. This is relatively easy! The easy problem gets tougher when the dataset size increases massively and therefore we need a formula.
+
+Bar plot of water quantity in each jar
+
+Mean/Average=sum of all data points/count of all data points
+
+Mean and data distribution
+
+So what we did by redistribution or calculating average, is that even the individual numbers were varying a lot from each other, when we redistribute the values, 6 is the value that will remove the fluctuations. Two important points to note here, firstly, the mean tell more about the whole data set than individual values and secondly, mean is directly and highly influenced by the outlier values.
+
+Median: This is the point which divides the data set into two equal half such that one set of the values will always be smaller than the median and other half will be bigger than the median. This means that median is unaffected by the outliers and hence better measure of central tendencies in case the data is highly skewed (asymmetric distribution). In case of normal distribution the mean and median values coincides.
+
+Mode: Mode measure the most frequent values from the dataset. Mode is more useful when the interest is in knowing which categories are more frequent and is of little use in case of continuous dataset (reason → multi-modal distribution)
+
+Mean, Median, Mode change as per distribution. source
+
+To summarise the central tendency, the mean is most preferred as it represents the characteristics of entire dataset . In case of data skewed left or right( shown in above image) median is preferred.
+
+A quick formula:
+
+Mean=Median=Mode → Normal distribution
+
+Mean > Mode → positive skewed distribution
+
+Mean<Mode → Negatively skewed distribution
+
+Measure of central tendency of dataset Tips
+
+Measure of dispersion: Measure of dispersion/spread describes the variance in the data, which means how far away from mean, the data points are spread . In association with measure of central tendency, the measure of variance is of great value. It shows how well the measure of central tendency is representative of the data.
+
+Range: It is one of the basic and most intuitive measure of spread. Range is the difference between lowest and highest value from the data set which defines the boundary of the data. It has limited use unless there are some critical boundary violation check is of interest.
+
+Variance: To represent the spread of data, variance uses squared absolute deviation ,divided by the sample size. As a result only positive number is achieved.
+
+If datapoints is spread out wide → Variance will be higher (large number)
+
+If datapoints are close to mean →Variance will be smaller (small number).
+
+However, variance can be tricky in presence of outliers. Firstly, due to squared absolute deviation outliers/extreme values gets more weight. Secondly, the squared unit causes variance to appear arbitrary number and hard to interpret.
+
+If datapoints is spread out wide → Variance will be higher (large number) If datapoints are close to mean →Variance will be smaller (small number). However, variance can be tricky in presence of outliers. Firstly, due to squared absolute deviation outliers/extreme values gets more weight. Secondly, the squared unit causes variance to appear arbitrary number and hard to interpret. Standard variance/deviation: The second problem of variance is solved by taking the square root of variance and result is standard deviation. Low standard deviation means that data points are closer to the mean and high standard deviation signify the data points are spread across the wide range.
+
+Interquartile Range: Similar to idea of median, the data set is first divided into 4 quartiles and difference between third and first quartile is calculated. Quartiles are interesting measure as they are robust to outliers/skewed data unlike variance, standard deviation and mean.
+
+Graphical representation of IQR. source
+
+Skewness and Kurtosis: Skewness and kurtosis describes the given data distribution’s asymmetry (skewness) and peakiness (kurtosis), in context to Gaussian distribution or the bell curve.
+
+Graphical representation of skewed and kurtotic distribution. source
+
+Density graph of variable total_bill
+
+Univariate-Graphical EDA:
+
+Histograms: One of the quickest and most popular way to access the distribution of data is histograms. Below is the histogram of tip from the tips dataset. As can be seen from the histogram the data is positively skewed.
+
+Histogram of the variable (total_bill)
+
+Box-plots: Box plots are extremely useful to identify the outliers, symmetry, central tendency, and skewness. It applies the same principle of interquartile range (IQR). For a dataset with normal distribution, the median divides the box in approximately equal sizes. However in case of skewed data, size of box will not be equal. Size of box tells the story, if right side box (upper box) from median is bigger, data is positive skewed. Box-plots are good measure of variability in case of skewed data as IQR takes account of data between Q1 and Q3 and ignore the part having outliers.
+
+Boxplot for variable total_bill
+
+Quantile -Quantile Plot: Q-Q plot compares the data distribution against the normal distribution and helps in identifying non-normality, skewness, kurtosis, multimodality. The plot looks similar to scatter plot which is plotted between the observed or recorded value against expected/theoretical values (as per normal distribution).

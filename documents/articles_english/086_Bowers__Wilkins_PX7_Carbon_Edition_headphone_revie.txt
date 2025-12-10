@@ -1,0 +1,101 @@
+Title: Bowers & Wilkins PX7 Carbon Edition headphone review: Exquisite sound, elegant active noise cancellation
+URL: https://medium.com/@surendr42579219/bowers-wilkins-px7-carbon-edition-headphone-review-exquisite-sound-elegant-active-noise-3beed498fd81
+Tags: Music, Surveillance, Connected Home, Consumer Electronics
+----------------------------------------
+The PX7 Carbon Edition headphone from audio titan Bowers & Wilkins is a special version of the PX7 headphone the company introduced in late 2019. It features the same carbon-fiber construction, but with a new finish. We didn’t have an opportunity to review the original PX7, so we welcomed the chance to give this new edition an in-depth listen.
+
+
+
+These premium active noise-cancelling (ANC) headphones carry over the same 43.6mm drivers, 30-hour battery life, and software features for a list price of $400. Are they worth the $50 bump over Sony’s WH-1000XM4 (when Sony’s cans aren’t on sale, that is)? Sony’s offering is our current top pick for ANC headphones, but the PX7 are more comfortable to wear, and they deliver more accurate audio reproduction. Their higher list price, however, can be attributed mostly to luxury.
+
+
+
+This review is part of TechHive’s coverage of the best headphones, where you’ll find reviews of competing products, plus a buyer’s guide to the features you should consider when shopping for this type of product. Adam Patrick Murray/IDGPremium fit and finish Mentioned in this article Sony WH-1000XM4 Read TechHive's reviewSee it From a design perspective, the PX7 Carbon Edition adds just a bit more class to the original PX7. The original Space Grey and Silver finishes look refined and classic, but the new model’s Carbon finish, combined with the diamond-cut detailing around the B&W logo plates on the ear cups, take the design up a notch—for some people. I find it to be a bit too flashy, and the band of textured fabric around each ear cup tends to gather particulate debris, which isn’t super easy to wipe away. But those are about the only aspects of this headphone that I’m not in love with.
+
+
+
+Adam Patrick Murray/IDG Two very different styles: Sony WH-1000XM4 (left) vs. Bowers & Wilkins PX7 Carbon Edition
+
+
+
+Wearing the PX7 for long listening sessions is a fantastic experience. They’re smaller and lighter than Sony’s WH-1000XM4, yet their ear cups are even deeper, and their memory-foam ear cups compress less. This resulted in a tight seal around my ears without putting any pressure on my outer ears or the sides of my head, allowing me to forget I was wearing them even after hours of listening.
+
+
+
+Adam Patrick Murray/IDG Sony WH-1000XM4 (left) size and style vs. Bowers & Wilkins PX7 Carbon Edition.
+
+
+
+Pressing a single easy-to-locate button on the left-hand ear cup cycles through the various noise cancellation modes. There are almost too many buttons on the right-hand, though. You’ll find a sliding power switch that doubles as the Bluetooth pairing trigger, plus three control buttons that tend to blur together under your fingertip.
+
+
+
+There are two buttons for adjusting volume up and down, but the one in the middle performs a host of tasks, starting with play/pause (one press), track forward (two presses), and previous track (three presses). This same button is also used for answering, muting, ending, toggling between two phone calls, and merging two calls—all depending on how many times you push the button. I never got completely comfortable with it or its location.
+
+
+
+Adam Patrick Murray/IDG Button and port placement is mostly on right earcup.
+
+
+
+There’s a USB-C port for charging the headphone’s battery, and an LED indicator reports the battery level (green, amber, or red). B&W says you should expect 30 hours of battery life, but my experience was just short of that mark (listening with active noise cancellation at its highest setting 80 percent of the time). A rapid-charge feature yields five hours of listening with just a 15-minute charge—and you can listen to music while charging if you plug the USB cable into a computer (the headphone will operate as a USB audio device).
+
+
+
+If you have a favorite outboard DAC, you can plug the headphone into it using a 3.5mm analog audio cable, but the headphone’s battery will need to be charged. All this falls close to what Sony offers on the WH-1000XM4, so B&W has nothing on the competition on that score.
+
+
+
+An accurate listening experienceEven before I underwent formal audio-engineering training, I was acutely aware of the coloration many home audio companies apply to their gear, both to differentiate their products from the competition and/or—in all too many cases—to fool consumers into believing they’re hearing a better product than what they’re actually buying.
+
+
+
+Accuracy in audio reproduction exists on a spectrum, with the gear that professionals use clustered at one end and home audio gear spread over the other. Professional gear is designed to present recordings precisely as they sounded in the studio—it doesn’t color the sound at all. Home audio gear is typically designed with the manufacturer’s “signature” sound, emphasizing certain frequencies—often those at the lower end of the range—at the expense of others. There’s nothing inherently wrong with any company’s signature sound, all that really matters is whether you as the buyer like it. You’re not buying a tool for work, after all, you’re buying something to enjoy.
+
+
+
+Adam Patrick Murray/IDGThe Bowers & Wilkins PX7 Carbon Edition are a much more accurate headphone than the Sony WH-1000XM4, so I’d put it much closer to pro audio gear on that spectrum (not that any audio professional would use a noise-cancelling headphone for work). I suspect that’s why B&W didn’t include user-adjustable EQ settings in its app. Here again, however, you might consider that to be a missing feature.
+
+
+
+As usual, I have my own suite of songs I go through when testing headphones. It became immediately clear that I was listening to headphones that prioritize accuracy, much as my professional mixing headphones do. Perhaps this shouldn’t come as a surprise, since the same design team built and tuned the 800 Series Diamond loudspeakers recording engineers use at Abbey Road studios.
+
+
+
+Adam Patrick Murray/IDG The PX7 don’t fold flat the way Sony’s do, so the carrying case is necessarily larger.
+
+
+
+In any event, my music was presented as close to the quality of final mixdowns as I’ve heard from a pair of noise-cancelling headphones. There were no shrill or sharp transients at the high end, low-end punch came through smooth and rich, and the mids weren’t muddy or overpowered in the mix. In a pinch, I would even trust these headphones to do work—they’re as accurate as they are pleasant.
+
+
+
+At higher volumes, there’s loads of bass to push low-end-heavy genres like rap, but the high frequencies can turn shrill if pushed too hard. Classic recordings from jazz legends come through crisp and clear with minimal noise and with plenty of separation between instruments—even at lower volumes. It was a real treat to listen to some of my favorite music on the PX7 Carbon Edition, as I’m accustomed to hearing the limitations of lower-end hardware and/or overzealous processing. The coloration that is present is minimal and applied sparingly.
+
+
+
+Seamless noise cancellation, and a simple appIt’s hard to compete with the Sony WH-1000XM4’s top-notch noise cancellation, but B&W gets very close. I will note that the PX7’s stiffer memory foam introduced a tiny break in the seal while I was wearing eyeglasses, which didn’t happen with the softer pads on the Sony’s ear cups.
+
+
+
+Adam Patrick Murray/IDGUsing Bowers & Wilkins’ app lets you customize your noise-cancelling experience. Low and high noise cancellation was fairly straightforward and did a fine job with the use cases I presented. I have not been on a plane or rode public transit for almost a year now, so I did other tests in their place. The PX7 did great with lower-end rumble while outside, and it was terrific against the constant fan noises coming from either my gaming PC or my white-noise machine. This headphone would make a fine travel companion. It fell a bit behind the performance of Sony’s best ANC headphone when it came to sharp transients and human speech, though, so it wouldn’t be my go-to option for an office environment.
+
+
+
+B&W’s ambient passthrough mode, which allows you to hear sound from your surroundings—such as conversation or boarding calls—sounded more natural than the same setting on Sony’s WH-1000XM4. You can adjust the amount of ambient sound you want to hear using a slider in each headphone’s companion app. The biggest bummer came from B&W app’s Auto noise-cancelling setting, which defaulted to Low more than I would of liked. I found myself manually switching from Low to High frequently.
+
+
+
+Adam Patrick Murray/IDG The B&W companion app is simple and features ANC controls, multi-device pairing, and soundscapes.
+
+
+
+Overall, B&W’s app experience is much simpler than Sony’s, but that’s not necessarily a bad thing. B&W’s app does what it needs to do without pushing a bunch of bells and whistles at you. Sony’s app can feel like it’s tryiing to lock you into other services. On the flip side, Bowers & Wilkins doesn’t offer as many customization options or extra features in its software. That said, the app’s simplicity falls in line with the rest of the experience of using the PX7, so I appreciate the company’s dedication to straightforward design.
+
+
+
+Bottom lineThe Bowers & Wilkins PX7 Carbon Edition are far from being the most expensive headphone TechHive has reviewed, but that doesn’t change the fact that its list price is $50 higher than Sony’s WH-1000XM4 (make that $122 at press time, since was offering a sale). And if you like Sony’s signature sound, you’ll be happier with its noise-cancelling cans. If you place higher value on accurate audio reproduction and bespoke British design, on the other hand, the extra cash will be well spent.
+
+
+
+Note: When you purchase something after clicking links in our articles, we may earn a small commission. Read our affiliate link policy for more details.

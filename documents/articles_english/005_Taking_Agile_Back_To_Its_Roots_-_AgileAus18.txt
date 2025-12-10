@@ -1,0 +1,107 @@
+Title: Taking Agile Back To Its Roots - AgileAus18
+URL: https://medium.com/seek-blog/taking-agile-back-to-its-roots-agileaus18-b6d6e1b9f154
+Tags: Software Development, Workplace Culture, Product Management, Leadership, Agile
+----------------------------------------
+SEEK colleague Glenn enjoying the conference. (Slatterys. AgileAus-Day1. 2018. Flickr.)
+
+The Agile Australia (AgileAus18) conference, in its 10th year, gave us two days of thought provoking speakers and passionate discussion among delegates. While it’s always a valuable conference from both information and community perspectives, there was a notable difference in the mood this year.
+
+Because of this mood, my biggest take-away wasn’t a new technique to try or a poignant quote, or a book to read, but a feeling.
+
+That feeling has increased during the conference, and has spilled over into many conversations since, both around SEEK and in the wider product/development community.
+
+The feeling is a mixture of excitement, a change in the wind, and nostalgia for simpler times, and it’s there because we’re establishing a discourse about taking agile back to its roots; to shift focus away from frameworks, processes and tools and back to:
+
+People
+
+Mindset
+
+Values
+
+People — Focusing on empowering people, and creating an environment for them to do their best work through servant leadership
+
+Mindset — Cultivating a mindset characterised by openness and growth
+
+Values — Going back to the core of the agile manifesto especially “people > process” and related values: Openness, Transparency, Adaptation, (i.e. SCRUM pillars of empiricism)
+
+It’s a nice feeling to have, and I’d like to contribute to the discourse by drawing together some of the common threads I picked up on during the conference…
+
+Author Stephen Denning in a “fireside chat” with Nigel Dalton introduced this theme in a subtle way. We know about the desire for meaningful work, and the value that follows when meaningful work is available (for customers and hence businesses), so many organisations failing to provide this can be puzzling.
+
+Denning was able to offer economist Milton Friedman’s ‘singular focus on shareholder value’ as an explanation.
+
+If business isn’t just about value to shareholders, it allows us to focus on people in the business as a community and the customers they are delivering for.
+
+Denning suggests that this can be achieved by adopting an “Integrated Agile system”:
+
+Focusing on the customer by delivering value continuously Small teams: De-scale complexity into small teams each focusing on parts of a problem (notably in contrast to the tendency of large businesses to establish large programs, projects and transformations to deal with complex challenges) Network: Organise businesses as an interconnected network of people instead of a hierarchical pyramid.
+
+To this end I am proud of SEEK’s meaningful purpose (“Helping people lead more fulfilling working lives and helping organisations succeed”) and our belief of “focusing on business fundamentals and customer outcomes rather than short-term financials” with a view that shareholder value will follow.
+
+Martin Fowler added something of a call-to-arms in response to“faux-agile” in his presentation with the idea of the “Agile industrial complex” which seems to have commercialised certain versions of agile practices in isolation from (and sometimes in conflict with) the underlying values.
+
+Rather than buying a framework as a silver-bullet, Fowler highlighted that people are at their best when they choose how they work, and are encouraged to continue improving their way of working. This is what agile is about at its core.
+
+Like Denning, Fowler encouraged businesses to restructure around:
+
+Cross-functional teams supporting long-running business capabilities
+
+Ensuring these teams are connected to the customer experience (i.e. verticals)
+
+Perhaps most surprisingly, but refreshingly, was Shayne Elliot joining the chorus in speaking about agile at ANZ. It’s rare to hear a CEO speak about agile fundamentals so passionately and in such a well-informed way.
+
+Rather than rolling out SAFe or another enterprise-aimed framework, ANZ is choosing to adopt agile through a mindset-based, ground-up approach, drawing heavily on Carol Dweck’s concept of “Growth Mindset”. They are referring to their organisational change program as ‘new ways of working’ rather than ‘agile transformation’. This signifies that there’s a genuine desire for meaningful change in how people think and behave, rather than inserting a set of methods and expecting several extra release trains each month.
+
+Elliott’s definition of agile as “Growth mindset + technology (delivery) at speed” is as concise and powerful a definition as I’ve heard, and some of the themes that emerged during his talk were equally strong:
+
+Transparency & being comfortable with saying ‘I don’t know’
+
+Embracing openness, learning and change
+
+Servant leadership: “Mission defines the work, the work defines how we lead”
+
+SEEK colleagues James & Michelle enjoying the conference. (Slatterys. AgileAus-Day1. 2018. Flickr.
+
+Several other presenters added to the feeling:
+
+Jessie Shternshus on un-learning and embracing change which resonated in terms of “Responding to change > following a plan”.
+
+Jeff Gothelf’s comment that companies are “bringing in agile to deliver software faster” but not providing the decision making environment required to determine what to build or when it’s done; echoing the structural imperatives highlighted by Denning and Fowler.
+
+Alison Cameron, on changing organisational culture in terms of mindset, beliefs and behaviours to build adaptive capacity. Marina Chiovetti & James Brett - Evolving Digital Leadership on attitudes conducive to disruption.
+
+Most overtly, the feeling was driven home by Adam Boas in his talk “People > Process” as he described the ‘seductive nature of process’ and how it can be easier to buy a framework & a certification than develop a mindset (as an individual, let alone an organisation).
+
+Instead, businesses need to put people first by “being values driven & adapting at every phase” to achieve outcomes.
+
+Further, Boas contends that people with an agile mindset are drawn to being able to create their own way of effective working, and that being process-heavy will actually exclude people with the kind of mindset that will help a business succeed.
+
+Boas shared keys to creating an environment where an agile mindset can flourish:
+
+Creating alignment to goals — Leaders saying one thing and behaving in another, often undermines this
+
+— Leaders saying one thing and behaving in another, often undermines this Focusing on Autonomy & Context > Processes for delivery — giving people the power to make decisions!
+
+> Processes for delivery — giving people the power to make decisions! Defining safe boundaries > ‘safe to fail’ if it isn’t really (and not everything should be)
+
+This feeling isn’t isolated to Agile Australia. In a similar vein 10 days later, a colleague shared a blunt article, “Revenge of the PMO” by Marty Cagan. In it Cagan promotes mindset over frameworks and how a PMO (Project Management Office) in control of frameworks and process can undermine successful product development and therefore customer and business value.
+
+Far and wide, the discourse is happening, the feeling is growing — let’s bring agile back to its’ roots by focusing on People, Mindset and Values to make work and products better for everyone!
+
+References & resources:
+
+Denning, Steve. “Fireside chat — Strategic agility”. Agile Australia 18 conference, 18th May 2018, Palladium at Crown, Melbourne
+
+Fowler, Martin. “Agile in 2018”. Agile Australia 18 conference, 18th May 2018, Palladium at Crown, Melbourne
+
+Elliott, Shayne. “Fireside chat — Agile at ANZ”. Agile Australia 18 conference, 18th May 2018, Palladium at Crown, Melbourne
+
+Shternshus, Jessie. “Unlearning: The challenge of change”. Agile Australia 18 conference, 18th May 2018, Palladium at Crown, Melbourne
+
+Gothelf, Jeff. “Lean vs Agile vs Design Thinking”. Agile Australia 18 conference, 18th May 2018, Palladium at Crown, Melbourne
+
+Cameron, Alison. “Enabling cultural evolution”. Agile Australia 18 conference, 18th May 2018, Palladium at Crown, Melbourne
+
+Boas, Adam. “People > Process”. Agile Australia 18 conference, 18th May 2018, Palladium at Crown, Melbourne
+
+Brett, James & Chiovetti, Marina. “Creating high-performance teams using the Human Full Stack”. Agile Australia 18 conference, 18th May 2018, Palladium at Crown, Melbourne.

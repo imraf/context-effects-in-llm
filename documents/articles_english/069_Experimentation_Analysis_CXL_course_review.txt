@@ -1,0 +1,79 @@
+Title: Experimentation Analysis (CXL course review)
+URL: https://medium.com/@hilarytirimba/experimentation-analysis-cxl-course-review-2ec216211aed
+Tags: Experimentation, Conversion Optimization, Analysis
+----------------------------------------
+It has been another amazing learning week at the CXL Institute. This weeks’ focus has been on Experimentation Analysis. The course is taught by Chad J. Anderson who currently works at Microsoft and also has several years of experience with other reputable organizations.
+
+In this course, Chad teaches the principles of going from zero to hero when it comes to experiments analysis. He outlines how important analysis is in the success of a testing campaign. He puts it very clearly that without exemplary analysis, the data could be interpreted poorly and the inaccurate data used in making crucial decisions which will affect the institution greatly.
+
+Much of the course involves R-language which is very useful and highly recommended in data interpretation and representation. Chad explains the concepts, especially those involving computing data and results in R, in very simple and basic terms. It is therefore not strenuous to get wind of what is going on and following through the entire course.
+
+Tools
+
+Earlier on in the course, a couple tools are introduced to help in getting started with R including R-network website and the R-studio. These two are the primary to get started for downloading applications, launching and inputting code.
+
+He also talks about key functions for R including Combine function, Data frames and packages.
+
+Principles of analysis and metric building
+
+Getting to know what to measure and how to build up the tests for specific metrics is central in experimentation. The metrics are grouped into three:
+
+Top metrics; North star metrics — these are critically important to business health for example revenue.
+
+Tier two — these are metrics that are not very key but have a correlation with the north star metrics. These can somehow affect the more important ones and include conversions. They are leading indicators of the top metrics.
+
+Tier 3- these are the least critical to business health and have a weaker correlation with the top metrics.
+
+When choosing and building up on these metrics it is important to remember the following as they all affect the validity and accuracy of data used in decision making:
+
+Aggregates and averages are essential in building conclusions. However, if the data on site visits and conversions is randomized then averaged, a false picture will be painted. If randomized by visits too, the average will be a false representation of the conversion process. The right procedure is to randomize based on the user behavior then get averages.
+
+R-language is also useful in setting up metrics and factor analysis to obtain data on specific metrics that may be primary to us. R gives the space to manipulate the results to get a specific inference by altering the code to suite your goals.
+
+“So for example, let’s say that I have a website and I care not so much about the amount of revenue that a person spends. That’s actually a little bit secondary to me. What I care about is their engagement level, how engaged are they with my website. And how do you define engagement level, right? That’s not a metric that you’re pulling from a data layer. That’s not anything that you’re capturing. Nobody clicks on a button and their engagement goes up. We have to create that metric ourselves. And we create that metric ourselves by combining metrics together and weighting them in a way that we feel is important. “
+
+That is Chad explaining in his own words why creating our custom reports based on what we would like to know is important.
+
+The data is formed by selecting the metrics that matter and creating columns. The data collected is then analyzed according to a heuristic or a weighted average to get the information you are looking for.
+
+Good experimentation analysis.
+
+Good experiment analysis has three main pillars. These are
+
+1. Statistical comprehension
+
+2. Trustworthy analysis
+
+3. Honest analysis.
+
+Statistical comprehension is the understanding of how you got to the data you have. An understanding of the process can help in getting the insights as well as recognizing mistakes later on. It helps also to understand the danger of averages and why certain methods of computation may not apply and the impact they could have.
+
+Trustworthy analysis is the kind that can be relied on. From such, whatever conclusions are drawn are reliable and can be used in making decisions. They are a true reflection of the data and lead to better results based on the risk assessment.
+
+One major factor that affects trustworthiness is the sample ratio mismatch where the variations in the participants is not randomly and evenly distributed between the treatment and control groups. This splitting of participants and the logging of data should be well understood and validated.
+
+Chad goes on to explain the relevance of randomization and power. This automated indiscriminate grouping using A/B testing tools maintains the integrity of the process. Any significant results in a randomized controlled trial is therefore because of pure chance or because the different groups represented show differing traits.
+
+Honest analysis
+
+Here Chad stresses the importance of accepting that we do not know it all and that we cannot be entirely sure about a certain observed trait. All we do is draw conclusions from data but never 100% sure of what influenced the outcome.
+
+It is necessary to acknowledge our areas of ignorance and do more research and study on those areas.
+
+Statistical power
+
+This is the probability of getting significant results or obtaining statistical significance and p-value. Significant results, if they exist within your study group for that metric, are a representation that most of the time a certain behavior will be observed up to a certain extent.
+
+The significance will not always exist because of the random distribution of traits but whenever it does. It should show and be consistent. This calls for tests to go on to completion even if the significance has already been attained. Predetermine the sample size and let the test run unless something is seriously affecting the test or the business.
+
+The larger the sample size, the larger the chances of observing the significance if present. This is how often the power will be observed.
+
+Towards the end, Chad introduces the different tests including F-test, p&t tests, levene tests and factorial designs.
+
+The primary goal for CRO is also quantified as the understanding of risks involved with a certain variation in comparison to the others.
+
+“ An F-test is testing the variance of our data. Let’s just start as we always do with a normal distribution, with a mean of 10and a standard deviation of 2, right? Normal distribution, we’ve seen it 100 times already. Let’s go ahead and plot the mean which is exactly 10 which is pretty rare but also kind of cool. And as usual let’s look at a histogram of the data as always we can see that the average point is center data 10 and as we start to go out to either side the numbers become larger and also more infrequent. Now we’re doing something a little bit different. This is not a normal distribution.
+
+Let me give you an example, imagine that you’ve been talking to your favorite customers about improving your website and they’ve been giving you feedback all the time then you’ve been going back into your site and designing A/B test based around that customer feedback. Now imagine if your mean average order value is about $3 and when you run your A/B test, your mean average order value is also $3. But what if in your control version most people were buying around $3 worth of products? But in your treatment version, the people that you talked to, the segment that you catered your site to are performing much better, and now their average order value is $4. But the people that you didn’t talk to, a significant part of your site population that also matters is now under catered to and their average order value is $2.Well, you wouldn’t be able to detect this change at all because the average difference is still the same and a p and t-test does not calculate that.
+
+Learning at CXL continues to be an amazing experience even as I near the end of my 12-week course. Next week I will be moving on to the fourth out of five courses.

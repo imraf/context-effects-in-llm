@@ -1,0 +1,75 @@
+Title: Regulatory mistakes ICOs make (and what they should do instead)
+URL: https://medium.com/hackernoon/regulatory-mistakes-icos-make-and-what-they-should-do-instead-daafd000f62
+Tags: Regulation, Blockchain, ICO, Bitcoin, Altcoins
+----------------------------------------
+This article explores common regulatory mistakes that appear to occur with many ICOs and crypto businesses. To learn more about ICOs, cryptocurrency, and ICO regulation, check out our database: CryptoRDB, or our other articles here.
+
+This article focuses on smaller and early-stage ICOs. The approach of large, very well funded ICO projects differs from smaller projects, primarily because larger projects can usually engage law firms, and specialised crypto advisory teams (like Lupercal Capital) to provide bespoke, ongoing advice.
+
+If you’re looking to engage a specialist ICO advisor, we’d love to hear from you — feel free to contact us at enquiries@lupercalcapital.com or go to lupercalcapital.com to learn more.
+
+Common ICO Mistakes
+
+For ICO/TGE projects with lower external expenditure budgets — and projects not yet ready to engage crypto advisory firms — we see a number of key trends around how regulations are approached:
+
+ICOs throw businesses into the regulatory deep end — usually only multinationals with huge legal teams have to deal with international regulation, but ICOs potentially face a multitude of jurisdictions (this problem is described in more detail here) .
+
+It is a lot more complicated than people realise — addressing regulations in one jurisdiction can be irrelevant for another jurisdiction.
+
+It is rarely feasible for crypto entities to effectively ‘do it themselves’ without some assistance — easily-available information often just scratches the surface of what entities should know. This is particularly true as the application of existing laws to the crypto industry is largely untested and unclear in many jurisdictions, and there are limited means of working out what governments will do in the longer-term.
+
+There’s hardly ever a ‘turn key’ solution for all regulatory issues.
+
+Funding to pay legal fees/compliance costs can be limited (especially for newer entities), and entities can be reluctant to pay significant fees to third party advisors.
+
+Regulatory frameworks are often seen as an expense (not an opportunity for commercial outcomes, risk management, or improving a project’s image etc.)
+
+There are hundreds of things to consider, and crypto entities often don’t know what is a priority (what is the risk/why/when will it arise?)
+
+Regulatory hurdles are an after-thought — many ICO projects think of regulation after other key ICO issues things have been addressed. Often, the more work that has been done prior understanding regulatory issues, the harder it is to address them.
+
+What should ICOs do?
+
+One difficulty is knowing where to begin. Online materials can be very helpful, but usually: a) address a topic in an extremely general way, or b) address a very specific issues (which may or may not be relevant to your project).
+
+Whilst they’re a great resource, there are clear limits to how helpful articles can be.
+
+In an ideal world, engaging specialist advisors as early as possible is the best approach, but this isn’t always feasible.
+
+More importantly, when honing an ICO idea, it can be helpful to have an idea of regulatory hurdles that could get in the way. For example, would the main target audience for my great idea be excluded because the ICO would probably be an issue of securities?
+
+The Answer
+
+Knowledge and Prioritisation.
+
+Benefits of Early Regulatory Knowledge
+
+Regulatory Issues Supplement ICO Brainstorming
+
+It is a huge help to have a working check-list of regulatory challenges that a project could face. What jurisdictions would have to be excluded for regulatory reasons? How extensive and onerous are regulatory challenges? How long will they take to address (it could be 4 weeks; it could be 12 months).
+
+Regulatory Knowledge can make Advisors More Effective & Cheaper
+
+For some projects, major issues arise that may require detailed legal advice from specialised lawyers. For other projects, the issues may be less complex, and the right approach may be to address regulatory/compliance requirements in-house. A better knowledge of regulatory frameworks can help you identify which issues require advice, and which don’t.
+
+Having detailed knowledge or a check-list of key regulatory issues also ensures that advisors are engaged on the right issues. This maximises their usefulness, and often makes advisors much cheaper as their efforts are more concentrated.
+
+Regulatory Knowledge highlights Opportunities
+
+Cryptocurrency, blockchain, and FinTech more broadly are seen as hugely promising by many governments. Some Governments use their regulatory frameworks to offer significant opportunities, concessions, and other ways of assisting projects — knowing about these opportunities early on can help increase your company’s chance of success.
+
+Some governments are also very supportive of ICOs, whilst others are not. Knowledge of this can help you decide where it could be best to base your project.
+
+This is particularly important as knowing about this once an ICO has started can be too late.
+
+Next Steps: Regulatory Management for Early-Stage or Smaller ICOs
+
+Utilising cryptocurrency regulatory databases allows you to identify a suite of possible regulatory considerations, have an more detailed idea of important regulatory issues, and create a ‘check-list’ of considerations early on in your project. Staying on-top of regulatory issues early on can set your ICO up for success.
+
+Inspired by the World Bank’s ‘Easy of Doing Business’ rankings, Lupercal is among the first to pioneer a comprehensive database on cryptocurrency regulation. Our Crypto RDB provides you with the tools you need to cost-effectively identify regulatory considerations, and prioritise where action is required.
+
+Learn More
+
+Check out the world’s leading cryptocurrency regulatory database: CryptoRDB to help get on-top of ICO regulatory issues
+
+Lupercal Capital regularly provides strategic consulting and project management for ICOs, crypto businesses, and existing companies looking to implement blockchain technology into their business. Feel free to contact us at enquiries@lupercalcapital.com or go to lupercalcapital.com to learn more.

@@ -1,74 +1,88 @@
-# Implementation Plan: Context Windows Lab
+# Implementation Plan: Context Windows Benchmarking Suite
 
-## 1. Project Setup & Environment
-- **Objective**: Prepare the execution environment for high-performance LLM inference and experimentation.
-- **Environment**:
-  - **Hardware**: NVIDIA A100 (80GB VRAM).
-  - **Software**: Python 3.12+, Ollama (via `OLLAMA_HOST`).
-  - **Model**: Custom model `lab-model` based on `llama3.2:3b` (or similar) with extended context window (128k) defined in `modelfile`.
-- **Tasks**:
-  1.  **Dependencies**: Update `requirements.txt` with `langchain`, `langchain-community`, `chromadb`, `pandas`, `matplotlib`, `seaborn`, `nomic` (or `sentence-transformers`).
-  2.  **Model Creation**: Script to run `ollama create lab-model -f modelfile`.
-  3.  **Utilities (`utils.py`)**:
-      -   `get_llm()`: Returns a configured LangChain/Ollama client.
-      -   `generate_text()`: Helper for synthetic data.
-      -   `evaluate_answer()`: Helper to compare model output vs expected truth.
-      -   `log_result()`: Standardized JSON logger.
+## Phase 1: Environment & Infrastructure Setup
+**Goal:** Establish a robust, isolated development environment.
 
-## 2. Experiment 1: Needle in a Haystack ("Lost in the Middle")
-- **Objective**: Demonstrate accuracy degradation when critical facts are buried in the middle of the context.
-- **Data**: 5 synthetic documents (approx. 200 words each).
-- **Methodology**:
-  1.  Generate "filler" text.
-  2.  Insert a specific "needle" (fact) at three positions: `start` (0%), `middle` (50%), `end` (100%).
-  3.  Query the model for the needle.
-  4.  Repeat $N$ times (e.g., 10 iterations) to ensure statistical significance.
-- **Output**: `experiment_1_results.json` containing `{position, accuracy}`.
+1.  **Virtual Environment:**
+    -   Create `.venv` using `python -m venv .venv`.
+    -   Create activation helper script (optional) or documentation.
+2.  **Dependencies:**
+    -   Create `requirements.txt` including:
+        -   `langchain`, `langchain-community`, `langchain-chroma`
+        -   `ollama` (Python client)
+        -   `chromadb`
+        -   `pandas`, `numpy`
+        -   `matplotlib`, `seaborn` (for static high-quality plots)
+        -   `tqdm` (for progress bars)
+3.  **Configuration:**
+    -   Create `config.py` to manage:
+        -   `OLLAMA_HOST` retrieval from env.
+        -   List of Models.
+        -   Experiment parameters (seeds, document counts, etc.).
 
-## 3. Experiment 2: Context Window Size Impact
-- **Objective**: Quantify the relationship between context length and model performance (accuracy & latency).
-- **Data**: Real text from `hobbit` or `lotr` files.
-- **Methodology**:
-  1.  Create context chunks of increasing size: equivalent to 2, 5, 10, 20, 50 "documents" (or token counts).
-  2.  Formulate a question answerable only from the text.
-  3.  Measure:
-      -   **Accuracy**: Correctness of answer.
-      -   **Latency**: Time to first token / total generation time.
-      -   **Token Count**: Exact size of context.
-- **Output**: `experiment_2_results.json` containing `{num_docs, tokens_used, latency, accuracy}`.
+## Phase 2: Data Generation Module
+**Goal:** Create reproducible datasets for all experiments.
 
-## 4. Experiment 3: RAG vs. Full Context
-- **Objective**: Compare Retrieval-Augmented Generation against stuffing the entire context into the window.
-- **Data**: 20 Hebrew documents (domains: Medicine, Law, Technology). *Note: Will generate synthetic Hebrew docs if not provided.*
-- **Methodology**:
-  1.  **Setup**:
-      -   Chunk documents (size ~500 tokens).
-      -   Embed using a local embedding model.
-      -   Index in ChromaDB.
-  2.  **Full Context Mode**: Concatenate all 20 docs into the prompt. Query.
-  3.  **RAG Mode**: Retrieve top $k=3$ chunks. Query.
-  4.  Compare Accuracy and Latency for both modes.
-- **Output**: `experiment_3_results.json` containing `{mode, accuracy, latency}`.
+1.  **Synthetic Text Generator (Exp 1 & 2):**
+    -   Implement `generate_filler_text(word_count)` using a lorem ipsum library or simple dictionary.
+    -   Implement `embed_fact(text, fact, position)` to inject needles.
+2.  **Document Loading (Exp 3):**
+    -   Load the 20 Hebrew documents from `documents/articles_hebrew/`.
+    -   Load the 150 English articles from `documents/articles_english/` (if needed for other experiments).
+    -   Ensure metadata is loaded from `documents/articles_metadata.json`.
+3.  **Sequential Task Simulator (Exp 4):**
+    -   Design a simple state-machine or logic puzzle that requires remembering previous steps (e.g., "I put the apple in the box", "I moved the box to the kitchen").
 
-## 5. Experiment 4: Context Engineering Strategies
-- **Objective**: Evaluate advanced context management strategies for long-running tasks.
-- **Data**: A simulated 10-step sequential task (e.g., a text-based logic puzzle or state tracking).
-- **Strategies**:
-  1.  **Select (RAG)**: Retrieve only relevant past steps.
-  2.  **Compress**: Summarize history when it exceeds a threshold.
-  3.  **Write (Scratchpad)**: Maintain a separate "key facts" list, updated at each step.
-- **Methodology**:
-  1.  Run the 10-step simulation for each strategy.
-  2.  At each step, the model must perform an action based on history.
-  3.  Evaluate success rate of valid actions/correct state tracking.
-- **Output**: `experiment_4_results.json` containing `{strategy, step, success}`.
+## Phase 3: Core Experiment Implementation
+**Goal:** Implement the logic for each experiment, decoupled from the specific model.
 
-## 6. Analysis & Reporting
-- **Objective**: Visualize results as requested in the lab manual.
-- **Tasks**:
-  1.  Update `analyze_results.py`.
-  2.  **Exp 1**: Bar chart (Accuracy vs. Position).
-  3.  **Exp 2**: Dual-axis chart (Accuracy & Latency vs. Context Size).
-  4.  **Exp 3**: Grouped bar chart (RAG vs. Full Context).
-  5.  **Exp 4**: Line chart or Table (Success Rate over Steps per Strategy).
-  6.  Generate `EXPERIMENT_REPORT.md` summarizing findings.
+1.  **LLM Interface:**
+    -   Create a wrapper class `OllamaClient` that respects `OLLAMA_HOST` and handles retries/timeouts.
+2.  **Experiment 1 (Needle):**
+    -   Script `exp1_needle.py`: Loop through [Start, Middle, End] positions.
+    -   Output: `results/exp1_{model}.json`.
+3.  **Experiment 2 (Context Size):**
+    -   Script `exp2_size.py`: Loop through doc counts [2, 5, 10, 20, 50]. Measure time and check answer correctness.
+    -   Output: `results/exp2_{model}.json`.
+4.  **Experiment 3 (RAG):**
+    -   Script `exp3_rag.py`:
+        -   Setup ChromaDB.
+        -   Run "Full Context" query.
+        -   Run "RAG" query.
+    -   Output: `results/exp3_{model}.json`.
+5.  **Experiment 4 (Strategies):**
+    -   Script `exp4_strategies.py`: Implement the `Select`, `Compress`, and `Write` logic flows.
+    -   Output: `results/exp4_{model}.json`.
+
+## Phase 4: Orchestration & Execution
+**Goal:** Run the full suite across all models automatically.
+
+1.  **Master Runner:**
+    -   Create `main.py` or `run_benchmark.py`.
+    -   Iterate through the model list defined in PRD.
+    -   For each model, run Exp 1-4 sequentially.
+    -   Handle model loading/unloading (if necessary via API) or warm-up calls.
+    -   **Crucial:** Save intermediate results to disk immediately to prevent data loss on crash.
+
+## Phase 5: Visualization & Reporting Engine
+**Goal:** Transform raw JSON data into publication-quality assets.
+
+1.  **Data Aggregation:**
+    -   Script `analyze_results.py` to load all JSONs into a unified Pandas DataFrame.
+2.  **Plot Generation (The "Wow" Factor):**
+    -   **Style:** Set global matplotlib style (e.g., `plt.style.use('seaborn-v0_8-paper')`).
+    -   **Plot 1: The "Lost in the Middle" Heatmap:** X-axis=Context Size, Y-axis=Model, Color=Accuracy Drop in Middle.
+    -   **Plot 2: Performance Scaling:** Multi-line chart (Accuracy vs Tokens) for all models.
+    -   **Plot 3: RAG Efficiency:** Grouped Bar Chart (Latency & Accuracy) comparing RAG vs Full.
+    -   **Plot 4: The "Model Radar":** A normalized radar chart comparing the 5 models on:
+        -   Retrieval Accuracy
+        -   Reasoning (Exp 4)
+        -   Speed
+        -   Context Tolerance
+3.  **Report Generation:**
+    -   Auto-generate `BENCHMARK_REPORT.md` that includes the generated images and summary tables.
+
+## Phase 6: Verification
+1.  Verify `.venv` usage.
+2.  Verify `OLLAMA_HOST` connectivity.
+3.  Dry run with a small model (or one of the target models) to ensure pipeline stability.

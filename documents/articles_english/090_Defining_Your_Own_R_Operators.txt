@@ -1,0 +1,33 @@
+Title: Defining Your Own R Operators
+URL: https://medium.com/optima-blog/defining-your-own-negation-function-for-readability-6e0174ca1aa7
+Tags: Data Science, R Programming
+----------------------------------------
+Defining Your Own R Operators
+
+for better readability and for its sheer awesomeness!
+
+Say you are on your R console, writing some R code that will conquer the world! Let’s say you reached the point where you want to check the non-existence of the letter “a” in a list of characters [“a”, “b”, “c”]. So, you might think, negating the %in% operator like this:
+
+!("a" %in% c("a", "b", "c"))
+
+… but conquering the world requires more readability! So how about we define our own negation operator? This is done like this:
+
+'%notin%' <- Negate('%in%')
+
+Using our freshly minted negation operator makes for much more readable code:
+
+"a" %notin% c("a", "b", "c")
+
+The source of this tip is this tweet by LearnR.
+
+Why stop at negation? We can extend this neat trick to build other operators as well. For example we can create a binary addition operator like this:
+
+#define the add operator
+
+'%add%' <- function(a,b) a+b #perform addition using our defined add operator
+
+1 %add% 3 #output
+
+4
+
+Now you are much more equipped for that world conquest thing!

@@ -1,0 +1,117 @@
+Title: What Is Functional Programming?
+URL: https://medium.com/swlh/what-is-functional-programming-bef9d2141965
+Tags: JavaScript, Software Development, ES6, Declarative Programming, Functional Programming
+----------------------------------------
+"On two occasions I have been asked, 'Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?'...I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question." - Charles Babbage (1864): Inventor of the Analytical Engine (the originator of digital computing)
+
+Functional Programming defines another programming paradigm of the ‘declarative’ (as opposed to imperative) type of programming approaches defined within Computer Science.
+
+This article explores functional programming for beginners, using the highly popular JavaScript ES6 language for reference.
+
+In short, functional approaches to programming are defined as applying and composing of functions, in contrast to the imperative ‘line by line’ approach to programming used by historical Computer Scientists, such as Babbage.
+
+This begs us to ask, what are functions?
+
+Dictionary.com unpacks a function, in Mathematical definition as…
+
+map, mapping, Also called correspondence transformation . a relation between two sets in which one element of the second set is assigned to each element of the first set, as the expression y = x^2; operator. https://www.dictionary.com/browse/function
+
+If you haven’t studied advanced Mathematics, perhaps, beyond required schooling, or Computer Science formally (like myself); to decompose the meaning of functions in programming; it is simple to understand that we are taking a ‘set’ of defined values or ‘objects’ of data and mapping or transforming that data to another value.
+
+We call the overarching ‘module’ that is created by transforming, for example, ‘x to y’ — a function.
+
+Let me explain a little further herein. I will be using JavaScript ES6 functions, however I will stick to one form of expressing functions using function declarations (rather than arrow and anonymous functions), for simplicity. If you are interested in learning how to write functions in all forms within JavaScript, I suggest you take a thorough course on the subject.
+
+What is a function in day to day use?
+
+It is imagined that you have grasped some of the topics and syntax of computer programming at this stage, but perhaps are not sure about what a function is and how to use a function driven approach to get your programming needs done.
+
+If you’ve encountered Microsoft Excel in the past, with a little training, you may have been taught how to use the auto ‘sum’ feature within this program.
+
+This feature allows the user to highlight a group of cells containing numerical values and to simply click a button to automatically compute the ‘sum’ or total of all those numbers.
+
+Excel’s SUM Feature
+
+In Excel, this essentially serves a purpose as a pre-written function. When we write =SUM(X) and hit return in a cell in Excel, with X being the value(s) we want to total; the mapping from X to Y is undertaken under the hood.
+
+So perhaps, in Excel, what the function composition or expressions of SUM could be determined as, might look a little like this. Using the above screenshot of Excel, the values are denoted within brackets…
+
+SUM = (10 + 20 + 30 + 15)
+
+// Returns 75
+
+The above is what you could define as an imperative approach to programming (the opposite of a functional approach). It is the function unpacked, written laboriously, but explicitly defined. In an imperative approach, we don’t refer to functions or control flow — we simply execute instructions top to bottom.
+
+What if we had to undertake this process without using the SUM feature within Excel for hundreds or thousands of cells containing values?
+
+You would have a very clearly defined program, written line by line, computing everything you explicitly defined, but perhaps it would take a much longer period of time than simply defining what the function SUM does and then using it once, or as many times as required.
+
+This is, at it’s heart, what functional programming is all about…
+
+To conclude the semantics of definition, a function is basically a transformation of values from X to Y. As we saw in SUM, a set of number or numbers (X) to a single total (Y). To add to this, we typically ‘return’ a value (Y) as a result of the function — so that the function serves a purpose in the program.
+
+In programming parlance, functions are typically declared and ‘named’ — as is ‘SUM’ the name of a computation to total a set of values within Excel — in various computer programming languages, you can define a function to do whatever computation (or transformation) you wish and give it an apt name.
+
+We aren’t limited to just summing numbers — we can write functions to merge arrays, unpack objects, iterate and filter values into new data structures and so on and so forth, the limit is really what the language is capable of doing with the given data structures.
+
+What is functional ‘programming’ though? How does this apply to JavaScript and other programming languages?
+
+If you understood, as above, that functions merely ‘abstract’ or take a routine process and encapsulate that process within a named entity (or better termed — a declared function) in a form that allows for reuse, as opposed to repetition, then you could probably imagine that almost any programming process could be turned into a function.
+
+Let’s continue with the SUM from Excel and look at it under the hood with my example in JavaScript. Bear in mind that this function already exists as part of a built-in method within JavaScript. I.E in the real world, you don’t need to write a function to SUM values, as it already exists within this language.
+
+This is my interpretation of the SUM function in Excel, written in JavaScript ES6
+
+Pretty useful — I won’t unpack all of this line for line for you — but in short, it takes an array (a grouping of values i.e a data structure) and loops through that array, adding each of the values of the elements within the array to a total variable. The function then simply returns that total and the end of the computation process.
+
+So the computations that took place under the hood, if we unpack that function, look something like this, if we were to do it in a imperative — line by line — fashion…
+
+total = 0;
+
+total = total + 10;
+
+total = total + 20;
+
+...
+
+return total;
+
+Great, so a function is essentially a shortcut to executing some code I’ve already written that can be reused. How does this help me as a programmer?
+
+Functional approaches to programming allow the developer or programmer to, in short, decompose a larger problem into smaller modules that can be reused to solve smaller, decomposed problems in the future.
+
+That serves the purpose of decomposing an algorithm (we could broadly define all programming as simply writing and decomposing algorithms) in a reusable way.
+
+How does this make sense in a metaphorical form? Let’s make a ‘cake baking’ program, as is the typical metaphor used to explain what an algorithm is to novices.
+
+Note the difference between the functional approach and the imperative. While the functional is about 20 lines longer than the imperative — line by line — approach, think firstly about what would happen if we had not 10, but 100 or 1000 or more ingredients to add.
+
+I have omitted from my code any form of delay or timing functions and simply commented and console logged where the program should wait for a set time.
+
+Baking a Cake Algorithm — Functional Versus Imperative
+
+The above is a simple algorithm for baking a cake. Let us first examine the functional approach and then compare to the imperative approach (one which does not widely utilise functions).
+
+Functional Cake Baking — Summarised
+
+Ingredients are moved from an ingredient list to a pan. The ingredients array can be expanded to a huge number of elements / ingredients and the ‘addToPan’ function will happily move them all without having to write explicitly the instruction to move from a (ingredients array) to b (pan array). The ingredients are mixed with a function called mix(pan) that takes pan as an argument and sorts the elements by alphabetical order. There are other ways to sort (or shuffle) elements randomly, but this is omitted in this article. ovenSwitch() toggles the oven on or off in a boolean value of true or false, with true denoting to us that the oven is on. clean(pan) simply empties the array of all value if assigned to the global pan variable. bake() — is a higher order function. A higher order function is one which calls other functions within its function block. In this case, bake takes all of the previously created functions and iterates them in the correct order. The program is executed simply by calling ‘bake()’ at the bottom, after ensuring the correct ingredients are included at the top of the program within the ingredients array.
+
+Now, the functional approach, as above, has a caveat.
+
+Initially, while declaring these functions and writing re-usable code — for small use cases, such as in baking a cake that only contains 8 ingredients; it may actually be quicker to write in an imperative way, as below, noting that the codebase is much shorter.
+
+The imperative approach — as above — looks deceptively simpler and more easily interpreted. However, pay specific attention to the concept of adding (x) ingredients to the pan.
+
+If this were a more advanced program that takes a random set of ingredients from a database as represented by an array of differing length within this program, e.g. one with 100 or 1001 ingredients, then the programmer would have to transfer each of those ingredients, as above, one by one, into the pan.
+
+Functional Programming Summarised
+
+We know now what a function is, having defined it as a named or declared method to transform data from x to y. We looked at examples, such as the SUM function within Excel, which totals a range of numbers where appropriate.
+
+This saves having to compute the unpacked process of summing each value one by one.
+
+We looked at comparisons between imperative and functional programming using a cake baking algorithm, with the JavaScript language. This highlighted that, while functional programming is the ideal approach to dealing with code that is likely to repeat itself, there are caveats, in that in small use cases it may be easier to write in a more imperative style.
+
+Ultimately, however, taking a functional approach to programming ensures that your code is adaptable to varying datasets (or inputs). This means that, with a functional code base, you are less likely to encounter the issue of repetition and human error, that may occur if you avoided defining functions to break down your overall programming challenge.
+
+If you found this article interesting and would like to read more about another programming approach which builds on and advances the functional approach, then please read my article below — ‘What is Object Oriented Programming?’

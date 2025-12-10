@@ -1,0 +1,95 @@
+Title: A brief introduction to Useful Data Artifacts — and the next generation of data analysis systems
+URL: https://medium.com/tag-bio/a-brief-introduction-to-useful-data-artifacts-and-the-next-generation-of-data-analysis-systems-1f42ef91ce92
+Tags: Analytics, Data Visualization, Software Development, Data, Data Science
+----------------------------------------
+Data analysis systems should be systematic, like vending machines. Your question or request goes in, and a Useful Data Artifact comes out.
+
+For starters, I’d like to acknowledge Josh Dunn for first using the term “Useful Data Artifacts” in a conversation over lunch at the Boston Seaport a few weeks back. I’d been using the term “Data Artifacts” for some time, but what’s the value of one, if it’s not useful?
+
+What is a Useful Data Artifact?
+
+First and foremost, a Useful Data Artifact is an actual digital thing. It is not an idea, a thought, a realization, or an insight. It’s not in your brain — it’s a structured data object, created when you or an algorithm do something with data.
+
+More technically — a Useful Data Artifact is a nonrandom subset or derivative digital product of a data source, created by an intelligent agent (human or software) after performing a function on the data source.
+
+Our industry loves acronyms, so I’m going to use UDATs to refer to Useful Data Artifacts from here on out. It’s fun to say — give it a try.
+
+Why the generation and management of UDATs are critically important right now.
+
+Because data is expanding at an exponential rate, both in scale and complexity.
+
+Because people have far more questions of — and needs for — data sources than current processes and systems can handle. There is a significant Last Mile Problem .
+
+. Because the state-of-the-art outputs from data analysis software are visualizations and dashboards, which are highly overrated — specifically because visualizations fail to generate UDATs .
+
+. Because the investment you put into collecting, storing and utilizing data sources is wasted if you don’t have a systematic process for creating recordable, attributable, reproducible and useful outputs from analysis.
+
+outputs from analysis. Because you don’t want your organization’s discoveries and trade secrets sequestered in the brains of your employees or scattered about in different places or incompatible digital formats.
+
+Within most organizations, data artifacts are scattered around like this.
+
+Some key properties of UDATs:
+
+Digitally storable in a structured schema.
+
+in a structured schema. Immutable .
+
+. With provenance — i.e. explicitly attributable to the persons and processes that created it.
+
+— i.e. explicitly attributable to the persons and processes that created it. FAIR (Findable, Accessible, Interoperable, Reusable).
+
+(Findable, Accessible, Interoperable, Reusable). Useful! For reporting, making decisions, applying to other data sources or exporting for use in external systems.
+
+You are probably already creating UDATs now, here are some examples:
+
+Analysis parameters — the arguments and settings by which you configure and run an analysis — i.e., the question or request you asked of the data.
+
+— the arguments and settings by which you configure and run an analysis — i.e., the question or request you asked of the data. Cohorts — subsets of entities, otherwise known as clusters or segments.
+
+— subsets of entities, otherwise known as clusters or segments. Vohorts — subsets of variables, otherwise known as signatures or feature sets.
+
+— subsets of variables, otherwise known as signatures or feature sets. Query results — products of structured queries and functions, often producing derivative tables.
+
+— products of structured queries and functions, often producing derivative tables. Summaries — results of an analysis on a single cohort, utilizing one or more variables.
+
+— results of an analysis on a single cohort, utilizing one or more variables. Comparisons — results of analysis comparing cohorts, utilizing one or more variables.
+
+— results of analysis comparing cohorts, utilizing one or more variables. Similarities — results of finding similarities or differences between entities, e.g. nearest-neighbors.
+
+— results of finding similarities or differences between entities, e.g. nearest-neighbors. Correlations — results of finding similarities or differences between variables.
+
+— results of finding similarities or differences between variables. Descriptive Models — results of algorithms more complicated than the simple processes described above.
+
+— results of algorithms more complicated than the simple processes described above. Projection Models — results of unsupervised analysis which show relationships between known cohorts or identify new cohorts.
+
+— results of unsupervised analysis which show relationships between known cohorts or identify new cohorts. Predictive Models — results of supervised algorithms that can predict values or categories for new entities.
+
+— results of supervised algorithms that can predict values or categories for new entities. Systems Models — results of combining cohorts and vohorts with external knowledge bases and ontologies.
+
+Tidy that stuff up.
+
+How to make software systems and processes produce, manage and utilize UDATs:
+
+Systematic parameterization and explicit recording of user intent during analysis — i.e. please stop making hyper-interactive dashboards that don’t record anything.
+
+during analysis — i.e. please stop making hyper-interactive dashboards that don’t record anything. A robust, universal, open schema for digital storage of the different types of UDATs.
+
+for digital storage of the different types of UDATs. Provenance — know what, who, when, why and how a UDAT was created.
+
+— know what, who, when, why and how a UDAT was created. Make UDATs FAIR — Findable, Accessible, Interoperable, and Reusable, with important exceptions for keeping trade secrets and sensitive data private.
+
+— Findable, Accessible, Interoperable, and Reusable, with important exceptions for keeping trade secrets and sensitive data private. Make UDATs shareable — and ideally understandable for humans.
+
+— and ideally for humans. Make UDATs systematically deployable — i.e. in the case of predictive models.
+
+— i.e. in the case of predictive models. Enable utilization of UDATs in subsequent analyses on the same data source, and on different data sources, where applicable.
+
+on the same data source, and on different data sources, where applicable. Facilitate transfer of UDATs between software systems that would utilize them.
+
+What did I miss?
+
+There’s clearly a lot more to discuss around the definition, utilization, and value of Useful Data Artifacts as the industry evolves.
+
+I should note that at Tag.bio we’ve been producing, storing and utilizing UDATs for some time now — we just never had a good name for them.
+
+Image credits:

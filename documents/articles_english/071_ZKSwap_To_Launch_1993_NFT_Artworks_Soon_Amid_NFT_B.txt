@@ -1,0 +1,111 @@
+Title: ZKSwap To Launch 1,993 NFT Artworks Soon Amid NFT Boom, Says Lead Developer Alex Lee
+URL: https://medium.com/@zkswapofficial/zkswap-to-launch-1-993-nft-artworks-soon-amid-nft-boom-says-lead-developer-alex-lee-4f2b09ffbc2d
+Tags: Bsc, Dex, Zkswap, Nft, Layer 2
+----------------------------------------
+ZKSwap To Launch 1,993 NFT Artworks Soon Amid NFT Boom, Says Lead Developer Alex Lee ZKSwap Aug 10·7 min read
+
+1,993 NFT artworks are expected to be launched on ZKSwap in the next couple of weeks, says Alex Lee, the lead developer of the ZKRollup-based, Automatic Market Making (AMM)-featured Layer2 DEX ZKSwap.
+
+Last week saw ZKSwap’s very first AMAs after its 2.0 version went live on July 28, 2021. During the AMAs, Alex made a brief introduction to ZKSwap’s upgrade from V1 to V2, explained unlimited token listing, the 50% decrease in withdrawal time, personalized fee token settings, layer 2 for all and all other important updates in detail, and answered some of the questions frequently asked by community members. He also revealed that NFT is currently on top priorities of ZKSwap while the team is working on a few other new features, including cross-chain deployment on BSC, HECO, and OKExChain, Ethereum Virtual Machine (EVM), and layer2 lending and payment SDK.
+
+In cooperation with art institutions, a total of 1,500 NFT artworks have been completed and submitted for a final review, with 493 in progress, according to the latest ZKSwap Weekly Dev and Operations Update (7.31–8.06).
+
+“We aim to jointly expand the Layer2 ecosystem with business partners and community members, supporting the token listing of all standards as well as NFT token transfer and exchange. We will be the first Layer 2 DEX to be deployed on the Binance Smart Chain. There is no doubt that ZKSwap is gaining more exposure than ever in the crypto and blockchain world,” says Alex.
+
+For a better understanding of the status quo and future opportunities of ZKSwap V2, please read the full recap of Alex’s most recent AMA as follows.
+
+Q1: It has been a week after an official ZKSwap V2 launch. Can you give us a brief introduction to the latest version?
+
+A: Sure. February 14, 2021, witnessed the birth of ZKSwap V1, a ZK-Rollup-based, Automatic Market Making (AMM) featured Layer2 DEX that offers swap infrastructure and transactions with ultra-high throughput and zero gas fees to liquidity providers and traders. The project is backed by Bixin Capital, SNZ Capital, FBG Capital, and Longling Capital, and fully audited by ABDK, CertiK, and SlowMist.
+
+In less than 6 months since the V1 launch, ZKSWap has facilitated over $1.7 billion in total value locked, ranking as one of the largest Layer2 decentralized exchanges in the world.
+
+On July 28, we unveiled ZKSwap V2. The v2 launch of ZKSwap comes as the exchange attracts new DeFi users looking for a more cost-efficient way to swap between a wide variety of tokens amid the recent DeFi boom.
+
+With ZKSwap V2, users can try unlimited token listing, faster withdrawal speed, personalized fee token settings. Before long, ZKSwap V2 will be deployed across BSC, HECO, and OEC.
+
+Q2: Where are we now and what we’ve accomplished so far?
+
+A: Since the V1 mainnet launch in February 2021, ZKSwap has grown to 87,000 users and $11.5 billion in total trading volume. We have an ever-growing community of more than 38K members across different social media platforms. Over 8K users use zks.app every week. The total value locked on ZKSwap reached $46M the day V2 was launched. Besides, ZKSwap was seen in 250+ media press releases last week, reaching over 160M users.
+
+Q3: Among several new features you mentioned above, can you talk about unlimited token listing in detail?
+
+A: Yes. ZKSwap v2 allows anyone to add any ERC-20 token or create a token pair, and all ERC-20 token and stablecoin transactions on ZKSwap are free and settled in real-time. In the future, we’ll support tokens of any standards to further expand our asset ecosystem.
+
+Q4: How about a faster withdrawal speed? How fast can it be?
+
+A: Our tech team dynamically modified ZKSwap’s circuit system, improving the speed of transaction aggregation packaged on the chain according to the actual situation. After this modification, the user’s transfer and exchange experience on Layer2 will be silkier and smoother, and the withdrawal time from Layer2 to Layer1 processed by the smart contract will be directly shortened from 40 minutes to 20 minutes.
+
+Q5: That’s 50% faster than before! Can you elaborate more on fee settings?
+
+A: ZKSwap currently supports MetaMask, imToken, TokenPocket, Bitpie, and all WalletConnect-supported wallets for zero-fee token transfers through ZKSwap. Users can make up to 50 transactions per day without incurring any gas fees, and fees are only paid on layer-one withdrawal. After free transactions are used up, users can select a token among ZKS, WBTC, ETH, and USDT for fee payment. In the near future, more fee tokens will be added and applied to more use cases, including but not limited to adding/removing liquidity and asset transfers.
+
+Q6: Many users are interested in ZKSwap’s layer 2 deployment on Binance Smart Chain, Ethereum, OKExChain and Huobi Eco Chain (HECO). When will that happen and what can we expect with this?
+
+A: Cross-chain support for the BSC, OKExChain and HECO will be added within the next couple of weeks to enable cross-chain token swaps beyond Ethereum. Users will also be able to add any tokens supported by the three exchange blockchains.
+
+Q7: After V2 is online, will V1 still exist or go offline? Can users still see their V1 transactions from February to now on the explorer?
+
+A: Yes. V1 and V2 will coexist. Users will be able to view all transaction records.
+
+Q8: Will users need to withdraw tokens from V1 to V2 and how can they do that?
+
+A: It is recommended to migrate tokens to V2 because of the better functionality, and the existing functionality of V1 will not be affected for a long time. To migrate assets from V1 to V2, users must transfer their assets to L1 first and make a new deposit to V2. Here is a tutorial https://en.wiki.zks.org/tutorials/zkswap-v2-tutorials for reference.
+
+Q9: There were great mining events on V1. What mining activities can users participate in now?
+
+A: Good question. Proof of Gas and Proof of Staking mining are ongoing activities for all users.
+
+PoG is a long-term campaign with a daily release of 20,000 to 30,000 ZKS. As the token price gradually stabilizes, the ETH stored across the network remains in the thousands, and the yield is maintained at 30–50%, which retains a higher level of return in ETH finance. The PoG campaign is essentially an opportunity for the community to buy ZKS at a 20% discount, with annualized returns stabilized up to 50%.
+
+The PoS campaign allows the user to stake ZKS for a reward. Now, ZKSwap is open to community users in 4 different time periods of staking: 30 days, 90 days, 180 days, and 360 days. Users who participate in 360-day staking will also get gZKS which is the governance token on ZKSwap. With gZKS, users will be able to propose and vote, greatly involved in the community and future of ZKSwap.
+
+In the meantime, Proof of Liquidity mining is paused. We’ll make an announcement once it is resumed.
+
+Q10: As disclosed in previous reports, ZKSwap will bring an NFT feature in the next upgrade. Will ZKSwap build its own DeFi/NFT applications or invite third-party projects to its ecosystem?
+
+A: We are open to both as both will be beneficial to ZKSwap. In fact, we’ve been working with art institutions on NFT for a long time. Our art partners have submitted their first batch of NFT works and 95% of the second batch of NFT works have been completed. The NFT feature is still being developed as planned.
+
+Q11: Is there any big news we can expect in Q3, layer2 for all, NFT, new token listing, or more?
+
+A: Basically, that’s all you can imagine in the 3rd quarter of 2021. Teams working on blockchain infrastructures, NFT, and gaming have been reaching out to us on potential partnerships. There will be a big move in cross-chain deployment, which will be announced in due time.
+
+Q12: How governance token gZKS is useful?
+
+⁣A: We issued the community governance token gZKS on April 29, 2021. Anyone with 50,000 gZKS can make a proposal and all gZKS holders can participate in community governance. So gZKS is and will always be useful and active.
+
+Q13: While you build your project, do you take into account community feedback and demands?
+
+A: That’s for sure. We hold product test programs regularly and users often give us valuable and useful feedback, which means a lot. Users who offer such feedback can always get rewarded and see their suggestions being reflected in product iterations.
+
+We’ve just distributed $10K rewards to ZKSwap V2 testnet campaign winners. Hundreds of community members participated in this campaign, testing ZKSwap V2 and making what the latest version is.
+
+Q14: How do you plan to spread awareness about your project in different countries?
+
+A: While expanding the global markets, we established six Telegram groups and one Discord group, which have been growing fast! You are always welcomed to join any of the following groups!
+
+English: https://t.me/ZKSwapOfficial
+
+Russian: https://t.me/ZKSwapRussianOfficial
+
+Chinese: https://t.me/ZKSwapChineseOffical
+
+Indonesian: https://t.me/ZKSwapIndonesiaOfficial
+
+Korean: https://t.me/ZKSwapKoreaOfficial
+
+Vietnamese: https://t.me/ZkswapVietNameseOfficial
+
+*Discord: https://discord.gg/fC9GdnEpas
+
+We currently have over 38K community members across different social media platforms and aim to build stronger communities in the future.
+
+The English community is the largest for the moment. We plan to build more communities in more languages! If you are interested in helping us create a local community in your region, don’t hesitate to contact us right away!
+
+Q15: What are your plans for the future and marketing strategy?
+
+A: We aim to jointly expand the Layer2 ecosystem with business partners by supporting all token standards as well as NFT token transfer and exchange. We will be the first Layer 2 DEX to be deployed on BSC, HECO, and OKEx Chain. We will launch Layer2 payment SDK and facilitate seamless access to wallets exchanges and payment service providers.
+
+Furthermore, we plan to make continuous breakthroughs by launching Layer2 lending and stable currency exchange service; developing a general EVM model based on ZK-Rollups to realize the programmability of Layer2 by constructing a circuit on the EVM instruction set and connecting with more partners to promote the property of the Layer2 DeFi ecosystem.
+
+ZKSwap will gain more media exposure than ever in the 2nd half of the year. Thank you for your continuous support!

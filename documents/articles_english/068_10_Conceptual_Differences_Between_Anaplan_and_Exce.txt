@@ -1,0 +1,91 @@
+Title: 10 Conceptual Differences Between Anaplan and Excel
+URL: https://medium.com/@v4.1data/in-10-steps-conceptual-differences-between-anaplan-vs-excel-e934dd0a85da
+Tags: API, Connection, Planning, Excel, Anaplan
+----------------------------------------
+Did you get a chance to watch the introduction to advertisement (1992) -when MS Excel was first launched? If so, you will remember the iconic sentence ”My spreadsheet doesn’t do that’’ spoken to compare the old-fashioned spreadsheets with MS Excel. (if you haven’t seen it, highly recommend you to watch it to see how feels like it was a hundred ages ago when really it was 3 decades ago)
+
+There is no doubt that MS Excel is the most common spreadsheet of all time. But after building several projects via Anaplan, to my surprise, I have found myself saying “My MS Excel doesn’t do that.”
+
+In my words, Anaplan is a cloud-based platform that provides detailed hyper-scale models to get fast, accurate, synced data for budgeting, planning, forecasting to solve business problems and to get the best financial analysis insights by providing eye-catching and highly effective UX pages.
+
+Let’s take a look together at why I enjoy my Anaplan experience by explaining In 10 steps of Conceptual Differences between Anaplan and MS Excel.
+
+1. Power of Calculation
+
+At first glance, the power of calculation is the most remarkable feature of Anaplan. If you have experience with Excel, it’s no secret that it doesn’t do well with a large number of rows including complex formulas. But Anaplan’s hyper-scaling with CPU cores can compute millions of rows in a split second. Anaplan can incorporate sophisticated coding quickly because its technology applies the code to only related cells among multidimensional models.
+
+2. Cloud-Based Structure
+
+If you are using Office 365 Cloud, you can run your Excel spreadsheet on your local machine and synchronously store it to the cloud driver. However, there is a high possibility of outages in the case of complexity. Excel online provides only light editing options with regards to the desktop version of Excel on Windows.
+
+On the other hand, Anaplan has cloud architecture with in-memory processing. Without scaling issues, you can process millions of rows directly in the cloud. Anaplan cloud also supports application lifecycle management (ALM). Thanks to ALM, we can separate the production and development phases of the application and associated duties, roles, and functions. Also, you may review the changes later because the previous version is held in the cloud too.
+
+3. Multi-User Collaborative Environment
+
+The cloud-based structure, also allows for multi-user collaboration. Spreadsheets in general are designed for single-user applications. Anaplan models can be built by different users added by the workspace administrators. This structure maintains simultaneous visibility with partners worldwide.
+
+Also, thanks to dynamic UX pages, end users can add new data to the model using import actions or allow editing. It enables the team members to join the planning implementation effectively. Multiple users can execute the process from budgeting to forecasting by commenting or edit it at the same time.
+
+Thanks to the user-friendly concept of dimensionality, team members do not have to be programmers in order to cooperate on the model. This feature enhances the collaboration and speed of performance by eliminating communication inertia.
+
+4. Surveillance (Selective Users/Roles)
+
+The ability to be driven by multi-users may bring about doubts with regards to security and user access level. In Excel, users can reach the main spreadsheet with full access. That increases the risk of errors and security at the same time. However in Anaplan, thanks to flexible permissions, you can protect the data and the process effectively. Anaplan supports different user authorization levels, hence you can assign different roles and grant selective access. Role-based access controls the users by assigning module, version, list, and action permission to the role. User management and selective access in Anaplan provide only authorized users with permitted rights(read/write) to the specific data(modules/line or list items). This tailored limitation ensures the protection of the company data while providing necessary transparency to the relevant individuals.
+
+5. Relational Data (join in SQL)
+
+In MS-Excel it can be hard to connect data from different spreadsheets to each other. You must use some Lookup functions to connect different data from many Excel sources. Or, as another time-saving option, you can write SQL using Power Query. You can use Power Query to build a dynamic SQL statement that will automatically generate all the conditions in the Excel table.
+
+However, in Anaplan you do not need to be a SQL programmer to join modules together. On the contrary, you can fetch and consolidate data from different sources easily. Anaplan uses hyper-block technology which allows the merging of different large data sets at in-memory datastore with a calculation engine. It is like the imaginary cube version(or tensors in deep learning) of the 2 dimensions JOIN function in SQL.
+
+In my opinion, this is the game-changer because such multidimensionality turns the complex market problems into a piece of cake while allowing you to enjoy the performance and the flexibility to reach all data from one formula bar.
+
+6. Nested Data (family child)
+
+MS Excel can’t keep nested or hierarchical data so you can’t calculate a formula that depends on the data’s hierarchy. Let’s look at the hierarchy concept with a geographic region sample:
+
+a city (New York) is a child of a country (USA), which is a child of a region (AMER), which rolls up into a total of the international company. Such as, if you have only country sales data, and you don’t have any hierarchy between country and region, you can’t automatically calculate region scaled sales depending on countries.
+
+This calculation is a real hard problem in MS Excel. Because MS Excel is the 2-dimensional and only way to get into the dimensions is to create a pivot table and those are not that easy to work with.
+
+However, Anaplan technology recognizes the relationship between parent-children data thanks to the concept of dimensionality. That provides a calculation convenience when it comes to decision-making and comparing the totals in regards to their geographic level. Long story short, while looking at the big picture of sales, you can easily track how micro changes affect the macro. Anaplan implements and automatically computes them by rolling up the real-life data.
+
+7. Anaplan Connect API
+
+REST API services are the most common communication technology in the internet world. You can connect different services, data sets, and databases to each other using REST APIs.
+
+Anaplan Connect is an API Client which supports import, export, process, delete or upload metadata functions. Thanks to this command-line interface, manual work is not required for each run. Also, you can schedule the actions that you want to run automatically.
+
+In addition, this Anaplan interface does not require coding a full-scale software application. You can communicate your applications or ERP software to Anaplan API.
+
+Moreover, while using standard Anaplan Connect to perform the mentioned operations, you can use Anaplan Robotic Process Automation Connection(RPA) to automate the security settings for new Import Data Sources.
+
+8. Flexibility — Power Query
+
+Anaplan has a flexible structure that allows you to connect a third-party data integration on a single platform. Anaplan’s expansive network can extend integration capabilities. For example, purpose-built integrations such as Tableau, Power BI, DocuSign are supported by Anaplan interoperability capability. In addition, Anaplan can integrate with data lakes and data warehouses (MuleSoft or Informatica for example) using connectors for ETL and ESB tools.
+
+Even if MS Excel does not have this ability, Anaplan’s flexibility is similar to Microsoft’s Power Query which is a data transformation and data preparation engine. Using Power Query, you can perform the extract, transform, and load (ETL) processing of data. For example, using connectors such as Excel or Anaplan, PQ can transform the data to Power BI.
+
+In summary, we can say that Anaplan’s extensive network includes MS Excel’s spreadsheet functions with Power Query at the same time on a single platform that maintains easy deployment and communication with third-party solutions.
+
+9. Forecasting — PlanIQ
+
+MS Excel has the ability to present statistical calculations with its functions such as QUARTILE.INC, CORREL or STDEV.S. Excel can also compute a data set’s mean, average or standard error of estimate for a regression. But these are far beyond the capability of delivering intelligent and precise forecasts.
+
+By implementing built-in Machine Learning(ML) algorithms, Anaplan provides predictive insights for business decisions. Because market conditions are very dynamic, thus tactical real-time resources are very crucial for actionable planning.
+
+Anaplan uses PlanIQ which produces accurate forecasts using AI and ML. Product managers, sales teams, finance reporters, or humans can use PlanIQ to get info for the projected period. For example, a demand planner can improve top-and bottom-line order volume according to PlanIQ technology by utilizing historical data and customer attitudes. Or, a sales manager can optimize the enterprise strategy thanks to predicted insights regards to different scenarios and commercial periods.
+
+In addition, Anaplan can integrate AWS’s Amazon Forecasting by combining Anaplan’s powerful calculation engine with AWS’s market-leading ML and deep learning algorithms to generate reliable, agile forecasts without requiring expertise from data scientists to configure, deploy and operate(*).
+
+10. UX pages
+
+MS Excel can create different charts utilizing rows and columns and present data visualization such as pie charts or scatter plots.
+
+Anaplan UX pages perform above and beyond as a data visualization tool by providing collaborative agile planning. The models can be personalized with key performance metrics and reports at any time by pivoting or filtering. The ability to change the dimensions allows controlling the time and the periods to be focused.
+
+End-users have the ability to add new data or import files to participate in the planning process. The users can be limited in accordance with their regions or work scope through pages. UX pages are also deployed from desktops, tablets, or mobile apps.
+
+Moreover, with a new update to UX pages, Anaplan now provides management reporting that seems like a PowerPoint document with dynamic and interactive slides. This feature can help create visual narratives for business leaders to understand key data and drive confident decisions.
+
+These are the 10 differences I recognized as an Anaplan Model Builder and an experienced MS Excel user. Hopefully, synchronizing the more partners experience this powerful platform, the more organizations find effective solutions and have enjoyed its benefits.

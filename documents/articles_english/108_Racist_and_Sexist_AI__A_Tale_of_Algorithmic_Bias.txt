@@ -1,0 +1,43 @@
+Title: Racist and Sexist AI — A Tale of Algorithmic Bias
+URL: https://medium.com/swlh/racist-and-sexist-ai-a-tale-of-algorithmic-bias-3dc9128cc0ab
+Tags: AI, Ethics, Justice, Data Science, Racism
+----------------------------------------
+Decision-making algorithms trained on large amounts of data regularly shape the world we live in, often unknowingly. From deciding which demographic a social media advertising campaign will target to granting parole to a prisoner, these algorithms are trusted daily to make important decisions in personal finance, health care, hiring, housing, education, policies and much more.
+
+First, let’s discuss the importance of data in AI…
+
+For anyone that hasn’t worked with data science before, some notions are important to define. The subset of AI which allows algorithms to learn by themselves is called machine learning. This technique is behind most of the “operational” AI that we find in our everyday lives ranging from credit card fraud detection, targeted advertising, Facebook news feed generation, image recognition, voice recognition and many more.
+
+Machine learning can be understood as a sort of statistical pattern matching. There are statistical models that are then fitted to a set of training data in order to represent the real world. This is how a statistical model will learn to recognize fraud by having been trained on thousands of transactions, for example. The algorithms are learning and making predictions from the data.
+
+Now you may ask, how can an algorithm even be racist?
+
+There exists an important ethical concern when it comes to determining if an algorithm is impacted by existing human biases and stereotypes. Intuitively, if bias exists in the society, algorithms naively learning from data will surely be affected and will themselves become biased. This is where the concept of data fairness comes into play. This phenomenon has been observed previously in many different spheres.
+
+According to a research conducted by Latanya Sweeney, a Harvard professor of government and technology, a user on website receiving ads traffic with a black-identifying name such as DeShawn, Darnell or Jermaine was 25% more likely to receive an ad suggestive of an arrest record.
+
+As outraging as this example seems at first, when data fairness is discussed in relation to social media or ad campaigns, the issue, unfortunately, seems trivial. Although I disagree that algorithmic bias in social media is trivial, mainly because anything presented to us on social media platforms greatly shapes the way we perceive our world, I would agree that this issue becomes increasingly important when studied for algorithms making decisions for governments and cities.
+
+Jun Cen: Illustration
+
+In 2016, Angwin et al. writing for ProPublica analyzed predictions made by COMPAS (Correctional Offender Management Profiling for Alternative Sanctions), a tool that creates risk scores to help assign bond amounts in Broward County, FL. The bond amount was determined by a human judge based on a computer-calculated “risk score” ranging from 0 to 10, 10 being a very high risk of a repeat offence. When comparing the offender’s future risk scores to their actual criminal records, the analysis found that the tool was twice as likely to falsely label black offenders as future criminals than white offenders and more likely to falsely label white offenders as low risk.
+
+The article went on to show an example where the COMPAS tool had assigned a risk score of 8 to a young African-American woman who had been arrested for attempting to steal a kid’s bicycle and scooter, totalling around 80$. The same tool assigned a risk score of 3 to a middle-aged caucasian male who shoplifted a similar amount of around 80$. Both had a criminal record, nonetheless incomparable, the male having served five years in prison for armed robbery and the woman having committed some misdemeanours when she was a minor.
+
+So who let an algorithm become racist?
+
+The simple answer is no one — the tricky answer is everyone. Algorithmic bias is described as a bias that is introduced into a decision-making algorithm by data that is tainted with historical human biases. However, it may not always be as evident as attributes such as race or gender — sometimes, other attributes of the dataset correlate highly with sensitive data such as ethnicity or gender, which could be completely unnoticeable by the scientists handling the data. When thinking of algorithmic bias, there is truly no one else to blame other than the historical training data which is, in the end, only a mirror of our flawed society.
+
+For example, let’s take a system that predicts how likely a customer is to fail to pay back a bank loan. If you’ve ever applied for a loan, you have probably seen the bank teller enter your personal information in said system, and almost immediately receive a decision such as “pre-approved”.
+
+Due to anti-discrimination laws, the system would not use race, ethnicity or gender as an attribute to predict such an outcome. However, the system could very well use a person’s postal code. The main problem here is that this feature often highly correlates with a person’s ethnicity. Therefore, removing ethnicity may not do much to remove algorithmic bias, as a person’s postal code is an excellent predictor for this attribute. In many cases, most statistical models would be able to pick up the correlation and therefore infer race. One can imagine how this example can be extrapolated to all sorts of different attributes for all sorts of different applications — city, state and school attended are all features that could be correlated to race.
+
+Now, the previously described algorithm would be trained on historical data of bank tellers making decisions on loans. The dataset contains years of bank tellers’ decisions on approving loans, prior to the system ever existing. It would look something like an aggregate of data related to a past customer and the customer’s financials mapped to an outcome (customer defaulted bank loan or customer paid back everything on time).
+
+As the system is trying to replace human judgement, it would then try to correlate these features to an outcome before approving or denying a loan. Many oversimplified concepts were explored here, but the problem is still clear — the historical data based on bank tellers’ decisions are tainted by unconscious (or conscious..) bias! The moment a dataset contains instances of human bank tellers historically possibly denying loans to a race A more often than a race B with no valid reason, the dataset becomes inherently biased. The system will then learn the bias, even though race, ethnicity or gender was never even mentioned in the dataset!
+
+If data scientists are not mindful of algorithmic bias, an algorithm learning blindly from a deeply racist society can only become racist itself.
+
+These ethical concerns call for a discrimination-conscious development of algorithms and data mining systems, especially when used for governmental and justice-related decision-making. This remains a challenge in the data science community and many novel techniques have been discussed by researchers to address algorithmic bias.
+
+Different solutions range from deemphasizing the data fed to the model to even introducing a second independent algorithm to assess and reduce bias in the first algorithm. However, the problem needs to be discussed far more often as these algorithms are being widely used in making life-changing decisions for the population.

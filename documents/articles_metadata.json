@@ -1,0 +1,2325 @@
+[
+    {
+        "id": 0,
+        "filename": "000_Benchmarking_new_xgboost_fast_histogram_xgboost_an.txt",
+        "title": "Benchmarking new xgboost fast histogram: xgboost and the compiler story",
+        "url": "https://medium.com/data-design/benchmarking-new-xgboost-fast-histogram-xgboost-and-the-compiler-story-86f0c5a4bcd3",
+        "authors": "[]",
+        "timestamp": "2017-05-14 20:33:42.437000+00:00",
+        "tags": [
+            "Benchmark"
+        ],
+        "length": 1010
+    },
+    {
+        "id": 1,
+        "filename": "001_Businesses_See_GreenNot_Red_and_Bluein_Fight_Over_.txt",
+        "title": "Businesses See Green\u2013Not Red and Blue\u2013in Fight Over Voter Rights",
+        "url": "https://medium.com/@taxjustice/businesses-see-green-not-red-and-blue-in-fight-over-voter-rights-188316a1fb85",
+        "authors": "['Citizens For Tax Justice']",
+        "timestamp": "2021-04-10 13:18:13.300000+00:00",
+        "tags": [
+            "Baseball",
+            "Politics",
+            "Business",
+            "Voting",
+            "Taxes"
+        ],
+        "length": 4111
+    },
+    {
+        "id": 2,
+        "filename": "002_Working_with_Prometheus_and_Grafana__An_Introducti.txt",
+        "title": "Working with Prometheus and Grafana \u2014 An Introduction",
+        "url": "https://medium.com/@akshayavb99/working-with-prometheus-and-grafana-an-introduction-ae197c8e27bf",
+        "authors": "['Akshaya Balaji']",
+        "timestamp": "2020-07-19 15:25:25.550000+00:00",
+        "tags": [
+            "Grafana",
+            "Monitoring",
+            "Prometheus",
+            "Kubernetes",
+            "DevOps"
+        ],
+        "length": 1711
+    },
+    {
+        "id": 3,
+        "filename": "003_Best_Affordable_Hotels_in_Philadelphia.txt",
+        "title": "Best Affordable Hotels in Philadelphia",
+        "url": "https://medium.com/@paawann.mishra/best-affordable-hotels-in-philadelphia-1d9e4ad34a72",
+        "authors": "['Pawann Mishra']",
+        "timestamp": "2016-12-27 09:18:09.493000+00:00",
+        "tags": [
+            "Hotels",
+            "Travel"
+        ],
+        "length": 3171
+    },
+    {
+        "id": 4,
+        "filename": "004_When_in_the_Amazon_do_as_Amazonians_do.txt",
+        "title": "When in the Amazon, do as Amazonians do",
+        "url": "https://medium.com/@olga.rosas/when-in-the-amazon-do-as-amazonians-do-755c56f8a980",
+        "authors": "['Olga Rosas']",
+        "timestamp": "2020-02-18 12:46:37.819000+00:00",
+        "tags": [
+            "Python",
+            "Csv File",
+            "Matplotlib",
+            "Amazon"
+        ],
+        "length": 5040
+    },
+    {
+        "id": 5,
+        "filename": "005_Taking_Agile_Back_To_Its_Roots_-_AgileAus18.txt",
+        "title": "Taking Agile Back To Its Roots - AgileAus18",
+        "url": "https://medium.com/seek-blog/taking-agile-back-to-its-roots-agileaus18-b6d6e1b9f154",
+        "authors": "['Jordan Lewis']",
+        "timestamp": "2020-04-03 01:13:11.142000+00:00",
+        "tags": [
+            "Software Development",
+            "Workplace Culture",
+            "Product Management",
+            "Leadership",
+            "Agile"
+        ],
+        "length": 8276
+    },
+    {
+        "id": 6,
+        "filename": "006_Why_do_we_need_a_Constitutional_Convention_Honor_t.txt",
+        "title": "Why do we need a Constitutional Convention? Honor the One We Have!",
+        "url": "https://medium.com/libertarian-socialism-american-style/why-do-we-need-a-constitutional-convention-honor-the-one-we-have-87313b91f32d",
+        "authors": "[]",
+        "timestamp": "2017-04-06 23:01:54.977000+00:00",
+        "tags": [
+            "Politics",
+            "Constitutional Reform",
+            "Freedom",
+            "Bill Of Rights",
+            "Constitution"
+        ],
+        "length": 20705
+    },
+    {
+        "id": 7,
+        "filename": "007_How_I_Launched_a_Midlife_Career_Revolution.txt",
+        "title": "How I Launched a Midlife Career Revolution",
+        "url": "https://medium.com/swlh/how-i-launched-a-midlife-career-revolution-d4fdcfac30aa",
+        "authors": "['Debra Woods']",
+        "timestamp": "2020-10-03 07:04:45.116000+00:00",
+        "tags": [
+            "Life",
+            "Entrepreneurship",
+            "Work",
+            "Careers",
+            "Wellness"
+        ],
+        "length": 5846
+    },
+    {
+        "id": 8,
+        "filename": "008_The_Art_of_Exploratory_Data_Analysis_EDA.txt",
+        "title": "The Art of Exploratory Data Analysis (EDA)",
+        "url": "https://medium.com/swlh/the-art-of-exploratory-data-analysis-eda-94a24320d3bd",
+        "authors": "['Nisha Chauhan']",
+        "timestamp": "2020-11-03 02:06:40.578000+00:00",
+        "tags": [
+            "Data Analysis",
+            "Statistics",
+            "Data Science",
+            "Data Visualization",
+            "Exploratory Data Analysis"
+        ],
+        "length": 7044
+    },
+    {
+        "id": 9,
+        "filename": "009_Prosecute_Start_With_Records.txt",
+        "title": "Prosecute? Start With Records",
+        "url": "https://medium.com/@terryschwadron/prosecute-start-with-records-621b58d82102",
+        "authors": "['Terry Schwadron']",
+        "timestamp": "2020-12-24 11:16:45.970000+00:00",
+        "tags": [
+            "Prosecution",
+            "President",
+            "Donald Trump",
+            "Crimes",
+            "Joe Biden"
+        ],
+        "length": 5875
+    },
+    {
+        "id": 10,
+        "filename": "010_Using_Gitlabs_CI_for_Periodic_Data_Mining.txt",
+        "title": "Using Gitlab\u2019s CI for Periodic Data Mining",
+        "url": "https://towardsdatascience.com/using-gitlabs-ci-for-periodic-data-mining-b3cc314ecd85",
+        "authors": "['Andreas Pogiatzis']",
+        "timestamp": "2019-04-14 16:34:11.506000+00:00",
+        "tags": [
+            "Data Mining",
+            "Gitlab",
+            "DevOps",
+            "Data Science",
+            "Python"
+        ],
+        "length": 5000
+    },
+    {
+        "id": 11,
+        "filename": "011_The_Land_Catacombs_A_LitRPG_Saga_Chaos_Seeds_Book_.txt",
+        "title": "The Land: Catacombs: A LitRPG Saga (Chaos Seeds Book 4)",
+        "url": "https://medium.com/litrpg/the-land-catacombs-a-litrpg-saga-chaos-seeds-book-4-33158cec02c4",
+        "authors": "['Alex Itsios']",
+        "timestamp": "2020-12-24 22:00:51.803000+00:00",
+        "tags": [
+            "Virtual Reality",
+            "Aleron Kong",
+            "Litrpg",
+            "VR",
+            "Chaos Seeds"
+        ],
+        "length": 364
+    },
+    {
+        "id": 12,
+        "filename": "012_Regulatory_mistakes_ICOs_make_and_what_they_should.txt",
+        "title": "Regulatory mistakes ICOs make (and what they should do instead)",
+        "url": "https://medium.com/hackernoon/regulatory-mistakes-icos-make-and-what-they-should-do-instead-daafd000f62",
+        "authors": "['Lupercal Advisory']",
+        "timestamp": "2018-01-13 18:27:00.028000+00:00",
+        "tags": [
+            "Regulation",
+            "Blockchain",
+            "ICO",
+            "Bitcoin",
+            "Altcoins"
+        ],
+        "length": 6114
+    },
+    {
+        "id": 13,
+        "filename": "013_Hows_This_For_A_Curve_Ball.txt",
+        "title": "How\u2019s This For A Curve Ball?",
+        "url": "https://ericjscholl.medium.com/hows-this-for-a-curve-ball-6979d8e5d3de",
+        "authors": "['Eric J Scholl']",
+        "timestamp": "2019-01-24 06:33:46.825000+00:00",
+        "tags": [
+            "Budget",
+            "Donald Trump",
+            "Politics",
+            "Immigration",
+            "Congress"
+        ],
+        "length": 5531
+    },
+    {
+        "id": 14,
+        "filename": "014_My_Number_1_Priority.txt",
+        "title": "My Number 1 Priority\u00a0.\u00a0.\u00a0.",
+        "url": "https://medium.com/@mercia.basson/my-number-1-priority-a3ec48f9a3f3",
+        "authors": "['Mercia Basson']",
+        "timestamp": "2021-01-03 09:50:02.020000+00:00",
+        "tags": [
+            "Health",
+            "Weight Loss",
+            "Healthy Living",
+            "Fitness",
+            "CrossFit"
+        ],
+        "length": 11065
+    },
+    {
+        "id": 15,
+        "filename": "015_Whats_Quantum_Computing_Why_Who.txt",
+        "title": "What\u2019s Quantum Computing? Why? Who?",
+        "url": "https://medium.com/quantum-untangled/what-qc-why-qc-who-qc-4d5f601285e5",
+        "authors": "[]",
+        "timestamp": "2021-01-26 11:19:59.963000+00:00",
+        "tags": [
+            "Computer Science",
+            "Quantum Physics",
+            "Quantum Computing",
+            "Physics"
+        ],
+        "length": 7952
+    },
+    {
+        "id": 16,
+        "filename": "016_3_Mood-Boosting_Benefits_of_Being_Sober_and_Social.txt",
+        "title": "3 Mood-Boosting Benefits of Being Sober and Social.",
+        "url": "https://medium.com/@drinksunchaser/3-mood-boosting-benefits-of-being-sober-and-social-c0e3fe42412b",
+        "authors": "['Sun Chaser']",
+        "timestamp": "2020-12-22 17:46:41.991000+00:00",
+        "tags": [
+            "Sober",
+            "Life Hacking",
+            "Drinking",
+            "Party",
+            "Health"
+        ],
+        "length": 3875
+    },
+    {
+        "id": 17,
+        "filename": "017_Sprawlball_A_Visual_Tour_of_the_New_Era_of_the_NBA.txt",
+        "title": "Sprawlball: A Visual Tour of the New Era of the NBA \u2014 Kirk Goldsberry",
+        "url": "https://medium.com/park-recommendations/sprawlball-a-visual-tour-of-the-new-era-of-the-nba-kirk-goldsberry-80e083931989",
+        "authors": "['Jason Park']",
+        "timestamp": "2019-06-06 10:17:31.512000+00:00",
+        "tags": [
+            "Sports",
+            "Basketball",
+            "Book Review",
+            "NBA",
+            "Books"
+        ],
+        "length": 5093
+    },
+    {
+        "id": 18,
+        "filename": "018_Closure__You_Keep_On_Using_That_Word.txt",
+        "title": "Closure \u2014 You Keep On Using That Word",
+        "url": "https://medium.com/the-innovation/closure-you-keep-on-using-that-word-348039c2fa22",
+        "authors": "['Jason Knight']",
+        "timestamp": "2020-11-29 08:34:39.270000+00:00",
+        "tags": [
+            "JavaScript",
+            "Programming",
+            "Web Development",
+            "PHP"
+        ],
+        "length": 6893
+    },
+    {
+        "id": 19,
+        "filename": "019_What_are_the_ways_of_gardening_for_beginners.txt",
+        "title": "What are the ways of gardening for beginners?",
+        "url": "https://medium.com/@munibajamil321/what-are-the-ways-of-gardening-for-beginners-f658aa8761f6",
+        "authors": "[]",
+        "timestamp": "2020-12-15 11:42:47.565000+00:00",
+        "tags": [
+            "Basic Steps Of Gardening",
+            "Ways Of Gardening",
+            "Strategies Of Gardeners",
+            "Gardening",
+            "Beginners Gardening Tips"
+        ],
+        "length": 4419
+    },
+    {
+        "id": 20,
+        "filename": "020_A_brief_introduction_to_Useful_Data_Artifacts__and.txt",
+        "title": "A brief introduction to Useful Data Artifacts \u2014 and the next generation of data analysis systems",
+        "url": "https://medium.com/tag-bio/a-brief-introduction-to-useful-data-artifacts-and-the-next-generation-of-data-analysis-systems-1f42ef91ce92",
+        "authors": "['Jesse Paquette']",
+        "timestamp": "2020-10-07 08:44:24.212000+00:00",
+        "tags": [
+            "Analytics",
+            "Data Visualization",
+            "Software Development",
+            "Data",
+            "Data Science"
+        ],
+        "length": 6499
+    },
+    {
+        "id": 21,
+        "filename": "021_All_is_fair_in_faith_and_war.txt",
+        "title": "All is fair in faith and war\u2026",
+        "url": "https://medium.com/make-it-red/all-is-fair-in-faith-and-war-93e20609962d",
+        "authors": "['Jo\u00ebl Edouard']",
+        "timestamp": "2019-12-02 00:39:51.218000+00:00",
+        "tags": [
+            "Propaganda"
+        ],
+        "length": 5253
+    },
+    {
+        "id": 22,
+        "filename": "022_Introduction_to_unittest_a_Unit_Testing_Framework_.txt",
+        "title": "Introduction to unittest: a Unit Testing Framework in Python",
+        "url": "https://medium.com/better-programming/introduction-to-unittest-a-unit-testing-framework-in-python-fa0d96fc8262",
+        "authors": "['Ng Wai Foong']",
+        "timestamp": "2020-11-09 04:53:50.158000+00:00",
+        "tags": [
+            "Automation Testing",
+            "Testing",
+            "Tdd",
+            "Programming",
+            "Python"
+        ],
+        "length": 5173
+    },
+    {
+        "id": 23,
+        "filename": "023_What_we_believe_in_Chronotope.txt",
+        "title": "What we believe in. Chronotope",
+        "url": "https://medium.com/habidatum/what-we-believe-in-chronotope-8b99af40b648",
+        "authors": "['Katya Serova']",
+        "timestamp": "2019-01-11 16:10:15.534000+00:00",
+        "tags": [
+            "English",
+            "Urban Planning",
+            "Data Visualization",
+            "Smart Cities",
+            "Data Science"
+        ],
+        "length": 2813
+    },
+    {
+        "id": 24,
+        "filename": "024_Audeze_LCD-1_planar-magnetic_headphone_review_The_.txt",
+        "title": "Audeze LCD-1 planar-magnetic headphone review: The truth, the whole truth, and nothing but the truth",
+        "url": "https://medium.com/@katie92975617/audeze-lcd-1-planar-magnetic-headphone-review-the-truth-the-whole-truth-and-nothing-but-the-6f8b42cdaed7",
+        "authors": "[]",
+        "timestamp": "2021-01-16 00:25:57.562000+00:00",
+        "tags": [
+            "Chargers",
+            "Home Tech"
+        ],
+        "length": 13291
+    },
+    {
+        "id": 25,
+        "filename": "025_3_Valuable_Lessons_Ive_Learned_on_My_Way_to_Better.txt",
+        "title": "3 Valuable Lessons I\u2019ve Learned on My Way to Better Skin",
+        "url": "https://byrslf.co/3-valuable-lessons-ive-learned-on-my-way-to-better-skin-c8797ffa4de0",
+        "authors": "['Manuela Putz']",
+        "timestamp": "2021-05-08 21:03:48.021000+00:00",
+        "tags": [
+            "Women",
+            "Feminism",
+            "Health",
+            "Acne",
+            "Beyourself"
+        ],
+        "length": 1229
+    },
+    {
+        "id": 26,
+        "filename": "026_Books_I_Read_in_2020.txt",
+        "title": "Books I Read in 2020",
+        "url": "https://medium.com/@anshumanblog/books-i-read-in-2020-4093b6735a3",
+        "authors": "['Anshuman Sharma']",
+        "timestamp": "2020-12-27 07:28:33.440000+00:00",
+        "tags": [
+            "Read",
+            "2020",
+            "Knowledge",
+            "Books",
+            "Lists"
+        ],
+        "length": 1600
+    },
+    {
+        "id": 27,
+        "filename": "027_This_One_Thing_Is_Our_Only_Hope_for_Change.txt",
+        "title": "This One Thing Is Our Only Hope for Change",
+        "url": "https://medium.com/@holisticallyliving/this-one-thing-is-our-only-hope-for-change-3dc5d3c1454c",
+        "authors": "['Nathaniel Allen']",
+        "timestamp": "2020-05-07 19:47:58.523000+00:00",
+        "tags": [
+            "Bias",
+            "Media",
+            "Democracy",
+            "Government",
+            "Corruption"
+        ],
+        "length": 8525
+    },
+    {
+        "id": 28,
+        "filename": "028_Pythonda_inheritance_metod_overriding_anlay\u0131\u015flar\u0131.txt",
+        "title": "Pythonda inheritance, metod overriding anlay\u0131\u015flar\u0131",
+        "url": "https://medium.com/pragmatech/pythonda-inheritance-metod-overriding-anlay%C4%B1%C5%9Flar%C4%B1-59d369d9c756",
+        "authors": "[]",
+        "timestamp": "2020-09-29 11:16:40.275000+00:00",
+        "tags": [
+            "Inheritance",
+            "Programming",
+            "Python",
+            "Praqmatik M\u0259s\u0259l\u0259l\u0259r",
+            "Python3"
+        ],
+        "length": 138
+    },
+    {
+        "id": 29,
+        "filename": "029_Portfolio_Update.txt",
+        "title": "[Portfolio Update]",
+        "url": "https://medium.com/cypher-core/portfolio-update-bi-weekly-release-e78e8dd93bd0",
+        "authors": "['Ken', 'Cypher Core']",
+        "timestamp": "2020-06-21 02:21:17.710000+00:00",
+        "tags": [
+            "Portfolio Updates",
+            "Regen Network",
+            "Cypher Core",
+            "Irisnet",
+            "Blockchain"
+        ],
+        "length": 3234
+    },
+    {
+        "id": 30,
+        "filename": "030_Challenges_of_Designing_a_Jewish_Deli_Website_with.txt",
+        "title": "Challenges of Designing a Jewish Deli Website with a Colossal Menu",
+        "url": "https://medium.com/lform/challenges-of-designing-a-jewish-deli-website-with-a-colossal-menu-7c805a24503e",
+        "authors": "['Lyndsay Bouchal']",
+        "timestamp": "2017-08-02 16:02:49.975000+00:00",
+        "tags": [
+            "Branding",
+            "Web Design",
+            "Restaurant Marketing",
+            "Menu Design",
+            "Web Development"
+        ],
+        "length": 4568
+    },
+    {
+        "id": 31,
+        "filename": "031_Men_Who_Wont_Wear_Masks_Are_Dopes.txt",
+        "title": "Men Who Won\u2019t Wear Masks Are Dopes",
+        "url": "https://medium.com/humungus/men-who-wont-wear-masks-are-biological-weapons-23181a8a83a8",
+        "authors": "['John Devore']",
+        "timestamp": "2020-05-20 23:15:10.498000+00:00",
+        "tags": [
+            "Politics",
+            "Masculinity",
+            "Men",
+            "Coronavirus",
+            "Pride"
+        ],
+        "length": 4333
+    },
+    {
+        "id": 32,
+        "filename": "032_The_Lost_Cause_Of_The_North.txt",
+        "title": "The Lost Cause Of The North",
+        "url": "https://medium.com/afrosapiophile/union-soldiers-7862bde504f5",
+        "authors": "['Ephrom Josine']",
+        "timestamp": "2021-04-29 14:07:57.228000+00:00",
+        "tags": [
+            "White Supremacy",
+            "Whitewashing",
+            "Slavery",
+            "Civil War",
+            "History"
+        ],
+        "length": 4084
+    },
+    {
+        "id": 33,
+        "filename": "033_Use_Djs_Aviation_exclusive_NordVPN_deal_and_increa.txt",
+        "title": "Use Dj\u2019s Aviation exclusive NordVPN deal and increase your security online!",
+        "url": "https://medium.com/@frankpontony/use-djs-aviation-exclusive-nordvpn-deal-d74a67e37175",
+        "authors": "['Frank Ponton']",
+        "timestamp": "2020-06-02 12:02:40.648000+00:00",
+        "tags": [
+            "VPN",
+            "Offers",
+            "Discount",
+            "Coupon"
+        ],
+        "length": 2681
+    },
+    {
+        "id": 34,
+        "filename": "034_How_to_Be_a_Successful_Digital_Nomad_When_You_Cant.txt",
+        "title": "How to Be a Successful Digital Nomad When You Can\u2019t Leave Your House",
+        "url": "https://medium.com/swlh/how-to-be-a-successful-digital-nomad-when-you-cant-leave-your-house-1a92e948c11c",
+        "authors": "['Liana Buenaventura']",
+        "timestamp": "2020-11-08 16:02:22.787000+00:00",
+        "tags": [
+            "Work Life Balance",
+            "Freelancing",
+            "Digital Nomad Lifestyle",
+            "Success",
+            "Digital Nomads"
+        ],
+        "length": 4866
+    },
+    {
+        "id": 35,
+        "filename": "035_How_to_Build_Posts_Scheduler_with_Almost_No-Coding.txt",
+        "title": "How to Build Posts Scheduler with Almost No-Coding",
+        "url": "https://medium.com/orienteer/how-to-build-posts-scheduler-with-almost-no-coding-b52068f8c23b",
+        "authors": "['Ilya Naryzhnyy']",
+        "timestamp": "2020-12-23 00:07:10.829000+00:00",
+        "tags": [
+            "Publishing",
+            "Scheduling",
+            "Java",
+            "Telegram",
+            "Rapid App Development"
+        ],
+        "length": 10858
+    },
+    {
+        "id": 36,
+        "filename": "036_How_To_Speed_Up_Metabolism_Fast__A_Daily_Checklist.txt",
+        "title": "How To Speed Up Metabolism Fast \u2014 A Daily Checklist",
+        "url": "https://medium.com/@elevateme-ai/how-to-speed-up-metabolism-fast-a-daily-checklist-elevateme-b8c3fce3be8c",
+        "authors": "[]",
+        "timestamp": "2021-09-11 16:34:56.824000+00:00",
+        "tags": [
+            "Metabolism Diet",
+            "Metabolism",
+            "Metabolism Booster",
+            "Improvement",
+            "Energy Healing"
+        ],
+        "length": 1733
+    },
+    {
+        "id": 37,
+        "filename": "037_Stable_Coins_and_Cryptocurrency.txt",
+        "title": "Stable Coins and Cryptocurrency",
+        "url": "https://medium.com/acreapp/stable-coins-and-cryptocurrency-eef9e817e851",
+        "authors": "['Jamie Boyer']",
+        "timestamp": "2018-11-30 00:52:31.994000+00:00",
+        "tags": [
+            "Bitcoin",
+            "Cryptocurrency",
+            "Altcoins",
+            "Finance",
+            "Stable Coin"
+        ],
+        "length": 2495
+    },
+    {
+        "id": 38,
+        "filename": "038_How_to_Raise_Kids_Who_Love_Food_Their_Bodies_and_T.txt",
+        "title": "How to Raise Kids Who Love Food, Their Bodies, and Themselves",
+        "url": "https://heidi-74232.medium.com/how-to-raise-kids-who-love-food-their-bodies-and-themselves-89a4f24fac1",
+        "authors": "['Heidi Schauster', 'Ms', 'Rdn']",
+        "timestamp": "2020-10-18 15:37:15.616000+00:00",
+        "tags": [
+            "Parenting",
+            "Body Image",
+            "Food",
+            "Health",
+            "Eating Disorders"
+        ],
+        "length": 12155
+    },
+    {
+        "id": 39,
+        "filename": "039_Things_Nobody_Tells_You_About_Having_A_Cat.txt",
+        "title": "Things Nobody Tells You About Having A Cat",
+        "url": "https://medium.com/@jessicagregory962/we-all-know-that-cats-are-extremely-popular-3af67f439121",
+        "authors": "[]",
+        "timestamp": "2020-12-27 16:40:19.927000+00:00",
+        "tags": [
+            "Cats",
+            "Pets",
+            "Cats N Things",
+            "Life",
+            "Funny Cats"
+        ],
+        "length": 4110
+    },
+    {
+        "id": 40,
+        "filename": "040_Looking_Back__Looking_Forward.txt",
+        "title": "Looking Back & Looking Forward",
+        "url": "https://medium.com/the-outlier/willem-jan-van-den-heuvel-91af6c86dcda",
+        "authors": "['Roy Klaasse Bos']",
+        "timestamp": "2017-11-03 06:49:50.451000+00:00",
+        "tags": [
+            "Data Science",
+            "Academia"
+        ],
+        "length": 2507
+    },
+    {
+        "id": 41,
+        "filename": "041_Reducing_Risk_of_COVID-19_Transmission_Strategies_.txt",
+        "title": "Reducing Risk of COVID-19 Transmission: Strategies to Reopen Schools",
+        "url": "https://medium.com/@ntraviss/reducing-risk-of-covid-19-transmission-strategies-to-reopen-schools-cfa5bc795720",
+        "authors": "['N Traviss']",
+        "timestamp": "2020-09-06 17:16:28.879000+00:00",
+        "tags": [
+            "Covid 19",
+            "Ventilation",
+            "Risk Management",
+            "Reopening Schools",
+            "Schools"
+        ],
+        "length": 20926
+    },
+    {
+        "id": 42,
+        "filename": "042_Why_have_an_online_store.txt",
+        "title": "Why have an online store",
+        "url": "https://medium.com/kduka/why-have-an-online-store-bd18d671768f",
+        "authors": "['Mercy Kinoti']",
+        "timestamp": "2018-08-06 12:58:46.225000+00:00",
+        "tags": [
+            "Kduka",
+            "Online Shopping",
+            "Ecommerce",
+            "Online Marketing"
+        ],
+        "length": 2618
+    },
+    {
+        "id": 43,
+        "filename": "043_Flying_High.txt",
+        "title": "Flying High",
+        "url": "https://medium.com/@sunflowersandmangoes/flying-high-911325df85df",
+        "authors": "['Laura Garcia']",
+        "timestamp": "2019-08-15 21:35:11.348000+00:00",
+        "tags": [
+            "Thailand",
+            "Divorce",
+            "Thecontentcastle",
+            "Kohsamui",
+            "Dealingwithdivorce"
+        ],
+        "length": 3418
+    },
+    {
+        "id": 44,
+        "filename": "044_How_To_Deal_With_The_Adversities_Of_Life.txt",
+        "title": "How To Deal With The Adversities Of Life",
+        "url": "https://medium.com/personal-growth/how-to-deal-with-the-adversities-of-life-1a1a9286aa48",
+        "authors": "['Niklas G\u00f6ke']",
+        "timestamp": "2018-11-11 00:25:43.834000+00:00",
+        "tags": [
+            "Self Improvement",
+            "Life Lessons",
+            "Life",
+            "Psychology",
+            "Culture"
+        ],
+        "length": 7990
+    },
+    {
+        "id": 45,
+        "filename": "045_Your_friendly_neighborhood_TPHG.txt",
+        "title": "Your friendly neighborhood: TPHG",
+        "url": "https://medium.com/@tphgsellsdc/your-friendly-neighborhood-tphg-247b01f1d8bf",
+        "authors": "['Your Friendly', 'Neighborhood Marketing Person']",
+        "timestamp": "2020-12-13 20:53:04.265000+00:00",
+        "tags": [
+            "Equity",
+            "Dc Living",
+            "Real Estate News",
+            "Entrepreneurship",
+            "Blackexcellency"
+        ],
+        "length": 4866
+    },
+    {
+        "id": 46,
+        "filename": "046_Coinpaprika_Release__Independent_Source_of_Crypto_.txt",
+        "title": "Coinpaprika Release \u2014 Independent Source of Crypto Data",
+        "url": "https://medium.com/coinpaprika/coinpaprika-release-independent-source-of-crypto-data-5f027af00dbe",
+        "authors": "[]",
+        "timestamp": "2018-08-30 16:37:24.846000+00:00",
+        "tags": [
+            "Cryptocurrency",
+            "Bitcoin",
+            "Blockchain",
+            "Ethereum",
+            "Data"
+        ],
+        "length": 2261
+    },
+    {
+        "id": 47,
+        "filename": "047_Maximizing_Your_Impact_Providing_Support_and_Incre.txt",
+        "title": "Maximizing Your Impact: Providing Support and Increasing Sustainability for Local Nonprofit Organizations Across the Globe",
+        "url": "https://medium.com/an-idea/maximizing-your-impact-providing-support-and-increasing-sustainability-for-local-nonprofit-49bc4af6c9a3",
+        "authors": "['Edmund Settle']",
+        "timestamp": "2020-12-29 12:05:00.437000+00:00",
+        "tags": [
+            "Leadership",
+            "Nonprofit",
+            "Social Impact",
+            "Philanthropy",
+            "Social Impact Investing"
+        ],
+        "length": 5177
+    },
+    {
+        "id": 48,
+        "filename": "048_The_biased_crypto_Investor.txt",
+        "title": "The biased crypto Investor",
+        "url": "https://medium.com/swlh/the-biased-crypto-investor-3fa5e845fc92",
+        "authors": "['Igor Feerer']",
+        "timestamp": "2018-07-26 09:32:03.426000+00:00",
+        "tags": [
+            "Bitcoin",
+            "Ethereum",
+            "Token Sale",
+            "Coinbase",
+            "Cryptocurrency"
+        ],
+        "length": 6240
+    },
+    {
+        "id": 49,
+        "filename": "049_We_Must_Demand_Better_Than_Privatized_Affordable_H.txt",
+        "title": "We Must Demand Better Than Privatized \u201cAffordable Housing\u201d",
+        "url": "https://medium.com/groundgamela/we-must-demand-better-than-privatized-affordable-housing-c62ff0f73cf8",
+        "authors": "['Jacob Woocher']",
+        "timestamp": "2020-12-08 17:07:27.973000+00:00",
+        "tags": [
+            "Tenants Unions",
+            "Affordable Housing",
+            "Los Angeles",
+            "Activism",
+            "Privatization"
+        ],
+        "length": 9960
+    },
+    {
+        "id": 50,
+        "filename": "050_How_A_Small_Device_Can_Help_Monitor_and_Reduce_Str.txt",
+        "title": "How A Small Device Can Help Monitor and Reduce Stress",
+        "url": "https://medium.com/x-factors-in-life/how-a-small-device-can-help-monitor-and-reduce-stress-f00736cca56c",
+        "authors": "['Emilia Lambert']",
+        "timestamp": "2020-12-03 21:17:47.374000+00:00",
+        "tags": [
+            "Stress",
+            "Biofeedback",
+            "Technology",
+            "Burnout"
+        ],
+        "length": 5348
+    },
+    {
+        "id": 51,
+        "filename": "051_Supporting_Our_Non-Binary_Buddies.txt",
+        "title": "Supporting Our Non-Binary Buddies",
+        "url": "https://medium.com/@writerfox2/supporting-our-non-binary-buddies-e052345150fe",
+        "authors": "['Steven Allison']",
+        "timestamp": "2021-02-15 11:24:30.921000+00:00",
+        "tags": [
+            "Identity",
+            "Queer",
+            "Nonbinary",
+            "Gender",
+            "Equality"
+        ],
+        "length": 6421
+    },
+    {
+        "id": 52,
+        "filename": "052_Paddington_2_An_Examination.txt",
+        "title": "Paddington 2: An Examination",
+        "url": "https://joshualawrencesemail.medium.com/paddington-2-an-examination-6dd431bdc6eb",
+        "authors": "['Joshua Lawrence']",
+        "timestamp": "2020-12-24 17:53:33.535000+00:00",
+        "tags": [
+            "Bears",
+            "Courts",
+            "Prison Reform",
+            "Paddington",
+            "Prison Abolition"
+        ],
+        "length": 10818
+    },
+    {
+        "id": 53,
+        "filename": "053_What_Were_Building_Lightning_Development_Kit.txt",
+        "title": "What We\u2019re Building: Lightning Development Kit",
+        "url": "https://medium.com/@squarecrypto/what-were-building-lightning-development-kit-1ed58b0cab06",
+        "authors": "['Square Crypto']",
+        "timestamp": "2020-01-21 17:13:24.387000+00:00",
+        "tags": [
+            "Bitcoin",
+            "Lightning Network"
+        ],
+        "length": 2505
+    },
+    {
+        "id": 54,
+        "filename": "054_Smudge_All_Stars_Album_Review_The_Funk_Never_Dies.txt",
+        "title": "Smudge All Stars Album Review: The Funk Never Dies",
+        "url": "https://medium.com/the-riff/smudge-all-stars-album-review-the-funk-never-dies-43426b6207a9",
+        "authors": "['Brandon Johnson']",
+        "timestamp": "2020-12-01 17:09:12.176000+00:00",
+        "tags": [
+            "Funk",
+            "Parliament Funkadelic",
+            "George Clinton",
+            "Album Review",
+            "Music"
+        ],
+        "length": 3240
+    },
+    {
+        "id": 55,
+        "filename": "055_Ageism_in_Malaysia.txt",
+        "title": "Ageism in Malaysia",
+        "url": "https://medium.com/@nur8cahaya/ageism-in-malaysia-4cc55b837cce",
+        "authors": "[]",
+        "timestamp": "2020-12-06 08:28:54.125000+00:00",
+        "tags": [
+            "Malaysia",
+            "Ageism",
+            "Public Health",
+            "Global Health",
+            "Retirement"
+        ],
+        "length": 5845
+    },
+    {
+        "id": 56,
+        "filename": "056_How_to_take_advantage_of_global_digitalization_and.txt",
+        "title": "How to take advantage of global digitalization and use it to motivate and initiate change in our societies.",
+        "url": "https://medium.com/@tooodooo/how-to-take-advantage-of-global-digitalization-and-use-it-to-motivate-and-initiate-change-in-our-9d5de2d8b401",
+        "authors": "[]",
+        "timestamp": "2020-08-10 09:01:01.722000+00:00",
+        "tags": [
+            "Behavior Change",
+            "Company",
+            "Incentives",
+            "Digitalization"
+        ],
+        "length": 5835
+    },
+    {
+        "id": 57,
+        "filename": "057_6__LAWS_of_The_Mind_What_youll_learn_in_this_artic.txt",
+        "title": "6 \u2014 LAWS of The Mind.. What you\u2019ll learn in this article: How\u2026",
+        "url": "https://medium.com/@samrat007/6-laws-of-the-mind-ba249c005562",
+        "authors": "['Samrat Chakraborty']",
+        "timestamp": "2020-12-23 07:31:11.442000+00:00",
+        "tags": [
+            "Mindfulness",
+            "Brain",
+            "Entrepreneurship",
+            "Success",
+            "Sales"
+        ],
+        "length": 210
+    },
+    {
+        "id": 58,
+        "filename": "058_You_Cannot_Become_Happy_You_Can_Only_Be_Happy.txt",
+        "title": "You Cannot Become Happy, You Can Only Be Happy\u201d",
+        "url": "https://medium.com/an-idea/you-cannot-become-happy-you-can-only-be-happy-74218a188821",
+        "authors": "['Davidson Chua']",
+        "timestamp": "2020-12-14 04:21:07.075000+00:00",
+        "tags": [
+            "Sam Harris",
+            "Singapore",
+            "Happiness",
+            "Be Happy",
+            "Happy"
+        ],
+        "length": 5445
+    },
+    {
+        "id": 59,
+        "filename": "059_Ripple_building_Worldwide_Cryptocurrency_Remittanc.txt",
+        "title": "Ripple building Worldwide Cryptocurrency Remittance Network",
+        "url": "https://marketmadhouse.medium.com/ripple-building-worldwide-cryptocurrency-remittance-network-b868d4ecfb5a",
+        "authors": "['Daniel G. Jennings']",
+        "timestamp": "2018-10-12 17:27:43.662000+00:00",
+        "tags": [
+            "Cryptocurrency Investment",
+            "Cryptocurrency News",
+            "Bitcoin",
+            "Remittances",
+            "Ripple"
+        ],
+        "length": 5158
+    },
+    {
+        "id": 60,
+        "filename": "060_Soon_all_your_customers_will_want_KIVI.txt",
+        "title": "Soon all your customers will want KIVI",
+        "url": "https://medium.com/cyberark-engineering/soon-all-your-customers-will-want-kivi-ceeda318e38c",
+        "authors": "['Michal Grinvald-Almaro']",
+        "timestamp": "2020-09-22 07:09:38.871000+00:00",
+        "tags": [
+            "Bug",
+            "Known Issues",
+            "Initiative",
+            "Community",
+            "Transparency"
+        ],
+        "length": 6276
+    },
+    {
+        "id": 61,
+        "filename": "061_Mumcoin_MUM_Airdrop.txt",
+        "title": "Mumcoin (MUM) Airdrop",
+        "url": "https://medium.com/mumcoin/mumcoin-mum-airdrop-513a76bd146e",
+        "authors": "[]",
+        "timestamp": "2018-04-11 15:57:02.627000+00:00",
+        "tags": [
+            "Airdrop",
+            "Crowdsale",
+            "ICO",
+            "Ethereum",
+            "Bitcoin"
+        ],
+        "length": 770
+    },
+    {
+        "id": 62,
+        "filename": "062_The_Imperial_Presidency_Secrecy_and_the_Intelligen.txt",
+        "title": "The Imperial Presidency, Secrecy, and the Intelligence Community",
+        "url": "https://medium.com/discourse/the-imperial-presidency-continues-to-flourish-part-ii-db87079543cf",
+        "authors": "['Mitchell Nemeth']",
+        "timestamp": "2019-10-26 20:50:35.860000+00:00",
+        "tags": [
+            "National Security",
+            "Conservatives",
+            "Donald Trump",
+            "FBI",
+            "Politics"
+        ],
+        "length": 6646
+    },
+    {
+        "id": 63,
+        "filename": "063_How_to_cut_out_Toxic_Relationships.txt",
+        "title": "How to cut out Toxic Relationships",
+        "url": "https://medium.com/@theaisixcollective/how-to-cut-out-toxic-relationships-750c7e62c97d",
+        "authors": "['Joshua Samuel']",
+        "timestamp": "2020-12-19 13:48:43.477000+00:00",
+        "tags": [
+            "Emotional Intelligence",
+            "Emotions",
+            "Relationships"
+        ],
+        "length": 3610
+    },
+    {
+        "id": 64,
+        "filename": "064_A_Love_Note.txt",
+        "title": "A Love Note",
+        "url": "https://medium.com/@vivraqd/a-love-note-832024aa8b1b",
+        "authors": "['Vivian-Raquel Dayan']",
+        "timestamp": "2020-12-13 17:24:37.171000+00:00",
+        "tags": [
+            "Self Improvement",
+            "Breakups",
+            "Time",
+            "Love Letters",
+            "Love"
+        ],
+        "length": 1031
+    },
+    {
+        "id": 65,
+        "filename": "065_SEO_COMPANY_IN_COIMBATORE.txt",
+        "title": "SEO COMPANY IN COIMBATORE",
+        "url": "https://medium.com/@harshavarthan63/seo-company-in-coimbatore-79fb44d2685f",
+        "authors": "[]",
+        "timestamp": "2021-12-29 09:16:48.994000+00:00",
+        "tags": [
+            "Seo In Coimbatore",
+            "SEO",
+            "Seo Services"
+        ],
+        "length": 1122
+    },
+    {
+        "id": 66,
+        "filename": "066_Apple_Snow_Red_Frost.txt",
+        "title": "Apple Snow, Red Frost",
+        "url": "https://medium.com/@mpgolfin/apple-snow-red-frost-a9e284b511ee",
+        "authors": "['M. P\u00eda Golf\u00edn M.']",
+        "timestamp": "2021-01-17 07:05:21.807000+00:00",
+        "tags": [
+            "Snow",
+            "Talking Animal",
+            "Magic"
+        ],
+        "length": 19816
+    },
+    {
+        "id": 67,
+        "filename": "067_Never_Known_in_November.txt",
+        "title": "Never Known in November",
+        "url": "https://medium.com/fantasy-shorts/never-known-in-november-8b24169aff74",
+        "authors": "['Christine Graves']",
+        "timestamp": "2020-11-05 14:03:23.802000+00:00",
+        "tags": [
+            "Poetry",
+            "November",
+            "Fantasy",
+            "Winter",
+            "Rhyming Poetry"
+        ],
+        "length": 755
+    },
+    {
+        "id": 68,
+        "filename": "068_10_Conceptual_Differences_Between_Anaplan_and_Exce.txt",
+        "title": "10 Conceptual Differences Between Anaplan and Excel",
+        "url": "https://medium.com/@v4.1data/in-10-steps-conceptual-differences-between-anaplan-vs-excel-e934dd0a85da",
+        "authors": "['Vera Guzelsoy']",
+        "timestamp": "2021-09-10 15:46:02.085000+00:00",
+        "tags": [
+            "API",
+            "Connection",
+            "Planning",
+            "Excel",
+            "Anaplan"
+        ],
+        "length": 10912
+    },
+    {
+        "id": 69,
+        "filename": "069_Experimentation_Analysis_CXL_course_review.txt",
+        "title": "Experimentation Analysis (CXL course review)",
+        "url": "https://medium.com/@hilarytirimba/experimentation-analysis-cxl-course-review-2ec216211aed",
+        "authors": "['Hilary Tirimba']",
+        "timestamp": "2020-12-13 14:41:51.802000+00:00",
+        "tags": [
+            "Experimentation",
+            "Conversion Optimization",
+            "Analysis"
+        ],
+        "length": 8221
+    },
+    {
+        "id": 70,
+        "filename": "070_Thin_as_Thorns__an_exhibition_of_Creative_AI_and_G.txt",
+        "title": "\u201cThin as Thorns\u201d \u2014 an exhibition of Creative AI and Generative Art in LA",
+        "url": "https://medium.com/the-ai-art-corner/thin-as-thorns-an-exhibition-of-creative-ai-and-generative-art-in-la-5b5f964578a5",
+        "authors": "['Beth Jochim']",
+        "timestamp": "2020-12-10 14:27:34.378000+00:00",
+        "tags": [
+            "Articles",
+            "Art",
+            "Artificial Intelligence",
+            "Exhibition",
+            "Los Angeles"
+        ],
+        "length": 1329
+    },
+    {
+        "id": 71,
+        "filename": "071_ZKSwap_To_Launch_1993_NFT_Artworks_Soon_Amid_NFT_B.txt",
+        "title": "ZKSwap To Launch 1,993 NFT Artworks Soon Amid NFT Boom, Says Lead Developer Alex Lee",
+        "url": "https://medium.com/@zkswapofficial/zkswap-to-launch-1-993-nft-artworks-soon-amid-nft-boom-says-lead-developer-alex-lee-4f2b09ffbc2d",
+        "authors": "[]",
+        "timestamp": "2021-08-12 07:49:25.296000+00:00",
+        "tags": [
+            "Bsc",
+            "Dex",
+            "Zkswap",
+            "Nft",
+            "Layer 2"
+        ],
+        "length": 10473
+    },
+    {
+        "id": 72,
+        "filename": "072_The_Crypto_Art_of_the_Experiment.txt",
+        "title": "The [Crypto] Art of the Experiment",
+        "url": "https://medium.com/swlh/the-crypto-art-of-the-experiment-bf1bd1bbc10f",
+        "authors": "[]",
+        "timestamp": "2020-11-01 19:55:19.360000+00:00",
+        "tags": [
+            "Painting",
+            "Cryptoart",
+            "Art Market",
+            "Blockchain",
+            "Art"
+        ],
+        "length": 5121
+    },
+    {
+        "id": 73,
+        "filename": "073_So_You_Want_To_Be_A_CISM.txt",
+        "title": "So, You Want To Be A CISM",
+        "url": "https://medium.com/@olayinka.o/so-you-want-to-be-a-cism-aff1536ba320",
+        "authors": "[]",
+        "timestamp": "2019-09-19 14:31:37.503000+00:00",
+        "tags": [
+            "Information Security",
+            "Cybersecurity",
+            "Certification",
+            "Risk Management",
+            "Cism"
+        ],
+        "length": 2661
+    },
+    {
+        "id": 74,
+        "filename": "074_How_to_drive_traffic_to_your_website_using_social_.txt",
+        "title": "How to drive traffic to your website using social media",
+        "url": "https://medium.com/@thecodework/how-to-drive-traffic-to-your-website-using-social-media-ed932171ee72",
+        "authors": "[]",
+        "timestamp": "2020-12-23 16:53:56.242000+00:00",
+        "tags": [
+            "Social Media Traffic",
+            "Social Media Marketing",
+            "Marketing Strategies",
+            "Traffic Optimization",
+            "Website Traffic"
+        ],
+        "length": 11962
+    },
+    {
+        "id": 75,
+        "filename": "075_Solidity_Smart_Contract_Tutorial_With_Building_Rea.txt",
+        "title": "Solidity Smart Contract Tutorial With Building Real-World DAPP \u2014 Part 3: Create a Request for Freelancer",
+        "url": "https://medium.com/coinmonks/solidity-smart-contract-tutorial-with-building-real-world-dapp-part-3-create-a-request-for-ead40e83384f",
+        "authors": "['Behzad Pournouri']",
+        "timestamp": "2020-11-03 15:06:51.360000+00:00",
+        "tags": [
+            "Solidity",
+            "Smart Contracts",
+            "Dapps",
+            "Blockchain",
+            "Ethereum"
+        ],
+        "length": 4846
+    },
+    {
+        "id": 76,
+        "filename": "076_Were_Losing_the_War_on_Drugs.txt",
+        "title": "We\u2019re Losing the \u2018War on Drugs\u2019",
+        "url": "https://medium.com/illumination/were-losing-the-war-on-drugs-8efe2a578445",
+        "authors": "['Jamie Bean']",
+        "timestamp": "2021-03-08 06:39:36.033000+00:00",
+        "tags": [
+            "Drugs",
+            "Politics",
+            "Society",
+            "Criminal Justice",
+            "Crime"
+        ],
+        "length": 10785
+    },
+    {
+        "id": 77,
+        "filename": "077_Power_BI__Visual_Story_Telling_Visual_Story_Teller.txt",
+        "title": "Power BI \u2014 Visual Story Telling. Visual Story Tellers \u2014 The Power BI\u2026",
+        "url": "https://medium.com/@harishgopalan/power-bi-visual-story-telling-50c2f492cec0",
+        "authors": "['Harish Gopalan']",
+        "timestamp": "2020-11-23 11:56:35.744000+00:00",
+        "tags": [
+            "Storytelling",
+            "Power Bi",
+            "Visualization",
+            "Customer Experience"
+        ],
+        "length": 1055
+    },
+    {
+        "id": 78,
+        "filename": "078_Creating_a_design_system_5_lessons_weve_learnt.txt",
+        "title": "Creating a design system: 5 lessons we\u2019ve learnt",
+        "url": "https://medium.com/design-at-zoopla/creating-a-design-system-5-lessons-weve-learnt-634946b39513",
+        "authors": "['Sam Newman']",
+        "timestamp": "2020-02-24 10:27:58.996000+00:00",
+        "tags": [
+            "User Experience Design",
+            "Atomic Design",
+            "UI Design",
+            "Design Systems",
+            "Service Design"
+        ],
+        "length": 1247
+    },
+    {
+        "id": 79,
+        "filename": "079_FROM_MAGAZINE_Building_aviation_infrastructure_in_.txt",
+        "title": "FROM MAGAZINE: Building aviation infrastructure in Mozambique",
+        "url": "https://medium.com/@logupdateafrica/from-magazine-building-aviation-infrastructure-in-mozambique-5e055b428e70",
+        "authors": "['Logistics Update Africa']",
+        "timestamp": "2019-05-21 06:06:05.063000+00:00",
+        "tags": [
+            "Aviation",
+            "Travel"
+        ],
+        "length": 10411
+    },
+    {
+        "id": 80,
+        "filename": "080_Top_10_Graduation_Speeches_of_All_Time.txt",
+        "title": "Top 10 Graduation Speeches of All Time",
+        "url": "https://medium.com/the-mission/top-10-graduation-speeches-of-all-time-474c4bc23fa0",
+        "authors": "['Jonathan G. Chew']",
+        "timestamp": "2017-07-11 15:27:06.480000+00:00",
+        "tags": [
+            "Public Speaking",
+            "Graduation",
+            "Future",
+            "Life Lessons",
+            "Inspiration"
+        ],
+        "length": 23367
+    },
+    {
+        "id": 81,
+        "filename": "081_What_Is_Functional_Programming.txt",
+        "title": "What Is Functional Programming?",
+        "url": "https://medium.com/swlh/what-is-functional-programming-bef9d2141965",
+        "authors": "['Adam Turner']",
+        "timestamp": "2020-10-29 23:27:13.104000+00:00",
+        "tags": [
+            "JavaScript",
+            "Software Development",
+            "ES6",
+            "Declarative Programming",
+            "Functional Programming"
+        ],
+        "length": 10842
+    },
+    {
+        "id": 82,
+        "filename": "082_Magnified.txt",
+        "title": "Magnified",
+        "url": "https://medium.com/@spoonful-of-stardust/magnified-8c962e3788c0",
+        "authors": "['Spoonful Of Stardust']",
+        "timestamp": "2020-12-11 15:00:31.608000+00:00",
+        "tags": [
+            "Loss",
+            "Poetry",
+            "Love",
+            "Vulnerability",
+            "Love Letters"
+        ],
+        "length": 890
+    },
+    {
+        "id": 83,
+        "filename": "083_10_Ways_I_Use_Linkedin_to_Generate_Leads_for_My_Bu.txt",
+        "title": "10 Ways I Use Linkedin to Generate Leads for My Business",
+        "url": "https://medium.com/the-innovation/10-tips-on-how-i-use-linkedin-to-generate-leads-for-my-business-5c42727a6eae",
+        "authors": "['Daniel Hopper']",
+        "timestamp": "2020-11-07 06:27:04.442000+00:00",
+        "tags": [
+            "Content Marketing",
+            "Marketing",
+            "Social Media",
+            "LinkedIn",
+            "Digital Marketing"
+        ],
+        "length": 3466
+    },
+    {
+        "id": 84,
+        "filename": "084_The_cognitive_overload_happening_on_your_screen_ri.txt",
+        "title": "The cognitive overload happening on your screen right now",
+        "url": "https://uxdesign.cc/the-cognitive-overload-happening-on-your-screen-right-now-deee2a913393",
+        "authors": "['Michal Malewicz']",
+        "timestamp": "2020-11-01 22:46:22.297000+00:00",
+        "tags": [
+            "Design",
+            "UI",
+            "UX",
+            "Visual Design",
+            "Colors"
+        ],
+        "length": 5332
+    },
+    {
+        "id": 85,
+        "filename": "085_8_Best_Travel_Gadgets_to_Consider_for_Any_Trip__Mo.txt",
+        "title": "8 Best Travel Gadgets to Consider for Any Trip \u2014 Money Saved Is Money Earned",
+        "url": "https://medium.com/@moneysavedblog/8-best-travel-gadgets-to-consider-for-any-trip-money-saved-is-money-earned-8db36489734f",
+        "authors": "['Money Saved Is Money Earned']",
+        "timestamp": "2021-03-08 16:14:32.926000+00:00",
+        "tags": [
+            "Travel",
+            "Travel Tips",
+            "Hiking",
+            "Best Travel Gadgets",
+            "Traveling"
+        ],
+        "length": 9650
+    },
+    {
+        "id": 86,
+        "filename": "086_Bowers__Wilkins_PX7_Carbon_Edition_headphone_revie.txt",
+        "title": "Bowers & Wilkins PX7 Carbon Edition headphone review: Exquisite sound, elegant active noise cancellation",
+        "url": "https://medium.com/@surendr42579219/bowers-wilkins-px7-carbon-edition-headphone-review-exquisite-sound-elegant-active-noise-3beed498fd81",
+        "authors": "[]",
+        "timestamp": "2020-12-31 09:58:24.100000+00:00",
+        "tags": [
+            "Music",
+            "Surveillance",
+            "Connected Home",
+            "Consumer Electronics"
+        ],
+        "length": 9813
+    },
+    {
+        "id": 87,
+        "filename": "087_What_needs_to_be_done_to_make_agriculture_profitab.txt",
+        "title": "What needs to be done to make agriculture profitable for more farmers in India?",
+        "url": "https://medium.com/@kranthipanduru/what-needs-to-be-done-to-make-agriculture-profitable-for-more-farmers-in-india-aa7c96587390",
+        "authors": "['Kranthi Kumar']",
+        "timestamp": "2020-04-06 08:23:05.628000+00:00",
+        "tags": [
+            "Future",
+            "India",
+            "Development",
+            "Startup",
+            "Agriculture"
+        ],
+        "length": 1458
+    },
+    {
+        "id": 88,
+        "filename": "088_12_Cute_Thanksgiving_Baby_PhotoShoot_That_You_Can_.txt",
+        "title": "12 Cute Thanksgiving Baby PhotoShoot That You Can Take Yourself",
+        "url": "https://medium.com/@mamapearofficial/12-cute-thanksgiving-baby-photoshoot-that-you-can-take-yourself-58d4bc8067a6",
+        "authors": "[]",
+        "timestamp": "2020-10-22 05:19:45.908000+00:00",
+        "tags": [
+            "Photoshoot",
+            "Baby Photography",
+            "Thanksgiving Pictures",
+            "Thanksgiving",
+            "Baby"
+        ],
+        "length": 3853
+    },
+    {
+        "id": 89,
+        "filename": "089_Build_a_Custom_Slack__Airtable_Task_Management_App.txt",
+        "title": "Build a Custom Slack + Airtable Task Management Application",
+        "url": "https://medium.com/swlh/build-a-custom-slack-airtable-task-management-application-d95c8e7eb55c",
+        "authors": "['Janeth Ledezma Graziani']",
+        "timestamp": "2020-05-05 09:28:39.738000+00:00",
+        "tags": [
+            "Slack",
+            "Productivity",
+            "Technology",
+            "API",
+            "Project Management"
+        ],
+        "length": 2187
+    },
+    {
+        "id": 90,
+        "filename": "090_Defining_Your_Own_R_Operators.txt",
+        "title": "Defining Your Own R Operators",
+        "url": "https://medium.com/optima-blog/defining-your-own-negation-function-for-readability-6e0174ca1aa7",
+        "authors": "['Haroun Shihab']",
+        "timestamp": "2015-12-24 12:08:24.601000+00:00",
+        "tags": [
+            "Data Science",
+            "R Programming"
+        ],
+        "length": 1044
+    },
+    {
+        "id": 91,
+        "filename": "091_Why_Is_Cloud_Mining_a_Good_Investment.txt",
+        "title": "Why Is Cloud Mining a Good Investment?",
+        "url": "https://medium.com/@ghpexofficial/why-is-cloud-mining-a-good-investment-6809c68d68bf",
+        "authors": "['Global Hashpower Exchange']",
+        "timestamp": "2021-06-22 02:34:47.458000+00:00",
+        "tags": [
+            "Blockchain",
+            "Cloud Mining",
+            "Cryptocurrency",
+            "Bitcoin Mining",
+            "Cryptocurrency Investment"
+        ],
+        "length": 5207
+    },
+    {
+        "id": 92,
+        "filename": "092_Looking_Back_To_Move_Forward.txt",
+        "title": "Looking Back. To Move Forward.",
+        "url": "https://medium.com/@nathanpearsonsmith/looking-back-to-move-forward-d7570c8d02e5",
+        "authors": "['Nathan Pearson Smith']",
+        "timestamp": "2020-12-02 22:58:31.349000+00:00",
+        "tags": [
+            "Personal Growth",
+            "Self Care",
+            "Looking Back",
+            "Progress",
+            "Vulnerability"
+        ],
+        "length": 1567
+    },
+    {
+        "id": 93,
+        "filename": "093_Hex_Trust_partners_with_Klaytn_Foundation_to_serve.txt",
+        "title": "Hex Trust partners with Klaytn Foundation to serve institutional blockchain projects",
+        "url": "https://medium.com/hex-trust/hex-trust-partners-with-klaytn-foundation-to-serve-institutional-blockchain-projects-ee661765ddda",
+        "authors": "['Joe Caselin']",
+        "timestamp": "2021-09-07 01:09:06.592000+00:00",
+        "tags": [
+            "Press Release"
+        ],
+        "length": 4226
+    },
+    {
+        "id": 94,
+        "filename": "094_4_Investment_Period.txt",
+        "title": "4. Investment Period",
+        "url": "https://medium.com/consciouscrypto/4-investment-period-e0b9c7c27e53",
+        "authors": "['Carl-Arvid Ewerbring']",
+        "timestamp": "2018-09-17 21:12:05.049000+00:00",
+        "tags": [
+            "Cryptocurrency Investment",
+            "Investment",
+            "Bitcoin",
+            "Investing",
+            "Cryptocurrency"
+        ],
+        "length": 3296
+    },
+    {
+        "id": 95,
+        "filename": "095_Creating_a_Customer_Journey_Map.txt",
+        "title": "Creating a Customer Journey Map",
+        "url": "https://medium.com/@carlosrousseau/creating-a-customer-journey-map-e22aa0810cf6",
+        "authors": "['Carlos E Rousseau']",
+        "timestamp": "2020-12-26 15:31:55.210000+00:00",
+        "tags": [
+            "Customer Experience",
+            "Customer Success",
+            "Customer Journey Map",
+            "User Experience Design"
+        ],
+        "length": 5517
+    },
+    {
+        "id": 96,
+        "filename": "096_How_Would_You_Like_To_INSTANTLY_Start_Your_Own_6-f.txt",
+        "title": "How Would You Like To INSTANTLY Start Your Own 6-figure Software Business WITHOUT Any of The Headaches?",
+        "url": "https://medium.com/@kamrulislam7152/how-would-you-like-to-instantly-start-your-own-6-figure-software-business-without-any-of-the-8785474b8ba4",
+        "authors": "['Kamrul Islam']",
+        "timestamp": "2021-05-03 06:23:09.439000+00:00",
+        "tags": [
+            "Website Design",
+            "Internet",
+            "Software Development",
+            "Web Development",
+            "Web Design"
+        ],
+        "length": 1014
+    },
+    {
+        "id": 97,
+        "filename": "097_How_to_land_a_job_at_Valuemotive.txt",
+        "title": "How to land a job at Valuemotive",
+        "url": "https://blog.valuemotive.com/how-to-land-a-job-at-valuemotive-db74521d2d1e",
+        "authors": "['Matias Klemola']",
+        "timestamp": "2020-02-20 10:16:53.652000+00:00",
+        "tags": [
+            "Jobs",
+            "Consultancy",
+            "It",
+            "Career",
+            "Recruitment"
+        ],
+        "length": 4835
+    },
+    {
+        "id": 98,
+        "filename": "098_Francisco_dAnconia_On_the_root_of_money.txt",
+        "title": "Francisco d\u2019Anconia: On the root of money",
+        "url": "https://medium.com/@duongnguyen_31626/francisco-danconia-so-you-think-that-money-is-the-root-of-all-evil-82407fb4bf36",
+        "authors": "['Duong Nguyen']",
+        "timestamp": "2019-12-20 04:52:41.683000+00:00",
+        "tags": [
+            "Money Mindset",
+            "Atlas Shrugged",
+            "Capitalism",
+            "Ayn Rand",
+            "Money"
+        ],
+        "length": 6594
+    },
+    {
+        "id": 99,
+        "filename": "099_Goodnight_Haiku.txt",
+        "title": "Goodnight: Haiku",
+        "url": "https://medium.com/poets-unlimited/goodnight-haiku-3a9c9406dddd",
+        "authors": "['Patsy Starke']",
+        "timestamp": "2017-09-11 11:40:06.494000+00:00",
+        "tags": [
+            "Poetry On Medium",
+            "Poetry",
+            "Haiku Hub",
+            "Haiku",
+            "LGBTQ"
+        ],
+        "length": 218
+    },
+    {
+        "id": 100,
+        "filename": "100_There_is_no_escape__What_Being_A_Social_Worker_Dur.txt",
+        "title": "\u2018There is no escape\u2019 \u2014 What Being A Social Worker During a Pandemic Really Means",
+        "url": "https://medium.com/@gabydixon/there-is-no-escape-what-being-a-social-worker-during-a-pandemic-really-means-6e286949db05",
+        "authors": "['Gabrielle Dixon']",
+        "timestamp": "2020-11-30 23:52:37.246000+00:00",
+        "tags": [
+            "Interview",
+            "Children",
+            "Corona",
+            "Social Work",
+            "UK"
+        ],
+        "length": 4282
+    },
+    {
+        "id": 101,
+        "filename": "101_Fatherhood_My_favorite_hip-hop_tales.txt",
+        "title": "Fatherhood: My favorite hip-hop tales",
+        "url": "https://medium.com/i-do-see-color/fatherhood-my-favorite-hip-hop-tales-d8e21d599c1a",
+        "authors": "['Shamontiel L. Vaughn']",
+        "timestamp": "2020-02-08 21:17:55.700000+00:00",
+        "tags": [
+            "Rakim",
+            "Black Fatherhood",
+            "Parenthood",
+            "Hip Hop",
+            "Fatherhood"
+        ],
+        "length": 1673
+    },
+    {
+        "id": 102,
+        "filename": "102_How_UX_and_design_education_changed_my_life.txt",
+        "title": "How UX and design education changed my life",
+        "url": "https://blog.prototypr.io/how-ux-and-design-education-changed-my-life-6ca02a4c19eb",
+        "authors": "['Isabel Riedel']",
+        "timestamp": "2019-04-08 07:59:08.458000+00:00",
+        "tags": [
+            "User Experience",
+            "Learning",
+            "UX",
+            "Education",
+            "Interaction Design"
+        ],
+        "length": 5988
+    },
+    {
+        "id": 103,
+        "filename": "103_Introducing_Paxos_Settlement_Service__Changing_How.txt",
+        "title": "Introducing Paxos Settlement Service \u2014 Changing How U.S. Securities are Settled",
+        "url": "https://medium.com/paxos/introducing-paxos-settlement-service-changing-how-u-s-securities-are-settled-ebfde2ad870e",
+        "authors": "['Charles Cascarilla']",
+        "timestamp": "2019-10-28 22:25:22.972000+00:00",
+        "tags": [
+            "Us Equities",
+            "Settlement",
+            "Blockchain",
+            "Securities"
+        ],
+        "length": 3629
+    },
+    {
+        "id": 104,
+        "filename": "104_9_Vue_Input_Libraries_to_Power_Up_Your_Forms.txt",
+        "title": "9 Vue Input Libraries to Power Up Your Forms",
+        "url": "https://medium.com/javascript-in-plain-english/9-vue-input-libraries-to-power-up-your-forms-91ca63ac389d",
+        "authors": "['Matt Maribojoc']",
+        "timestamp": "2020-12-24 01:47:19.758000+00:00",
+        "tags": [
+            "Technology",
+            "JavaScript",
+            "Vuejs",
+            "Web Development",
+            "Front End Development"
+        ],
+        "length": 4867
+    },
+    {
+        "id": 105,
+        "filename": "105_SpotCam_Eva_2_review_a_much-improved_security_came.txt",
+        "title": "SpotCam Eva 2 review: a much-improved security camera",
+        "url": "https://medium.com/@rick54211155/spotcam-eva-2-review-a-much-improved-security-camera-cc9139bcd558",
+        "authors": "[]",
+        "timestamp": "2020-12-23 19:46:09.626000+00:00",
+        "tags": [
+            "Electronics",
+            "Tvs",
+            "Music",
+            "Home Theater"
+        ],
+        "length": 5361
+    },
+    {
+        "id": 106,
+        "filename": "106_How_To_Find_Your_Cell_Phone_Details_to_find_your_c.txt",
+        "title": "How To Find Your Cell Phone Details to find your cell phone details such as RAM and ROM consumption battery health , sensors and many more things first of all download CPU-Z on play store. Sos in\u2026",
+        "url": "https://medium.com/@hidayetachak/how-to-find-your-cell-phone-details-to-find-your-cell-phone-details-such-as-ram-and-rom-consumption-5a70ec00caac",
+        "authors": "['Hidayet Achak']",
+        "timestamp": "2020-12-26 11:39:23.455000+00:00",
+        "tags": [
+            "How To",
+            "Online",
+            "Mobile",
+            "Viral",
+            "Programming"
+        ],
+        "length": 455
+    },
+    {
+        "id": 107,
+        "filename": "107_Week_7__Defining_Voice_and_Tone_Its_all_about_pers.txt",
+        "title": "Week 7 : Defining Voice and Tone. It\u2019s all about personality",
+        "url": "https://medium.com/ux-writers-learn/week-7-defining-voice-and-tone-679e869a3962",
+        "authors": "['Uzoma Ibekwe']",
+        "timestamp": "2021-07-06 13:31:46.969000+00:00",
+        "tags": [
+            "Ux Writing"
+        ],
+        "length": 2599
+    },
+    {
+        "id": 108,
+        "filename": "108_Racist_and_Sexist_AI__A_Tale_of_Algorithmic_Bias.txt",
+        "title": "Racist and Sexist AI \u2014 A Tale of Algorithmic Bias",
+        "url": "https://medium.com/swlh/racist-and-sexist-ai-a-tale-of-algorithmic-bias-3dc9128cc0ab",
+        "authors": "['Karine Mellata']",
+        "timestamp": "2020-07-22 21:33:47.486000+00:00",
+        "tags": [
+            "AI",
+            "Ethics",
+            "Justice",
+            "Data Science",
+            "Racism"
+        ],
+        "length": 7310
+    },
+    {
+        "id": 109,
+        "filename": "109_A_Stew_You_Cant_Stop_Eating_a_Pot-Pie_Mashup_and_P.txt",
+        "title": "A Stew You Can\u2019t Stop Eating, a Pot-Pie Mashup, and Parm That Stays Crisp",
+        "url": "https://heated.medium.com/youll-want-to-add-these-chicken-dishes-to-your-winter-rotation-f2fb9ed6cf2a",
+        "authors": "['Mark Bittman']",
+        "timestamp": "2020-12-21 18:20:56.588000+00:00",
+        "tags": [
+            "Recipe",
+            "Food",
+            "Chicken"
+        ],
+        "length": 550
+    },
+    {
+        "id": 110,
+        "filename": "110_Traditional_Banking_Sucks.txt",
+        "title": "Traditional Banking Sucks",
+        "url": "https://medium.com/dot-dots/traditional-banking-sucks-2fb57828231b",
+        "authors": "['John G. Izaguirre']",
+        "timestamp": "2021-12-30 10:38:55.693000+00:00",
+        "tags": [
+            "Web3",
+            "Economics",
+            "Cryptocurrency",
+            "Money",
+            "Banking"
+        ],
+        "length": 1926
+    },
+    {
+        "id": 111,
+        "filename": "111_Adolf_Tolkachev_The_Man_Who_Killed_Soviet_Aircraft.txt",
+        "title": "Adolf Tolkachev: The Man Who Killed Soviet Aircraft Reputation",
+        "url": "https://murtie-djokobayu.medium.com/adolf-tolkachev-the-man-who-killed-soviet-aircraft-reputation-f1ed34b92105",
+        "authors": "['Djoko Bayu Murtie']",
+        "timestamp": "2020-12-12 03:59:00.309000+00:00",
+        "tags": [
+            "History",
+            "Cold War",
+            "Military",
+            "Espionage",
+            "Aircraft"
+        ],
+        "length": 10718
+    },
+    {
+        "id": 112,
+        "filename": "112_What_It_Was_Like_to_Win_the_Apple_WWDC_Scholarship.txt",
+        "title": "What It Was Like to Win the Apple WWDC Scholarship in 2019",
+        "url": "https://medium.com/better-programming/winning-the-apple-wwdc-scholarship-2019-f694d603d626",
+        "authors": "['Rudrank Riyam']",
+        "timestamp": "2020-11-27 18:53:45.367000+00:00",
+        "tags": [
+            "Mobile",
+            "WWDC",
+            "iOS",
+            "Swift",
+            "Programming"
+        ],
+        "length": 1107
+    },
+    {
+        "id": 113,
+        "filename": "113_REVIEW_Unicomps_New_Model_M_mechanical_buckling_sp.txt",
+        "title": "REVIEW: Unicomp\u2019s \u201cNew Model M\u201d mechanical buckling spring keyboard (2021)",
+        "url": "https://medium.com/@an_achronism/review-unicomps-new-model-m-mechanical-buckling-spring-keyboard-2021-8ba6903393ee",
+        "authors": "[]",
+        "timestamp": "2021-04-29 02:37:25.497000+00:00",
+        "tags": [
+            "IBM",
+            "Keyboard",
+            "Technology",
+            "Mechanical Keyboards",
+            "Review"
+        ],
+        "length": 19901
+    },
+    {
+        "id": 114,
+        "filename": "114_The_Digital_Identity_Landscape.txt",
+        "title": "The Digital Identity Landscape",
+        "url": "https://medium.com/composui/the-digital-identity-landscape-99eb6f453a20",
+        "authors": "['Dominik Schiener']",
+        "timestamp": "2016-08-29 17:09:23.333000+00:00",
+        "tags": [
+            "Identity",
+            "Authentication"
+        ],
+        "length": 7969
+    },
+    {
+        "id": 115,
+        "filename": "115_A_Tale_of_Two_Christmases.txt",
+        "title": "A Tale of Two Christmases",
+        "url": "https://medium.com/@libbyclement/a-tale-of-two-christmases-734e28a996e6",
+        "authors": "[]",
+        "timestamp": "2020-12-24 18:39:02.136000+00:00",
+        "tags": [
+            "Loneliness",
+            "Grief",
+            "Christmas"
+        ],
+        "length": 2396
+    },
+    {
+        "id": 116,
+        "filename": "116_Irradiation_Apparatus_Market_Trends_and_Forecast.txt",
+        "title": "Irradiation Apparatus Market Trends and Forecast",
+        "url": "https://medium.com/@marketinsight92/irradiation-apparatus-market-trends-and-forecast-e1a6cdfd70da",
+        "authors": "['Market Insight']",
+        "timestamp": "2021-12-30 10:20:10.108000+00:00",
+        "tags": [
+            "Market Research Reports",
+            "Market Size",
+            "Market Research",
+            "Market Analysis Reports",
+            "Irradiation Apparatus"
+        ],
+        "length": 5378
+    },
+    {
+        "id": 117,
+        "filename": "117_Jupiter_and_Saturn_will_be_closest_in_400_years_in.txt",
+        "title": "Jupiter and Saturn will be closest in 400 years in the Earth\u2019s sky Monday night",
+        "url": "https://medium.com/@tactility/jupiter-and-saturn-will-be-closest-in-400-years-in-the-earths-sky-monday-night-b82969a1cc48",
+        "authors": "[]",
+        "timestamp": "2020-12-23 14:12:16.240000+00:00",
+        "tags": [
+            "Astrology",
+            "Jupiter",
+            "Saturn",
+            "News"
+        ],
+        "length": 9559
+    },
+    {
+        "id": 118,
+        "filename": "118_Beginners_Guide_to_Marketing_B2B.txt",
+        "title": "Beginner\u2019s Guide to Marketing B2B",
+        "url": "https://medium.com/@ioogoinc/beginners-guide-to-marketing-b2b-f24ebc56f67d",
+        "authors": "['Ioogo Inc.']",
+        "timestamp": "2021-09-07 22:45:57.025000+00:00",
+        "tags": [
+            "Marketing B2b",
+            "Marketing Strategies",
+            "Audience Engagement",
+            "Target Audience",
+            "Ioogo Business"
+        ],
+        "length": 3231
+    },
+    {
+        "id": 119,
+        "filename": "119_An_Agenda_for_Highways_and_Bridges_for_a_21st_Cent.txt",
+        "title": "An Agenda for Highways and Bridges for a 21st Century Transportation Secretary",
+        "url": "https://medium.com/@jtrea81/an-agenda-for-highways-and-bridges-for-a-21st-century-transportation-secretary-58cdf033ab53",
+        "authors": "['Jonathan French']",
+        "timestamp": "2020-12-31 02:51:44.252000+00:00",
+        "tags": [
+            "Biden",
+            "Roundabout",
+            "Pete Buttigieg",
+            "Infrastructure",
+            "Transportation"
+        ],
+        "length": 5266
+    },
+    {
+        "id": 120,
+        "filename": "120_Care_From_Wherever_DESIGN_Canberra.txt",
+        "title": "Care From Wherever: DESIGN Canberra",
+        "url": "https://medium.com/mutualart/care-from-wherever-design-canberra-5cc811c0362d",
+        "authors": "[]",
+        "timestamp": "2020-11-18 08:02:18.998000+00:00",
+        "tags": [
+            "Australia",
+            "Care",
+            "Design",
+            "Festivals",
+            "Art"
+        ],
+        "length": 7637
+    },
+    {
+        "id": 121,
+        "filename": "121_TV_review_Agents_of_SHIELD__Shadows.txt",
+        "title": "TV review: Agents of SHIELD \u2014 \u2018Shadows\u2019",
+        "url": "https://simonc.me.uk/tv-review-agents-of-shield-shadows-8c39f52a629e",
+        "authors": "['Simon Cocks']",
+        "timestamp": "2016-11-14 18:01:25.040000+00:00",
+        "tags": [
+            "Movies",
+            "TV",
+            "Marvel",
+            "Review"
+        ],
+        "length": 2662
+    },
+    {
+        "id": 122,
+        "filename": "122_How_to_Prevent_Running_Injuries.txt",
+        "title": "How to Prevent Running Injuries",
+        "url": "https://medium.com/@whitneyheins/how-to-prevent-running-injuries-7664a8740a09",
+        "authors": "['Whitney Heins']",
+        "timestamp": "2021-03-23 08:30:21.851000+00:00",
+        "tags": [
+            "Running",
+            "Runningculture",
+            "Injury",
+            "Injury Prevention",
+            "Running Tips"
+        ],
+        "length": 11131
+    },
+    {
+        "id": 123,
+        "filename": "123_Link_to_BRON_Presale_and_How_to_Participate.txt",
+        "title": "Link to BRON Presale and How to Participate",
+        "url": "https://medium.com/@bronwynpro/link-to-bron-presale-and-how-to-participate-b04b95b6f76f",
+        "authors": "[]",
+        "timestamp": "2020-12-12 00:52:39.274000+00:00",
+        "tags": [
+            "Presale",
+            "Bron",
+            "Eth"
+        ],
+        "length": 2491
+    },
+    {
+        "id": 124,
+        "filename": "124_Is_There_Any_Way_Out_To_Pakistan_Endless_Energy_Cr.txt",
+        "title": "Is There Any Way Out To Pakistan Endless Energy Crisis?",
+        "url": "https://medium.com/@muqadasurooj123/is-there-any-way-out-to-pakistan-endless-energy-crisis-41be7998d724",
+        "authors": "['Muqadas Urooj']",
+        "timestamp": "2021-04-09 07:50:22.233000+00:00",
+        "tags": [
+            "Crisis",
+            "Energy",
+            "Solution",
+            "Pakistan",
+            "Problems To Solve"
+        ],
+        "length": 4053
+    },
+    {
+        "id": 125,
+        "filename": "125_Why_cant_teachers_just_be_perfect.txt",
+        "title": "Why can\u2019t teachers just be perfect?",
+        "url": "https://medium.com/live-your-life-on-purpose/why-cant-teachers-just-be-perfect-because-they-are-human-3aa1249aa74b",
+        "authors": "[]",
+        "timestamp": "2020-09-29 14:23:11.161000+00:00",
+        "tags": [
+            "Happiness",
+            "Humanity",
+            "Children",
+            "Learning",
+            "Education"
+        ],
+        "length": 12751
+    },
+    {
+        "id": 126,
+        "filename": "126_The_Importance_of_Data_Cleaning_to_Get_the_Best_An.txt",
+        "title": "The Importance of Data Cleaning to Get the Best Analysis in Data Science",
+        "url": "https://medium.com/@deshiwa/the-importance-of-data-cleaning-to-get-the-best-analysis-in-data-science-668f0336c072",
+        "authors": "['Deshiwa Budilaksana']",
+        "timestamp": "2020-11-23 07:49:09.333000+00:00",
+        "tags": [
+            "Data Cleaning",
+            "Python",
+            "Data Science",
+            "Linear Regression",
+            "Machine Learning"
+        ],
+        "length": 5546
+    },
+    {
+        "id": 127,
+        "filename": "127_Rouhani_Iran_and_US_can_return_to_time_before_Trum.txt",
+        "title": "Rouhani: Iran and US can return to time before Trump",
+        "url": "https://medium.com/@shovonmahamud/rouhani-iran-and-us-can-return-to-time-before-trump-804c04f5f99c",
+        "authors": "[]",
+        "timestamp": "2020-11-25 13:42:20.657000+00:00",
+        "tags": [
+            "Rouhani",
+            "Us",
+            "Iran",
+            "Trump"
+        ],
+        "length": 3616
+    },
+    {
+        "id": 128,
+        "filename": "128_Failure_Happens_to_the_Best_People.txt",
+        "title": "Failure Happens to the Best People:",
+        "url": "https://medium.com/illumination/failure-happens-to-the-best-people-e9f02e82b45e",
+        "authors": "['Freda Savahl']",
+        "timestamp": "2020-12-19 19:54:58.603000+00:00",
+        "tags": [
+            "Failure",
+            "Abraham Lincoln",
+            "Charlie Brown",
+            "Success",
+            "Edsel"
+        ],
+        "length": 3191
+    },
+    {
+        "id": 129,
+        "filename": "129_How_to_Eat_the_Best_Fruit_and_Not_the_Bad_Fruit.txt",
+        "title": "How to Eat the Best Fruit (and Not the Bad Fruit)",
+        "url": "https://medium.com/s/story/how-to-eat-the-best-fruit-and-not-the-bad-fruit-af73f4b74d07",
+        "authors": "['Sheree Joseph']",
+        "timestamp": "2018-02-17 19:55:01.711000+00:00",
+        "tags": [
+            "Lists",
+            "Memoir",
+            "Fruits",
+            "Food",
+            "Writing"
+        ],
+        "length": 10561
+    },
+    {
+        "id": 130,
+        "filename": "130_Open-Source_Projects_For_Beginners.txt",
+        "title": "Open-Source Projects For Beginners",
+        "url": "https://medium.com/@deeboke/open-source-projects-for-beginners-313b6825d76e",
+        "authors": "['Dyreen Daisy Nyaboke']",
+        "timestamp": "2020-11-20 11:04:50.306000+00:00",
+        "tags": [
+            "Open Source",
+            "Beginners Guide",
+            "Projects"
+        ],
+        "length": 3243
+    },
+    {
+        "id": 131,
+        "filename": "131_Minister_of_Finance_in_Qatar_arrested_for_Funding_.txt",
+        "title": "Minister of Finance in Qatar arrested for Funding terrorism",
+        "url": "https://medium.com/@martizaabdel/minister-of-finance-in-qatar-arrested-for-funding-terrorism-f4640e846982",
+        "authors": "[]",
+        "timestamp": "2021-05-07 11:00:51.843000+00:00",
+        "tags": [
+            "Terrorism",
+            "Qatar",
+            "Corruption",
+            "Finance Minister"
+        ],
+        "length": 1131
+    },
+    {
+        "id": 132,
+        "filename": "132_OUROBOROS.txt",
+        "title": "OUROBOROS",
+        "url": "https://medium.com/terrace-vista/ouroboros-3a539b1197e",
+        "authors": "['Burak Acar Koyuncu']",
+        "timestamp": "2020-03-05 02:52:14.325000+00:00",
+        "tags": [
+            "Featured",
+            "Poetry",
+            "Destiny",
+            "Time",
+            "Vicious Cycle"
+        ],
+        "length": 626
+    },
+    {
+        "id": 133,
+        "filename": "133_The_Analytics_Hierarchy_of_Needs.txt",
+        "title": "The Analytics Hierarchy of Needs",
+        "url": "https://towardsdatascience.com/the-analytics-hierarchy-of-needs-6d57d0e205e2",
+        "authors": "['Ryan Foley']",
+        "timestamp": "2020-12-15 04:18:07.413000+00:00",
+        "tags": [
+            "Data Analytics",
+            "Data Analyst",
+            "Product Analytics",
+            "Data Science",
+            "Data"
+        ],
+        "length": 3840
+    },
+    {
+        "id": 134,
+        "filename": "134_Build_a_place.txt",
+        "title": "Build a place",
+        "url": "https://medium.com/moments-of-passion/build-a-place-64b40c47a1c4",
+        "authors": "['S.F. Kurlek']",
+        "timestamp": "2020-06-04 20:59:47.915000+00:00",
+        "tags": [
+            "Politics",
+            "Poetry",
+            "Society",
+            "Change",
+            "Passion"
+        ],
+        "length": 1009
+    },
+    {
+        "id": 135,
+        "filename": "135_Why_user_testing_with_real_copy_is_like_the_ultima.txt",
+        "title": "Why user testing with real copy is like the ultimate bacon sarnie",
+        "url": "https://uxdesign.cc/why-user-testing-with-real-copy-is-like-the-ultimate-bacon-sarnie-2886ba0b8d3d",
+        "authors": "['Alex Ryder']",
+        "timestamp": "2019-09-17 22:28:06.498000+00:00",
+        "tags": [
+            "Copywriting",
+            "Marketing",
+            "Startup",
+            "Content Strategy",
+            "Ux Writing"
+        ],
+        "length": 3520
+    },
+    {
+        "id": 136,
+        "filename": "136_Teen_Heath.txt",
+        "title": "Teen Heath",
+        "url": "https://medium.com/@bribri121103/heath-ab60b4d07d29",
+        "authors": "[]",
+        "timestamp": "2020-12-24 19:34:05.493000+00:00",
+        "tags": [
+            "Health",
+            "Hair",
+            "Diet",
+            "Depression",
+            "Teenagers"
+        ],
+        "length": 722
+    },
+    {
+        "id": 137,
+        "filename": "137_When_I_Look_Back.txt",
+        "title": "When I Look Back",
+        "url": "https://medium.com/@bjameshancock/when-i-look-back-714ea19ec8b7",
+        "authors": "['B. James Hancock']",
+        "timestamp": "2020-12-15 06:33:19.911000+00:00",
+        "tags": [
+            "Short Story",
+            "Bjameshancock",
+            "Fiction",
+            "Civil Rights"
+        ],
+        "length": 8551
+    },
+    {
+        "id": 138,
+        "filename": "138_Why_People_Hate_Vegans_So_Much.txt",
+        "title": "Why People Hate Vegans So Much",
+        "url": "https://medium.com/intelligence-challenged/why-people-hate-vegans-so-much-fe4e3de5d7b",
+        "authors": "['Christopher Laine']",
+        "timestamp": "2019-11-19 03:49:04.109000+00:00",
+        "tags": [
+            "Diet",
+            "Discrimination",
+            "Vegan",
+            "Veganism"
+        ],
+        "length": 10114
+    },
+    {
+        "id": 139,
+        "filename": "139_Troj4n_wants_to_Be_Your_Everything.txt",
+        "title": "Troj4n wants to \u201cBe Your Everything\u201d",
+        "url": "https://medium.com/musicbrackts/troj4n-wants-to-be-your-everything-7b60ae639d6a",
+        "authors": "['Murendeni Mukwevho']",
+        "timestamp": "2018-04-19 06:31:06.502000+00:00",
+        "tags": [
+            "Music",
+            "Music Video",
+            "Artist",
+            "South Africa"
+        ],
+        "length": 1324
+    },
+    {
+        "id": 140,
+        "filename": "140_You_may_have_already_done_this_but_you_could_have_.txt",
+        "title": "You may have already done this, but you could have her thyroid checked.",
+        "url": "https://medium.com/@luciasiochi/you-may-have-already-done-this-but-you-could-have-her-thyroid-checked-3c9d85854837",
+        "authors": "['Lucia Siochi']",
+        "timestamp": "2020-12-27 19:24:43.043000+00:00",
+        "tags": [
+            "Cats",
+            "Pets"
+        ],
+        "length": 245
+    },
+    {
+        "id": 141,
+        "filename": "141_Who_Wants_to_Win_a_Nobel_Prize.txt",
+        "title": "Who Wants to Win a Nobel Prize?",
+        "url": "https://medium.com/hackernoon/who-wants-to-win-a-nobel-prize-eb076e64718d",
+        "authors": "['Matt Swayne']",
+        "timestamp": "2019-07-01 12:21:01.541000+00:00",
+        "tags": [
+            "AI",
+            "Artificial Intelligence",
+            "Blockchain",
+            "Healthcare",
+            "Data"
+        ],
+        "length": 4890
+    },
+    {
+        "id": 142,
+        "filename": "142_3_Things_People_Tend_to_Forget_in_Their_Financial_.txt",
+        "title": "3 Things People Tend to Forget in Their Financial Plans",
+        "url": "https://medium.com/@beyondfinances/3-things-people-tend-to-forget-in-their-financial-plans-553c4f3937ea",
+        "authors": "['Eric Roberge']",
+        "timestamp": "2020-12-21 17:13:32.338000+00:00",
+        "tags": [
+            "Self Improvement",
+            "Money",
+            "Wealth",
+            "Financial Planning",
+            "Finance"
+        ],
+        "length": 5224
+    },
+    {
+        "id": 143,
+        "filename": "143_Word_Embedding_Character_Embedding_and_Contextual_.txt",
+        "title": "Word Embedding, Character Embedding and Contextual Embedding in BiDAF \u2014 an Illustrated Guide",
+        "url": "https://towardsdatascience.com/the-definitive-guide-to-bidaf-part-2-word-embedding-character-embedding-and-contextual-c151fc4f05bb",
+        "authors": "['Meraldo Antonio']",
+        "timestamp": "2019-09-05 07:21:22.458000+00:00",
+        "tags": [
+            "Machine Learning",
+            "Data Science",
+            "Computer Science",
+            "Artificial Intelligence",
+            "NLP"
+        ],
+        "length": 5355
+    },
+    {
+        "id": 144,
+        "filename": "144_Helping_the_worlds_poor_is_a_wise_investment.txt",
+        "title": "Helping the world\u2019s poor is a wise investment.",
+        "url": "https://medium.com/@rtr-1985/helping-the-worlds-poor-is-a-wise-investment-a5dfffad7f0d",
+        "authors": "['Robert T. Rogers']",
+        "timestamp": "2020-11-20 21:52:09.942000+00:00",
+        "tags": [
+            "Advocacy",
+            "International Affairs",
+            "Poverty Alleviation",
+            "Poverty",
+            "Foreign Policy"
+        ],
+        "length": 1010
+    },
+    {
+        "id": 145,
+        "filename": "145_Machine_Learning_Optimization_Methods_and_Techniqu.txt",
+        "title": "Machine Learning Optimization Methods and Techniques",
+        "url": "https://medium.com/better-programming/machine-learning-optimization-methods-and-techniques-56f5a6fc5d0e",
+        "authors": "[]",
+        "timestamp": "2020-12-07 21:19:18.359000+00:00",
+        "tags": [
+            "Machine Learning",
+            "Artificial Intelligence",
+            "Data Science",
+            "Programming",
+            "Deep Learning"
+        ],
+        "length": 3753
+    },
+    {
+        "id": 146,
+        "filename": "146_How_to_leverage_Data_Science_and_Optimization_for_.txt",
+        "title": "How to leverage Data Science and Optimization for Economical Supply Chain Network Design?",
+        "url": "https://medium.com/the-innovation/how-to-leverage-data-science-and-optimization-for-economical-supply-chain-network-design-d022f456447d",
+        "authors": "['Vikas Garg']",
+        "timestamp": "2020-10-20 17:24:59.241000+00:00",
+        "tags": [
+            "Operations Research",
+            "Supply Chain",
+            "Optimization",
+            "Data Science",
+            "Decision Making"
+        ],
+        "length": 1270
+    },
+    {
+        "id": 147,
+        "filename": "147_Are_Mormons_Having_a_Public_Conversation_Everyone_.txt",
+        "title": "Are Mormons Having a Public Conversation Everyone Else Should be Having?",
+        "url": "https://medium.com/inspirebuzz/are-mormons-having-a-public-conversation-everyone-else-should-be-having-3e239fa5d3c3",
+        "authors": "['Matthew Faraci']",
+        "timestamp": "2018-09-04 00:47:19.649000+00:00",
+        "tags": [
+            "Christianity",
+            "Mormon",
+            "Movies",
+            "Faith",
+            "Race Relations"
+        ],
+        "length": 9119
+    },
+    {
+        "id": 148,
+        "filename": "148_Custom_metrics_source_in_apache_spark.txt",
+        "title": "Custom metrics source in apache spark",
+        "url": "https://medium.com/@simhadri-g/custom-metrics-source-in-apache-spark-ca30a3b362dd",
+        "authors": "['Simhadri G']",
+        "timestamp": "2021-07-03 21:42:47.450000+00:00",
+        "tags": [
+            "Metrics",
+            "Apache Spark",
+            "Big Data Analytics"
+        ],
+        "length": 3263
+    },
+    {
+        "id": 149,
+        "filename": "149_Play_like_youre_one-nil_down.txt",
+        "title": "Play like you\u2019re one-nil down",
+        "url": "https://medium.com/develeap/play-like-youre-one-nil-down-de84fc35ceee",
+        "authors": "['Gilad Neiger']",
+        "timestamp": "2021-03-03 07:43:52.320000+00:00",
+        "tags": [
+            "Code",
+            "Learning",
+            "DevOps",
+            "Life",
+            "Work"
+        ],
+        "length": 6783
+    }
+]

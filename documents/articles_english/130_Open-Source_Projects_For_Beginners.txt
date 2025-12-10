@@ -1,0 +1,25 @@
+Title: Open-Source Projects For Beginners
+URL: https://medium.com/@deeboke/open-source-projects-for-beginners-313b6825d76e
+Tags: Open Source, Beginners Guide, Projects
+----------------------------------------
+Looking to put your learned skills to the test? Why not try contributing to an open-source project. Contributing to an open-source project helps to build your understanding of your stack and build your reputation as well. Wondering where to start? GitHub is the best place to search for ongoing and active projects that are beginner-friendly, visit github.com/topics, and pick a topic that interests you. While very few projects are beginner-friendly here is a list of projects you can contribute to;
+
+Developed by Facebook in 2008, Apache Cassandra has eased the burden that comes with the distribution and decentralization of databases. This project was created to manage huge data — both structured and unstructured.
+
+With Java as its primary language, 5,700 stars, and 287 contributors, Apache Cassandra has a close and tight-knit team of developers. Cassandra’s most popular feature is its linear and elastic scalability which allows for faster and consistent response time. Cassandra has already been deployed across platforms like Netflix, Apple, eBay, GitHub, Comcast, CERN, and many, more.
+
+This high-level Python Web framework has gained traction and popularity amongst Python lovers and beginners. Django is built for speed allowing developers to put out apps faster, cutting on the time taken from conceptualization to completion. Django has 1,853 contributors and 47,100 stars. Django has already made a name for itself across platforms seeing that it is being used by Mozilla, Pinterest, Instagram, Open Stack, National Geographic, and MacArthur Foundation.
+
+Django’s objectivity of rapid development has cleared the hassle of web development and its dedication to security has seen many developers avoid security mishaps like clickjacking, cross-site scripting, and SQL injection.
+
+Go is a programming language that is making rounds and getting popular each day. The Kubernetes team took advantage of this by creating a project that helps teams build, test, and deploy at a large scale and very fast.
+
+Kubernetes has 63,000 stars, 2,441 contributors, and built on GO. The ability of Kubernetes to automate processes has made it a go-to for companies like Spotify, Nav, AppDirect, and China Unicom. Kubernetes gives you the ability to manage multiple host and scale resources and application time.
+
+Machine learning is trending right now and Google is on the race to developing simple models for mobile, web, desktop, and cloud. This open-source library was created in 2015 by the Google Brain Team. With over 2,380 contributors, TensorFlow has 141,000 stars. This project’s backbone languages are C++ and Python.
+
+Abstraction is one of TensorFlows biggest benefits. TensorFlow is gaining popularity because of its ease in allowing developers to work on the general logic while it handles the bulk of implementation in the background.
+
+Conclusion
+
+These are just four projects that I have come across that I believe form a good basis for anyone who is a beginner in either a new stack or an overall beginner as an open-source contributor. Other projects you can contribute to are frontend projects such as Gatsby,NEXT.js and Clarity. Some other projects are backend projects like Spring Security, ElasticSearch, and Apache Kafka.

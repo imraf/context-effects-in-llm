@@ -1,0 +1,49 @@
+Title: Why user testing with real copy is like the ultimate bacon sarnie
+URL: https://uxdesign.cc/why-user-testing-with-real-copy-is-like-the-ultimate-bacon-sarnie-2886ba0b8d3d
+Tags: Copywriting, Marketing, Startup, Content Strategy, Ux Writing
+----------------------------------------
+First written for and published on naturalinteraction.com
+
+Imagine you’ve spent months designing and building a shiny new website. It looks amazing and you’re sure it’s going to raise online profits and convert every visitor on first visit. You tested the design concept and even run click testing on the Information Architecture — what could go wrong?
+
+Words.
+
+Getting the content right, getting that microcopy right, using simple, on brand, audience appropriate language. These things are all important when it comes to delivering a great user experience. And yet, those words are often the last thing on the list and rarely form part of the testing process.
+
+Wherever possible, you should always user test with real copy. If you don’t have the final copy ready, at least use a draft or as close to final as you can.
+
+Say no to a dry sarnie
+
+Lorem Ipsum is a well known form of dummy text, used to fill spaces on designs and wireframes before the polish. It dates back to the 15th century when it was first used by typesetters and printers to show how a page layout might look.
+
+It’s still a useful tool but well, it’s a bit dry. You need to add some sauce (aka real words) so that when you’re usability testing a product or design with representative users, you really get to know that they fully understand the point of it all. And, that they find it easy to use from both a visual and reading point of view.
+
+The gold standard (aka the sauce)
+
+Having the content written and ready to go at the point you start user testing your designs is pretty rare. Being able to test the design in conjunction with its content with real users is absolutely the gold standard. Why? Because your users may well pick up things you’ve missed.
+
+This is especially key if you’re working on the user interface for something like an app or a piece of software. Call to action text and tooltips need to work hand in hand with the visual appearance of the product to enable a fast onboarding process and of course, smooth user experience.
+
+In this podcast episode Chris Myhill from Just UX Design talks about how a project he worked on for a large supermarket chain, it was actually the copy which caused usability issues and not the design which surprised the whole team. They were using sector jargon and complex wording which were both confusing users.
+
+By providing more context and simplifying the content, pairing it with icons, he was able to really improve the overall product
+
+Realistic best practices
+
+Areas that are important such as call to action buttons and instructions should be as clear as possible because these are places in which customers are most likely to struggle or get confused. If you’re not able to test your product or website with real, polished copy, at least ensure the following are as close to final as possible:
+
+Instructions
+
+Tooltips
+
+Microcopy
+
+Call to action
+
+Sign up process
+
+Do what you can — something is better than nothing
+
+If you’re working with a client, push for real copy to be supplied at the time of your initial brief and if that’s not possible, at least write something relevant in place of lorem ipsum to give your users a more holistic sense of the end product.
+
+In conclusion, and if I was pushed to make an analogy — and let’s face it, I’ve been building up to it all the way through — I would say that user testing without real copy is like eating a bacon sarnie without brown sauce. It’s better than nothing at all but add that sauce and you’ve got yourself something truly great.

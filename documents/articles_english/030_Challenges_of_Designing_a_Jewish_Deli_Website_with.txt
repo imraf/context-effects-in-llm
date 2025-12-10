@@ -1,0 +1,33 @@
+Title: Challenges of Designing a Jewish Deli Website with a Colossal Menu
+URL: https://medium.com/lform/challenges-of-designing-a-jewish-deli-website-with-a-colossal-menu-7c805a24503e
+Tags: Branding, Web Design, Restaurant Marketing, Menu Design, Web Development
+----------------------------------------
+Lform Owner Ian Loew has been a patron of Eppes Essen, a legendary Jewish deli in Livington, NJ since he was seven years old. His go-to meal: Matzo ball noodle soup and the tongue sandwich. While all of us at the office give him a look when he places an order, he swears it’s delicious. We’ll take his word on it.
+
+The one thing we can agree on is that every other item on Eppes Essen’s menu is outrageous. Every. Single. Morsel. So when the delicatessen owner came to us looking for a modern responsive website, one that matched the famed establishment’s reputation and top-notch quality food, we couldn’t wait to start. And, as an NJ web design company, we were even more excited to work with a local business.
+
+Mobile-First Web Design for Restaurant Menus
+
+We knew from our own experience how big Eppes Essen’s menu is — each time it takes us a solid 15 minutes to thumb through all the delicious options before deliberating — so we knew it would be a challenge to communicate all aspects online in a quick, efficient, and easily digestible manner. (Oh yes, that was a pun.)
+
+In addition to the sheer size of the menu, we accounted for all item variations: Some items required measurements in ounces and pounds, which affected pricing, while others required one or more call-out areas highlighting specials. This could be done through hard coding, using Photoshop, or slapping up the menu as a PDF file, but this lacks strategy and the ability to easily update menu items and pricing. The more challenging, but dynamic approach was to design the backend interface to work harmoniously with these variations so they could be added and removed as needed.
+
+Starving for Web Design Solutions
+
+In addition to making the website easy to update for the backend user, we also made it super simple for the public, Eppes’ clients, to find exactly what they have a hankering for in no time. We designed three options for the user to navigate the menu — for both casual perusing and deliberate on-the-hunt-for-your-craving search: traditional scrolling, using the search bar, and selecting from the flyout menu on the left-hand side.
+
+With such an expansive menu, we helped eliminate confusion and expedite browsing by creating a powerful search bar.
+
+When users select items from the flyout menu, they can jump rapdily from section to section!
+
+Mouth-Watering Custom Imagery & Videography
+
+Finally, we’re avid believers in custom video and imagery for websites. A recent study by Miscrosoft revealed that humans have a shorter attention span than a goldfish! We can focus all of eight seconds before we’re on to the next thing. That’s why video is so important. It has the ability to captivate your audience. When you open with a big, gorgeous, well-produced video, it pulls the user in with emotional content and increases click-throughs to your products, or in Eppes’ case, its food. Because humans are highly visual beings, video also helps us retain what we see. It resonates with the audience and we’re able to retain what we saw much better and longer than if we read it.
+
+Custom photography also plays a big hand in digital marketing and web design. Custom images help to represent your brand accurately. Have you ever went on a website, let’s say for ziplining in the Catskills, and you book it based on how beautiful it looks in photos? Then you get there and realize the photos haven’t been updated in 10 years, the forest canopies are no longer lush and green and the equipment is ancient? Or, you Google around for ziplining in upstate New York and you come across a website that has images of the activity, but the mountains in the background are clearly from the West Coast? In both scenarios, you feel mislead. You lose trust and respect for the company.
+
+Current, high-quality custom photography showcasing what you offer is authentic and instills trust in your brand. That’s what we did for Eppes Essen. Although we are an NJ web design company, we recently expanded our capabilities to include in-house photography and videography to go hand-in-hand with our digital marketing strategy. We conducted a full-day food photography and video shoot of all its best-sellers, and then populated its new site with the images.
+
+Site Launch: Mazeltov!
+
+Designing Eppes Essen’s website with a clean, simple menu navigation and creating content for the restaurant site was certainly a passion project for all of us. We were over-the-moon to launch it this May and look forward to creating many more custom web design solutions for future and returning clients. Mazeltov!

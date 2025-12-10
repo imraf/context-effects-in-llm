@@ -1,0 +1,109 @@
+Title: Solidity Smart Contract Tutorial With Building Real-World DAPP — Part 3: Create a Request for Freelancer
+URL: https://medium.com/coinmonks/solidity-smart-contract-tutorial-with-building-real-world-dapp-part-3-create-a-request-for-ead40e83384f
+Tags: Solidity, Smart Contracts, Dapps, Blockchain, Ethereum
+----------------------------------------
+In the last article, we created our first smart contract and defined a constructor function for it. in the constructor function, we got the address of the creator of the contract using msg.sender.
+
+we also learned about variable types in solidity and all kinds of visibility that can be defined for variables and functions.
+
+In this article, we start learning about payments in solidity. then, we will create our own custom type in solidity using struct . we will also learn how to handle errors in solidity with the help of modifiers!
+
+let’s start!
+
+As I said, we can access the sender of the transaction using msg.sender. in the last article, we sent a transaction to the Ethereum blockchain for creating a contract.
+
+Any time that we want to interact with the blockchain, we need to create a transaction. we may send some cryptocurrency to a friend, deploy a smart contract, or call a function to change some data in the blockchain.
+
+So, How we can get the amount of ethers that has been sent with the transaction? (in this case, transaction of contract deployment)
+
+Smart Contract Payments
+
+we can use another property of the msg global variable to get the number of Ethers that have been sent with the transaction. it’s msg.value .
+
+There is also another thing that we should consider about payments. we have to make some changes in our function to be able to receive Ethers.
+
+In a solidity smart contract, there are two cases that you will be faced with to receive Ethers.
+
+1. Sometimes you have a function in your contract that can receiver some Ether. is this case, you need to create the function and mark it as a payable.
+
+So, the function will be able to receive Ethers.
+
+For example, you have a buyAsset() function. as the name implies, it needs to receive some Ethers.
+
+function buyAsset() public payable { uint256 value = msg.value; // Do some validation to make sure value is greater than 0
+
+// .
+
+// .
+
+// .
+
+// Buy asset }
+
+If you send some ether while calling a non-payable function, the transaction will be rejected.
+
+2. You may want to provide your smart contract address for a community. so everyone will be able to transfer Ethers from their wallet to your smart contract without calling any function. to add this feature to your contract, you need to define a function with the fallback keyword or receive keyword.
+
+These both functions cannot have arguments, cannot return anything, and must have external visibility!
+
+Fallback Function
+
+It is executed on a call to the contract if none of the other functions match the given function signature, or if no data was supplied at all and there is no receive function. The fallback function always receives data, but in order to also receive Ether, it must be marked payable.
+
+
+
+fallback() external payable {
+
+uint256 value = msg.value;
+
+}
+
+
+
+Receive Function
+
+It is executed on plain Ether transfers. If no such function exists, but a payable fallback function exists, the fallback function will be called on a plain Ether transfer. If neither a receive Ether nor a payable fallback function is present, the contract cannot receive Ether through regular transactions and throws an exception.
+
+
+
+receive() external payable {
+
+uint256 value = msg.value;
+
+}
+
+As I said, if we add receive or fallback function to our contract, people don’t need to call a function for transferring Ethers. they just need our contract address and can send Ethers using their Ethereum wallet.
+
+For example, we decide to raise funds for a charity. it’s not reliable to provide our personal account address for people who want to support us. instead, we can create a smart contract with some logic that shows people how the money will be used. then, provide the contract address for people. they can check the contract and if the contract logic was enough fair, they can send some Ethers to the contract address.
+
+So, as you see, there is a lot of ways to solve the issues. right?
+
+I want the employer to have been able to send some Ethers while creating the contract, so, I need to mark my constructor as a payable function.
+
+The employer may also want to send more Ethers after deploying. so, we can simply add a receive function, so everyone (including the employer) can send Ethers to contract.
+
+address public employer;
+
+address public freelancer;
+
+uint public deadline;
+
+uint public price; constructor(address _freelancer, uint256 _deadline) public payable {
+
+employer = msg.sender;
+
+freelancer = _freelancer;
+
+deadline = _deadline;
+
+price = msg.value;
+
+}
+
+receive() external payable {
+
+price += msg.value;
+
+}
+
+You can also create a custom function, for example, addMoreEther() function and mark it as a payable. so the employer can call this function in case of transferring more Ethers to the contract! it’s up to your business logic! There is a lot of ways for solving issues in programming.😎

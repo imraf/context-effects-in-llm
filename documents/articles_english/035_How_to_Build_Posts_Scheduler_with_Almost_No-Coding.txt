@@ -1,0 +1,203 @@
+Title: How to Build Posts Scheduler with Almost No-Coding
+URL: https://medium.com/orienteer/how-to-build-posts-scheduler-with-almost-no-coding-b52068f8c23b
+Tags: Publishing, Scheduling, Java, Telegram, Rapid App Development
+----------------------------------------
+For simplicity, we will focus on the scheduled posting to Telegram, but you will get enough skills to extend functionality, by adding new social networks, or by adjusting the data-model to do cross-posting, posting with post-removal after some time and etc. If you will have any questions: please contact us!
+
+Step 1: Setup and Launch Orienteer
+
+We will need docker, and, ideally, docker-compose. You can use it locally or on any available dockized hosting like AWS, Google Clouds or DigitalOcean. If you are not familiar with docker, I highly recommend spending 3–5 hours on self-education on this topic.
+
+You can run Orienteer by the following simple command:
+
+docker run -p 8080:8080 orienteer/orienteer
+
+But to preserve data between containers updates and to secure application by avoiding the use of default passwords you can use the following command:
+
+docker run -p 8080:8080 -v <runtime>:/app/runtime -e ORIENTDB_ADMIN_PASSWORD=<password> -e ORIENTDB_GUEST_PASSWORD=<password> orienteer/orienteer
+
+If you prefer docker-compose, here is the template:
+
+version: '2.1'
+
+services:
+
+orienteer:
+
+image: orienteer/orienteer:latest
+
+container_name: <My Posting Service Name>
+
+network_mode: 'bridge'
+
+ports:
+
+- "8080:8080"
+
+volumes:
+
+- ./runtime:/app/runtime
+
+- ./maven-repository:/app/repository
+
+environment:
+
+- ORIENTDB_ADMIN_PASSWORD=<Admin Password>
+
+- ORIENTDB_GUEST_PASSWORD=<Guest Password>
+
+- JAVA_TOOL_OPTIONS= -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/app/runtime/heapdump.bin
+
+After the successful starting of Orienteer, go to http://localhost:8080 (or other host if you run it on some hosting). You should see something like this on the screen below. Without authentication, you will act as a user guest , which can read everything, but not change. It can be restricted later on to allow access to the backend only for authenticated users.
+
+Click to right-top corner, select Login and enter to the system as admin (default password is admin as well).
+
+Step 2: Add Required Dependencies
+
+To turn Orienteer into service for scheduled posting we will need:
+
+java-telegram-bot-api — simple java library to work with Telegram network
+
+— simple java library to work with Telegram network orienteer-architect — module for data schema modeling
+
+— module for data schema modeling orienteer-devutils — module with a set of utils to develop
+
+By the way, the last 2 modules can be finally disabled: they needed only during the active part of development.
+
+Go to Schema, then to tab Artifacts. Click Add. To add java-telegram-bot-api enter everything as for common maven dependency:
+
+<dependency>
+
+<groupId>com.github.pengrad</groupId>
+
+<artifactId>java-telegram-bot-api</artifactId>
+
+<version>5.0.0</version>
+
+</dependency>
+
+It should look like this:
+
+To add the remaining 2 modules, click Add, then Available Orienteer Modules. After downloading of a list of available modules from the server, select a required module, and click Install as Trusted. Adding all the required modules, click Reload Orienteer. After the restart, we can go to the next step.
+
+Step 3: Data Schema Modeling
+
+I think that the best approach for systems development is spiral development. The first cycle is a very simple, but a workable solution which covers common needs (MVP). System functionality can be expanded and made more user-friendly or flexible in the next cycles. Let's follow this approach here as well. For the first cycle we will need just 3 types of entities(classes):
+
+Content (or Post) — content which we are going to send to a particular channel at a predefined time
+
+— content which we are going to send to a particular channel at a predefined time Channel — a destination to send our content to
+
+— a destination to send our content to Bot — an entity that performs the actual act of sending a content
+
+Let me highlight, that this data-model doesn’t have Telegram specific. By Channel, you can mean any other account you can share/send content to, for example, Instagram or Facebook. Any network-dependent details we will hide under Bot entity, which is responsible for actual sending: to be specific, in scripts which we will associate with a Bot through link “sendFunction”.
+
+It’s recommended to use orienteer-architect for data schema modeling. This module allows you to model data schema in UML-like editor. Go to ODataModel by clicking Browse, click Create, enter name (for example ‘Scheduler DataModel’) and click Save. Now it’s time for imagination! But, I guess, that for our use case you should have finally something like on the image below.
+
+After saving the data-model (buttons Save Data Model and then Apply Changes), don’t forget to polish UX by additional configuration such things like:
+
+Document Name Property — a property that defines the name of a document to be used in any links to a document of this type
+
+— a property that defines the name of a document to be used in any links to a document of this type Parent Document Property — link to a parent, which will be used in breadcrumbs
+
+— link to a parent, which will be used in breadcrumbs Visualization — how to visualize a particular property
+
+Step 4: Make Service Alive
+
+We will need just 2 scripts
+
+Scheduler — script, which, being invoked once per minute, will search for the next set of content to be sent. It will lookup the associated bot and sendfunction, and invoke last one with Content as an argument SendToTelegram — script which will send a Content which passed as an argument to Telegram network
+
+Scripts in Orienteer (and in OrientDb) are documents/objects of class OFunction. So we will create documents of this class with the corresponding name, language and actual code to be executed. I recommend to use nashorn — it’s Java implementation of JavaScript.
+
+I will not torment you with explanations: it’s better to see code once rather discuss it 100 times.
+
+Scheduler
+
+var db = orient.getDatabase(); //Obtain OrientDB
+
+var resultSet = db.query("select from SContent where published!=true and when < sysdate()"); //Query for all contents,which haven't yet published and expected date/time of publishing, actually, is in the past
+
+for(var i in resultSet) { //Iterate over results
+
+var content = resultSet[i]; //Next content to be sent
+
+var sendFunction = content.field("channel.bot.sendFunction.name"); //Obtain name of a function to be used for sending the content
+
+if(sendFunction) {
+
+db.getMetadata().getFunctionLibrary().getFunction(sendFunction).execute(content); //Invokation of sending function and passing content as an argument
+
+content.field("published", true); //Marking content as already published
+
+content.save(); //Saving the content
+
+}
+
+}
+
+As you can see, this script is very simple and there are no Telegram specifics: everything will be incorporated in a special script, which we will refer to from Bot.
+
+SendToTelegram
+
+Do you remember that we have added library java-telegram-bot-api? It’s time to use it for sending Telegram messages!
+
+var content = orient.getDatabase().load(content); //Just in case if content was passed not as a document, but a reference to a document
+
+var channel = content.field("channel"); //Obtain channel or chat we will send message to
+
+var botDoc = channel.field("bot");//Obtain document with Bot configuration. We have obtained "sendFunction" previously from this document
+
+var botKey = "Bot"+botDoc.getIdentity(); //Generate a key which we will use for retriving TelegramBot from the server environment
+
+var app = org.orienteer.core.OrienteerWebApplication.lookupApplication(); //Lookup Orienteer Web Application as Java object
+
+var bot = app.getMetaData(botKey); //Try to get bot by its key
+
+if(!bot) { //If bot was not found: lets create and start it
+
+bot = new com.pengrad.telegrambot.TelegramBot(botDoc.field("token")); //Create TelegramBot and pass token as argument
+
+app.setMetaData(botKey, bot); //Preserve just created bot in Orienteer Web Application, to avoid creation of the bot next time
+
+}
+
+bot.execute(new com.pengrad.telegrambot.request.SendMessage(channel.field("chatId"), content.field("content"))); //Send message by pessing required content and chatId
+
+But how are we going to have script Scheduler be invoked every minute? Orienteer (and OrientDB) use for the documents of class OSchedule. Let's create a document of this class, specify some name, link to script Scheduler in field Function. Then enter the following rule: 0 * * * * ? . This means invoking of the specified script at first (zero) second of each minute, each hour, etc.
+
+Step 5: Lets Test
+
+And now the most exciting part: testing!
+
+Create Bot in Telegram Network
+
+We should create a bot in Telegram first and then define it in Orienteer.
+
+You can read how to create Bot in Telegram in the official documentation. But here is the summary:
+
+Start conversation with BotFather Send command /newbot Define a displayable name for your bot Define an account name for your bot
+
+As a result, you should receive a token. I recommend to add just created bot into your contact list for subsequent adding it to required channels and groups.
+
+Now, let create a new document of class SBot, which we modeled and created in Step 3. Enter bot name, link to actual script SendToTelegram and token, which we got from BotFather.
+
+Create Telegram Channel
+
+I assume, that you already have Telegram channel or chat. If no — I’m sure that you can easily figure that out by yourself. In order to configure Orienteer properly, you will need chatId of your target channel or chat. There are multiple ways to figure that out, but one of the easiest is to use GetIDs Bot. Just forward a message from your channel to this bot and you will get the required information. But if you need chatId for a group: just add this bot to it and the first message will contain the required details. After that, you can easily remove this bot from it.
+
+If everything is ok, you have ChatId now and you can go ahead and configure Orienteer. Create SChannel, define name and ChatId. And don’t forget to link the previously created SBot document with this SChannel.
+
+Create a Content
+
+This is the moment of truth: let's create content and test sending it to a channel or group. For content, we have previously created class SContent. In a document of this class define name (not being used in Telegram), link to target channel or group, publication time, and the content itself.
+
+If you made it correctly, at a defined time you will see the corresponding message in your target channel/group.
+
+Hooray! It’s working!
+
+That’s it for today. Please let us know if you like our content by like or a comment.
+
+P.S. If you have any problems with the current tutorial or additional questions: please don’t hesitate and contact us.
+
+P.P.S. We are looking for new people for project Orienteer. Even if you are new to Java or JavaScript, but willing to learn: no problem — just contact us!

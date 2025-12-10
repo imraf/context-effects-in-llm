@@ -1,0 +1,53 @@
+Title: SpotCam Eva 2 review: a much-improved security camera
+URL: https://medium.com/@rick54211155/spotcam-eva-2-review-a-much-improved-security-camera-cc9139bcd558
+Tags: Electronics, Tvs, Music, Home Theater
+----------------------------------------
+The original SpotCam Eva, which we reviewed in 2016, was a pretty clunky camera, both in terms of its bulky design and its unpolished performance. It was apparent, however, that it contained the seeds of something better, and those have come to fruition in the SpotCam Eva 2.
+
+
+
+The rebooted camera has a “snowman” shape that’s neither particularly attractive nor an eyesore, but it’s smaller and easier to hide in plain sight than the original. It also has a wider field of view (130 degrees) and adds a built-in siren and two-way talk capabilities, Amazon Alexa and Google Home integration, and it supports automatic person tracking. Pan-and-tilt is still its core feature, but this feature works much better than it did in the previous iteration.
+
+
+
+This review is part of TechHive’s coverage of the best home security cameras, where you’ll find reviews of competing products, plus a buyer’s guide to the features you should consider when shopping for this type of product.The first evidence that the Eva 2 had improved on its predecessor surfaced during the setup process. There are no switches to flip or modes to toggle, just a few app-prompted steps to connect the camera to your network. I got the camera up and running in about a minute. I set the camera on a shelf in my living room, but it can also be used outdoors. It has an operating temperature of 14 degrees to 122 degrees Fahrenheit and comes with anchors and screws to mount it to an exterior wall or fence. Keep in mind it uses AC power, so you’ll need proximity to an outdoor outlet or an accessible indoor one if you deploy it outside.
+
+
+
+SpotCam SpotCam Eva 2 is leaner and performs better than its predecessor, but it still provides the same 1080p video resolution.
+
+
+
+The SpotCam app hasn’t changed much since I used it with the first Eva. Once you select the Eva 2 from the home screen, you’ll see the live feed with camera controls below it, including a speaker mute button, another for taking snapshots of the live feed, and a 30-second rewind. You can scrub through live video on a horizontally scrolling timeline displayed below this toolbar. At the very bottom are buttons for viewing recorded video clips of detected sound and motion events, triggering the microphone, and returning to the live feed. Options for customizing sound- and motion-detection sensitivity, alerts, and other features are accessible through a cog icon at the top right.
+
+
+
+[ Further reading: The best video doorbells ]The camera captures a sharp, vibrant image in daytime mode and provides about 32 feet of illumination with strong contrast when night vision is activated. When it detects sound or movement, it pushes a notification to your device with a snapshot of the feed included in the alert. These were accurate in my tests and arrived quickly, suggesting I’d be able to catch an intruder in the act during an actual break-in. Though these generic alerts work well enough, it’s worth enabling human tracking on the Eva 2 for $5.95 per month. It will help you reduce unwanted notifications by only alerting you when a human is identified, and it will lock onto the person and follow their movements so you don’t lose sight of them as they move through or around your home.
+
+
+
+That last feature is pan-and-tilt. Even without human tracking, you can can pan the camera 345 degrees and tilt it 90 degrees in small increments by swiping directly on the screen. You can hear the buzz of the motor clearly with each movement, but the camera is very responsive and precise, two things the original Eva’s pan-and-tilt wasn’t.
+
+
+
+Michael Ansaldo/IDG The SpotCam app lets you scrub through the Eva 2’s live footage.
+
+
+
+The Eva 2 stores all captured video in the cloud. It comes with the tantalizingly-titled Free Forever package, which includes what are actually pretty standard offerings: live streaming video, motion and audio detection, event alerts, and the ability to share live video and snapshots. You do get one-day rolling video history as well, but you must “subscribe” to this free feature in the app for the camera to start recording video clips.
+
+
+
+If you want to view more than a single day’s worth of recordings, you can upgrade to a 3-, 7-, or 30-day plan for $3.95, $5.95, or $19.95 a month, respectively.
+
+
+
+Though you can view recorded videos with any of these plans, you can’t download them. As with the original Eva, you must create a separate video for exporting from your surveillance clips if you want to have a file you can share via email or flash drive. This requires that you select either a “normal” or time-lapsed video and set parameters such as the video start time and clip length. The final product is saved to a separate tab called My Film, and you can download it to your local drive from there.
+
+
+
+This lingering limitation aside, the Spot Cam Eva 2 successfully eliminates the shortcomings of its predecessor and improves upon its strengths. Its easy operation and accurate AI features make it a great security solution for most scenarios. To get the most from it, though, you’ll likely want to upgrade the cloud storage plan and add the human-tracking features, so be sure to factor those costs into your purchase.
+
+
+
+Note: When you purchase something after clicking links in our articles, we may earn a small commission. Read our affiliate link policy for more details.

@@ -1,0 +1,21 @@
+Title: What It Was Like to Win the Apple WWDC Scholarship in 2019
+URL: https://medium.com/better-programming/winning-the-apple-wwdc-scholarship-2019-f694d603d626
+Tags: Mobile, WWDC, iOS, Swift, Programming
+----------------------------------------
+What It Was Like to Win the Apple WWDC Scholarship in 2019
+
+Documenting the process of creating the submission project
+
+WWDC 2019
+
+June 4, 2018
+
+I remember going through the WWDC website to watch the keynote on my MacBook Air.
+
+I wished I could watch it live someday. So, during the intro music, I started exploring the site to understand how the developers get a ticket for it. It was $1,600 for a developer, based on a lottery system. Ummm, no. I scrolled down and found this on the homepage.
+
+“Scholarships — Students and STEM organization members can apply to receive a conference ticket, lodging, and one year of membership in the Apple Developer Program.”
+
+Ahh, this is what I am looking for!
+
+But now I would have to wait for a year to apply. I went through the requirements, a full project on Xcode Playgrounds/Swift Playgrounds with some essays. I had just started iOS Development, and my experience with Playgrounds was limited to declaring a few variables. And only 350 students were selected from all over the world, ranging from school students to PhDs. This seemed difficult, and so I gave up.

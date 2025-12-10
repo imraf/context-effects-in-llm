@@ -1,0 +1,33 @@
+Title: What we believe in. Chronotope
+URL: https://medium.com/habidatum/what-we-believe-in-chronotope-8b99af40b648
+Tags: English, Urban Planning, Data Visualization, Smart Cities, Data Science
+----------------------------------------
+Fragment of an article in Tatlin Mono — “Young architects 2014”
+
+Habidatum Chronotope: map (2D) + time (vertical)
+
+City as a Process
+
+A modern city is a process unfolded in time and space. To study such a city is like to perform a piece of music or listen to it when the impressions of the passage being performed at the moment are immersed in the context of what has already been played, and the momentary pleasure complements the integrity of the performed fragment.
+
+The view on the city in static defined the current toolkit of urban studies. There are virtually no tools for analyzing the time trajectory of a place.
+
+Free Time of Space
+
+Meanwhile, such trajectories open up new opportunities for citizens, businesses and city authorities. With the help of the Habidatum Chronotope platform, you can identify the “free time” resources of a place, the mode of its use at different times of the day, week, month, year.
+
+According to Habidatum, approximately 60% of the time urban space is not in use: thus, the resources of urban activity growth and compaction are huge. Habidatum Chronotope platform helps detect free “temporal niches” in different areas of urban space.
+
+Compatibility of Functions in Time and Space
+
+The demand for free “temporary niches” raises the question of the compatibility of different functions when sharing the same place at different times — a situation reminiscent of the “right of passage” in the old medieval cities, when the street was used for the passage of cattle and people alternately. The compatibility potential of different functions can be assessed using analytical indicators that determine the “space capacity” and “usage type” for different categories of users of the platform.
+
+Event as a Change of Trend
+
+Habidatum believes in a special definition of urban “event” — for us, it is not just a single happening (football match, accident, demonstration, etc.). Oppositely, it is a change of “trend” or “pattern”. Data processed through special analytical “filters” in real time allow recording the change of “trends”, whether it is a change in a given parameter (for example, the average length of the trip) or a spatial pattern (for example, the configuration of ethnic diasporas in the city).
+
+Real-time vs. Historical Analysis
+
+Most of the professional tasks solved with the help of Habidatum Chronotope platform are in the between real-time monitoring and traditional historical analysis. The platform allows doing both, not limited to any of the extremes. Its main goal is the practice of “lean planning”, whose application requires linking historical analysis to constant engagement in the process that is studied and seeks adaptation of urban development scenarios based on the constantly updated information.
+
+Thank you for reading. Appreciate your comments!

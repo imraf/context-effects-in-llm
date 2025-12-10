@@ -1,0 +1,75 @@
+Title: What’s Quantum Computing? Why? Who?
+URL: https://medium.com/quantum-untangled/what-qc-why-qc-who-qc-4d5f601285e5
+Tags: Computer Science, Quantum Physics, Quantum Computing, Physics
+----------------------------------------
+Human species, ever since the origin of life has followed the path of curiosity which lead us to ample advancements. The determination to excel and question the Why, What, Who of everything is what motivated us. Things once considered as a dream or an impossible experiment with no real-life applications, today happen to be something our lives revolve around. From seeing a 5 MB hard drive as big as the size of refrigerators to multiple terabytes of data in a single small chip this decade has seen a leap in technology evolution.
+
+5 MB Hard Drive[1956] & 1 TB Micro Card[2020] Image:©www.highsnobiety.com
+
+The idea of Quantum Computing systems or a Quantum Computer was first envisioned by Richard Feynman and Yuri Manin when Physicist Paul Benioff proposed a quantum mechanical model of a Turing Machine, based on the suggestion that a quantum computer could simulate things that a classical computer couldn’t.
+
+Understanding Quantum Computing systems or Quantum Computer requires anyone to understand two words QUANTUM & COMPUTER, the latter is rather simple i.e., refers to a technology everyone is aware of; but the former is something that is often considered as something complicated and a word, when used by someone makes the person a sound like a geek, someone really into physics but Is it so?
+
+When googled the word “Quantum” is explained as “the smallest possible discrete unit of any physical property, such as energy or matter” or “quantized physical properties”. Even to people with prior knowledge of physics, it doesn’t make much sense. To put it more into the picture look at the image below.
+
+Image:© in.pinterest.com
+
+In this image quantization is explained, for example when we look at the staircase then each step is a specific energy level.
+
+Step 1 » Energy level 1
+
+Step 2 » Energy level 2
+
+And so on. We can see that there are no steps between step 1 and step 2 that refers that there cannot exist an energy level between energy levels 1 and 2, so a particle has either energy level 1 or level 2, thus the particle’s energy is quantized. This is called quantization of physical quantity meaning that a physical property only has specific values say, A and B also no intermediate values between them.
+
+Now as a disclaimer the quantization of physical properties spoken above happens in the microscopic world [only seen through electron microscope], therefore the physics governing these world(s) is called quantum physics.
+
+Now that we understand the meaning of quantum, we can finally talk about the what and why of quantum computing.
+
+What is Quantum Computing?
+
+Here the word “quantum” refers to the laws and weird phenomena of quantum physics being used to perform computational activities. Various quantum mechanical effects such as superposition, entanglement & Interference which are only observed in quantum systems are used to speed up the computational speed, the capacity of computation.
+
+In a quantum computer, the major difference from a classical computer is that a quantum computer uses ‘Qubits’ instead of bits. A bit as all of us know can be a 0 or 1, but a Qubit or a quantum-bit is a superposition of 0 and 1 simultaneously, which is a quantum mechanical phenomenon.
+
+Why quantum computing?
+
+Sorry to break it to you, but will a quantum computer replace our daily laptop? NO! So why are we even working so hard to integrate physics and computer science? A fully functional quantum computer will not be better than our classical computers in all problems but just specific ones.
+
+In computer science, we categorize problems according to how many computational steps it would take to solve them using the best-known algorithms. That is translated to how long it will take a computer to solve them. These categories are broad and often overlap. The most used three categories are P problems, NP problems, and NP-complete problems.
+
+Image:© in.pinterest.com
+
+· P Problems:
+
+These are problems classical computers can solve efficiently in polynomial time. An example of such problems is: Given n numbers and another number k, is there a number in n that’s larger than k? This problem can be solved easily in linear time.
+
+because polynomials increase somewhat slowly as n increases, classical computers can solve even enormous P problems within a reasonable number of steps (reasonable length of time).
+
+· NP Problems:
+
+These are problems whose solutions are easy to verify, yet tricky to implement efficiently. For example, if we have the same set of numbers n and the constant k, but this time we want to check it, there two numbers in n that add up to k. In this case, the problem’s complexity becomes exponential, that’s because the number of sets that we need to sum and check will grow quickly even with smaller n.
+
+Every P problem is also an NP problem, so the class P is a subclass of the class NP
+
+· NP-complete Problems:
+
+These are the hardest to solve problems. Theoretically speaking, if we can design an efficient solution to one NP-complete problem, then we can provide an efficient solution to all NP problems. An example of such problems is: Given a map, can you color it using only three colors so that no neighboring countries are the same color? This problem is challenging to solve, and hence why it categorizes as NP-complete. If you can find a solution to that problem — first, congratulations on being a genius — then you can extend the solution to the rest of the NP-complete problems.
+
+So far, no known algorithm can solve an NP-complete problem efficiently.
+
+Okay, now that we have the general idea of problem complexities, in what category do the problems solvable by quantum computers fall?
+
+The above diagram explains very well that some NP-complete problems can be solved efficiently by a quantum algorithm, not the entire category just a few problems.
+
+In 1993 computer scientists Ethan Bernstein and Umesh Vazirani defined a new complexity class that they called BQP, for “bounded-error quantum polynomial time.” They defined this class to contain all the decision problems — problems with a yes or no answer — that quantum computers can solve efficiently. Around the same time, they also proved that quantum computers can solve all the problems that classical computers can solve. That is, BQP contains all the problems that are in P.
+
+This concept is called quantum supremacy where a quantum computer is better than a classical computer at performing a particular task. Google achieved quantum supremacy back in 2019 proving that quantum supremacy or often referred to as quantum advantage.
+
+Now the major concern, where is quantum computing?
+
+Trying to explain where quantum computing is as of today is no easy task research in quantum computing nowadays has become more of private research were a lot of private companies are coming into the scenario due to requirements of heavy funding and various other reason that has its pros and cons but speaking irrespective of this fact quantum computing is on an all-time high, not just research-wise but also in accordance to research interest, governments interest funds are being given out by the government for motivating research in this field. Major countries such as the United States, China, Japan, and various other Asian and European countries have heavily invested in the research area of quantum computing and its applications.
+
+Personally, the place where quantum computing stands right now is analogous to the classical computing era in the 1940s and 1950s where it was a very highly motivated area of research and after a couple of decades massive transformations took in the field and the field completely evolved to what we see it today similarly quantum computing is currently just in its research and minimum application stage right now but very great things can be expected, not soon but yes surely great things can be expected from quantum computers or quantum computing systems.
+
+Further reading and references:

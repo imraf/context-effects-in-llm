@@ -1,0 +1,51 @@
+Title: Why Is Cloud Mining a Good Investment?
+URL: https://medium.com/@ghpexofficial/why-is-cloud-mining-a-good-investment-6809c68d68bf
+Tags: Blockchain, Cloud Mining, Cryptocurrency, Bitcoin Mining, Cryptocurrency Investment
+----------------------------------------
+Cloud mining is taking the cryptocurrency world by storm. Thanks to cloud mining, crypto mining has finally become a feasible earning opportunity for anyone. But what is cloud mining really, and why is it considered a good investment by so many blockchain experts?
+
+What Is Cloud Mining
+
+Cloud mining is a community-driven approach to mining cryptocurrencies such as Bitcoin or Ethereum. Thanks to cloud mining, people can gather together to lend or purchase a specific amount of hashing power, effectively making them share both costs and profits of mining crypto with each other.
+
+Two methods of cloud mining exist: the more traditional approach is simply buying a required amount of hashing power from a centralized cloud provider. The company uses your funds to pay for electricity and maintenance of the mining equipment, in return allowing you to share a portion of the profit from mining crypto.
+
+Another, more innovative method of investing in cloud mining requires the use of hashpower platforms like GHPEX. Hashpower platforms are similar to crypto exchanges such as Binance or Coinbase, only instead of allowing you to purchase BTC or ETH directly, they also enable you to invest in the hashing power required to mine these cryptocurrencies.
+
+Why Is Cloud Mining Profitable
+
+Essentially, all crypto mining is based on the same thing: using hashing power (in other words, computing power) to solve extremely complicated math equations.
+
+Thousands of miners around the world compete to solve the math puzzle first, and whoever does that is rewarded with a certain amount of crypto. For example, solving a Bitcoin block is currently rewarded with 6.5 BTC, which is almost $400,000 with today’s prices.
+
+Cloud mining doesn’t change this basic principle. What cloud mining does is allow people to share both the costs and profits of mining cryptocurrency.
+
+It would be extremely improbable for a single miner to have a chance at taking the entire $400,000 worth block reward for himself. But if 100 people gather together, it’s much easier for them to share a portion of the block reward worth $4,000 each.
+
+Mining cryptocurrencies is now done not by individual crypto enthusiasts, but mostly by specialized crypto mining companies which invest in mining farms worth millions of dollars. Cloud mining takes crypto mining back to its roots, and empowers anyone, anywhere in the world to participate in the earning opportunities provided by mining cryptocurrencies.
+
+Why Invest in Cloud Mining?
+
+It’s obvious that cloud mining can be profitable. But why exactly would you invest in cloud mining instead of purchasing some BTC or ETH directly on a crypto exchange like Binance or Coinbase?
+
+For most people, the answer is simple: passive income. Cloud mining is one of the easiest, most accessible and most reliable methods of gaining a steady source of blockchain-based income.
+
+If you buy BTC or any other digital currency, you might need to hold it for years before you’ll be able to send it for significant profit. Until you do that, your assets are frozen.
+
+Another option is crypto trading — buying and selling cryptocurrencies to scrape the profit resulting from the prices of digital assets changing constantly. Trading can be profitable, but it also requires a lot of time and experience, and can still be extremely risky even for veteran traders.
+
+Investing in cloud mining is a more profitable and flexible alternative to simply buying crypto and holding it in your wallet, and a much more secure alternative to crypto trading.
+
+For other people, investing in cloud mining is simply a way of diversifying their crypto portfolio. Purchasing crypto directly combined with cloud mining means an increased resilience and safety in the constantly evolving, highly volatile blockchain ecosystem.
+
+Finally, for some people cloud mining might be the only option of investing in crypto. Some countries prohibit buying and selling cryptocurrencies, and cloud mining allows investors from these countries to profit from crypto indirectly, without breaking any laws.
+
+How to Invest In Cloud Mining
+
+Originally, the only way to invest in cloud mining was by purchasing hashing power directly from centralized cloud providers. This option seemed like a good entry point to the world of crypto mining for many people, but unfortunately many cloud mining operators on the market turned out to be scams, and investors who purchased hashpower plans on unverified, untrustworthy websites never saw their money back.
+
+The more secure alternative to buying hashing power directly from cloud providers is using a specialized hashpower platform like GHPEX.
+
+GHPEX is a community-oriented platform connecting hashing power to users around the world. Whether you are a beginner or expert investor willing to get into cloud mining, GHPEX empowers you to profit from mining cryptocurrency without having to do all the work by yourself.
+
+Using a hashing power platform is not only the most secure way of investing in cloud mining, but also the most flexible and easiest one. With GHPEX, you can choose from a variety of cloud mining contracts, or use a user-friendly hashpower trading platform to trade hashpower futures.

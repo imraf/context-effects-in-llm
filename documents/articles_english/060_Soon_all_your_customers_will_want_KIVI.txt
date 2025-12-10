@@ -1,0 +1,91 @@
+Title: Soon all your customers will want KIVI
+URL: https://medium.com/cyberark-engineering/soon-all-your-customers-will-want-kivi-ceeda318e38c
+Tags: Bug, Known Issues, Initiative, Community, Transparency
+----------------------------------------
+Being part of a leading global company with a customer-first approach means we are constantly and actively seeking ways to provide our customers with more value.
+
+This has led me and my team to push forward an initiative of sharing known issues with our customers, making them an extension of our technical community. We believe this is what our customers need, regardless of whether they are using our on-prem or SaaS solutions.
+
+You might ask yourself, why share known issues at all? Aren’t release notes enough?
+
+This is what we discovered in our research:
+
+1. Customers expect transparency from their vendors. This is driven by the open source model, where not only bugs and fixes, but also the road map is shared and discussed in the open.
+
+2. The sharing platform is diverse, starting from a shared portal requiring login credentials, to being completely public. The most common shared info is: description, workaround, status and fix versions.
+
+3. Customers use this to follow a bug’s progress and get live updates. Also, they can learn from others that have experienced similar symptoms and existing workarounds. This is particularly useful when considering upgrades.
+
+4. This can improve your collaboration with your customers. It can help you better understand their usage and experience, and learn how common an issue is.
+
+5. Implementing this sharing process effectively can reduce your organization’s support load.
+
+The team
+
+In order to lead this initiative, we formalized a cross-departmental team from Product, Professional Services, R&D and IT, derived of people that felt passionate about this vision. This was one of the key elements that made this change happen. Together, we managed the change, provided needed prioritization, implemented the necessary updates to our systems and created training material.
+
+We acted as a virtual team, even though we had organic teams: we had reoccurring meetings, retrospectives, created our own mailing list, Teams group, and so on.
+
+Tip: Giving our initiative a catchy name has proven to be very effective. It’s useful in internal and external communications, labeling, and so on. If you create a similar initiative, make sure it has a name you relate to, because you’ll be hearing it a lot! Ours was KIVI (a.k.a. Known Issues Visibility).
+
+KIVI is the Hebrew word for the KIWI fruit
+
+It was time to get a green light from management
+
+Once our vision for this initiative was clear, we shared our research results and our vision with management, and talked about the expected value for our customers, and how it could improve our different units’ efficiency and productivity.
+
+Along the way, a few concerns were raised: How much more of a load will sharing this information put on our teams? Will there be increased pressure on fixing the known issues? etc.
+
+
+
+We provided answers, consulted with people inside and outside the organization, and formalized the process.
+
+Tip: Show what it will look like in your system and how you plan to mitigate any potential risks. This will provide a sense of the expected day-to-day changes and ease anxiety.
+
+Green light — Checked! Moving on to defining our internal business requirements
+
+With a green light from the management team, we moved on to the next step: Creating a new process for transforming a bug into a known issue. The different personas that were involved in the life cycle participated in formalizing the new process: QA, Product, Technical Writers, Support Engineers, Community Managers, and more.
+
+A couple of meetings were required to define what known issues are, what information each persona needs, and what the life cycle should look like.
+
+We came to an understanding that for us, a bug goes through 3 major phases and we created a new bug life cycle to represent this:
+
+1. R&D internal bug — bug documented for R&D usage only
+
+2. Internal bug — bug under evaluation; can be shared internally within the organization at this stage
+
+3. Known issue — bug shared with our customers
+
+Tip: Bringing all the main personas to the table is critical! Make at least one representative from each persona part of the process and part of the solution. Feedback at early stages is priceless.
+
+A surprise along the way
+
+This initiative ended up being a bigger organizational change than we anticipated, and it was necessary to adjust our system to fit the new process. Our vision was that once a team member reports a bug, the bug goes through the newly defined life cycle, and ends up in the technical community if relevant. This involved overcoming challenges, such as manual or undefined processes, missing data, multiple systems, etc.
+
+Tip: Preparing a change management plan can make a lot of difference. We did it a bit too late into the process, and the result was that people were surprised with the timeline and what was expected of them, and this made it harder to get the necessary cooperation.
+
+The KIVI implementation process was challenging
+
+During the implementation phase of such an initiative, you need to prepare training material and sessions. This is also a good time to make sure all of the “documentation” of the implementation is available: architecture, design, decisions taken, how-tos, and so on.
+
+Supporting the process is crucial. Such a change involves both change in mindset and technology. Our team was out there in the “field”, assisting, educating and collecting feedback. It was important to keep syncing and managing the implementation.
+
+
+
+During the implementation phase there were bugs in our processes, workflows missed, etc. This required prioritization, quick fixes and adjustments.
+
+Tip: Get feedback (direct and indirect) from your users and from the customers. You can do surveys, interviews, and run reports to check the usage of the system.
+
+Feedback started to flow in
+
+The feedback from our customers (beta participants) was great!!
+
+“YES! A thousand times YES!”;
+
+“I love the idea, and it will help reduce support tickets”;
+
+“We can use the power of community to help with known issues.”
+
+We were on the right track and have already started working on the next phase: solving issues found by our customers, and enabling more functionality in our technical community.
+
+If you want to hear more don’t hesitate to reach out!

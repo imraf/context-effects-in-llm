@@ -1,0 +1,39 @@
+Title: Word Embedding, Character Embedding and Contextual Embedding in BiDAF — an Illustrated Guide
+URL: https://towardsdatascience.com/the-definitive-guide-to-bidaf-part-2-word-embedding-character-embedding-and-contextual-c151fc4f05bb
+Tags: Machine Learning, Data Science, Computer Science, Artificial Intelligence, NLP
+----------------------------------------
+Additional Details on 1D-CNN
+
+The section above only presents a very conceptual overview of the workings of 1D-CNN. In this section, I will explain how 1D-CNN works in details. Strictly speaking, these details are not necessary to understand how BiDAF works; as such, feel free to jump ahead if you are short on time. However, if you are the type of person who can’t sleep well without understanding every moving part of an algorithm you are learning about, this section is for you!
+
+The idea that motivates the use of 1D-CNN is that not only words as a whole have meanings — word parts can carry meaning, too!
+
+For example, if you know the meaning of the word “underestimate”, you will understand the meaning of “misunderestimate”, although the latter isn’t actually a real word. Why? Because you know from your knowledge of the English language that the prefix “mis-” usually indicates the concept of “mistaken”; this allows you to deduce that “misunderestimate” refers to “mistakenly underestimate” something.
+
+1D-CNN is an algorithm that mimics this human capability to understand word parts. More broadly speaking, 1D-CNN is an algorithm capable of extracting information from shorter segments of a long input sequence. This input sequence can be music, DNA, voice recording, weblogs, etc. In BiDAF, this “long input sequence” is words and the “shorter segments” are the letter combinations and morphemes that make up the words.
+
+To understand how 1D-CNN works, let’s look at the series of illustrations below, which are taken from slides by Yoon Kim et. al., a group from Harvard University.
+
+Let’s say we want to apply 1D-CNN on the word “absurdity”. The first thing we do is represent each character in that word as a vector of dimension d. These vectors are randomly initialized. Collectively, these vectors form a matrix C. d is the height of this matrix, while its length, l, is simply the number of characters in the word. In our example, d and l are 4 and 9, respectively.
+
+2. Next, we create a convolutional filter H. This convolutional filter (also known as “kernel”) is a matrix with which we will “scan” the word. Its height, d, is the same as the height of C but its width w is a number that is smaller than l. The values within H are randomly initialized and will be adjusted during model training.
+
+3. We overlay H on the leftmost corner of C and take an element-wise product of H and its projection on C (a fancy word to describe this process is taking a Hadamard product of H and its projection on C). This process outputs a matrix that has the same dimension as H — a d x l matrix. We then sum up all the numbers in this output matrix to get a scalar. In our example, the scalar is 0.1. This scalar is set as the first element of a new vector called f.
+
+4. We then slide H one character to the right and perform the same operations (get the Hadamard product and sum up the numbers in the resulting matrix) to get another scalar, 0.7. This scalar is set as the second element of f.
+
+5. We repeat these operations character by character until we reach the end of the word. In each step, we add one more element to f and lengthen the vector until it reaches its maximum length which is l - w+1. The vector f is a numeric representation of the word “absurdity” obtained when we look at this word three characters at a time. One thing to note is that the values within the convolution filter H don’t change as H slides through the word. In fancier terms, we call H “position invariant”. The position invariance of the convolutional filters enables us to capture the meaning of a certain letter combination no matter where in the word such combination appears.
+
+6. We record the maximum value in f. This maximum can be thought of as the “summary” of f. In our example, this number is 0.7. We shall refer to this number as the “summary scalar” of f. This process of taking a maximum value of the vector f is also referred to as “max-pooling”.
+
+7. We then repeat all of the above steps with yet another convolutional filter (yet another H!). This convolutional filter might have a different width. In our example below, our second H, denoted H’, has a width of 2. As with the first filter, we slide along H’ across the word to get the vector f and then perform max-pooling on f (i.e. get its summary scalar).
+
+8. We repeat this scanning process several times with different convolutional filters, with each scanning process resulting in one summary scalar. Finally, the summary scalars from these different scanning processes are collected to form the character embedding of the word.
+
+So that’s it — now we’ve obtained a character-based representation of the word that can complement is word-based representation. That's the end of this little digression on 1D-CNN; now let's get back to talking about BiDAF.
+
+Step 4. Highway Network
+
+At this point, we have obtained two sets of vector representations for our words — one from the GloVe (word) embedding and the other from 1D-CNN (character) embedding. The next step is to vertically concatenate these representations.
+
+This concatenation produces two matrices, one for the Context and the other for the Query. Their height is d, which is the sum of d1 and d2. Meanwhile, their lengths are still the same as their predecessor matrices (T for the Context matrix and J for the Query matrix).

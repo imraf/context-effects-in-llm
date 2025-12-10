@@ -1,0 +1,29 @@
+Title: Creating a design system: 5 lessons we’ve learnt
+URL: https://medium.com/design-at-zoopla/creating-a-design-system-5-lessons-weve-learnt-634946b39513
+Tags: User Experience Design, Atomic Design, UI Design, Design Systems, Service Design
+----------------------------------------
+Getting buy-in
+
+A lesson in tenacity (and a bit of luck).
+
+To encourage buy-in across the business, our design leadership:
+
+Gave presentations on the value a design system can add
+
+Talked to the right people (including informal chats in the stairwell)
+
+Dedicated resources into pushing the design system forward
+
+This all helped make the concept of a design system with dedicated resources and a centralised team into a reality.
+
+Of course having a leader who ‘gets’ design in the business always helps and our case has been no different.
+
+Learning from the past
+
+Got a dusty old component library? We did.
+
+So we dusted it down and learnt all we could from it. We sent a survey to all the relevant designers, developers and QAs to understand where it went wrong and why it was no longer used.
+
+This has proven invaluable because we now know the potential pitfalls. For example, we had no real way to onboard new starters with the old component library. We’ve addressed this by creating clear onboarding processes, which detail what people need to get started.
+
+We also applied service design thinking in various ways — both to map out the current experience and map out our ideal process across all the different stages, internal users and tools.

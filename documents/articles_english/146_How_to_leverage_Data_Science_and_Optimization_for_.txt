@@ -1,0 +1,11 @@
+Title: How to leverage Data Science and Optimization for Economical Supply Chain Network Design?
+URL: https://medium.com/the-innovation/how-to-leverage-data-science-and-optimization-for-economical-supply-chain-network-design-d022f456447d
+Tags: Operations Research, Supply Chain, Optimization, Data Science, Decision Making
+----------------------------------------
+Problem Statement & Objective
+
+In my example, I have a finished good (FG) which is made of Part-1 and Part-2. Part-1 is manufactured at location 𝕃. The 𝕃 ships Part-1 to the distribution center (DC). The DC holds the Part-1 in inventory and follows the ‘make-to-order’ strategy i.e. as the order is received, DC outsource the Part-2 from a local supplier and assembles the FG. Then FG is shipped to customers using parcel delivery. I have been given a set (ℕ) of locations where DC can be opened. Out of ℕ, we have further given 𝕁 ⊂ ℕ as the preferred location. My aim is to identify the locations for DC so that the total operating cost of those DCs, shipping costs, and the assembly costs are minimized given the demand of each customer is satisfied.
+
+Further, if we decided to ship the products from 𝕃 to customers, then the total cost is estimated to be more than $27 million, shipping cost accounts for 60% of the total.
+
+To optimize the SCND cost, I am proposing a Mixed Integer Programming (MIP) model [To learn more about MIP and optimization, please check mipmaster.org blog]. The detailed mathematical model formulation and the problem description is available at github. Next, I describe how the OR and ML help in lowering the anticipated cost of $27 million.

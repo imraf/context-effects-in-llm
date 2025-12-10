@@ -1,0 +1,43 @@
+Title: Week 7 : Defining Voice and Tone. It’s all about personality
+URL: https://medium.com/ux-writers-learn/week-7-defining-voice-and-tone-679e869a3962
+Tags: Ux Writing
+----------------------------------------
+It’s all about personality
+
+In the previous post, I shared about user research — getting to know your users, the words they speak, the way they interact with your product and so on, in order to tailor your product copy to suit them and meet their needs.
+
+This week I’m sharing a little about product voice. This voice is your brand’s identity in writing— how people recognize you, what sets you apart from your competitors, what you stand for.
+
+The words a product uses is what communicates the product’s brand to its customers.
+
+One of my favourite sources for building voice is ‘Microcopy — The complete guide’ by Kinneret Yifrah.
+
+Language makes digital products more human-like, but it has to be authentic and natural.
+
+If a company positions itself as being young and tech savvy, then the way its product speaks — via its words — should reflect that. Same if a product’s target market is children and its brand is ‘playful’, you’d expect them to use words that kids understand and relate with.
+
+Writing copy according to a product’s voice is made possible with brand documents, content style guidelines, and other documentation that convey the product’s personality.
+
+Product voice is not limited to microcopy though, it affects all forms of writing and communication that is done on behalf of the company.
+
+Developing product voice
+
+Suppose there’s no defined voice yet, or you’re creating a product voice for your portfolio,? here are some tips I picked up from UX Writers.
+
+Vision & mission
+
+What is the company’s vision and its values? What drives the company? The language a company adopts most often aligns with its purpose.
+
+This vision influences the type of content put out, as well as help shape the personality of the product.
+
+2. Personality
+
+Memorable digital products have personalities. Imagine the product was a person. How would you describe it? Funny or serious? are they fashionable or biased towards basic comfort clothes ? are they friendly and open to everyone or do they move in close-knit circles?
+
+Personality scale developed by Big Brand System
+
+By humanizing products, it’s easier to decide how the product would naturally sound. This helps the copy and other content align with the product’s identity to create an authentic product voice that users can relate to. It’s based on this adopted personality that the product voice is shaped.
+
+In building the product’s voice, what your colleagues think the product sounds like, how it should sound (based on personality), and how users perceive it, should be taken into consideration.
+
+Tips for writing according to voice

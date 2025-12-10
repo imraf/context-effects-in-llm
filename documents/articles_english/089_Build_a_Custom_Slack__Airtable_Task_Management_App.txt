@@ -1,0 +1,69 @@
+Title: Build a Custom Slack + Airtable Task Management Application
+URL: https://medium.com/swlh/build-a-custom-slack-airtable-task-management-application-d95c8e7eb55c
+Tags: Slack, Productivity, Technology, API, Project Management
+----------------------------------------
+Prepare your Airtable Base
+
+Once you log in to Airtable, copy this base by clicking the link and select the workspace you’d like to add the base to:
+
+https://airtable.com/addBaseFromShare/shrDjE80mXmDexLfM?utm_source=airtable_shared_application
+
+Install Slack App Using Autocode
+
+Now copy my Slack app template using this link:
+
+https://autocode.stdlib.com/github/JanethL/TaskManagerBot/?filename=README.md
+
+Sign in or create a free account. If you have a Standard Library account, click Already Registered and sign in using your Standard Library credentials.
+
+Give your project a unique name and select Start API Project from Github:
+
+Fork Code from Github
+
+Autocode automatically sets up a project scaffold to save your project as an API endpoint.
+
+To deploy your API to the cloud, navigate through the functions/events/scheduler folders on the left and select weekly.js file.
+
+Enter weekly.js
+
+Click Accounts Required
+
+Select the red Account Required button, which will prompt you to link Slack and Airtable accounts.
+
+Link Resources
+
+Let’s start by linking a Slack Resource. Select Link New Resource to link a new Slack app.
+
+Install Standard Library App
+
+You should see an OAuth popup. Select the workspace you’d like to install your Slack app in, and click Allow.
+
+Click Allow
+
+Give your Slack app a name and image if you’d like.
+
+Select Finish
+
+Select Finish. Next select Link Resource to connect to your Airtable account by following the instructions on the modal to retrieve your Airtable API Key and select finish.
+
+Link Airtable
+
+Find and select your base and click Finish.
+
+Pick an Airtable base
+
+The green checkmarks confirm that you’ve linked your accounts properly. Select Finished Linking.
+
+Select Finished Linking
+
+You’re ready to deploy your Slack App! Select Deploy in the bottom-left of the file manager.
+
+Deploy App
+
+Continue
+
+Your Slack App is now available for use in the Slack workspace you authorized it.
+
+The final step is to populate the Members Airtable with active members in your workspace by running /cmd getmembers from any channel in Slack. You can then select the team members you’d like to have your app message.
+
+🙌🏼 Your Slack task manager is all set!

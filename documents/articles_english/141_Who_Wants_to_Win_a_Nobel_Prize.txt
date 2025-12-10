@@ -1,0 +1,45 @@
+Title: Who Wants to Win a Nobel Prize?
+URL: https://medium.com/hackernoon/who-wants-to-win-a-nobel-prize-eb076e64718d
+Tags: AI, Artificial Intelligence, Blockchain, Healthcare, Data
+----------------------------------------
+Who Wants to Win a Nobel Prize?
+
+How AI, blockchain, and genomic technologies could lead to a life sciences revolution
+
+A new method to price health data could lead to Nobel-worthy insights, suggest two leaders in AI and genetics fields. (Flickr)
+
+If we auctioned off all of the elements in your body — the carbon, oxygen, iron, sodium, etc. — you would be worth a grand total of about one U.S. dollar. Five bucks, if you had the right bidders, apparently.
+
+But, you’re more than just a smorgasbord of trace elements and mish-mash of substances. Inside you, right now, swirling around in your genome, could be data that lead to a cure for cancer, insights that pave the way to treatments for heart disease, and clues to solving a range of other trillion-dollar mysteries in the life sciences industries. There are even ways to convert this information into intelligence that would guide billion-dollar marketing decisions.
+
+So, now what would your body and brain’s treasure trove of data be worth? Millions? Billions?
+
+That’s the point. Nobody knows.
+
+A team of researchers are suggesting that finding a way to value that data could be a Nobel-prize worthy effort, one that could revolutionize the healthcare field and, they add, give more validity to blockchain technology. They add that a trifecta of new technologies could help.
+
+George Church, professor of genetics at Harvard Medical School and a founding member of the Wyss Institute for Biologically Inspired Engineering at Harvard, and Alex Zhavoronkov, CEO of Insilico Medicine, recently published a paper in Cell that serves as a call to economists, mathematicians, biotechnologists, information scientists, blockchain experts and anyone else who wants to collaborate to find a way to estimate the worth of human health data.
+
+According to the researchers, pharmaceutical companies currently buy and use large volumes of human health data for research and use in clinical trials, as well as for marketing purposes.
+
+“However, there are few examples of companies turning this data into new therapeutic products and it is difficult to estimate the potential benefits stemming from a specific data type or a combination,” Zhavoronkov wrote in a recent Medium post.
+
+In finance, established pricing methods have revolutionized the field, creating new investment products and leading to a quadrillion-dollar derivatives market. The Black-Scholes Model is perhaps the most famous and important pricing model in the financial industry. This model determines the fair price for options based on variables such as volatility, type of option, underlying stock price, time, strike price and risk-free rate.
+
+“With the continued growth of the blockchain technology within the healthcare system, data security, patient data privacy and the ability to manage consent and share data benefits with the patients, has become more vital than ever.”
+
+Human health data is a bit more sensitive than deciding what the price of pork bellies are and what a fair price for gold ingots should be, the researchers suggest. Privacy is a huge concern. Even as artificial intelligence and big data technologies are fed more and more health data to make huge leaps in understanding our health, not everyone is on board with donating their data because not everyone wants their personal health data flopping around the internet.
+
+That’s where blockchain comes in.
+
+“With the continued growth of the blockchain technology within the healthcare system, data security, patient data privacy and the ability to manage consent and share data benefits with the patients, has become more vital than ever,” Zhavoronkov writes.
+
+Public ledgers could help secure this private health data so that is used by the right people for the right purposes — and continually watched over by the people who actually own the data: you and me. It could also create a way to compensate us for contributing our health data to projects that might lead to new cures and treatments.
+
+“Storing and processing medical data in the cloud, or the closed ecosystem, which prevents its illegal usage, blockchain technology can increase patients’ engagement by allowing them to make profit from the initial sale of the data,” Zhavoronkov adds.
+
+These separate waves of technological revolutions — blockchain, artificial intelligence and whole genome sequencing — could create a perfect tsunami that leads to a market that dwarfs the Black-Scholes-powered derivatives market and, arguably, will benefit humankind in more profound ways.
+
+“In addition to these hack-resistant public ledgers, we have rapidly improving tools for whole genome sequencing and homomorphic encryption queries to deliver better privacy so that many people can finally benefit from knowing and owning their own genomes,” says Church.
+
+So, who wants to possible cure cancer, win a Nobel prize, and maybe even be a trillionaire?

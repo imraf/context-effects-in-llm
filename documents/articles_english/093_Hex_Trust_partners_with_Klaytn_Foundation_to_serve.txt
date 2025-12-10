@@ -1,0 +1,35 @@
+Title: Hex Trust partners with Klaytn Foundation to serve institutional blockchain projects
+URL: https://medium.com/hex-trust/hex-trust-partners-with-klaytn-foundation-to-serve-institutional-blockchain-projects-ee661765ddda
+Tags: Press Release
+----------------------------------------
+Hex Trust partners with Klaytn Foundation to serve institutional blockchain projects Joe Caselin Follow Sep 7 · 3 min read
+
+Hex Trust, Asia’s leading digital asset custodian, has partnered with Klaytn Foundation to provide the scalability and performance required for the mass adoption of digital assets. Following the announcement, customers of Hex Trust including financial institutions, digital asset natives, and HNWIs can now safely custody the Klaytn protocol’s native token KLAY with Hex Safe™, the institutional-grade digital assets custody platform.
+
+Klaytn, the blockchain project spearheaded by South Korean Internet giant Kakao, recently announced that the Klaytn Foundation, a non-profit entity headquartered in Singapore, formally officiates its role as the core committee overseeing the scaling of operations and resources for the continued global expansion of the Klaytn blockchain and its ecosystem.
+
+With hopes of building on its mission to drive global growth in the Klaytn ecosystem, the Klaytn Foundation will also accept applications for the Klaytn Growth Fund. The Fund invites developers and users to build applications, developer tools, or lead community-building initiatives to facilitate sustainable growth. Promising candidates can benefit from financial grants and technical consultation. Applications will open on the Klaytn Foundation website in late September.
+
+Klaytn is also strategically partnering with ConsenSys, the leading Ethereum software company, to advance the Klaytn platform’s integrated digital currency efforts in the Bank of Korea’s CBDC pilot this year.
+
+Calvin Shen, Head of Sales and Business Development at Hex Trust said, “supporting the enterprise-grade Klaytn platform with highly-secure, bank-grade and fully compliant custody services strengthens Klaytn’s position to serve institutional blockchain projects in the region which aligns with our own mission and vision for the industry.”
+
+Hex Trust enables banks and financial institutions to seamlessly integrate digital assets into their business operations in a highly secure, scalable and compliant way. The organization has one of the industry’s broadest ranges of digital asset custody support including cryptocurrencies, security tokens and non-fungible tokens (NFTs). Hex Trust has over 100 institutional clients including banks, financial institutions, exchanges, investment funds and corporations across Asia and Europe.
+
+About Klaytn Foundation
+
+Klaytn is a service-centric blockchain platform providing an intuitive development environment and friendly end-user experience. It is built upon solid reliability and significant stability with substantial service development for mass adoption.
+
+The Klaytn Foundation is a non-profit entity in Singapore established to accelerate the sustainable growth of Klaytn. We facilitate every innovator in the world to join Klaytn and enjoy Klaytn’s global ecosystem.
+
+For more information, visit https://www.klaytn.foundation
+
+About Hex Trust
+
+Hex Trust Limited is fully licenced, insured and Asia’s leading digital asset custodian. Led by veteran banking technologists and award-winning financial services experts, Hex Trust has built a proprietary bank-grade platform — Hex Safe™ — that delivers a custody solution for banks, financial institutions, asset managers, exchanges, and corporations.
+
+Through Hex Safe™, clients can access liquidity providers, exchanges and lending and staking platforms, enabling seamless access to services while assets are held in our highly secure and regulated platform. Hex Trust has offices in Hong Kong, Singapore, and Vietnam and is expanding to the European market during 2021.
+
+In Hong Kong, Hex Trust is registered as a Trust Company under the Hong Kong Trust Ordinance and holds a Trust or Company Service Provider (TCSP) license under the Anti-Money Laundering and Counter-Terrorist Financing Ordinance. In Singapore, Hex Trust holds a Capital Markets Services (CMS) licence from the Monetary Authority of Singapore (MAS) allowing the company to provide custodial services regulated under Singapore’s Securities and Futures Act.
+
+To learn more about Hex Trust, visit https://hextrust.com/ and follow us on LinkedIn and Twitter.

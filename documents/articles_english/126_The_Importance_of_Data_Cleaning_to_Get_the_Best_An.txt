@@ -1,0 +1,101 @@
+Title: The Importance of Data Cleaning to Get the Best Analysis in Data Science
+URL: https://medium.com/@deshiwa/the-importance-of-data-cleaning-to-get-the-best-analysis-in-data-science-668f0336c072
+Tags: Data Cleaning, Python, Data Science, Linear Regression, Machine Learning
+----------------------------------------
+Image From https://dataladder.com/data-cleaning-guide/
+
+How Importance is Data Cleaning in order to perform the best data analytics
+
+In data science, the results of the analysis will be greatly influenced by the quality of the data used. the quality of the data means the data available in accordance with the function to be used in the analysis. Simply put, good data will produce good analysis and vice versa.
+
+The data cleaning stage itself is an essential process in the machine learning analysis process before starting to apply the model. This discussion will take an example on real estate price prediction using linear regression. Previously, an example article of linear regression analysis for real estate price prediction can be seen here, the case analysis process is carried out as it is without preprocessing the data used. So the prediction process includes date values and serial numbers as independent variables, and multicollinearity values are also not previously calculated. This of course will make the analysis unsuitable. step-by-step data cleaning to prediction modeling can be seen as follows.
+
+Similar to the example used above, the data used is the real estate prices provided by Kaggle, which can be seen here
+
+First, import the library needed to read the dataset from csv format, and save the data into a variable
+
+import numpy as np
+
+import pandas as pd
+
+re_dataset = pd.read_csv("real_estate.csv")
+
+re_dataset.head()
+
+re_dataset
+
+There are 6 independent variables used to determine the real estate unit price value written from X1 to X6 in the dataset. We begin the data cleaning process by deleting empty data, but beforehand we make sure if there is empty data.
+
+re_dataset.isna().sum()
+
+dataset check
+
+Because there is no empty data, we don’t need to do the deletion process and the process is done by eliminating unused variables. Based on the existing variables, we will not use the transaction date variable and also the transaction sequence number, even though it is not included in the variable, it is still included in the dataset column, therefore the two columns in the dataset will be excluded for further processing.
+
+re_dataset.pop(“no”)
+
+re_dataset.pop(“transaction_date”)
+
+re_dataset.head()
+
+unneeded columns removed
+
+The next step is to normalize the data, considering that each data used has a different range.
+
+from sklearn import preprocessing
+
+re_col = re_dataset.columns
+
+normalize_df = preprocessing.normalize(re_dataset, axis=0)
+
+normalize_df = pd.DataFrame(normalize_df, columns=re_col)
+
+normalize_df.head()
+
+normalized data
+
+After the data is normalized, the next step is to divide the data into training data and test data before making predictions.
+
+from sklearn.model_selection import train_test_splitdf_train, df_test = train_test_split(normalize_df, train_size=0.8, test_size=0.2) y_train = df_train["house_price"]
+
+x_train = df_train[["house_age", "distance_to_mrt", "num_convinience", "latitude", "longitude"]]
+
+One more preparation before conducting regression analysis is to check multicollinearity between variables, multicollinearity is a condition where a variable has a very high attachment to another variable, for example a regression analysis is used on 3 independent variables, namely a, b and c which have a value of a * b This means that the variable c has high collinearity to other variables because if the variable a or b changes, it will greatly affect the value of variable c. The easiest way to eliminate this multicollinearity is to exclude this variable in the analysis process. Checking the multicollinearity value of the variable is as follows.
+
+from statsmodels.stats.outliers_influence import variance_inflation_factor vif_data = pd.DataFrame()
+
+vif_data[“feature”] = x_train.columns vif_data[“VIF”] = [variance_inflation_factor(x_train.values, i)
+
+for i in range(len(x_train.columns))] print(vif_data)
+
+multicollinearity using VIF
+
+The tolerable collinearity value based on VIF ranges from 1–5, and if it is more than that it is better not to include it in the analysis, it can be seen that the latitude and longitude values have a value of around 6.43 so that they must be ruled out. Therefore we have to readjust the independent variables to be used as well as declare the test data variables.
+
+x_train = x_train[[‘house_age’, ‘distance_to_mrt’, ‘num_convinience’]] y_test = df_test['house_price']
+
+x_test = df_test[['house_age', 'distance_to_mrt', 'num_convinience']]
+
+Finally, now enter the modeling stage, once again make sure the data is ready to use before applying it to the model. In accordance with the explanation above, if the prediction will be carried out by linear regression, the modeling can be seen as follows.
+
+from sklearn.linear_model import LinearRegression lm = LinearRegression()
+
+model = lm.fit(x_train, y_train)
+
+y_predictions = model.predict(x_test)
+
+If the data has been predicted, to find out whether the model that is made predicts good enough or not, it is necessary to test the accuracy. The accuracy test method that can be done is by means of Mean Absolute Error and R2
+
+from sklearn.metrics import mean_absolute_error, r2_score mae = mean_absolute_error(y_test, y_predictions)
+
+r2 = r2_score(y_test, y_predictions)
+
+print(mae)
+
+print(r2)
+
+accuracy test
+
+The accuracy results are recorded at around 0.009 for Mean Absolute Error and 0.373 for R2, these results indicate a significant increase in the results achieved before without cleaning data shown here, namely 5.77 for Mean Absolute Error and 0.657 for R2.
+
+References

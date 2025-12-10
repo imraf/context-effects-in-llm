@@ -1,0 +1,61 @@
+Title: How to land a job at Valuemotive
+URL: https://blog.valuemotive.com/how-to-land-a-job-at-valuemotive-db74521d2d1e
+Tags: Jobs, Consultancy, It, Career, Recruitment
+----------------------------------------
+Be yourself
+
+It’s easy to feel nervous during a job interview (or a discussion as we call it). After all, where you work has a big impact on both your professional and personal life. It’s in our best interest to let you take your time to describe yourself in a natural way.
+
+There’s no strict upper limit to the time we can spend on a discussion. The conversation flows freely. We do have some topics to discuss, but the order and emphasis is not set in stone either. There’s no pre-meditated battery of questions with correct answers. All I’d personally like to see is what kind of person I might get to work with, and what you can do. Keep in mind that soft skills are just as important as professional skills.
+
+Ask questions
+
+The discussion should flow in both ways. We have lots of questions to ask, but so should you. Folks often come up with unexpected questions even though they’ve been to our website and blog, and maybe even met some of us. Though our daily work resembles the work of other software consultancies, we have a distinct company culture and diverse projects. We’ll happily answer questions like:
+
+“How was your last project?”
+
+“What kind of benefits does Valuemotive offer?”
+
+“I like to work with a Thinkpad using Ubuntu. Can I do so in an average project?”
+
+“What kind of hobbies are common in your company? Does anyone cycle to work?”
+
+Asking questions in the discussion is a clear signal that you are interested in us, and in your prospects.
+
+Highlight your work
+
+Have you ever completed a demanding project? Did you find success in convincing your colleagues to use certain tech? Have you taught folks about agile working methods? Got a cool side-project to show? Though our clients tend to ask us for a developer with x years of experience in y, we value tangible results.
+
+It’s often the case that your success stories are behind a NDA, or otherwise private. That’s OK. I’m sure that there’s a way to highlight the best parts of a project without disclosing the details. The business secrets didn’t lead to results, rather actions taken by the team did.
+
+If the reason you are applying to work for us is that your current employer is not providing the platform for you to shine, that’s fine too. There must be something you have learned even if you’ve been barred from success stories.
+
+Tell us about teamwork
+
+All of our work is teamwork. Our consultants must be able to communicate their work and intentions clearly. We can afford to be frank about facts and so do you. We use best practices in our teams so that we ship top quality code, or keep Valuemotive on track internally.
+
+What kind of experiences do you have? Again it’s possible that you haven’t had the chance to enjoy pair programming, code reviews or take part in retrospectives. You may still have an inkling of the value good habits provide. Tell us about it!
+
+Show your passion
+
+Enthusiasm drives greatness. I’m sure that there’s something that you feel passionate about. This could be related to tech, or a mindset. You might have a business domain or cause that you could lend your skills to. We can use this information in the project scouting phase to your benefit (more on that soon).
+
+What was the last thing that got you excited?
+
+You can choose your own adventure at Valuemotive!
+
+What to expect from us
+
+Your technical skill (if applicable) will be evaluated by thorough discussions and possibly by asking for example code. Goal of the first discussion is to introduce each other and for us to get a good overview of your skills. That’s the right time to ask lots of questions!
+
+The second discussion is dedicated to technical stuff or topics for the role you are applying for. We like to go over an example problem and see how you would approach it. We do this verbally. Explaining or estimating complexity face to face is part of our daily work.
+
+We’ll give a realistic description of our work. When it’s obvious that you should work for us, we’ll proceed to look for a project that you’d be ideal for. We really don’t want to have someone land in an environment that they don’t like. The project scouting phase usually includes a meeting with a client. We might want to meet you for the third time to discuss a project.
+
+You can also expect us to give you timely updates along the way. We’re lean, and have no reason to keep you waiting. You will receive constructive feedback from our discussions.
+
+Ready to apply?
+
+Now that you know what to expect, contact us! You can reach our recruitment team at careers@valuemotive.com, though you should first check out what kind of roles we are looking for over at valuemotive.com/careers. In any case I recommend you to write about your hopes and dream. I would love to see a relatively short and direct CV — with emphasis on projects instead of employers and education.
+
+See you soon!
