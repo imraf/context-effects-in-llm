@@ -5,7 +5,7 @@ This project aims to implement a comprehensive suite of experiments to analyze t
 
 ## 2. Objectives
 -   **Analyze Context Behavior:** Quantify how models handle information retrieval and reasoning as context grows and noise increases.
--   **Compare Models:** Benchmark and compare these LLMs: (`llama3.2:3b-100K`, `llama3.2:3b-100K`, `granite3.3:2b-100K`, `gpt-oss:20b-100K` `gemma3:12b-100K`, `qwen3:14b-100K`)
+-   **Compare Models:** Benchmark and compare these LLMs: (`llama3.2:3b-100K`, `granite3.3:2b-100K`, `gpt-oss:20b-100K` `gemma3:12b-100K`, `qwen3:14b-100K`)
 -   **Visualize Results:** Produce high-quality, insightful, and aesthetic visualizations (graphs, heatmaps) suitable for academic or professional publication.
 -   **Evaluate Strategies:** Determine the efficacy of RAG and specific context engineering techniques (Select, Compress, Write).
 

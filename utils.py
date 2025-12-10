@@ -76,20 +76,37 @@ def load_hebrew_articles(limit: int = 20) -> List[str]:
 
 def generate_filler_text(word_count: int, source_texts: List[str]) -> str:
     """Generates filler text by sampling from source texts."""
-    if not source_texts:
-        return "Lorem ipsum dolor sit amet " * (word_count // 5)
+    # Filter out empty texts
+    valid_texts = [t for t in source_texts if t and t.strip()]
     
-    text = ""
-    while len(text.split()) < word_count:
-        sample = random.choice(source_texts)
-        # Take a random chunk
+    if not valid_texts:
+        return " ".join(["Lorem", "ipsum", "dolor", "sit", "amet"] * (word_count // 5 + 1))
+    
+    collected_words = []
+    current_count = 0
+    
+    while current_count < word_count:
+        sample = random.choice(valid_texts)
         words = sample.split()
-        if not words: continue
-        start = random.randint(0, max(0, len(words) - 100))
-        chunk = " ".join(words[start:start+200])
-        text += chunk + "\n\n"
+        
+        if not words:
+            continue
+            
+        # Take a random chunk
+        chunk_size = 200
+        if len(words) > chunk_size:
+            start = random.randint(0, len(words) - chunk_size)
+            chunk = words[start:start+chunk_size]
+        else:
+            chunk = words
+            
+        collected_words.extend(chunk)
+        current_count += len(chunk)
+        
+        # Add paragraph break
+        collected_words.append("\n\n")
     
-    return " ".join(text.split()[:word_count])
+    return " ".join(collected_words[:word_count])
 
 def embed_fact(context: str, fact: str, position: str) -> str:
     """Embeds a fact into the context at a specific position."""

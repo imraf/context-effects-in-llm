@@ -21,8 +21,8 @@ class NeedleExperiment:
         logger.info(f"Starting Experiment 1 (Needle) for {self.model}")
         results = {}
         
-        # Base context size (approx 3000 words ~ 4k tokens)
-        context_length_words = 3000 
+        # Base context size
+        context_length_words = 50000 
         base_context = generate_filler_text(context_length_words, self.articles)
 
         for position in config.EXP1_NEEDLE_POSITIONS:
