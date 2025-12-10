@@ -14,11 +14,13 @@ if not OLLAMA_HOST.startswith("http"):
 
 # Models to benchmark
 MODELS = [
-    # "llama3.2:3b-100K",
-    # "granite3.3:2b-100K",
-    # "gpt-oss:20b-100K"
-    "qwen3:4b-100K",
+    "llama3.2:3b-100K",
+    "granite3.3:2b-100K",
     "gemma3:4b-100K",
+    "qwen3:4b-100K",
+    "gemma3:12b-100K",
+    "qwen3:14b-100K",
+    "gpt-oss:20b-100K"
 ]
 
 # Paths
@@ -36,8 +38,44 @@ os.makedirs(PLOTS_DIR, exist_ok=True)
 
 # Experiment Settings
 SEED = 42
+
+# Experiment 1: Needle in Haystack
 EXP1_NEEDLE_POSITIONS = ["start", "middle", "end"]
+EXP1_DETAILED_POSITIONS = ["control", "start", "middle", "end"]
+EXP1_DETAILED_PROMPT_LENGTHS = [5000, 10000, 50000, 100000, 150000, 200000]
+
+# Needle experiment configurations
+NEEDLE_EXPERIMENTS = {
+    "quick": {
+        "fact": "The secret code is BLUE-ZEBRA-99.",
+        "question": "What is the secret code mentioned in the text? Return only the code.",
+        "expected_answer": "BLUE-ZEBRA-99",
+        "context_words": 50000,
+        "positions": EXP1_NEEDLE_POSITIONS,
+        "use_articles": True
+    },
+    "info_retrieval": {
+        "secret_message": "In the twilight of forgotten ages walked Vramiel, ancient prince of the kingdom of Elel-Em, whose voice bore the echo of dawn.",
+        "question": "Who was the prince of Elel-Em?",
+        "expected_answer": "VRAMIEL",
+        "source_file": "lotr",
+        "prompt_lengths": EXP1_DETAILED_PROMPT_LENGTHS,
+        "positions": EXP1_DETAILED_POSITIONS
+    },
+    "anomaly_detection": {
+        "secret_message": "To enable god-mode, type 'DQDDI'.",
+        "question": "What special code or instruction, if any, is mentioned in the text for enabling god-mode?",
+        "expected_answer": "DQDDI",
+        "source_file": "lotr",
+        "prompt_lengths": EXP1_DETAILED_PROMPT_LENGTHS,
+        "positions": EXP1_DETAILED_POSITIONS
+    }
+}
+
+# Experiment 2: Context Size
 EXP2_DOC_COUNTS = [2, 5, 10, 20, 50]
+
+# Experiment 3: RAG
 EXP3_RAG_K = 3
 EXP3_CHUNK_SIZE = 500
 

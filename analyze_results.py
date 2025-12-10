@@ -17,19 +17,34 @@ def load_results():
     files = glob.glob(os.path.join(config.RESULTS_DIR, "*_results.json"))
     for f in files:
         with open(f, "r") as file:
-            results.append(json.load(file))
+            data = json.load(file)
+            # Check if this is a detailed needle experiment result
+            if "experiment_metadata" in data and "results" in data:
+                # This is a detailed format (info_retrieval or anomaly_detection)
+                results.append({
+                    "type": "detailed_needle",
+                    "metadata": data["experiment_metadata"],
+                    "results": data["results"]
+                })
+            else:
+                # This is the original format
+                results.append({
+                    "type": "standard",
+                    "data": data
+                })
     return results
 
 def plot_exp1_needle(results):
     data = []
     for res in results:
-        model = res['model']
-        for pos, metrics in res['exp1_needle'].items():
-            data.append({
-                "Model": model,
-                "Position": pos.capitalize(),
-                "Accuracy": metrics['accuracy']
-            })
+        if res.get("type") == "standard":
+            model = res['data']['model']
+            for pos, metrics in res['data']['exp1_needle'].items():
+                data.append({
+                    "Model": model,
+                    "Position": pos.capitalize(),
+                    "Accuracy": metrics['accuracy']
+                })
     
     if not data: return
 
@@ -53,14 +68,15 @@ def plot_exp1_needle(results):
 def plot_exp2_size(results):
     data = []
     for res in results:
-        model = res['model']
-        for entry in res['exp2_size']:
-            data.append({
-                "Model": model,
-                "Tokens": entry['token_count'],
-                "Accuracy": entry['accuracy'],
-                "Latency": entry['latency']
-            })
+        if res.get("type") == "standard":
+            model = res['data']['model']
+            for entry in res['data']['exp2_size']:
+                data.append({
+                    "Model": model,
+                    "Tokens": entry['token_count'],
+                    "Accuracy": entry['accuracy'],
+                    "Latency": entry['latency']
+                })
     
     if not data: return
 
@@ -89,22 +105,23 @@ def plot_exp2_size(results):
 def plot_exp3_rag(results):
     data = []
     for res in results:
-        model = res['model']
-        rag_data = res.get('exp3_rag', {})
-        if not rag_data: continue
-        
-        data.append({
-            "Model": model,
-            "Method": "Full Context",
-            "Latency": rag_data.get('full_context', {}).get('latency', 0),
-            "Accuracy": rag_data.get('full_context', {}).get('accuracy', 0)
-        })
-        data.append({
-            "Model": model,
-            "Method": "RAG",
-            "Latency": rag_data.get('rag', {}).get('latency', 0),
-            "Accuracy": rag_data.get('rag', {}).get('accuracy', 0)
-        })
+        if res.get("type") == "standard":
+            model = res['data']['model']
+            rag_data = res['data'].get('exp3_rag', {})
+            if not rag_data: continue
+            
+            data.append({
+                "Model": model,
+                "Method": "Full Context",
+                "Latency": rag_data.get('full_context', {}).get('latency', 0),
+                "Accuracy": rag_data.get('full_context', {}).get('accuracy', 0)
+            })
+            data.append({
+                "Model": model,
+                "Method": "RAG",
+                "Latency": rag_data.get('rag', {}).get('latency', 0),
+                "Accuracy": rag_data.get('rag', {}).get('accuracy', 0)
+            })
     
     if not data: return
 
@@ -147,26 +164,27 @@ def plot_radar_summary(results):
     plt.ylim(0, 1.0)
     
     # Color palette
-    colors = sns.color_palette(PALETTE, len(results))
+    standard_results = [r for r in results if r.get("type") == "standard"]
+    colors = sns.color_palette(PALETTE, len(standard_results))
 
-    for idx, res in enumerate(results):
-        model = res['model']
+    for idx, res in enumerate(standard_results):
+        model = res['data']['model']
         
         # Calculate scores (normalized 0-1)
         # 1. Needle: Avg accuracy
-        exp1_vals = [v['accuracy'] for v in res['exp1_needle'].values()]
+        exp1_vals = [v['accuracy'] for v in res['data']['exp1_needle'].values()]
         s1 = np.mean(exp1_vals) if exp1_vals else 0
         
         # 2. Long Context: Avg accuracy weighted by token count? Or just raw avg accuracy.
         # Let's use avg accuracy for simplicity.
-        exp2_vals = [v['accuracy'] for v in res['exp2_size']]
+        exp2_vals = [v['accuracy'] for v in res['data']['exp2_size']]
         s2 = np.mean(exp2_vals) if exp2_vals else 0
         
         # 3. RAG: Accuracy
-        s3 = res.get('exp3_rag', {}).get('rag', {}).get('accuracy', 0)
+        s3 = res['data'].get('exp3_rag', {}).get('rag', {}).get('accuracy', 0)
         
         # 4. Reasoning: Exp 4 Write strategy accuracy
-        s4 = 1.0 if res.get('exp4_strategies', {}).get('write', {}).get('correct') else 0.0
+        s4 = 1.0 if res['data'].get('exp4_strategies', {}).get('write', {}).get('correct') else 0.0
         
         values = [s1, s2, s3, s4]
         values += values[:1]
@@ -181,6 +199,97 @@ def plot_radar_summary(results):
     plt.savefig(os.path.join(config.PLOTS_DIR, "benchmark_radar.png"), dpi=300)
     plt.close()
 
+def plot_detailed_needle_experiments(results):
+    """Generate visualizations for detailed needle experiments (info_retrieval, anomaly_detection)."""
+    detailed_results = [r for r in results if r.get("type") == "detailed_needle"]
+    
+    for exp_result in detailed_results:
+        metadata = exp_result["metadata"]
+        exp_data = exp_result["results"]
+        exp_name = metadata.get("experiment_name", "unknown")
+        
+        df = pd.DataFrame(exp_data)
+        
+        # Filter out control for some analyses
+        test_df = df[df['message_position'] != 'control']
+        
+        if len(test_df) == 0:
+            continue
+        
+        # 1. Overall Detection Rate by Model
+        plt.figure(figsize=(10, 6))
+        model_accuracy = test_df.groupby('model')['found_secret'].mean().reset_index()
+        sns.barplot(data=model_accuracy, x='model', y='found_secret', palette='viridis')
+        plt.title(f'Overall Secret Detection Rate - {exp_name}')
+        plt.ylabel('Detection Rate')
+        plt.ylim(0, 1.0)
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        plt.savefig(os.path.join(config.PLOTS_DIR, f"overall_detection_{exp_name}.png"), dpi=300)
+        plt.close()
+
+        # 2. Detection Rate by Position
+        plt.figure(figsize=(12, 6))
+        pos_accuracy = test_df.groupby(['model', 'message_position'])['found_secret'].mean().reset_index()
+        sns.barplot(data=pos_accuracy, x='model', y='found_secret', hue='message_position', palette='deep')
+        plt.title(f'Detection Rate by Position - {exp_name}')
+        plt.ylabel('Detection Rate')
+        plt.ylim(0, 1.0)
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        plt.savefig(os.path.join(config.PLOTS_DIR, f"position_detection_{exp_name}.png"), dpi=300)
+        plt.close()
+
+        # 3. Heatmaps per model
+        models = test_df['model'].unique()
+        for model in models:
+            model_data = test_df[test_df['model'] == model]
+            pivot_table = model_data.pivot_table(
+                index='message_position',
+                columns='target_prompt_length',
+                values='found_secret',
+                aggfunc='mean'
+            )
+            # Reorder index
+            pivot_table = pivot_table.reindex(['start', 'middle', 'end'])
+            
+            plt.figure(figsize=(12, 4))
+            sns.heatmap(pivot_table, annot=True, cmap='RdYlGn', vmin=0, vmax=1, 
+                       cbar_kws={'label': 'Detection Rate'}, fmt='.2f')
+            plt.title(f'Needle Detection Heatmap: {model} - {exp_name}')
+            plt.xlabel('Context Length (chars)')
+            plt.ylabel('Needle Position')
+            plt.tight_layout()
+            safe_model_name = model.replace(':', '_')
+            plt.savefig(os.path.join(config.PLOTS_DIR, f"heatmap_{safe_model_name}_{exp_name}.png"), dpi=300)
+            plt.close()
+
+        # 4. Length Detection Curve
+        plt.figure(figsize=(12, 6))
+        length_accuracy = test_df.groupby(['model', 'target_prompt_length'])['found_secret'].mean().reset_index()
+        sns.lineplot(data=length_accuracy, x='target_prompt_length', y='found_secret', 
+                    hue='model', marker='o', linewidth=2.5)
+        plt.title(f'Detection Rate vs Context Length - {exp_name}')
+        plt.xlabel('Context Length (chars)')
+        plt.ylabel('Detection Rate')
+        plt.ylim(-0.05, 1.05)
+        plt.grid(True, linestyle='--', alpha=0.7)
+        plt.tight_layout()
+        plt.savefig(os.path.join(config.PLOTS_DIR, f"length_curve_{exp_name}.png"), dpi=300)
+        plt.close()
+
+        # 5. Query Time Analysis
+        plt.figure(figsize=(12, 6))
+        sns.scatterplot(data=df, x='target_prompt_length', y='query_time_seconds', 
+                       hue='model', alpha=0.6, s=100)
+        plt.title(f'Query Time vs Context Length - {exp_name}')
+        plt.xlabel('Context Length (chars)')
+        plt.ylabel('Time (seconds)')
+        plt.grid(True, linestyle='--', alpha=0.7)
+        plt.tight_layout()
+        plt.savefig(os.path.join(config.PLOTS_DIR, f"query_time_{exp_name}.png"), dpi=300)
+        plt.close()
+
 def main():
     results = load_results()
     if not results:
@@ -192,6 +301,7 @@ def main():
     plot_exp2_size(results)
     plot_exp3_rag(results)
     plot_radar_summary(results)
+    plot_detailed_needle_experiments(results)
     print(f"Plots saved to {config.PLOTS_DIR}")
 
 if __name__ == "__main__":

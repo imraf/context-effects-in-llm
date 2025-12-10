@@ -149,4 +149,52 @@ def embed_fact(context: str, fact: str, position: str) -> str:
 
 def count_tokens(text: str) -> int:
     # Simple approximation
-    return len(text.split()) * 1.3 
+    return len(text.split()) * 1.3
+
+def load_text_from_file(filepath: str, max_chars: int) -> str:
+    """Load text from file up to max_chars characters."""
+    if not os.path.exists(filepath):
+        logger.warning(f"Text file not found: {filepath}")
+        return ""
+    
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read(max_chars)
+        return content
+    except Exception as e:
+        logger.error(f"Error loading text from {filepath}: {e}")
+        return ""
+
+def insert_secret_message(
+    text: str, 
+    position: str,
+    secret: str
+) -> str:
+    """Insert secret message at specified position in text.
+    
+    Args:
+        text: Base text content
+        position: One of "control", "start", "middle", "end"
+        secret: Secret message to insert
+        
+    Returns:
+        Modified text with secret inserted (or original if position is "control")
+    """
+    if position == "control":
+        return text  # No modification for control
+    elif position == "start":
+        return secret + "\n" + text
+    elif position == "end":
+        return text + "\n" + secret
+    elif position == "middle":
+        mid_point = len(text) // 2
+        # Find next whitespace character after midpoint
+        next_whitespace = mid_point
+        while next_whitespace < len(text) and not text[next_whitespace].isspace():
+            next_whitespace += 1
+        if next_whitespace >= len(text):
+            logger.warning("No whitespace found near midpoint; inserting at end.")
+            next_whitespace = len(text)
+        return text[:next_whitespace+1] + secret + "\n" + text[next_whitespace+1:]
+    else:
+        raise ValueError(f"Invalid position: {position}") 
