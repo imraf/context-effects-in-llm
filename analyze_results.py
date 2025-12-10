@@ -43,7 +43,7 @@ def plot_exp1_needle(results):
     
     ax = sns.heatmap(pivot_df, annot=True, cmap="RdYlGn", vmin=0, vmax=1, fmt=".2f", 
                      linewidths=.5, cbar_kws={'label': 'Accuracy'})
-    plt.title("Experiment 1: 'Lost in the Middle' Analysis", fontsize=16, pad=20)
+    plt.title("Experiment 1: 'Lost in the Middle' Analysis - Model Comparison", fontsize=16, pad=20)
     plt.ylabel("Model Name")
     plt.xlabel("Fact Position")
     plt.tight_layout()
@@ -81,7 +81,7 @@ def plot_exp2_size(results):
     ax2.set_ylabel("Latency (seconds)")
     ax2.grid(True, linestyle='--', alpha=0.7)
     
-    plt.suptitle("Experiment 2: Context Scaling Performance", fontsize=18)
+    plt.suptitle("Experiment 2: Context Scaling Performance - Model Comparison", fontsize=18)
     plt.tight_layout()
     plt.savefig(os.path.join(config.PLOTS_DIR, "exp2_scaling.png"), dpi=300)
     plt.close()
@@ -123,7 +123,7 @@ def plot_exp3_rag(results):
     ax2.set_title("Accuracy Comparison (Higher is Better)", fontsize=14)
     ax2.set_ylim(0, 1.1)
     
-    plt.suptitle("Experiment 3: RAG vs Full Context", fontsize=18)
+    plt.suptitle("Experiment 3: RAG vs Full Context - Model Comparison", fontsize=18)
     plt.tight_layout()
     plt.savefig(os.path.join(config.PLOTS_DIR, "exp3_rag_comparison.png"), dpi=300)
     plt.close()
@@ -174,7 +174,7 @@ def plot_radar_summary(results):
         ax.plot(angles, values, linewidth=2, linestyle='solid', label=model, color=colors[idx])
         ax.fill(angles, values, color=colors[idx], alpha=0.1)
         
-    plt.title("Overall Model Capabilities", size=20, y=1.1)
+    plt.title("Overall Model Capabilities Comparison", size=20, y=1.1)
     plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))
     
     plt.tight_layout()
