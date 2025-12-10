@@ -42,12 +42,24 @@ EXP3_RAG_K = 3
 EXP3_CHUNK_SIZE = 500
 
 # Logging Setup
+class PathSanitizerFormatter(logging.Formatter):
+    def format(self, record):
+        msg = super().format(record)
+        # Replace the absolute BASE_DIR with just the folder name (relative path) to hide PII
+        if BASE_DIR in msg:
+            msg = msg.replace(BASE_DIR, os.path.basename(BASE_DIR))
+        return msg
+
+formatter = PathSanitizerFormatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+
+file_handler = logging.FileHandler(os.path.join(RESULTS_DIR, "benchmark.log"))
+file_handler.setFormatter(formatter)
+
+stream_handler = logging.StreamHandler()
+stream_handler.setFormatter(formatter)
+
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler(os.path.join(RESULTS_DIR, "benchmark.log")),
-        logging.StreamHandler()
-    ]
+    handlers=[file_handler, stream_handler]
 )
 logger = logging.getLogger("Benchmark")
