@@ -97,7 +97,7 @@ class RagExperiment:
         # 2. RAG
         start_time = time.time()
         retriever = self.vectorstore.as_retriever(search_kwargs={"k": config.EXP3_RAG_K})
-        relevant_docs = retriever.get_relevant_documents(query)
+        relevant_docs = retriever.invoke(query)
         rag_context = "\n\n".join([d.page_content for d in relevant_docs])
         
         rag_response = self.client.generate(

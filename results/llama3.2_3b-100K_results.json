@@ -2,74 +2,85 @@
   "model": "llama3.2:3b-100K",
   "exp1_needle": {
     "start": {
-      "accuracy": 0.0,
-      "latency": 0.0008029937744140625,
-      "response": ""
+      "accuracy": 1.0,
+      "latency": 1.4346950054168701,
+      "response": "BLUE-ZEBRA-99"
     },
     "middle": {
-      "accuracy": 0.0,
-      "latency": 0.0001571178436279297,
-      "response": ""
+      "accuracy": 1.0,
+      "latency": 1.432908058166504,
+      "response": "BLUE-ZEBRA-99"
     },
     "end": {
-      "accuracy": 0.0,
-      "latency": 0.00023794174194335938,
-      "response": ""
+      "accuracy": 1.0,
+      "latency": 1.11696195602417,
+      "response": "BLUE-ZEBRA-99"
     }
   },
   "exp2_size": [
     {
       "doc_count": 2,
-      "token_count": 1762.8,
-      "latency": 0.00019598007202148438,
-      "accuracy": 0.0,
-      "response": ""
+      "token_count": 769.6,
+      "latency": 0.5550839900970459,
+      "accuracy": 1.0,
+      "response": "ID-3038"
     },
     {
       "doc_count": 5,
-      "token_count": 4920.5,
-      "latency": 0.000141143798828125,
-      "accuracy": 0.0,
-      "response": ""
+      "token_count": 3993.6000000000004,
+      "latency": 1.3589286804199219,
+      "accuracy": 1.0,
+      "response": "ID-5595"
     },
     {
       "doc_count": 10,
-      "token_count": 10904.4,
-      "latency": 0.00018787384033203125,
-      "accuracy": 0.0,
-      "response": ""
+      "token_count": 10930.4,
+      "latency": 3.1523611545562744,
+      "accuracy": 1.0,
+      "response": "ID-7445"
     },
     {
       "doc_count": 20,
-      "token_count": 23602.8,
-      "latency": 0.00028967857360839844,
+      "token_count": 20714.2,
+      "latency": 9.859996795654297,
       "accuracy": 0.0,
-      "response": ""
+      "response": "Here are the answers to your questions:\n\n1. The URL of the first article is https://medium.com/@writerfox2/supporting-our-non-binary-buddies-e052345150fe\n2. The title of the second article is \"3 Valuable Lessons I\u2019ve Learned on My Way to Better Skin\"\n3. The title of the third article is \"Things Nobody Tells You About Having A Cat\"\n4. The title of the fourth article is \"How To Deal With The Adversities Of Life\"\n5. The title of the fifth article is \"You Cannot Become Happy, You Can Only Be Happy\u201d\n6. The title of the sixth article is \"An Agenda for Highways and Bridges for a 21st Century Transportation Secretary\"\n7. The title of the seventh article is \"Why People Hate Vegans So Much\"\n8. The title of the eighth article is \"Beginner\u2019s Guide to Marketing B2B\"\n9. The title of the ninth article is \"Build a Custom Slack + Airtable Task Management Application\"\n10. The title of the tenth article is \"\u201cThin as Thorns\u201d \u2014 an exhibition of Creative AI and Generative Art in LA\"\n11. The title of the eleventh article is \"We\u2019re Losing the \u2018War on Drugs\u2019\"\n\nThe unique reference ID mentioned in the text is not explicitly stated, but it can be found in the URL of each article."
     },
     {
       "doc_count": 50,
-      "token_count": 60971.3,
-      "latency": 0.0009028911590576172,
+      "token_count": 53548.3,
+      "latency": 49.287718296051025,
       "accuracy": 0.0,
-      "response": ""
+      "response": "Here are the answers to your questions:\n\n1. How To Speed Up Metabolism Fast \u2014 A Daily Checklist\n   The article discusses lifestyle changes that can help increase metabolism, including getting a good night's sleep, drinking more water, and trying out high-intensity workouts.\n\n2. Link to BRON Presale and How to Participate\n   The article provides information on the BRON presale, including the date, minimum contribution amount, and base price.\n\n3. Irradiation Apparatus Market Trends and Forecast\n   The article discusses the market trends and forecast for irradiation apparatuses, including the expected value of the market by 2027 and the potential applications of these devices.\n\n4. Why user testing with real copy is like the ultimate bacon sarnie\n   The article emphasizes the importance of using real copy in user testing, comparing it to eating a bacon sarnie without brown sauce - something that's better than nothing but lacks flavor and satisfaction.\n\n5. Racist and Sexist AI \u2014 A Tale of Algorithmic Bias\n   The article discusses the issue of algorithmic bias in AI systems, including how biases in historical data can lead to discriminatory outcomes in decision-making algorithms.\n\n6. How to leverage Data Science and Optimization for Economical Supply Chain Network Design?\n   The article provides an overview of how data science and optimization can be used to design economical supply chain networks, including the use of machine learning and optimization techniques.\n\n7. Audeze LCD-1 planar-magnetic headphone review: The truth, the whole truth, and nothing but the truth\n   The article reviews the Audeze LCD-1 planar-magnetic headphones, discussing their performance, design, and features.\n\n8. Build a Custom Slack + Airtable Task Management Application\n   The article provides a step-by-step guide on how to build a custom Slack + Airtable task management application using Autocode.\n\n9. Francisco d\u2019Anconia: On the root of money\n   The article discusses the concept of money and its relationship to happiness, arguing that money is not the root of all evil but rather a tool that can be used for good or ill.\n\n10. Why user testing with real copy is like the ultimate bacon sarnie\n    (same as question 4)\n\n11. Racist and Sexist AI \u2014 A Tale of Algorithmic Bias\n    (same as question 5)"
     }
   ],
-  "exp3_rag": {},
+  "exp3_rag": {
+    "full_context": {
+      "latency": 92.0649209022522,
+      "response": "\"\u05dc\u05d0, \"\u05d4-\u05d8\u05e7\u05e1\u05d8\" (Python) 3.9.7.",
+      "accuracy": 0.0
+    },
+    "rag": {
+      "latency": 1.380986213684082,
+      "response": "\u05dc\u05d0. \n\n\"sklearn\" (scikit-learn) - \u05db\u05dc\u05d9 \u05e1\u05e7\u05e8\u05d9\u05e0\u05d2 (machine learning) \n\"from sklearn\" - \"from\" + \"sklearn\"",
+      "accuracy": 0.0
+    }
+  },
   "exp4_strategies": {
     "baseline": {
-      "response": "",
+      "response": "Living Room",
       "correct": false
     },
     "select": {
-      "response": "",
-      "correct": false
+      "response": "Table",
+      "correct": true
     },
     "compress": {
-      "response": "",
-      "correct": false
+      "response": "Table",
+      "correct": true
     },
     "write": {
-      "response": "",
+      "response": "Kitchen",
       "correct": false
     }
   }

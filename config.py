@@ -1,6 +1,12 @@
 import os
 import logging
 
+# Disable Telemetry
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+os.environ["SCARF_NO_ANALYTICS"] = "true"
+os.environ["DO_NOT_TRACK"] = "true"
+os.environ["NOMIC_TELEMETRY_OPT_OUT"] = "true"
+
 # Configuration
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 if not OLLAMA_HOST.startswith("http"):
