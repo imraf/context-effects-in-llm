@@ -14,7 +14,7 @@ if not OLLAMA_HOST.startswith("http"):
 
 # Models to benchmark
 MODELS = [
-    "llama3.2:3b-100K",
+    # "llama3.2:3b-100K",
     "granite3.3:2b-100K",
     "gpt-oss:20b-100K",
     "gemma3:12b-100K",

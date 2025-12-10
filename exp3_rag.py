@@ -21,12 +21,34 @@ class RagExperiment:
         self.model = model
         self.client = OllamaClient(model)
         self.articles = load_hebrew_articles()
-        self.persist_directory = os.path.join(config.BASE_DIR, "chroma_db")
+        # Use a shared directory for all models to avoid re-embedding
+        self.persist_directory = os.path.join(config.BASE_DIR, "chroma_db_shared")
+
+    def cleanup(self):
+        if hasattr(self, 'vectorstore'):
+            self.vectorstore = None
+        # Do not delete the directory so it can be reused
+        # if os.path.exists(self.persist_directory):
+        #     shutil.rmtree(self.persist_directory)
+        #     logger.info(f"Cleaned up RAG directory: {self.persist_directory}")
 
     def setup_rag(self):
-        # Clear existing DB
+        # Embed and Store
+        # Note: Using nomic-embed-text for embeddings as it's standard with Ollama
+        embeddings = OllamaEmbeddings(model="nomic-embed-text", base_url=config.OLLAMA_HOST)
+
+        # Check if DB exists and reuse it
         if os.path.exists(self.persist_directory):
-            shutil.rmtree(self.persist_directory)
+            logger.info(f"Loading existing RAG DB from {self.persist_directory}")
+            self.vectorstore = Chroma(
+                persist_directory=self.persist_directory, 
+                embedding_function=embeddings
+            )
+            # Basic check to ensure it's not empty (optional, but good for safety)
+            # If it's empty or broken, we might want to rebuild, but for now assume it's good if it exists.
+            return
+
+        logger.info("Creating new RAG DB...")
             
         # Create documents
         docs = [Document(page_content=article, metadata={"source": f"doc_{i}"}) 
@@ -39,10 +61,6 @@ class RagExperiment:
         )
         splits = text_splitter.split_documents(docs)
         
-        # Embed and Store
-        # Note: Using nomic-embed-text for embeddings as it's standard with Ollama
-        embeddings = OllamaEmbeddings(model="nomic-embed-text", base_url=config.OLLAMA_HOST)
-        
         self.vectorstore = Chroma.from_documents(
             documents=splits, 
             embedding=embeddings,
@@ -51,6 +69,12 @@ class RagExperiment:
         logger.info(f"RAG Setup complete. Stored {len(splits)} chunks.")
 
     def run(self) -> Dict[str, Any]:
+        try:
+            return self._run_experiment()
+        finally:
+            self.cleanup()
+
+    def _run_experiment(self) -> Dict[str, Any]:
         logger.info(f"Starting Experiment 3 (RAG vs Full) for {self.model}")
         
         if not self.articles:
