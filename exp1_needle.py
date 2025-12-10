@@ -30,19 +30,23 @@ class NeedleExperiment:
             context = embed_fact(base_context, self.fact, position)
             
             start_time = time.time()
-            response = self.client.generate(
+            response_data = self.client.generate_with_stats(
                 prompt=f"Context:\n{context}\n\nQuestion: {self.question}",
                 temperature=0.1 # Low temp for factual retrieval
             )
             latency = time.time() - start_time
             
+            response_text = response_data.get("response", "")
+            prompt_eval_count = response_data.get("prompt_eval_count", 0)
+
             # Evaluation
-            is_correct = self.expected_answer.lower() in response.lower()
+            is_correct = self.expected_answer.lower() in response_text.lower()
             
             results[position] = {
                 "accuracy": 1.0 if is_correct else 0.0,
                 "latency": latency,
-                "response": response
+                "response": response_text,
+                "prompt_tokens": prompt_eval_count
             }
             logger.info(f"Position {position}: Correct={is_correct}, Latency={latency:.2f}s")
 

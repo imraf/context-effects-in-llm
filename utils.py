@@ -22,6 +22,7 @@ class OllamaClient:
             "prompt": prompt,
             "system": system,
             "stream": False,
+            "keep_alive": 0,
             "options": {
                 "temperature": temperature,
                 "num_predict": max_tokens
@@ -35,10 +36,31 @@ class OllamaClient:
             logger.error(f"Ollama generation failed: {e}")
             return ""
 
+    def generate_with_stats(self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048) -> Dict[str, Any]:
+        payload = {
+            "model": self.model,
+            "prompt": prompt,
+            "system": system,
+            "stream": False,
+            "keep_alive": 0,
+            "options": {
+                "temperature": temperature,
+                "num_predict": max_tokens
+            }
+        }
+        try:
+            response = requests.post(self.api_generate, json=payload)
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Ollama generation failed: {e}")
+            return {}
+
     def embed(self, text: str) -> List[float]:
         payload = {
             "model": "nomic-embed-text", # Assuming this model is available for embeddings
-            "prompt": text
+            "prompt": text,
+            "keep_alive": 0
         }
         try:
             response = requests.post(self.api_embeddings, json=payload)
