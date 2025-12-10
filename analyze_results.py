@@ -6,10 +6,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import config
+from math import pi
 
-# Set style
-plt.style.use('seaborn-v0_8-paper')
-sns.set_palette("deep")
+# Set global style
+sns.set_theme(style="whitegrid", context="paper", font_scale=1.2)
+PALETTE = "viridis"
 
 def load_results():
     results = []
@@ -35,13 +36,16 @@ def plot_exp1_needle(results):
     df = pd.DataFrame(data)
     
     plt.figure(figsize=(10, 6))
-    # Pivot for heatmap
     pivot_df = df.pivot(index="Model", columns="Position", values="Accuracy")
-    # Reorder columns
-    pivot_df = pivot_df[["Start", "Middle", "End"]]
+    # Ensure columns exist before selecting
+    available_cols = [c for c in ["Start", "Middle", "End"] if c in pivot_df.columns]
+    pivot_df = pivot_df[available_cols]
     
-    sns.heatmap(pivot_df, annot=True, cmap="RdYlGn", vmin=0, vmax=1, fmt=".2f")
-    plt.title("Experiment 1: Lost in the Middle (Accuracy)")
+    ax = sns.heatmap(pivot_df, annot=True, cmap="RdYlGn", vmin=0, vmax=1, fmt=".2f", 
+                     linewidths=.5, cbar_kws={'label': 'Accuracy'})
+    plt.title("Experiment 1: 'Lost in the Middle' Analysis", fontsize=16, pad=20)
+    plt.ylabel("Model Name")
+    plt.xlabel("Fact Position")
     plt.tight_layout()
     plt.savefig(os.path.join(config.PLOTS_DIR, "exp1_heatmap.png"), dpi=300)
     plt.close()
@@ -62,26 +66,24 @@ def plot_exp2_size(results):
 
     df = pd.DataFrame(data)
     
-    # Accuracy vs Tokens
-    plt.figure(figsize=(10, 6))
-    sns.lineplot(data=df, x="Tokens", y="Accuracy", hue="Model", marker="o")
-    plt.title("Experiment 2: Accuracy vs Context Size")
-    plt.ylabel("Accuracy")
-    plt.xlabel("Context Tokens")
-    plt.grid(True, alpha=0.3)
-    plt.tight_layout()
-    plt.savefig(os.path.join(config.PLOTS_DIR, "exp2_accuracy.png"), dpi=300)
-    plt.close()
+    # Create a figure with two subplots
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
 
-    # Latency vs Tokens
-    plt.figure(figsize=(10, 6))
-    sns.lineplot(data=df, x="Tokens", y="Latency", hue="Model", marker="s")
-    plt.title("Experiment 2: Latency vs Context Size")
-    plt.ylabel("Latency (s)")
-    plt.xlabel("Context Tokens")
-    plt.grid(True, alpha=0.3)
+    # Accuracy Plot
+    sns.lineplot(data=df, x="Tokens", y="Accuracy", hue="Model", marker="o", linewidth=2.5, ax=ax1, palette=PALETTE)
+    ax1.set_title("Accuracy vs Context Size", fontsize=14)
+    ax1.set_ylim(-0.1, 1.1)
+    ax1.grid(True, linestyle='--', alpha=0.7)
+
+    # Latency Plot
+    sns.lineplot(data=df, x="Tokens", y="Latency", hue="Model", marker="s", linewidth=2.5, ax=ax2, palette=PALETTE)
+    ax2.set_title("Latency vs Context Size", fontsize=14)
+    ax2.set_ylabel("Latency (seconds)")
+    ax2.grid(True, linestyle='--', alpha=0.7)
+    
+    plt.suptitle("Experiment 2: Context Scaling Performance", fontsize=18)
     plt.tight_layout()
-    plt.savefig(os.path.join(config.PLOTS_DIR, "exp2_latency.png"), dpi=300)
+    plt.savefig(os.path.join(config.PLOTS_DIR, "exp2_scaling.png"), dpi=300)
     plt.close()
 
 def plot_exp3_rag(results):
@@ -108,63 +110,73 @@ def plot_exp3_rag(results):
 
     df = pd.DataFrame(data)
     
-    # Latency Comparison
-    plt.figure(figsize=(10, 6))
-    sns.barplot(data=df, x="Model", y="Latency", hue="Method")
-    plt.title("Experiment 3: RAG vs Full Context (Latency)")
-    plt.ylabel("Latency (s)")
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
+    
+    # Latency
+    sns.barplot(data=df, x="Model", y="Latency", hue="Method", ax=ax1, palette="muted")
+    ax1.set_title("Latency Comparison (Lower is Better)", fontsize=14)
+    ax1.set_ylabel("Seconds")
+    ax1.set_yscale("log") # Log scale because differences can be huge
+    
+    # Accuracy
+    sns.barplot(data=df, x="Model", y="Accuracy", hue="Method", ax=ax2, palette="muted")
+    ax2.set_title("Accuracy Comparison (Higher is Better)", fontsize=14)
+    ax2.set_ylim(0, 1.1)
+    
+    plt.suptitle("Experiment 3: RAG vs Full Context", fontsize=18)
     plt.tight_layout()
-    plt.savefig(os.path.join(config.PLOTS_DIR, "exp3_latency.png"), dpi=300)
+    plt.savefig(os.path.join(config.PLOTS_DIR, "exp3_rag_comparison.png"), dpi=300)
     plt.close()
 
 def plot_radar_summary(results):
-    # Normalize metrics for radar chart
-    # Metrics: Exp1 Avg Acc, Exp2 Avg Acc, Exp3 RAG Acc, Exp4 Write Acc
-    categories = ['Needle Acc', 'Long Context Acc', 'RAG Acc', 'Reasoning Acc']
-    
-    data = []
-    for res in results:
-        model = res['model']
-        
-        # Exp 1 Avg
-        exp1_vals = [v['accuracy'] for v in res['exp1_needle'].values()]
-        exp1_score = np.mean(exp1_vals) if exp1_vals else 0
-        
-        # Exp 2 Avg (Long Context)
-        exp2_vals = [v['accuracy'] for v in res['exp2_size']]
-        exp2_score = np.mean(exp2_vals) if exp2_vals else 0
-        
-        # Exp 3 RAG
-        exp3_score = res.get('exp3_rag', {}).get('rag', {}).get('accuracy', 0)
-        
-        # Exp 4 Write Strategy (Proxy for reasoning)
-        exp4_score = 1.0 if res.get('exp4_strategies', {}).get('write', {}).get('correct') else 0.0
-        
-        data.append({
-            "Model": model,
-            "Scores": [exp1_score, exp2_score, exp3_score, exp4_score]
-        })
-
-    if not data: return
-
-    # Radar Chart Logic
+    categories = ['Needle Retrieval', 'Long Context', 'RAG Efficiency', 'Reasoning']
     N = len(categories)
-    angles = [n / float(N) * 2 * np.pi for n in range(N)]
+    
+    angles = [n / float(N) * 2 * pi for n in range(N)]
     angles += angles[:1]
     
-    plt.figure(figsize=(8, 8))
+    plt.figure(figsize=(10, 10))
     ax = plt.subplot(111, polar=True)
     
-    plt.xticks(angles[:-1], categories)
+    # Draw one axe per variable + add labels
+    plt.xticks(angles[:-1], categories, color='grey', size=12)
     
-    for entry in data:
-        values = entry['Scores']
-        values += values[:1]
-        ax.plot(angles, values, linewidth=1, linestyle='solid', label=entry['Model'])
-        ax.fill(angles, values, alpha=0.1)
+    # Draw ylabels
+    ax.set_rlabel_position(0)
+    plt.yticks([0.25, 0.5, 0.75, 1.0], ["0.25", "0.5", "0.75", "1.0"], color="grey", size=10)
+    plt.ylim(0, 1.0)
+    
+    # Color palette
+    colors = sns.color_palette(PALETTE, len(results))
+
+    for idx, res in enumerate(results):
+        model = res['model']
         
-    plt.title("Model Capabilities Benchmark")
+        # Calculate scores (normalized 0-1)
+        # 1. Needle: Avg accuracy
+        exp1_vals = [v['accuracy'] for v in res['exp1_needle'].values()]
+        s1 = np.mean(exp1_vals) if exp1_vals else 0
+        
+        # 2. Long Context: Avg accuracy weighted by token count? Or just raw avg accuracy.
+        # Let's use avg accuracy for simplicity.
+        exp2_vals = [v['accuracy'] for v in res['exp2_size']]
+        s2 = np.mean(exp2_vals) if exp2_vals else 0
+        
+        # 3. RAG: Accuracy
+        s3 = res.get('exp3_rag', {}).get('rag', {}).get('accuracy', 0)
+        
+        # 4. Reasoning: Exp 4 Write strategy accuracy
+        s4 = 1.0 if res.get('exp4_strategies', {}).get('write', {}).get('correct') else 0.0
+        
+        values = [s1, s2, s3, s4]
+        values += values[:1]
+        
+        ax.plot(angles, values, linewidth=2, linestyle='solid', label=model, color=colors[idx])
+        ax.fill(angles, values, color=colors[idx], alpha=0.1)
+        
+    plt.title("Overall Model Capabilities", size=20, y=1.1)
     plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))
+    
     plt.tight_layout()
     plt.savefig(os.path.join(config.PLOTS_DIR, "benchmark_radar.png"), dpi=300)
     plt.close()
@@ -175,7 +187,7 @@ def main():
         print("No results found to analyze.")
         return
 
-    print("Generating plots...")
+    print("Generating enhanced plots...")
     plot_exp1_needle(results)
     plot_exp2_size(results)
     plot_exp3_rag(results)
