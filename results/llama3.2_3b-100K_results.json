@@ -1,0 +1,90 @@
+{
+  "model": "llama3.2:3b-100K",
+  "exp1_needle": {
+    "start": {
+      "accuracy": 1.0,
+      "latency": 61.90169906616211,
+      "response": "BLUE-ZEBRA-99",
+      "prompt_tokens": 62868
+    },
+    "middle": {
+      "accuracy": 1.0,
+      "latency": 61.93120980262756,
+      "response": "BLUE-ZEBRA-99",
+      "prompt_tokens": 62869
+    },
+    "end": {
+      "accuracy": 1.0,
+      "latency": 62.122501850128174,
+      "response": "BLUE-ZEBRA-99",
+      "prompt_tokens": 62868
+    }
+  },
+  "exp2_size": [
+    {
+      "doc_count": 2,
+      "token_count": 2351.7000000000003,
+      "latency": 4.496450901031494,
+      "accuracy": 1.0,
+      "response": "ID-7239"
+    },
+    {
+      "doc_count": 5,
+      "token_count": 3584.1,
+      "latency": 5.084017753601074,
+      "accuracy": 1.0,
+      "response": "ID-4935"
+    },
+    {
+      "doc_count": 10,
+      "token_count": 5991.7,
+      "latency": 5.375620126724243,
+      "accuracy": 1.0,
+      "response": "ID-2576"
+    },
+    {
+      "doc_count": 20,
+      "token_count": 22197.5,
+      "latency": 12.300035238265991,
+      "accuracy": 1.0,
+      "response": "ID-8084"
+    },
+    {
+      "doc_count": 50,
+      "token_count": 56205.5,
+      "latency": 86.42456007003784,
+      "accuracy": 0.0,
+      "response": "Here are the answers:\n\n1. The title of the article about Apple Snow, Red Frost is \"Apple Snow, Red Frost\".\n2. The URL of the article is https://medium.com/@mpgolfin/apple-snow-red-frost-a9e284b511ee.\n3. The tags for the article are \"Snow\", \"Talking Animal\", and \"Magic\".\n4. The title of the article about Benchmarking new xgboost fast histogram is \"Benchmarking new xgboost fast histogram: xgboost and the compiler story\".\n5. The URL of the article is https://medium.com/data-design/benchmarking-new-xgboost-fast-histogram-xgboost-and-the-compiler-story-86f0c5a4bcd3.\n6. The title of the article about Build a Custom Slack + Airtable Task Management Application is \"Build a Custom Slack + Airtable Task Management Application\".\n7. The URL of the article is https://medium.com/swlh/build-a-custom-slack-airtable-task-management-application-d95c8e7eb55c.\n8. The title of the article about Paddington 2: An Examination is \"Paddington 2: An Examination\".\n9. The URL of the article is https://joshualawrencesemail.medium.com/paddington-2-an-examination-6dd431bdc6eb.\n10. The title of the article about Jupiter and Saturn will be closest in 400 years in the Earth\u2019s sky Monday night is \"Jupiter and Saturn will be closest in 400 years in the Earth\u2019s sky Monday night\".\n11. The URL of the article is https://medium.com/@tactility/jupiter-and-saturn-will-be-closest-in-400-years-in-the-earths-sky-monday-night-b82969a1cc48.\n12. The title of the article about Sprawlball: A Visual Tour of the New Era of the NBA \u2014 Kirk Goldsberry is \"Sprawlball: A Visual Tour of the New Era of the NBA \u2014 Kirk Goldsberry\".\n13. The URL of the article is https://medium.com/park-recommendations/sprawlball-a-visual-tour-of-the-new-era-of-the-nba-kirk-goldsberry-80e083931989.\n14. The title of the article about Word Embedding, Character Embedding and Contextual Embedding in BiDAF \u2014 an Illustrated Guide is \"Word Embedding, Character Embedding and Contextual Embedding in BiDAF \u2014 an Illustrated Guide\".\n15. The URL of the article is https://towardsdatascience.com/the-definitive-guide-to-bidaf-part-2-word-embedding-character-embedding-and-contextual-c151fc4f05bb.\n16. The title of the article about Stable Coins and Cryptocurrency is \"Stable Coins and Cryptocurrency\".\n17. The URL of the article is https://medium.com/acreapp/stable-coins-and-cryptocurrency-eef9e817e851.\n18. The title of the article about Why People Hate Vegans So Much is \"Why People Hate Vegans So Much\".\n19. The URL of the article is https://medium.com/intelligence-challenged/why-people-hate-vegans-so-much-fe4e3de5d7b.\n20. The title of the article about A Tale of Two Christmases is \"A Tale of Two Christmases\".\n21. The URL of the article is https://medium.com/@libbyclement/a-tale-of-two-christmases-734e28a996e6.\n22. The title of the article about How to drive traffic to your website using social media is \"How to drive traffic to your website using social media\".\n23. The URL of the article is https://medium.com/@thecodework/how-to-drive-traffic-to-your-website-using-social-media-ed932171ee72.\n24. The title of the article about Creating a Customer Journey Map is \"Creating a Customer Journey Map\".\n25. The URL of the article is https://medium.com/@carlosrousseau/creating-a-customer-journey-map-e22aa0810cf6.\n26. The title of the article about What\u2019s Quantum Computing? Why? Who? is \"What\u2019s Quantum Computing? Why? Who?\"\n27. The URL of the article is https://medium.com/quantum-untangled/what-qc-why-qc-who-qc-4d5f601285e5.\n28. The title of the article about Regulatory mistakes ICOs make (and what they should do instead) is \"Regulatory mistakes ICOs make (and what they should do instead)\".\n29. The URL of the article is https://medium.com/hackernoon/regulatory-mistakes-icos-make-and-what-they-should-do-instead-daafd000f62.\n30. The title of the article about A Stew You Can\u2019t Stop Eating, a Pot-Pie Mashup, and Parm That Stays Crisp is \"A Stew You Can\u2019t Stop Eating, a Pot-Pie Mashup, and Parm That Stays Crisp\".\n31. The URL of the article is https://heated.medium.com/youll-want-to-add-these-chicken-dishes-to-your-winter-rotation-f2fb9ed6cf2a.\n32. The title of the article about Creating a design system: 5 lessons we\u2019ve learnt is \"Creating a design system: 5 lessons we\u2019ve learnt\".\n33. The URL of the article is https://medium.com/design-at-zoopla/creating-a-design-system-5-lessons-weve-learnt-634946b39513.\n34. The title of the article about REVIEW: Unicomp\u2019s \u201cNew Model M\u201d mechanical buckling spring keyboard (2021) is \"REVIEW: Unicomp\u2019s \u201cNew Model M\u201d mechanical buckling spring keyboard (2021)\".\n35. The URL of the article is https://medium.com/@an_achronism/review-unicomps-new-model-m-mechanical-buckling-spring-keyboard-2021-8ba6903393ee.\n36. The title of the article about My Number 1 Priority\u00a0.\u00a0.\u00a0. is \"My Number 1 Priority\u00a0.\u00a0.\u00a0.\".\n37. The URL of the article is https://medium.com/@mercia.basson/my-number-1-priority-a3ec48f9a3f3.\n38. The title of the article about Solidity Smart Contract Tutorial With Building Real-World DAPP \u2014 Part 3: Create a Request for Freelancer is \"Solidity Smart Contract Tutorial With Building Real-World DAPP \u2014 Part 3: Create a Request for Freelancer\".\n39. The URL of the article is https://medium.com/coinmonks/solidity-smart-contract-tutorial-with-building-real-world-dapp-part-3-create-a-request-for-ead40e83384f.\n40. The title of the article about Unique Reference ID mentioned in the text is \"The Answer\".\n41. The URL of the article is https://medium.com/quantum-untangled/the-answer-f4640e846982."
+    }
+  ],
+  "exp3_rag": {
+    "full_context": {
+      "latency": 105.60975217819214,
+      "response": "\"\u05d0\u05dc, 5.77%.\"",
+      "accuracy": 0.0
+    },
+    "rag": {
+      "latency": 5.315478086471558,
+      "response": "\u05d4\u05d8\u05e7\u05e1\u05d8 \u05de\u05d6\u05db\u05d9\u05e8 \u05d0\u05ea \u05d4\u05de\u05e9\u05e4\u05d8 \"Kuzmin\" (Kuzmin's Law),  \"Kuzmin\" (Kuzmin) -  \"Kuzmin\" (Kuzmin)",
+      "accuracy": 0.0
+    }
+  },
+  "exp4_strategies": {
+    "baseline": {
+      "response": "Table",
+      "correct": true
+    },
+    "select": {
+      "response": "Table",
+      "correct": true
+    },
+    "compress": {
+      "response": "Living Room",
+      "correct": false
+    },
+    "write": {
+      "response": "Countertops",
+      "correct": false
+    }
+  }
+}

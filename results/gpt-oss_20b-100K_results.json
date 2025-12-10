@@ -1,0 +1,90 @@
+{
+  "model": "gpt-oss:20b-100K",
+  "exp1_needle": {
+    "start": {
+      "accuracy": 1.0,
+      "latency": 261.3864870071411,
+      "response": "BLUE-ZEBRA-99",
+      "prompt_tokens": 64803
+    },
+    "middle": {
+      "accuracy": 1.0,
+      "latency": 259.2457859516144,
+      "response": "BLUE-ZEBRA-99",
+      "prompt_tokens": 64804
+    },
+    "end": {
+      "accuracy": 1.0,
+      "latency": 259.2731280326843,
+      "response": "BLUE-ZEBRA-99",
+      "prompt_tokens": 64803
+    }
+  },
+  "exp2_size": [
+    {
+      "doc_count": 2,
+      "token_count": 2064.4,
+      "latency": 13.25853419303894,
+      "accuracy": 1.0,
+      "response": "ID-8075"
+    },
+    {
+      "doc_count": 5,
+      "token_count": 6645.6,
+      "latency": 23.889286994934082,
+      "accuracy": 1.0,
+      "response": "ID-1606"
+    },
+    {
+      "doc_count": 10,
+      "token_count": 12855.7,
+      "latency": 44.222371101379395,
+      "accuracy": 1.0,
+      "response": "ID-2642"
+    },
+    {
+      "doc_count": 20,
+      "token_count": 23312.9,
+      "latency": 81.10600924491882,
+      "accuracy": 1.0,
+      "response": "ID-9575"
+    },
+    {
+      "doc_count": 50,
+      "token_count": 58288.1,
+      "latency": 221.27463030815125,
+      "accuracy": 1.0,
+      "response": "ID-1730"
+    }
+  ],
+  "exp3_rag": {
+    "full_context": {
+      "latency": 188.06600713729858,
+      "response": "",
+      "accuracy": 0.0
+    },
+    "rag": {
+      "latency": 13.81516408920288,
+      "response": "\u05dc\u05d0",
+      "accuracy": 0.0
+    }
+  },
+  "exp4_strategies": {
+    "baseline": {
+      "response": "Living Room",
+      "correct": false
+    },
+    "select": {
+      "response": "Table",
+      "correct": true
+    },
+    "compress": {
+      "response": "table",
+      "correct": true
+    },
+    "write": {
+      "response": "Table",
+      "correct": true
+    }
+  }
+}
