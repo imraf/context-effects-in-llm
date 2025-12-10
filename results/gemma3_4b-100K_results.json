@@ -1,0 +1,90 @@
+{
+  "model": "gemma3:4b-100K",
+  "exp1_needle": {
+    "start": {
+      "accuracy": 0.0,
+      "latency": 28.77459979057312,
+      "response": "42\n",
+      "prompt_tokens": 67773
+    },
+    "middle": {
+      "accuracy": 0.0,
+      "latency": 28.456241846084595,
+      "response": "42\n",
+      "prompt_tokens": 67775
+    },
+    "end": {
+      "accuracy": 0.0,
+      "latency": 28.45434021949768,
+      "response": "BLUE-Z9\n",
+      "prompt_tokens": 67774
+    }
+  },
+  "exp2_size": [
+    {
+      "doc_count": 2,
+      "token_count": 3738.8,
+      "latency": 4.758666038513184,
+      "accuracy": 1.0,
+      "response": "ID-7713"
+    },
+    {
+      "doc_count": 5,
+      "token_count": 6961.5,
+      "latency": 5.60556697845459,
+      "accuracy": 1.0,
+      "response": "ID-7728"
+    },
+    {
+      "doc_count": 10,
+      "token_count": 9558.9,
+      "latency": 6.520108699798584,
+      "accuracy": 1.0,
+      "response": "ID-6801"
+    },
+    {
+      "doc_count": 20,
+      "token_count": 21365.5,
+      "latency": 9.405662059783936,
+      "accuracy": 0.0,
+      "response": "5e055b428e70"
+    },
+    {
+      "doc_count": 50,
+      "token_count": 61638.200000000004,
+      "latency": 27.928115844726562,
+      "accuracy": 0.0,
+      "response": "621b58d82102\n"
+    }
+  ],
+  "exp3_rag": {
+    "full_context": {
+      "latency": 16.03382396697998,
+      "response": "\u05db\u05df",
+      "accuracy": 1.0
+    },
+    "rag": {
+      "latency": 6.843748092651367,
+      "response": "\u05db\u05df.",
+      "accuracy": 1.0
+    }
+  },
+  "exp4_strategies": {
+    "baseline": {
+      "response": "Living Room\n",
+      "correct": false
+    },
+    "select": {
+      "response": "Table\n",
+      "correct": true
+    },
+    "compress": {
+      "response": "On the Table\n",
+      "correct": true
+    },
+    "write": {
+      "response": "Kitchen\n",
+      "correct": false
+    }
+  }
+}
