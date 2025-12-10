@@ -1,0 +1,71 @@
+2025-12-10 09:48:18,443 - BenchmarkRunner - INFO - Starting Full Benchmark Suite
+2025-12-10 09:48:18,443 - BenchmarkRunner - INFO - ========================================
+2025-12-10 09:48:18,443 - BenchmarkRunner - INFO - Processing Model: llama3.2:3b-100K
+2025-12-10 09:48:18,443 - BenchmarkRunner - INFO - ========================================
+2025-12-10 09:48:18,444 - BenchmarkRunner - INFO - Running Exp 1: Needle in Haystack...
+2025-12-10 09:48:18,461 - exp1_needle - INFO - Starting Experiment 1 (Needle) for llama3.2:3b-100K
+2025-12-10 09:48:18,462 - exp1_needle - INFO - Testing position: start
+2025-12-10 09:48:18,463 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:18,463 - exp1_needle - INFO - Position start: Correct=False, Latency=0.00s
+2025-12-10 09:48:18,463 - exp1_needle - INFO - Testing position: middle
+2025-12-10 09:48:18,464 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:18,464 - exp1_needle - INFO - Position middle: Correct=False, Latency=0.00s
+2025-12-10 09:48:18,464 - exp1_needle - INFO - Testing position: end
+2025-12-10 09:48:18,464 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:18,464 - exp1_needle - INFO - Position end: Correct=False, Latency=0.00s
+2025-12-10 09:48:18,464 - BenchmarkRunner - INFO - Running Exp 2: Context Size...
+2025-12-10 09:48:18,469 - exp2_size - INFO - Starting Experiment 2 (Context Size) for llama3.2:3b-100K
+2025-12-10 09:48:18,469 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:18,469 - exp2_size - INFO - Docs: 2, Tokens: 1763, Correct: False, Latency: 0.00s
+2025-12-10 09:48:18,469 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:18,469 - exp2_size - INFO - Docs: 5, Tokens: 4920, Correct: False, Latency: 0.00s
+2025-12-10 09:48:18,470 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:18,470 - exp2_size - INFO - Docs: 10, Tokens: 10904, Correct: False, Latency: 0.00s
+2025-12-10 09:48:18,471 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:18,471 - exp2_size - INFO - Docs: 20, Tokens: 23603, Correct: False, Latency: 0.00s
+2025-12-10 09:48:18,473 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:18,473 - exp2_size - INFO - Docs: 50, Tokens: 60971, Correct: False, Latency: 0.00s
+2025-12-10 09:48:18,473 - BenchmarkRunner - INFO - Running Exp 3: RAG vs Full...
+2025-12-10 09:48:18,478 - exp3_rag - INFO - Starting Experiment 3 (RAG vs Full) for llama3.2:3b-100K
+2025-12-10 09:48:18,504 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-12-10 09:48:19,009 - BenchmarkRunner - ERROR - Exp 3 failed for llama3.2:3b-100K: Error raised by inference endpoint: No connection adapters were found for '100.91.0.188:11434/api/embeddings'
+2025-12-10 09:48:19,009 - BenchmarkRunner - INFO - Running Exp 4: Strategies...
+2025-12-10 09:48:19,009 - exp4_strategies - INFO - Starting Experiment 4 (Strategies) for llama3.2:3b-100K
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,010 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,011 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,011 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,011 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,011 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,011 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,011 - utils - ERROR - Ollama generation failed: No connection adapters were found for '100.91.0.188:11434/api/generate'
+2025-12-10 09:48:19,012 - BenchmarkRunner - INFO - Saved results to /Users/bz0r7y/private/NBR/school-2025/semester-1/llm-orchestration/ex05/option-a/code/results/llama3.2_3b-100K_results.json
+2025-12-10 09:48:19,012 - BenchmarkRunner - INFO - Benchmark Suite Complete.
+2025-12-10 09:50:47,703 - BenchmarkRunner - INFO - Starting Full Benchmark Suite
+2025-12-10 09:50:47,703 - BenchmarkRunner - INFO - ========================================
+2025-12-10 09:50:47,703 - BenchmarkRunner - INFO - Processing Model: llama3.2:3b-100K
+2025-12-10 09:50:47,703 - BenchmarkRunner - INFO - ========================================
+2025-12-10 09:50:47,703 - BenchmarkRunner - INFO - Running Exp 1: Needle in Haystack...
+2025-12-10 09:50:47,721 - exp1_needle - INFO - Starting Experiment 1 (Needle) for llama3.2:3b-100K
+2025-12-10 09:50:47,722 - exp1_needle - INFO - Testing position: start
+2025-12-10 09:50:51,383 - exp1_needle - INFO - Position start: Correct=True, Latency=3.66s
+2025-12-10 09:50:51,383 - exp1_needle - INFO - Testing position: middle
+2025-12-10 09:50:52,721 - exp1_needle - INFO - Position middle: Correct=True, Latency=1.34s
+2025-12-10 09:50:52,722 - exp1_needle - INFO - Testing position: end
+2025-12-10 09:50:53,839 - exp1_needle - INFO - Position end: Correct=True, Latency=1.12s
+2025-12-10 09:50:53,839 - BenchmarkRunner - INFO - Running Exp 2: Context Size...
+2025-12-10 09:50:53,849 - exp2_size - INFO - Starting Experiment 2 (Context Size) for llama3.2:3b-100K
+2025-12-10 09:50:54,569 - exp2_size - INFO - Docs: 2, Tokens: 1518, Correct: True, Latency: 0.72s
+2025-12-10 09:50:56,185 - exp2_size - INFO - Docs: 5, Tokens: 5424, Correct: True, Latency: 1.62s
+2025-12-10 09:50:59,906 - exp2_size - INFO - Docs: 10, Tokens: 13244, Correct: True, Latency: 3.72s
+2025-12-10 09:51:12,541 - exp2_size - INFO - Docs: 20, Tokens: 22090, Correct: False, Latency: 12.63s

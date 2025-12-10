@@ -5,7 +5,10 @@ langchain-community
 langchain-chroma
 chromadb
 pandas
+numpy
 matplotlib
 seaborn
+tqdm
+ipykernel
 
 
