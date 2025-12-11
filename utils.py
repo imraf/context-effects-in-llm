@@ -15,17 +15,21 @@ logger = logging.getLogger(__name__)
 
 class LLMClient(ABC):
     """Abstract base class for LLM clients."""
-    
+
     @abstractmethod
     def generate(self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048) -> str:
         pass
-        
+
     @abstractmethod
-    def generate_with_stats(self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048) -> Dict[str, Any]:
+    def generate_with_stats(
+        self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048
+    ) -> Dict[str, Any]:
         pass
 
     @abstractmethod
-    async def generate_with_stats_async(self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048) -> Dict[str, Any]:
+    async def generate_with_stats_async(
+        self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048
+    ) -> Dict[str, Any]:
         pass
 
     @abstractmethod
@@ -95,7 +99,7 @@ class OllamaClient(LLMClient):
             response = requests.post(self.api_generate, json=payload, timeout=30)
             response.raise_for_status()
             result = response.json()
-            
+
             # Save to cache
             self._save_to_cache(cache_path, result)
             return result.get("response", "")
@@ -119,7 +123,7 @@ class OllamaClient(LLMClient):
             "keep_alive": 0,
             "options": {"temperature": temperature, "num_predict": max_tokens},
         }
-        
+
         # Check cache
         cache_path = self._get_cache_path(payload)
         cached_response = self._get_from_cache(cache_path)
@@ -131,7 +135,7 @@ class OllamaClient(LLMClient):
             response = requests.post(self.api_generate, json=payload, timeout=30)
             response.raise_for_status()
             result = response.json()
-            
+
             # Save to cache
             self._save_to_cache(cache_path, result)
             return result
@@ -155,7 +159,7 @@ class OllamaClient(LLMClient):
             "keep_alive": 0,
             "options": {"temperature": temperature, "num_predict": max_tokens},
         }
-        
+
         # Check cache (synchronous check is fine for local FS usually, or could make async)
         cache_path = self._get_cache_path(payload)
         cached_response = self._get_from_cache(cache_path)
@@ -168,7 +172,7 @@ class OllamaClient(LLMClient):
                 async with session.post(self.api_generate, json=payload, timeout=30) as response:
                     response.raise_for_status()
                     result = await response.json()
-                    
+
                     # Save to cache
                     self._save_to_cache(cache_path, result)
                     return result
@@ -210,9 +214,7 @@ def load_english_articles(limit: int = 150) -> List[str]:
     for f in files:
         if f.endswith(".txt"):
             try:
-                with open(
-                    os.path.join(config.ENGLISH_ARTICLES_DIR, f), "r", encoding="utf-8"
-                ) as file:
+                with open(os.path.join(config.ENGLISH_ARTICLES_DIR, f), "r", encoding="utf-8") as file:
                     articles.append(file.read())
             except Exception as e:
                 logger.warning(f"Failed to read {f}: {e}")
@@ -237,9 +239,7 @@ def load_hebrew_articles(limit: int = 20) -> List[str]:
     for f in files:
         if f.endswith(".txt"):
             try:
-                with open(
-                    os.path.join(config.HEBREW_ARTICLES_DIR, f), "r", encoding="utf-8"
-                ) as file:
+                with open(os.path.join(config.HEBREW_ARTICLES_DIR, f), "r", encoding="utf-8") as file:
                     articles.append(file.read())
             except Exception as e:
                 logger.warning(f"Failed to read {f}: {e}")
@@ -260,9 +260,7 @@ def generate_filler_text(word_count: int, source_texts: List[str]) -> str:
     valid_texts = [t for t in source_texts if t and t.strip()]
 
     if not valid_texts:
-        return " ".join(
-            ["Lorem", "ipsum", "dolor", "sit", "amet"] * (word_count // 5 + 1)
-        )
+        return " ".join(["Lorem", "ipsum", "dolor", "sit", "amet"] * (word_count // 5 + 1))
 
     collected_words = []
     current_count = 0
@@ -373,18 +371,12 @@ def insert_secret_message(text: str, position: str, secret: str) -> str:
         ValueError: If position is invalid.
         TypeError: If inputs are not strings.
     """
-    if (
-        not isinstance(text, str)
-        or not isinstance(position, str)
-        or not isinstance(secret, str)
-    ):
+    if not isinstance(text, str) or not isinstance(position, str) or not isinstance(secret, str):
         raise TypeError("All arguments must be strings")
 
     valid_positions = ["control", "start", "middle", "end"]
     if position not in valid_positions:
-        raise ValueError(
-            f"Invalid position: {position}. Must be one of {valid_positions}"
-        )
+        raise ValueError(f"Invalid position: {position}. Must be one of {valid_positions}")
 
     if position == "control":
         return text  # No modification for control

@@ -96,9 +96,7 @@ class PathSanitizerFormatter(logging.Formatter):
         return msg
 
 
-formatter = PathSanitizerFormatter(
-    "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
+formatter = PathSanitizerFormatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
 file_handler = logging.FileHandler(os.path.join(RESULTS_DIR, "benchmark.log"))
 file_handler.setFormatter(formatter)

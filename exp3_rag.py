@@ -39,16 +39,12 @@ class RagExperiment(ExperimentBase):
     def setup_rag(self):
         # Embed and Store
         # Note: Using nomic-embed-text for embeddings as it's standard with Ollama
-        embeddings = OllamaEmbeddings(
-            model="nomic-embed-text", base_url=config.OLLAMA_HOST
-        )
+        embeddings = OllamaEmbeddings(model="nomic-embed-text", base_url=config.OLLAMA_HOST)
 
         # Check if DB exists and reuse it
         if os.path.exists(self.persist_directory):
             logger.info(f"Loading existing RAG DB from {self.persist_directory}")
-            self.vectorstore = Chroma(
-                persist_directory=self.persist_directory, embedding_function=embeddings
-            )
+            self.vectorstore = Chroma(persist_directory=self.persist_directory, embedding_function=embeddings)
             # Basic check to ensure it's not empty (optional, but good for safety)
             # If it's empty or broken, we might want to rebuild, but for now assume it's good if it exists.
             return
@@ -57,14 +53,11 @@ class RagExperiment(ExperimentBase):
 
         # Create documents
         docs = [
-            Document(page_content=article, metadata={"source": f"doc_{i}"})
-            for i, article in enumerate(self.articles)
+            Document(page_content=article, metadata={"source": f"doc_{i}"}) for i, article in enumerate(self.articles)
         ]
 
         # Split
-        text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=config.EXP3_CHUNK_SIZE, chunk_overlap=50
-        )
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=config.EXP3_CHUNK_SIZE, chunk_overlap=50)
         splits = text_splitter.split_documents(docs)
 
         self.vectorstore = Chroma.from_documents(
@@ -111,9 +104,7 @@ class RagExperiment(ExperimentBase):
         # 1. Full Context
         full_context = "\n\n".join(self.articles)
         start_time = time.time()
-        full_response = self.client.generate(
-            prompt=f"Context:\n{full_context}\n\nQuestion: {query}", temperature=0.1
-        )
+        full_response = self.client.generate(prompt=f"Context:\n{full_context}\n\nQuestion: {query}", temperature=0.1)
         full_latency = time.time() - start_time
 
         results["full_context"] = {
@@ -125,15 +116,11 @@ class RagExperiment(ExperimentBase):
 
         # 2. RAG
         start_time = time.time()
-        retriever = self.vectorstore.as_retriever(
-            search_kwargs={"k": config.EXP3_RAG_K}
-        )
+        retriever = self.vectorstore.as_retriever(search_kwargs={"k": config.EXP3_RAG_K})
         relevant_docs = retriever.invoke(query)
         rag_context = "\n\n".join([d.page_content for d in relevant_docs])
 
-        rag_response = self.client.generate(
-            prompt=f"Context:\n{rag_context}\n\nQuestion: {query}", temperature=0.1
-        )
+        rag_response = self.client.generate(prompt=f"Context:\n{rag_context}\n\nQuestion: {query}", temperature=0.1)
         rag_latency = time.time() - start_time
 
         results["rag"] = {

@@ -12,25 +12,20 @@ class TestMain:
         MockNeedle = MagicMock()
         MockNeedle.NAME = "Needle"
         MockNeedle.return_value.run.return_value = {"needle": "results"}
-        
+
         MockSize = MagicMock()
         MockSize.NAME = "Size"
         MockSize.return_value.run.return_value = ["size_results"]
-        
+
         MockRag = MagicMock()
         MockRag.NAME = "Rag"
         MockRag.return_value.run.return_value = {"rag": "results"}
-        
+
         MockStrategies = MagicMock()
         MockStrategies.NAME = "Strat"
         MockStrategies.return_value.run.return_value = {"strat": "results"}
 
-        MockRegistry.get_all_experiments.return_value = {
-            1: MockNeedle,
-            2: MockSize,
-            3: MockRag,
-            4: MockStrategies
-        }
+        MockRegistry.get_all_experiments.return_value = {1: MockNeedle, 2: MockSize, 3: MockRag, 4: MockStrategies}
 
         # Execute
         results = main.run_single_model("test-model", experiments=[1, 2, 3, 4], exp1_mode="quick")
@@ -52,7 +47,7 @@ class TestMain:
         MockNeedle.NAME = "Needle"
         mock_exp1_instance = MockNeedle.return_value
         mock_exp1_instance.run.return_value = [{"detailed": "result"}]
-        
+
         MockRegistry.get_all_experiments.return_value = {1: MockNeedle}
 
         # Execute

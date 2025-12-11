@@ -36,10 +36,7 @@ class StrategiesExperiment(ExperimentBase):
 
         # 1. Baseline (Full History)
         history = "\n".join(self.actions)
-        prompt = (
-            f"History:\n{history}\n\nQuestion: {self.final_question}\n"
-            "Answer with just the location name."
-        )
+        prompt = f"History:\n{history}\n\nQuestion: {self.final_question}\n" "Answer with just the location name."
         resp = self.client.generate(prompt)
         results["baseline"] = {
             "response": resp,
@@ -74,8 +71,7 @@ class StrategiesExperiment(ExperimentBase):
             summary = self.client.generate(prompt)
 
         prompt = (
-            f"Summary of Events:\n{summary}\n\nQuestion: {self.final_question}\n"
-            "Answer with just the location name."
+            f"Summary of Events:\n{summary}\n\nQuestion: {self.final_question}\n" "Answer with just the location name."
         )
         resp = self.client.generate(prompt)
         results["compress"] = {
@@ -93,8 +89,7 @@ class StrategiesExperiment(ExperimentBase):
             scratchpad = self.client.generate(prompt)
 
         prompt = (
-            f"Final State:\n{scratchpad}\n\nQuestion: {self.final_question}\n"
-            "Answer with just the location name."
+            f"Final State:\n{scratchpad}\n\nQuestion: {self.final_question}\n" "Answer with just the location name."
         )
         resp = self.client.generate(prompt)
         results["write"] = {

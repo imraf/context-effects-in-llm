@@ -72,13 +72,9 @@ def run_single_model(model: str, experiments: list = None, exp1_mode: str = "qui
                 # Detailed mode: save separately
                 if hasattr(experiment, "save_detailed_results"):
                     experiment.save_detailed_results(results)
-                    logger.info(
-                        f"[{model}] Detailed results saved separately for {exp1_mode}"
-                    )
+                    logger.info(f"[{model}] Detailed results saved separately for {exp1_mode}")
                 else:
-                    logger.warning(
-                        f"[{model}] Detailed results generated but save method missing."
-                    )
+                    logger.warning(f"[{model}] Detailed results generated but save method missing.")
             else:
                 # Standard mode: add to model results
                 model_results[key] = results
@@ -89,12 +85,10 @@ def run_single_model(model: str, experiments: list = None, exp1_mode: str = "qui
     # Save results for this model (if not just running detailed exp1)
     # Logic: If running quick mode OR any other experiment, save the summary JSON.
     should_save = exp1_mode == "quick" or any(e != 1 for e in experiments)
-    
+
     if should_save:
         safe_model_name = model.replace(":", "_")
-        output_file = os.path.join(
-            config.RESULTS_DIR, f"{safe_model_name}_results.json"
-        )
+        output_file = os.path.join(config.RESULTS_DIR, f"{safe_model_name}_results.json")
         try:
             with open(output_file, "w") as f:
                 json.dump(model_results, f, indent=2)
@@ -148,12 +142,8 @@ def run_benchmark(models=None, experiments=None, exp1_mode="quick", parallel=Fal
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Run LLM context benchmarking experiments"
-    )
-    parser.add_argument(
-        "--models", nargs="+", help="Models to test (default: all from config)"
-    )
+    parser = argparse.ArgumentParser(description="Run LLM context benchmarking experiments")
+    parser.add_argument("--models", nargs="+", help="Models to test (default: all from config)")
     parser.add_argument(
         "--experiments",
         nargs="+",
@@ -166,9 +156,7 @@ if __name__ == "__main__":
         default="quick",
         help="Mode for Experiment 1 (default: quick)",
     )
-    parser.add_argument(
-        "--parallel", action="store_true", help="Run models in parallel"
-    )
+    parser.add_argument("--parallel", action="store_true", help="Run models in parallel")
 
     args = parser.parse_args()
 

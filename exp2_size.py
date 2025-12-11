@@ -59,16 +59,12 @@ class ContextSizeExperiment(ExperimentBase):
             query = "What is the Unique Reference ID mentioned in the text? Return only the ID."
 
             start_time = time.time()
-            response = self.client.generate(
-                prompt=f"Context:\n{context}\n\nQuestion: {query}", temperature=0.1
-            )
+            response = self.client.generate(prompt=f"Context:\n{context}\n\nQuestion: {query}", temperature=0.1)
             latency = time.time() - start_time
 
             is_correct = unique_id in response
 
-            logger.info(
-                f"Docs: {doc_count}, Tokens: {token_count:.0f}, Correct: {is_correct}, Latency: {latency:.2f}s"
-            )
+            logger.info(f"Docs: {doc_count}, Tokens: {token_count:.0f}, Correct: {is_correct}, Latency: {latency:.2f}s")
 
             results.append(
                 {

@@ -9,7 +9,7 @@ from utils import (
     load_english_articles,
     load_hebrew_articles,
     load_text_from_file,
-    OllamaClient
+    OllamaClient,
 )
 
 
@@ -150,10 +150,10 @@ class TestOllamaClient:
     @patch("utils.OllamaClient._get_from_cache")
     def test_generate_cache_hit(self, mock_get_cache, mock_post):
         mock_get_cache.return_value = {"response": "cached response"}
-        
+
         client = OllamaClient("test-model")
         resp = client.generate("prompt")
-        
+
         assert resp == "cached response"
         mock_post.assert_not_called()
 
@@ -165,10 +165,10 @@ class TestOllamaClient:
         mock_resp = MagicMock()
         mock_resp.json.return_value = {"response": "api response"}
         mock_post.return_value = mock_resp
-        
+
         client = OllamaClient("test-model")
         resp = client.generate("prompt")
-        
+
         assert resp == "api response"
         mock_post.assert_called()
         mock_save_cache.assert_called()

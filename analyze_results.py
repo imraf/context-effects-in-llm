@@ -4,7 +4,8 @@ import glob
 import logging
 import pandas as pd
 import matplotlib
-matplotlib.use('Agg')
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -175,9 +176,7 @@ def plot_exp2_size(results: List[Dict[str, Any]]):
     ax2.set_ylabel("Latency (seconds)")
     ax2.grid(True, linestyle="--", alpha=0.7)
 
-    plt.suptitle(
-        "Experiment 2: Context Scaling Performance - Model Comparison", fontsize=18
-    )
+    plt.suptitle("Experiment 2: Context Scaling Performance - Model Comparison", fontsize=18)
     plt.tight_layout()
     plt.savefig(os.path.join(config.PLOTS_DIR, "exp2_scaling.png"), dpi=300)
     plt.close()
@@ -266,9 +265,7 @@ def plot_radar_summary(results: List[Dict[str, Any]]):
 
     # Draw ylabels
     ax.set_rlabel_position(0)
-    plt.yticks(
-        [0.25, 0.5, 0.75, 1.0], ["0.25", "0.5", "0.75", "1.0"], color="grey", size=10
-    )
+    plt.yticks([0.25, 0.5, 0.75, 1.0], ["0.25", "0.5", "0.75", "1.0"], color="grey", size=10)
     plt.ylim(0, 1.0)
 
     # Color palette
@@ -292,11 +289,7 @@ def plot_radar_summary(results: List[Dict[str, Any]]):
         s3 = res["data"].get("exp3_rag", {}).get("rag", {}).get("accuracy", 0)
 
         # 4. Reasoning: Exp 4 Write strategy accuracy
-        s4 = (
-            1.0
-            if res["data"].get("exp4_strategies", {}).get("write", {}).get("correct")
-            else 0.0
-        )
+        s4 = 1.0 if res["data"].get("exp4_strategies", {}).get("write", {}).get("correct") else 0.0
 
         values = [s1, s2, s3, s4]
         values += values[:1]
@@ -355,18 +348,12 @@ def plot_detailed_needle_experiments(results: List[Dict[str, Any]]):
         plt.ylim(0, 1.0)
         plt.xticks(rotation=45, ha="right")
         plt.tight_layout()
-        plt.savefig(
-            os.path.join(config.PLOTS_DIR, f"overall_detection_{exp_name}.png"), dpi=300
-        )
+        plt.savefig(os.path.join(config.PLOTS_DIR, f"overall_detection_{exp_name}.png"), dpi=300)
         plt.close()
 
         # 2. Detection Rate by Position
         plt.figure(figsize=(12, 6))
-        pos_accuracy = (
-            test_df.groupby(["model", "message_position"])["found_secret"]
-            .mean()
-            .reset_index()
-        )
+        pos_accuracy = test_df.groupby(["model", "message_position"])["found_secret"].mean().reset_index()
         sns.barplot(
             data=pos_accuracy,
             x="model",
@@ -414,20 +401,14 @@ def plot_detailed_needle_experiments(results: List[Dict[str, Any]]):
             plt.tight_layout()
             safe_model_name = model.replace(":", "_")
             plt.savefig(
-                os.path.join(
-                    config.PLOTS_DIR, f"heatmap_{safe_model_name}_{exp_name}.png"
-                ),
+                os.path.join(config.PLOTS_DIR, f"heatmap_{safe_model_name}_{exp_name}.png"),
                 dpi=300,
             )
             plt.close()
 
         # 4. Length Detection Curve
         plt.figure(figsize=(12, 6))
-        length_accuracy = (
-            test_df.groupby(["model", "target_prompt_length"])["found_secret"]
-            .mean()
-            .reset_index()
-        )
+        length_accuracy = test_df.groupby(["model", "target_prompt_length"])["found_secret"].mean().reset_index()
         sns.lineplot(
             data=length_accuracy,
             x="target_prompt_length",
@@ -442,9 +423,7 @@ def plot_detailed_needle_experiments(results: List[Dict[str, Any]]):
         plt.ylim(-0.05, 1.05)
         plt.grid(True, linestyle="--", alpha=0.7)
         plt.tight_layout()
-        plt.savefig(
-            os.path.join(config.PLOTS_DIR, f"length_curve_{exp_name}.png"), dpi=300
-        )
+        plt.savefig(os.path.join(config.PLOTS_DIR, f"length_curve_{exp_name}.png"), dpi=300)
         plt.close()
 
         # 5. Query Time Analysis
@@ -462,9 +441,7 @@ def plot_detailed_needle_experiments(results: List[Dict[str, Any]]):
         plt.ylabel("Time (seconds)")
         plt.grid(True, linestyle="--", alpha=0.7)
         plt.tight_layout()
-        plt.savefig(
-            os.path.join(config.PLOTS_DIR, f"query_time_{exp_name}.png"), dpi=300
-        )
+        plt.savefig(os.path.join(config.PLOTS_DIR, f"query_time_{exp_name}.png"), dpi=300)
         plt.close()
 
 

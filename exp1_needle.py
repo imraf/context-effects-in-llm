@@ -23,12 +23,7 @@ class NeedleExperiment(ExperimentBase):
     ID = 1
     NAME = "Needle in Haystack"
 
-    def __init__(
-        self,
-        model: str,
-        mode: Literal["quick", "info_retrieval", "anomaly_detection"] = "quick",
-        **kwargs
-    ):
+    def __init__(self, model: str, mode: Literal["quick", "info_retrieval", "anomaly_detection"] = "quick", **kwargs):
         """Initialize needle experiment.
 
         Args:
@@ -40,9 +35,7 @@ class NeedleExperiment(ExperimentBase):
         self.mode = mode
 
         if mode not in config.NEEDLE_EXPERIMENTS:
-            raise ValueError(
-                f"Invalid mode: {mode}. Must be one of {list(config.NEEDLE_EXPERIMENTS.keys())}"
-            )
+            raise ValueError(f"Invalid mode: {mode}. Must be one of {list(config.NEEDLE_EXPERIMENTS.keys())}")
 
         self.exp_config = config.NEEDLE_EXPERIMENTS[mode]
 
@@ -93,14 +86,18 @@ class NeedleExperiment(ExperimentBase):
                 "response": response_text,
                 "prompt_tokens": prompt_eval_count,
             }
-            logger.info(
-                f"Position {position}: Correct={is_correct}, Latency={latency:.2f}s"
-            )
+            logger.info(f"Position {position}: Correct={is_correct}, Latency={latency:.2f}s")
 
         return results
 
     async def _run_single_trial(
-        self, prompt_length: int, position: str, secret_message: str, question: str, expected_answer: str, source_file: str
+        self,
+        prompt_length: int,
+        position: str,
+        secret_message: str,
+        question: str,
+        expected_answer: str,
+        source_file: str,
     ) -> Dict[str, Any]:
         """Run a single async trial."""
         logger.info(f"Testing length={prompt_length}, position={position}")
@@ -113,9 +110,7 @@ class NeedleExperiment(ExperimentBase):
             return None
 
         # Insert secret message
-        text_with_secret = insert_secret_message(
-            base_text, position, secret_message
-        )
+        text_with_secret = insert_secret_message(base_text, position, secret_message)
         include_secret = position != "control"
 
         # Create prompt
@@ -130,16 +125,12 @@ class NeedleExperiment(ExperimentBase):
 Please provide your answer clearly."""
 
         # Run query
-        experiment_id = (
-            f"{self.model}_{prompt_length}_{position}_{int(time.time())}"
-        )
+        experiment_id = f"{self.model}_{prompt_length}_{position}_{int(time.time())}"
 
         start_time = time.time()
         try:
             # Use async generation
-            response_data = await self.client.generate_with_stats_async(
-                prompt=prompt, temperature=0.1, max_tokens=500
-            )
+            response_data = await self.client.generate_with_stats_async(prompt=prompt, temperature=0.1, max_tokens=500)
             query_time = time.time() - start_time
 
             response_text = response_data.get("response", "")
@@ -166,19 +157,13 @@ Please provide your answer clearly."""
                     "eval_count": response_data.get("eval_count", 0),
                     "eval_duration": response_data.get("eval_duration", 0),
                     "load_duration": response_data.get("load_duration", 0),
-                    "prompt_eval_count": response_data.get(
-                        "prompt_eval_count", 0
-                    ),
-                    "prompt_eval_duration": response_data.get(
-                        "prompt_eval_duration", 0
-                    ),
+                    "prompt_eval_count": response_data.get("prompt_eval_count", 0),
+                    "prompt_eval_duration": response_data.get("prompt_eval_duration", 0),
                     "total_duration": response_data.get("total_duration", 0),
                 },
             }
 
-            logger.info(
-                f"Result: found={found_secret}, tokens={token_count}, time={query_time:.2f}s"
-            )
+            logger.info(f"Result: found={found_secret}, tokens={token_count}, time={query_time:.2f}s")
             return result
 
         except Exception as e:
@@ -202,7 +187,7 @@ Please provide your answer clearly."""
                         prompt_length, position, secret_message, question, expected_answer, source_file
                     )
                 )
-        
+
         # Gather all results
         results = await asyncio.gather(*tasks)
         # Filter out None results
@@ -210,15 +195,11 @@ Please provide your answer clearly."""
 
     def run_detailed(self) -> List[Dict[str, Any]]:
         """Run detailed needle experiment with multiple context lengths."""
-        logger.info(
-            f"Starting Experiment 1 (Needle - {self.mode.replace('_', ' ').title()} Mode) for {self.model}"
-        )
+        logger.info(f"Starting Experiment 1 (Needle - {self.mode.replace('_', ' ').title()} Mode) for {self.model}")
         # Run the async loop
         return asyncio.run(self._run_detailed_async())
 
-    def save_detailed_results(
-        self, results: List[Dict[str, Any]], output_dir: str = None
-    ):
+    def save_detailed_results(self, results: List[Dict[str, Any]], output_dir: str = None):
         """Save detailed experiment results to JSON."""
         if output_dir is None:
             output_dir = config.RESULTS_DIR

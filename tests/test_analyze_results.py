@@ -6,45 +6,33 @@ import os
 # Sample Data
 STANDARD_RESULT = {
     "model": "test-model",
-    "exp1_needle": {
-        "start": {"accuracy": 1.0},
-        "middle": {"accuracy": 0.5},
-        "end": {"accuracy": 0.0}
-    },
+    "exp1_needle": {"start": {"accuracy": 1.0}, "middle": {"accuracy": 0.5}, "end": {"accuracy": 0.0}},
     "exp2_size": [
         {"token_count": 100, "accuracy": 1.0, "latency": 0.1},
-        {"token_count": 1000, "accuracy": 0.8, "latency": 1.0}
+        {"token_count": 1000, "accuracy": 0.8, "latency": 1.0},
     ],
-    "exp3_rag": {
-        "rag": {"accuracy": 0.9, "latency": 0.2},
-        "full_context": {"accuracy": 1.0, "latency": 2.0}
-    },
-    "exp4_strategies": {
-        "write": {"correct": True}
-    }
+    "exp3_rag": {"rag": {"accuracy": 0.9, "latency": 0.2}, "full_context": {"accuracy": 1.0, "latency": 2.0}},
+    "exp4_strategies": {"write": {"correct": True}},
 }
 
 DETAILED_RESULT = {
-    "experiment_metadata": {
-        "experiment_name": "test-exp",
-        "models": ["test-model"]
-    },
+    "experiment_metadata": {"experiment_name": "test-exp", "models": ["test-model"]},
     "results": [
         {
             "model": "test-model",
             "message_position": "start",
             "target_prompt_length": 1000,
             "found_secret": True,
-            "query_time_seconds": 0.5
+            "query_time_seconds": 0.5,
         },
         {
             "model": "test-model",
             "message_position": "middle",
             "target_prompt_length": 1000,
             "found_secret": False,
-            "query_time_seconds": 0.6
-        }
-    ]
+            "query_time_seconds": 0.6,
+        },
+    ],
 }
 
 
@@ -74,9 +62,7 @@ class TestAnalyzeResults:
         analyze_results.plot_exp1_needle(results)
 
         mock_heatmap.assert_called()
-        mock_savefig.assert_called_with(
-            os.path.join(config.PLOTS_DIR, "exp1_heatmap.png"), dpi=300
-        )
+        mock_savefig.assert_called_with(os.path.join(config.PLOTS_DIR, "exp1_heatmap.png"), dpi=300)
 
     @patch("matplotlib.pyplot.savefig")
     @patch("seaborn.lineplot")
@@ -104,11 +90,13 @@ class TestAnalyzeResults:
 
     @patch("matplotlib.pyplot.savefig")
     def test_plot_detailed_needle_experiments(self, mock_savefig):
-        results = [{
-            "type": "detailed_needle",
-            "metadata": DETAILED_RESULT["experiment_metadata"],
-            "results": DETAILED_RESULT["results"]
-        }]
+        results = [
+            {
+                "type": "detailed_needle",
+                "metadata": DETAILED_RESULT["experiment_metadata"],
+                "results": DETAILED_RESULT["results"],
+            }
+        ]
         analyze_results.plot_detailed_needle_experiments(results)
         mock_savefig.assert_called()
 
