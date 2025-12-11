@@ -5,6 +5,7 @@ import os
 import time
 from functools import partial
 from multiprocessing import Pool, cpu_count
+from typing import Optional
 
 import config
 from plugins import PluginRegistry
@@ -12,7 +13,7 @@ from plugins import PluginRegistry
 logger = logging.getLogger("BenchmarkRunner")
 
 
-def run_single_model(model: str, experiments: list = None, exp1_mode: str = "quick"):
+def run_single_model(model: str, experiments: Optional[list] = None, exp1_mode: str = "quick"):
     """Run all selected experiments for a single model.
 
     Args:

@@ -267,7 +267,7 @@ def plot_radar_summary(results: List[Dict[str, Any]]):
     plt.xticks(angles[:-1], categories, color="grey", size=12)
 
     # Draw ylabels
-    ax.set_rlabel_position(0)
+    ax.set_rlabel_position(0)  # type: ignore[attr-defined]
     plt.yticks([0.25, 0.5, 0.75, 1.0], ["0.25", "0.5", "0.75", "1.0"], color="grey", size=10)
     plt.ylim(0, 1.0)
 

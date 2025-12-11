@@ -95,7 +95,8 @@ class OllamaClient(LLMClient):
         cached_response = self._get_from_cache(cache_path)
         if cached_response:
             logger.info("Cache hit for generate request")
-            return cached_response.get("response", "")
+            response_str: str = cached_response.get("response", "")
+            return response_str
 
         try:
             response = requests.post(self.api_generate, json=payload, timeout=30)
@@ -104,7 +105,8 @@ class OllamaClient(LLMClient):
 
             # Save to cache
             self._save_to_cache(cache_path, result)
-            return result.get("response", "")
+            response_text: str = result.get("response", "")
+            return response_text
         except requests.exceptions.RequestException as e:
             logger.error(f"Ollama generation failed: {e}")
             return ""
@@ -131,7 +133,8 @@ class OllamaClient(LLMClient):
         cached_response = self._get_from_cache(cache_path)
         if cached_response:
             logger.info("Cache hit for generate_with_stats request")
-            return cached_response
+            cached_dict: Dict[str, Any] = cached_response if isinstance(cached_response, dict) else {}
+            return cached_dict
 
         try:
             response = requests.post(self.api_generate, json=payload, timeout=30)
@@ -140,7 +143,8 @@ class OllamaClient(LLMClient):
 
             # Save to cache
             self._save_to_cache(cache_path, result)
-            return result
+            result_dict: Dict[str, Any] = result if isinstance(result, dict) else {}
+            return result_dict
         except requests.exceptions.RequestException as e:
             logger.error(f"Ollama generation failed: {e}")
             return {}
@@ -167,17 +171,20 @@ class OllamaClient(LLMClient):
         cached_response = self._get_from_cache(cache_path)
         if cached_response:
             logger.info("Cache hit for generate_with_stats_async request")
-            return cached_response
+            cached_dict: Dict[str, Any] = cached_response if isinstance(cached_response, dict) else {}
+            return cached_dict
 
         try:
             async with aiohttp.ClientSession() as session:
-                async with session.post(self.api_generate, json=payload, timeout=30) as response:
+                timeout = aiohttp.ClientTimeout(total=30)
+                async with session.post(self.api_generate, json=payload, timeout=timeout) as response:
                     response.raise_for_status()
                     result = await response.json()
 
                     # Save to cache
                     self._save_to_cache(cache_path, result)
-                    return result
+                    result_dict: Dict[str, Any] = result if isinstance(result, dict) else {}
+                    return result_dict
         except Exception as e:
             logger.error(f"Ollama async generation failed: {e}")
             return {}
@@ -192,7 +199,9 @@ class OllamaClient(LLMClient):
         try:
             response = requests.post(self.api_embeddings, json=payload, timeout=30)
             response.raise_for_status()
-            return response.json().get("embedding", [])
+            result = response.json()
+            embedding: List[float] = result.get("embedding", [])
+            return embedding if isinstance(embedding, list) else []
         except requests.exceptions.RequestException as e:
             logger.error(f"Ollama embedding failed: {e}")
             return []

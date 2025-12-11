@@ -4,7 +4,7 @@ import inspect
 import logging
 import os
 import sys
-from typing import Dict, Type
+from typing import Dict, Optional, Type
 
 from base import ExperimentBase
 
@@ -47,7 +47,7 @@ class PluginRegistry:
         cls._discovered = True
 
     @classmethod
-    def get_experiment_class(cls, exp_id: int) -> Type[ExperimentBase]:
+    def get_experiment_class(cls, exp_id: int) -> Optional[Type[ExperimentBase]]:
         if not cls._discovered:
             cls.discover_experiments()
         return cls._experiments.get(exp_id)
