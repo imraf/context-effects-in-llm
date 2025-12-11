@@ -238,7 +238,7 @@ if __name__ == "__main__":
     if mode_arg not in ["quick", "info_retrieval", "anomaly_detection"]:
         print(f"Invalid mode: {mode_arg}")
         sys.exit(1)
-    
+
     mode: Literal["quick", "info_retrieval", "anomaly_detection"] = mode_arg  # type: ignore
     model = config.MODELS[0] if config.MODELS else "llama3.2:3b-100K"
 
