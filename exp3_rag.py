@@ -2,11 +2,10 @@ import time
 import logging
 import json
 import random
-import shutil
 import os
 from typing import Dict, Any
 import config
-from utils import OllamaClient, load_hebrew_articles, count_tokens
+from utils import OllamaClient, load_hebrew_articles
 
 # LangChain imports
 from langchain_chroma import Chroma

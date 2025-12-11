@@ -1,8 +1,6 @@
-import time
 import logging
 import json
-import random
-from typing import Dict, List, Any
+from typing import Dict, Any
 import config
 from utils import OllamaClient
 
@@ -34,7 +32,10 @@ class StrategiesExperiment:
 
         # 1. Baseline (Full History)
         history = "\n".join(self.actions)
-        prompt = f"History:\n{history}\n\nQuestion: {self.final_question}\nAnswer with just the location name."
+        prompt = (
+            f"History:\n{history}\n\nQuestion: {self.final_question}\n"
+            "Answer with just the location name."
+        )
         resp = self.client.generate(prompt)
         results["baseline"] = {
             "response": resp,
@@ -42,11 +43,14 @@ class StrategiesExperiment:
         }
 
         # 2. Select (Simulated RAG - picking relevant lines)
-        # Ideally we use embeddings, but for this simple list, keyword matching is a proxy for "perfect retrieval"
+        # Ideally we use embeddings, but for this simple list, keyword matching is a proxy
         keywords = ["Apple", "put", "pick"]
         selected = [a for a in self.actions if any(k in a for k in keywords)]
         history_select = "\n".join(selected)
-        prompt = f"Relevant History:\n{history_select}\n\nQuestion: {self.final_question}\nAnswer with just the location name."
+        prompt = (
+            f"Relevant History:\n{history_select}\n\n"
+            f"Question: {self.final_question}\nAnswer with just the location name."
+        )
         resp = self.client.generate(prompt)
         results["select"] = {
             "response": resp,
@@ -59,10 +63,16 @@ class StrategiesExperiment:
         for i in range(0, len(self.actions), chunk_size):
             chunk = "\n".join(self.actions[i : i + chunk_size])
             # Ask model to update summary
-            prompt = f"Current Summary: {summary}\nNew Actions:\n{chunk}\n\nUpdate the summary of where items are located. Keep it brief."
+            prompt = (
+                f"Current Summary: {summary}\nNew Actions:\n{chunk}\n\n"
+                "Update the summary of where items are located. Keep it brief."
+            )
             summary = self.client.generate(prompt)
 
-        prompt = f"Summary of Events:\n{summary}\n\nQuestion: {self.final_question}\nAnswer with just the location name."
+        prompt = (
+            f"Summary of Events:\n{summary}\n\nQuestion: {self.final_question}\n"
+            "Answer with just the location name."
+        )
         resp = self.client.generate(prompt)
         results["compress"] = {
             "response": resp,
@@ -72,10 +82,16 @@ class StrategiesExperiment:
         # 4. Write (Scratchpad - update state after each step)
         scratchpad = "Current State: {}"
         for action in self.actions:
-            prompt = f"{scratchpad}\nAction: {action}\n\nUpdate the Current State JSON to reflect item locations. Return only JSON."
+            prompt = (
+                f"{scratchpad}\nAction: {action}\n\n"
+                "Update the Current State JSON to reflect item locations. Return only JSON."
+            )
             scratchpad = self.client.generate(prompt)
 
-        prompt = f"Final State:\n{scratchpad}\n\nQuestion: {self.final_question}\nAnswer with just the location name."
+        prompt = (
+            f"Final State:\n{scratchpad}\n\nQuestion: {self.final_question}\n"
+            "Answer with just the location name."
+        )
         resp = self.client.generate(prompt)
         results["write"] = {
             "response": resp,

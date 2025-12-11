@@ -52,7 +52,7 @@ class ContextSizeExperiment:
             selected_docs[target_doc_idx] += f"\n\nUnique Reference ID: {unique_id}"
             context = "\n\n".join(selected_docs)
 
-            query = f"What is the Unique Reference ID mentioned in the text? Return only the ID."
+            query = "What is the Unique Reference ID mentioned in the text? Return only the ID."
 
             start_time = time.time()
             response = self.client.generate(

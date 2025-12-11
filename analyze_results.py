@@ -88,7 +88,7 @@ def plot_exp1_needle(results: List[Dict[str, Any]]):
     available_cols = [c for c in ["Start", "Middle", "End"] if c in pivot_df.columns]
     pivot_df = pivot_df[available_cols]
 
-    ax = sns.heatmap(
+    sns.heatmap(
         pivot_df,
         annot=True,
         cmap="RdYlGn",

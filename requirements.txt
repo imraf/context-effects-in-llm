@@ -10,6 +10,8 @@ matplotlib
 seaborn
 tqdm
 ipykernel
+openpyxl
+nbformat
 
 # Testing & Quality
 pytest>=7.0.0

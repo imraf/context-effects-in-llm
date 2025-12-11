@@ -1,8 +1,7 @@
 import os
 import logging
-import requests
 
-# Disable Telemetry
+# Environment Setup
 os.environ["ANONYMIZED_TELEMETRY"] = "False"
 os.environ["SCARF_NO_ANALYTICS"] = "true"
 os.environ["DO_NOT_TRACK"] = "true"
@@ -56,7 +55,10 @@ NEEDLE_EXPERIMENTS = {
         "use_articles": True,
     },
     "info_retrieval": {
-        "secret_message": "In the twilight of forgotten ages walked Vramiel, ancient prince of the kingdom of Elel-Em, whose voice bore the echo of dawn.",
+        "secret_message": (
+            "In the twilight of forgotten ages walked Vramiel, ancient prince "
+            "of the kingdom of Elel-Em, whose voice bore the echo of dawn."
+        ),
         "question": "Who was the prince of Elel-Em?",
         "expected_answer": "VRAMIEL",
         "source_file": "lotr",

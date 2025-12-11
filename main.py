@@ -25,9 +25,9 @@ def run_single_model(model: str, experiments: list = None, exp1_mode: str = "qui
     Returns:
         Dictionary containing results for the model.
     """
-    logger.info(f"========================================")
+    logger.info("========================================")
     logger.info(f"Processing Model: {model}")
-    logger.info(f"========================================")
+    logger.info("========================================")
 
     model_results = {
         "model": model,

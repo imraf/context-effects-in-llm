@@ -63,7 +63,7 @@ class OllamaClient:
             return response.json()
         except requests.exceptions.RequestException as e:
             logger.error(f"Ollama generation failed: {e}")
-            return {{}}
+            return {}
 
     def embed(self, text: str) -> List[float]:
         """Generate embeddings for text."""
