@@ -1,3 +1,4 @@
+from base import ExperimentBase
 import time
 import logging
 import json
@@ -17,11 +18,15 @@ from utils import (
 logger = logging.getLogger(__name__)
 
 
-class NeedleExperiment:
+class NeedleExperiment(ExperimentBase):
+    ID = 1
+    NAME = "Needle in Haystack"
+
     def __init__(
         self,
         model: str,
         mode: Literal["quick", "info_retrieval", "anomaly_detection"] = "quick",
+        **kwargs
     ):
         """Initialize needle experiment.
 
@@ -29,7 +34,7 @@ class NeedleExperiment:
             model: Model identifier
             mode: Experiment mode - "quick", "info_retrieval", or "anomaly_detection"
         """
-        self.model = model
+        super().__init__(model, mode=mode, **kwargs)
         self.client = OllamaClient(model)
         self.mode = mode
 

@@ -33,6 +33,14 @@ Based on experiment results:
 
 ## Optimization Strategies
 
-1. **Caching**: Reuse ChromaDB embeddings across models
-2. **Sampling**: Run detailed experiments on subset of models
-3. **Early stopping**: Terminate failed experiments quickly
+1. **Caching**:
+    - **Embeddings**: Reusing ChromaDB embeddings across models (shared `chroma_db_shared` directory).
+    - **Inference**: Response caching implemented in `OllamaClient`. Hash-based caching prevents redundant API calls for identical prompts, significantly reducing generation time and token usage during development and re-runs.
+2. **Sampling**: Run detailed experiments on subset of models.
+3. **Early stopping**: Terminate failed experiments quickly.
+
+## Planned Optimizations
+
+1. **Plugin-based Selective Execution**: The new `plugins.py` architecture allows for granular loading of experiments, preventing unnecessary imports and resource allocation for disabled experiments.
+2. **Token Budgeting**: A `CostEstimator` class will be added to pre-calculate estimated tokens before execution and warn the user.
+

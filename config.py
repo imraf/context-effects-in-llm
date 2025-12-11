@@ -31,10 +31,12 @@ HEBREW_ARTICLES_DIR = os.path.join(DOCUMENTS_DIR, "articles_hebrew")
 METADATA_FILE = os.path.join(DOCUMENTS_DIR, "articles_metadata.json")
 RESULTS_DIR = os.path.join(BASE_DIR, "results")
 PLOTS_DIR = os.path.join(BASE_DIR, "plots")
+CACHE_DIR = os.path.join(RESULTS_DIR, "cache")
+TESTS_DIR = os.path.join(BASE_DIR, "tests")
 
-# Ensure directories exist
-os.makedirs(RESULTS_DIR, exist_ok=True)
-os.makedirs(PLOTS_DIR, exist_ok=True)
+# Create directories if they don't exist
+for d in [RESULTS_DIR, PLOTS_DIR, CACHE_DIR]:
+    os.makedirs(d, exist_ok=True)
 
 # Experiment Settings
 SEED = 42

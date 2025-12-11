@@ -147,7 +147,37 @@ class TestUtils:
 class TestOllamaClient:
 
     @patch("requests.post")
-    def test_generate_success(self, mock_post):
+    @patch("utils.OllamaClient._get_from_cache")
+    def test_generate_cache_hit(self, mock_get_cache, mock_post):
+        mock_get_cache.return_value = {"response": "cached response"}
+        
+        client = OllamaClient("test-model")
+        resp = client.generate("prompt")
+        
+        assert resp == "cached response"
+        mock_post.assert_not_called()
+
+    @patch("requests.post")
+    @patch("utils.OllamaClient._get_from_cache")
+    @patch("utils.OllamaClient._save_to_cache")
+    def test_generate_cache_miss_and_save(self, mock_save_cache, mock_get_cache, mock_post):
+        mock_get_cache.return_value = None
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"response": "api response"}
+        mock_post.return_value = mock_resp
+        
+        client = OllamaClient("test-model")
+        resp = client.generate("prompt")
+        
+        assert resp == "api response"
+        mock_post.assert_called()
+        mock_save_cache.assert_called()
+
+    @patch("requests.post")
+    @patch("utils.OllamaClient._get_from_cache")
+    @patch("utils.OllamaClient._save_to_cache")
+    def test_generate_success(self, mock_save_cache, mock_get_cache, mock_post):
+        mock_get_cache.return_value = None
         mock_resp = MagicMock()
         mock_resp.json.return_value = {"response": "test response"}
         mock_post.return_value = mock_resp
@@ -158,13 +188,18 @@ class TestOllamaClient:
         assert resp == "test response"
 
     @patch("requests.post", side_effect=requests.exceptions.RequestException)
-    def test_generate_failure(self, mock_post):
+    @patch("utils.OllamaClient._get_from_cache")
+    def test_generate_failure(self, mock_get_cache, mock_post):
+        mock_get_cache.return_value = None
         client = OllamaClient("test-model")
         resp = client.generate("prompt")
         assert resp == ""
 
     @patch("requests.post")
-    def test_generate_with_stats_success(self, mock_post):
+    @patch("utils.OllamaClient._get_from_cache")
+    @patch("utils.OllamaClient._save_to_cache")
+    def test_generate_with_stats_success(self, mock_save_cache, mock_get_cache, mock_post):
+        mock_get_cache.return_value = None
         mock_resp = MagicMock()
         mock_resp.json.return_value = {"response": "test", "eval_count": 10}
         mock_post.return_value = mock_resp
@@ -175,7 +210,9 @@ class TestOllamaClient:
         assert resp["eval_count"] == 10
 
     @patch("requests.post", side_effect=requests.exceptions.RequestException)
-    def test_generate_with_stats_failure(self, mock_post):
+    @patch("utils.OllamaClient._get_from_cache")
+    def test_generate_with_stats_failure(self, mock_get_cache, mock_post):
+        mock_get_cache.return_value = None
         client = OllamaClient("test-model")
         resp = client.generate_with_stats("prompt")
         assert resp == {}

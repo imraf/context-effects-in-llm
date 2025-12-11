@@ -2,6 +2,8 @@ import os
 import random
 import logging
 import requests
+import hashlib
+import json
 from typing import List, Dict, Any
 import config
 
@@ -16,6 +18,31 @@ class OllamaClient:
         self.host = host
         self.api_generate = f"{host}/api/generate"
         self.api_embeddings = f"{host}/api/embeddings"
+        self.cache_dir = config.CACHE_DIR
+
+    def _get_cache_path(self, payload: Dict[str, Any]) -> str:
+        """Generate cache file path based on payload hash."""
+        payload_str = json.dumps(payload, sort_keys=True)
+        payload_hash = hashlib.md5(payload_str.encode("utf-8")).hexdigest()
+        return os.path.join(self.cache_dir, f"{payload_hash}.json")
+
+    def _get_from_cache(self, cache_path: str) -> Any:
+        """Retrieve data from cache if it exists."""
+        if os.path.exists(cache_path):
+            try:
+                with open(cache_path, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception as e:
+                logger.warning(f"Failed to read cache {cache_path}: {e}")
+        return None
+
+    def _save_to_cache(self, cache_path: str, data: Any):
+        """Save data to cache."""
+        try:
+            with open(cache_path, "w", encoding="utf-8") as f:
+                json.dump(data, f)
+        except Exception as e:
+            logger.warning(f"Failed to write cache {cache_path}: {e}")
 
     def generate(
         self,
@@ -33,10 +60,22 @@ class OllamaClient:
             "keep_alive": 0,
             "options": {"temperature": temperature, "num_predict": max_tokens},
         }
+
+        # Check cache
+        cache_path = self._get_cache_path(payload)
+        cached_response = self._get_from_cache(cache_path)
+        if cached_response:
+            logger.info("Cache hit for generate request")
+            return cached_response.get("response", "")
+
         try:
             response = requests.post(self.api_generate, json=payload, timeout=30)
             response.raise_for_status()
-            return response.json().get("response", "")
+            result = response.json()
+            
+            # Save to cache
+            self._save_to_cache(cache_path, result)
+            return result.get("response", "")
         except requests.exceptions.RequestException as e:
             logger.error(f"Ollama generation failed: {e}")
             return ""
@@ -57,10 +96,22 @@ class OllamaClient:
             "keep_alive": 0,
             "options": {"temperature": temperature, "num_predict": max_tokens},
         }
+        
+        # Check cache
+        cache_path = self._get_cache_path(payload)
+        cached_response = self._get_from_cache(cache_path)
+        if cached_response:
+            logger.info("Cache hit for generate_with_stats request")
+            return cached_response
+
         try:
             response = requests.post(self.api_generate, json=payload, timeout=30)
             response.raise_for_status()
-            return response.json()
+            result = response.json()
+            
+            # Save to cache
+            self._save_to_cache(cache_path, result)
+            return result
         except requests.exceptions.RequestException as e:
             logger.error(f"Ollama generation failed: {e}")
             return {}

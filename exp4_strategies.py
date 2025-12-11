@@ -1,3 +1,4 @@
+from base import ExperimentBase
 import logging
 import json
 from typing import Dict, Any
@@ -7,9 +8,12 @@ from utils import OllamaClient
 logger = logging.getLogger(__name__)
 
 
-class StrategiesExperiment:
-    def __init__(self, model: str):
-        self.model = model
+class StrategiesExperiment(ExperimentBase):
+    ID = 4
+    NAME = "Context Strategies"
+
+    def __init__(self, model: str, **kwargs):
+        super().__init__(model, **kwargs)
         self.client = OllamaClient(model)
         self.actions = [
             "I enter the Kitchen.",

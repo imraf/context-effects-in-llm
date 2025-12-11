@@ -1,3 +1,4 @@
+from base import ExperimentBase
 import time
 import logging
 import json
@@ -16,9 +17,12 @@ from langchain_core.documents import Document
 logger = logging.getLogger(__name__)
 
 
-class RagExperiment:
-    def __init__(self, model: str):
-        self.model = model
+class RagExperiment(ExperimentBase):
+    ID = 3
+    NAME = "RAG vs Full"
+
+    def __init__(self, model: str, **kwargs):
+        super().__init__(model, **kwargs)
         self.client = OllamaClient(model)
         self.articles = load_hebrew_articles()
         # Use a shared directory for all models to avoid re-embedding

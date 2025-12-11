@@ -68,3 +68,9 @@ multi_line_output = 3
 [tool.black]
 line-length = 120
 target-version = ['py312']
+
+[tool.coverage.run]
+omit = [
+    "dashboard.py",
+    "tests/*",
+]

@@ -6,10 +6,7 @@ from multiprocessing import Pool, cpu_count
 from functools import partial
 import time
 import config
-from exp1_needle import NeedleExperiment
-from exp2_size import ContextSizeExperiment
-from exp3_rag import RagExperiment
-from exp4_strategies import StrategiesExperiment
+from plugins import PluginRegistry
 
 logger = logging.getLogger("BenchmarkRunner")
 
@@ -29,66 +26,71 @@ def run_single_model(model: str, experiments: list = None, exp1_mode: str = "qui
     logger.info(f"Processing Model: {model}")
     logger.info("========================================")
 
-    model_results = {
-        "model": model,
-        "exp1_needle": {},
-        "exp2_size": [],
-        "exp3_rag": {},
-        "exp4_strategies": {},
-    }
+    # Discover experiments
+    PluginRegistry.discover_experiments()
+    all_experiments = PluginRegistry.get_all_experiments()
 
     if experiments is None:
-        experiments = [1, 2, 3, 4]
+        experiments = list(all_experiments.keys())
 
-    try:
-        if 1 in experiments:
-            # Experiment 1
-            logger.info(
-                f"[{model}] Running Exp 1: Needle in Haystack (mode={exp1_mode})..."
-            )
-            exp1 = NeedleExperiment(model, mode=exp1_mode)
-            results = exp1.run()
+    model_results = {
+        "model": model,
+    }
 
-            if exp1_mode == "quick":
-                model_results["exp1_needle"] = results
+    # Compatibility mapping for result keys
+    key_map = {
+        1: "exp1_needle",
+        2: "exp2_size",
+        3: "exp3_rag",
+        4: "exp4_strategies",
+    }
+
+    experiments.sort()
+
+    for exp_id in experiments:
+        if exp_id not in all_experiments:
+            logger.warning(f"Experiment ID {exp_id} not found in registry.")
+            continue
+
+        ExpClass = all_experiments[exp_id]
+        key = key_map.get(exp_id, f"exp{exp_id}")
+
+        logger.info(f"[{model}] Running Exp {exp_id}: {ExpClass.NAME}...")
+
+        try:
+            # Prepare arguments
+            kwargs = {}
+            if exp_id == 1:
+                kwargs["mode"] = exp1_mode
+
+            # Initialize and run
+            experiment = ExpClass(model, **kwargs)
+            results = experiment.run()
+
+            # Handle results
+            if exp_id == 1 and exp1_mode != "quick":
+                # Detailed mode: save separately
+                if hasattr(experiment, "save_detailed_results"):
+                    experiment.save_detailed_results(results)
+                    logger.info(
+                        f"[{model}] Detailed results saved separately for {exp1_mode}"
+                    )
+                else:
+                    logger.warning(
+                        f"[{model}] Detailed results generated but save method missing."
+                    )
             else:
-                # For detailed modes, save separately
-                exp1.save_detailed_results(results)
-                logger.info(
-                    f"[{model}] Detailed results saved separately for {exp1_mode}"
-                )
-    except Exception as e:
-        logger.error(f"Exp 1 failed for {model}: {e}")
+                # Standard mode: add to model results
+                model_results[key] = results
 
-    try:
-        if 2 in experiments:
-            # Experiment 2
-            logger.info(f"[{model}] Running Exp 2: Context Size...")
-            exp2 = ContextSizeExperiment(model)
-            model_results["exp2_size"] = exp2.run()
-    except Exception as e:
-        logger.error(f"Exp 2 failed for {model}: {e}")
+        except Exception as e:
+            logger.error(f"Exp {exp_id} failed for {model}: {e}")
 
-    try:
-        if 3 in experiments:
-            # Experiment 3
-            logger.info(f"[{model}] Running Exp 3: RAG vs Full...")
-            exp3 = RagExperiment(model)
-            model_results["exp3_rag"] = exp3.run()
-    except Exception as e:
-        logger.error(f"Exp 3 failed for {model}: {e}")
-
-    try:
-        if 4 in experiments:
-            # Experiment 4
-            logger.info(f"[{model}] Running Exp 4: Strategies...")
-            exp4 = StrategiesExperiment(model)
-            model_results["exp4_strategies"] = exp4.run()
-    except Exception as e:
-        logger.error(f"Exp 4 failed for {model}: {e}")
-
-    # Save results for this model (for quick mode and exp2-4)
-    if exp1_mode == "quick" or any(e in experiments for e in [2, 3, 4]):
+    # Save results for this model (if not just running detailed exp1)
+    # Logic: If running quick mode OR any other experiment, save the summary JSON.
+    should_save = exp1_mode == "quick" or any(e != 1 for e in experiments)
+    
+    if should_save:
         safe_model_name = model.replace(":", "_")
         output_file = os.path.join(
             config.RESULTS_DIR, f"{safe_model_name}_results.json"
@@ -119,12 +121,12 @@ def run_benchmark(models=None, experiments=None, exp1_mode="quick", parallel=Fal
         models = config.MODELS
 
     if experiments is None:
-        experiments = [1, 2, 3, 4]
+        # Default to all discovered experiments
+        PluginRegistry.discover_experiments()
+        experiments = list(PluginRegistry.get_all_experiments().keys())
 
     if parallel and len(models) > 1:
         # Limit processes to CPU count or number of models, whichever is smaller
-        # Note: If running against local Ollama, too many parallel requests might choke it.
-        # But for benchmarking against a robust server or API, this is great.
         num_processes = min(cpu_count(), len(models))
         # Cap at 4 to be safe for typical local setups unless explicitly overridden
         num_processes = min(num_processes, 4)
@@ -156,7 +158,6 @@ if __name__ == "__main__":
         "--experiments",
         nargs="+",
         type=int,
-        choices=[1, 2, 3, 4],
         help="Experiments to run (default: all)",
     )
     parser.add_argument(

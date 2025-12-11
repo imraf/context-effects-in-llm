@@ -1,3 +1,4 @@
+from base import ExperimentBase
 import time
 import logging
 import json
@@ -9,9 +10,12 @@ from utils import OllamaClient, load_english_articles, count_tokens
 logger = logging.getLogger(__name__)
 
 
-class ContextSizeExperiment:
-    def __init__(self, model: str):
-        self.model = model
+class ContextSizeExperiment(ExperimentBase):
+    ID = 2
+    NAME = "Context Size"
+
+    def __init__(self, model: str, **kwargs):
+        super().__init__(model, **kwargs)
         self.client = OllamaClient(model)
         self.articles = load_english_articles()
 

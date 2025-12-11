@@ -1,6 +1,6 @@
 # 🔭 Context Horizons: Benchmarking the Limits of Small-to-Mid Sized LLMs
 
-![Benchmark Status](https://img.shields.io/badge/Benchmark-Complete-success) ![Python](https://img.shields.io/badge/Python-3.x-blue) ![License](https://img.shields.io/badge/License-MIT-green)
+![Benchmark Status](https://img.shields.io/badge/Benchmark-Complete-success) ![Python](https://img.shields.io/badge/Python-3.x-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Coverage](https://img.shields.io/badge/Coverage-92%25-brightgreen) ![Dashboard](https://img.shields.io/badge/Streamlit-Dashboard-red)
 
 > **"In the ocean of context, some models swim, while others drown."**
 
@@ -305,6 +305,17 @@ python exp1_needle.py anomaly_detection
 python analyze_results.py
 ```
 
+### Interactive Dashboard
+
+Explore results interactively using the Streamlit dashboard:
+
+```bash
+streamlit run dashboard.py
+```
+
+This will launch a web interface to filter by model, view heatmaps, and analyze raw data.
+
+
 This will:
 - Load all experiment results from `results/`
 - Generate heatmaps, scaling curves, and comparison plots
@@ -325,6 +336,9 @@ context-effects-in-llm/
 ├── config.py               # Configuration (models, parameters)
 ├── utils.py                # Utilities (Ollama client, text loading)
 ├── analyze_results.py      # Visualization generation
+├── dashboard.py            # Streamlit interactive dashboard
+├── plugins.py              # Plugin registry for dynamic experiment loading
+├── base.py                 # Abstract base class for experiments
 ├── requirements.txt        # Python dependencies
 ├── lotr                    # LOTR text source (for detailed experiments)
 ├── documents/              # English & Hebrew articles
