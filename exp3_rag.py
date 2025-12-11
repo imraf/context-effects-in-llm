@@ -1,18 +1,19 @@
-from base import ExperimentBase
-import time
-import logging
 import json
-import random
+import logging
 import os
-from typing import Dict, Any
-import config
-from utils import OllamaClient, load_hebrew_articles
+import random
+import time
+from typing import Any, Dict
 
 # LangChain imports
 from langchain_chroma import Chroma
 from langchain_community.embeddings import OllamaEmbeddings
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+import config
+from base import ExperimentBase
+from utils import OllamaClient, load_hebrew_articles
 
 logger = logging.getLogger(__name__)
 

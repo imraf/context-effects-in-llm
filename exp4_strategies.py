@@ -1,8 +1,9 @@
-from base import ExperimentBase
-import logging
 import json
-from typing import Dict, Any
+import logging
+from typing import Any, Dict
+
 import config
+from base import ExperimentBase
 from utils import OllamaClient
 
 logger = logging.getLogger(__name__)

@@ -1,19 +1,20 @@
-from base import ExperimentBase
-import time
-import logging
-import json
-import os
 import asyncio
+import json
+import logging
+import os
+import time
 from datetime import datetime
-from typing import Dict, List, Any, Literal
+from typing import Any, Dict, List, Literal
+
 import config
+from base import ExperimentBase
 from utils import (
     OllamaClient,
-    generate_filler_text,
     embed_fact,
+    generate_filler_text,
+    insert_secret_message,
     load_english_articles,
     load_text_from_file,
-    insert_secret_message,
 )
 
 logger = logging.getLogger(__name__)

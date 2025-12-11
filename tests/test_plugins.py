@@ -1,6 +1,7 @@
-from plugins import PluginRegistry
-from base import ExperimentBase
 import os
+
+from base import ExperimentBase
+from plugins import PluginRegistry
 
 
 class TestPlugins:

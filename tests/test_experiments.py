@@ -1,11 +1,13 @@
-import pytest
 import asyncio
-from unittest.mock import patch, MagicMock, AsyncMock
+from unittest.mock import AsyncMock, MagicMock, patch
+
+import pytest
+
+import config
 from exp1_needle import NeedleExperiment
 from exp2_size import ContextSizeExperiment
 from exp3_rag import RagExperiment
 from exp4_strategies import StrategiesExperiment
-import config
 
 
 class TestNeedleExperiment:

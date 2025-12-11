@@ -1,11 +1,12 @@
+import glob
 import importlib
 import inspect
-import glob
+import logging
 import os
 import sys
 from typing import Dict, Type
+
 from base import ExperimentBase
-import logging
 
 logger = logging.getLogger(__name__)
 

@@ -1,10 +1,11 @@
-import os
+import argparse
 import json
 import logging
-import argparse
-from multiprocessing import Pool, cpu_count
-from functools import partial
+import os
 import time
+from functools import partial
+from multiprocessing import Pool, cpu_count
+
 import config
 from plugins import PluginRegistry
 

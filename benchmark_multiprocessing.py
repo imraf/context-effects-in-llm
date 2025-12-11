@@ -1,8 +1,8 @@
-import time
-import logging
-from multiprocessing import Pool, cpu_count
-from functools import partial
 import argparse
+import logging
+import time
+from functools import partial
+from multiprocessing import Pool, cpu_count
 
 logger = logging.getLogger("BenchmarkTest")
 logging.basicConfig(level=logging.INFO)

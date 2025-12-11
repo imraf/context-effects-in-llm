@@ -1,11 +1,12 @@
-import unittest
-from unittest.mock import MagicMock, patch
+import json
 import os
 import shutil
 import tempfile
-import json
-from main import run_single_model
+import unittest
+from unittest.mock import MagicMock, patch
+
 import config
+from main import run_single_model
 
 
 class TestIntegration(unittest.TestCase):

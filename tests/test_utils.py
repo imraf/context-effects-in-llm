@@ -1,15 +1,17 @@
+from unittest.mock import MagicMock, mock_open, patch
+
 import pytest
 import requests
-from unittest.mock import patch, mock_open, MagicMock
+
 from utils import (
-    embed_fact,
-    insert_secret_message,
+    OllamaClient,
     count_tokens,
+    embed_fact,
     generate_filler_text,
+    insert_secret_message,
     load_english_articles,
     load_hebrew_articles,
     load_text_from_file,
-    OllamaClient,
 )
 
 

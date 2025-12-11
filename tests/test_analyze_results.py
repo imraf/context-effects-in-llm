@@ -1,7 +1,8 @@
-from unittest.mock import patch, mock_open
+import os
+from unittest.mock import mock_open, patch
+
 import analyze_results
 import config
-import os
 
 # Sample Data
 STANDARD_RESULT = {

@@ -1,11 +1,12 @@
-from base import ExperimentBase
-import time
-import logging
 import json
+import logging
 import random
-from typing import Dict, List, Any
+import time
+from typing import Any, Dict, List
+
 import config
-from utils import OllamaClient, load_english_articles, count_tokens
+from base import ExperimentBase
+from utils import OllamaClient, count_tokens, load_english_articles
 
 logger = logging.getLogger(__name__)
 
