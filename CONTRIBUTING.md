@@ -51,3 +51,17 @@ Hooks include: black, isort, flake8, mypy, and bandit.
 6. Commit with clear message: `git commit -m "Add amazing feature"`
 7. Push to branch: `git push origin feature/amazing-feature`
 8. Open Pull Request with description
+
+## Community
+
+We are committed to building a welcoming and inclusive community.
+
+### Code of Conduct
+
+Please note that this project is released with a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+### Reporting Issues
+
+- Use the GitHub Issues tab to report bugs or request features.
+- Please verify that the issue hasn't been reported previously.
+- Use the provided templates for bug reports and feature requests.

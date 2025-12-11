@@ -1,5 +1,6 @@
 import pytest
-from unittest.mock import patch, MagicMock
+import asyncio
+from unittest.mock import patch, MagicMock, AsyncMock
 from exp1_needle import NeedleExperiment
 from exp2_size import ContextSizeExperiment
 from exp3_rag import RagExperiment
@@ -40,7 +41,9 @@ class TestNeedleExperiment:
     def test_detailed_run(self, mock_load_text, MockOllamaClient):
         # Setup mocks
         mock_client = MockOllamaClient.return_value
-        mock_client.generate_with_stats.return_value = {
+        
+        # Mock the async method
+        mock_client.generate_with_stats_async = AsyncMock(return_value={
             "response": "VRAMIEL",
             "prompt_eval_count": 100,
             "eval_count": 10,
@@ -48,7 +51,7 @@ class TestNeedleExperiment:
             "load_duration": 100,
             "prompt_eval_duration": 100,
             "total_duration": 400,
-        }
+        })
 
         mock_load_text.return_value = "Some long text content..."
 

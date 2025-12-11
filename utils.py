@@ -4,13 +4,36 @@ import logging
 import requests
 import hashlib
 import json
-from typing import List, Dict, Any
+import aiohttp
+import asyncio
+from typing import List, Dict, Any, Protocol
+from abc import ABC, abstractmethod
 import config
 
 logger = logging.getLogger(__name__)
 
 
-class OllamaClient:
+class LLMClient(ABC):
+    """Abstract base class for LLM clients."""
+    
+    @abstractmethod
+    def generate(self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048) -> str:
+        pass
+        
+    @abstractmethod
+    def generate_with_stats(self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048) -> Dict[str, Any]:
+        pass
+
+    @abstractmethod
+    async def generate_with_stats_async(self, prompt: str, system: str = "", temperature: float = 0.7, max_tokens: int = 2048) -> Dict[str, Any]:
+        pass
+
+    @abstractmethod
+    def embed(self, text: str) -> List[float]:
+        pass
+
+
+class OllamaClient(LLMClient):
     """Client for interacting with Ollama API."""
 
     def __init__(self, model: str, host: str = config.OLLAMA_HOST):
@@ -114,6 +137,43 @@ class OllamaClient:
             return result
         except requests.exceptions.RequestException as e:
             logger.error(f"Ollama generation failed: {e}")
+            return {}
+
+    async def generate_with_stats_async(
+        self,
+        prompt: str,
+        system: str = "",
+        temperature: float = 0.7,
+        max_tokens: int = 2048,
+    ) -> Dict[str, Any]:
+        """Generate text response with full statistics asynchronously."""
+        payload = {
+            "model": self.model,
+            "prompt": prompt,
+            "system": system,
+            "stream": False,
+            "keep_alive": 0,
+            "options": {"temperature": temperature, "num_predict": max_tokens},
+        }
+        
+        # Check cache (synchronous check is fine for local FS usually, or could make async)
+        cache_path = self._get_cache_path(payload)
+        cached_response = self._get_from_cache(cache_path)
+        if cached_response:
+            logger.info("Cache hit for generate_with_stats_async request")
+            return cached_response
+
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.post(self.api_generate, json=payload, timeout=30) as response:
+                    response.raise_for_status()
+                    result = await response.json()
+                    
+                    # Save to cache
+                    self._save_to_cache(cache_path, result)
+                    return result
+        except Exception as e:
+            logger.error(f"Ollama async generation failed: {e}")
             return {}
 
     def embed(self, text: str) -> List[float]:

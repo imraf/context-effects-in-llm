@@ -3,6 +3,7 @@ import time
 import logging
 import json
 import os
+import asyncio
 from datetime import datetime
 from typing import Dict, List, Any, Literal
 import config
@@ -98,40 +99,27 @@ class NeedleExperiment(ExperimentBase):
 
         return results
 
-    def run_detailed(self) -> List[Dict[str, Any]]:
-        """Run detailed needle experiment with multiple context lengths."""
-        logger.info(
-            f"Starting Experiment 1 (Needle - {self.mode.replace('_', ' ').title()} Mode) for {self.model}"
+    async def _run_single_trial(
+        self, prompt_length: int, position: str, secret_message: str, question: str, expected_answer: str, source_file: str
+    ) -> Dict[str, Any]:
+        """Run a single async trial."""
+        logger.info(f"Testing length={prompt_length}, position={position}")
+
+        # Load text (sync I/O is acceptable here as it's fast)
+        base_text = load_text_from_file(source_file, prompt_length)
+
+        if not base_text:
+            logger.warning(f"Could not load text from {source_file}, skipping")
+            return None
+
+        # Insert secret message
+        text_with_secret = insert_secret_message(
+            base_text, position, secret_message
         )
+        include_secret = position != "control"
 
-        secret_message = self.exp_config["secret_message"]
-        question = self.exp_config["question"]
-        expected_answer = self.exp_config["expected_answer"]
-        source_file = self.exp_config["source_file"]
-        prompt_lengths = self.exp_config["prompt_lengths"]
-        positions = self.exp_config["positions"]
-
-        results = []
-
-        for prompt_length in prompt_lengths:
-            for position in positions:
-                logger.info(f"Testing length={prompt_length}, position={position}")
-
-                # Load text
-                base_text = load_text_from_file(source_file, prompt_length)
-
-                if not base_text:
-                    logger.warning(f"Could not load text from {source_file}, skipping")
-                    continue
-
-                # Insert secret message
-                text_with_secret = insert_secret_message(
-                    base_text, position, secret_message
-                )
-                include_secret = position != "control"
-
-                # Create prompt
-                prompt = f"""Below is a passage of text. Please read it carefully and answer the following question:
+        # Create prompt
+        prompt = f"""Below is a passage of text. Please read it carefully and answer the following question:
 
 {question}
 
@@ -141,62 +129,92 @@ class NeedleExperiment(ExperimentBase):
 
 Please provide your answer clearly."""
 
-                # Run query
-                experiment_id = (
-                    f"{self.model}_{prompt_length}_{position}_{int(time.time())}"
+        # Run query
+        experiment_id = (
+            f"{self.model}_{prompt_length}_{position}_{int(time.time())}"
+        )
+
+        start_time = time.time()
+        try:
+            # Use async generation
+            response_data = await self.client.generate_with_stats_async(
+                prompt=prompt, temperature=0.1, max_tokens=500
+            )
+            query_time = time.time() - start_time
+
+            response_text = response_data.get("response", "")
+            token_count = response_data.get("prompt_eval_count", 0)
+
+            # Detection
+            found_secret = expected_answer.upper() in response_text.upper()
+
+            result = {
+                "experiment_id": experiment_id,
+                "timestamp": datetime.now().isoformat(),
+                "model": self.model,
+                "mode": self.mode,
+                "prompt_length_chars": len(text_with_secret),
+                "target_prompt_length": prompt_length,
+                "message_position": position,
+                "secret_message": secret_message if include_secret else None,
+                "include_secret": include_secret,
+                "found_secret": found_secret,
+                "token_count": token_count,
+                "query_time_seconds": query_time,
+                "response": response_text,
+                "ollama_metadata": {
+                    "eval_count": response_data.get("eval_count", 0),
+                    "eval_duration": response_data.get("eval_duration", 0),
+                    "load_duration": response_data.get("load_duration", 0),
+                    "prompt_eval_count": response_data.get(
+                        "prompt_eval_count", 0
+                    ),
+                    "prompt_eval_duration": response_data.get(
+                        "prompt_eval_duration", 0
+                    ),
+                    "total_duration": response_data.get("total_duration", 0),
+                },
+            }
+
+            logger.info(
+                f"Result: found={found_secret}, tokens={token_count}, time={query_time:.2f}s"
+            )
+            return result
+
+        except Exception as e:
+            logger.error(f"Error in trial {experiment_id}: {e}")
+            return None
+
+    async def _run_detailed_async(self) -> List[Dict[str, Any]]:
+        """Async implementation of detailed run."""
+        secret_message = self.exp_config["secret_message"]
+        question = self.exp_config["question"]
+        expected_answer = self.exp_config["expected_answer"]
+        source_file = self.exp_config["source_file"]
+        prompt_lengths = self.exp_config["prompt_lengths"]
+        positions = self.exp_config["positions"]
+
+        tasks = []
+        for prompt_length in prompt_lengths:
+            for position in positions:
+                tasks.append(
+                    self._run_single_trial(
+                        prompt_length, position, secret_message, question, expected_answer, source_file
+                    )
                 )
+        
+        # Gather all results
+        results = await asyncio.gather(*tasks)
+        # Filter out None results
+        return [r for r in results if r is not None]
 
-                start_time = time.time()
-                try:
-                    response_data = self.client.generate_with_stats(
-                        prompt=prompt, temperature=0.1, max_tokens=500
-                    )
-                    query_time = time.time() - start_time
-
-                    response_text = response_data.get("response", "")
-                    token_count = response_data.get("prompt_eval_count", 0)
-
-                    # Detection
-                    found_secret = expected_answer.upper() in response_text.upper()
-
-                    result = {
-                        "experiment_id": experiment_id,
-                        "timestamp": datetime.now().isoformat(),
-                        "model": self.model,
-                        "mode": self.mode,
-                        "prompt_length_chars": len(text_with_secret),
-                        "target_prompt_length": prompt_length,
-                        "message_position": position,
-                        "secret_message": secret_message if include_secret else None,
-                        "include_secret": include_secret,
-                        "found_secret": found_secret,
-                        "token_count": token_count,
-                        "query_time_seconds": query_time,
-                        "response": response_text,
-                        "ollama_metadata": {
-                            "eval_count": response_data.get("eval_count", 0),
-                            "eval_duration": response_data.get("eval_duration", 0),
-                            "load_duration": response_data.get("load_duration", 0),
-                            "prompt_eval_count": response_data.get(
-                                "prompt_eval_count", 0
-                            ),
-                            "prompt_eval_duration": response_data.get(
-                                "prompt_eval_duration", 0
-                            ),
-                            "total_duration": response_data.get("total_duration", 0),
-                        },
-                    }
-
-                    results.append(result)
-                    logger.info(
-                        f"Result: found={found_secret}, tokens={token_count}, time={query_time:.2f}s"
-                    )
-
-                except Exception as e:
-                    logger.error(f"Error in trial {experiment_id}: {e}")
-                    continue
-
-        return results
+    def run_detailed(self) -> List[Dict[str, Any]]:
+        """Run detailed needle experiment with multiple context lengths."""
+        logger.info(
+            f"Starting Experiment 1 (Needle - {self.mode.replace('_', ' ').title()} Mode) for {self.model}"
+        )
+        # Run the async loop
+        return asyncio.run(self._run_detailed_async())
 
     def save_detailed_results(
         self, results: List[Dict[str, Any]], output_dir: str = None
