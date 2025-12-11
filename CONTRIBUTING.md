@@ -29,6 +29,17 @@ We follow PEP 8 with these modifications:
 - Aim for >70% code coverage
 - Run tests before submitting: `pytest tests/`
 - Check coverage: `pytest --cov=. --cov-report=html`
+- CI/CD pipeline runs on every push and PR to ensure quality
+
+## Pre-commit Hooks
+
+We use pre-commit to ensure code quality.
+
+1. Install pre-commit: `pip install pre-commit`
+2. Install hooks: `pre-commit install`
+3. Run hooks manually: `pre-commit run --all-files`
+
+Hooks include: black, isort, flake8, mypy, and bandit.
 
 ## Pull Request Process
 

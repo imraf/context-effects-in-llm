@@ -48,7 +48,7 @@ class ContextSizeExperiment:
             # Let's ask: "What is the title of the document mentioned in the middle of the text?" -> Too vague.
             # Let's inject a specific unique ID into one document.
 
-            unique_id = f"ID-{random.randint(1000, 9999)}"
+            unique_id = f"ID-{random.randint(*config.EXP2_ID_RANGE)}"
             selected_docs[target_doc_idx] += f"\n\nUnique Reference ID: {unique_id}"
             context = "\n\n".join(selected_docs)
 

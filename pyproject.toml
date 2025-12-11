@@ -37,6 +37,10 @@ dev = [
     "pylint>=3.0.0",
     "flake8>=6.0.0",
     "pre-commit>=3.0.0",
+    "bandit>=1.7.0",
+    "isort>=5.0.0",
+    "mypy>=1.0.0",
+    "black>=23.0.0"
 ]
 
 [project.urls]
@@ -50,3 +54,17 @@ context-horizons = "main:main"
 [build-system]
 requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv"]
+tests = ["B201", "B301"]
+skips = ["B101", "B601"]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+multi_line_output = 3
+
+[tool.black]
+line-length = 120
+target-version = ['py312']

@@ -77,6 +77,7 @@ NEEDLE_EXPERIMENTS = {
 
 # Experiment 2: Context Size
 EXP2_DOC_COUNTS = [2, 5, 10, 20, 50]
+EXP2_ID_RANGE = (1000, 9999)
 
 # Experiment 3: RAG
 EXP3_RAG_K = 3
